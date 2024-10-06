@@ -1,0 +1,80 @@
+[
+    {
+      "Studio": "20th Century Studios",
+      "Box Office": "$40,774,685",
+      "Date": "9/29/2023",
+      "Year": 2020,
+      "Movie": "THE CREATOR"
+    },
+    {
+      "Studio": "Lionsgate",
+      "Box Office": "$12,897,797",
+      "Date": "7/7/2023",
+      "Year": 2022,
+      "Movie": "JOY RIDE"
+    },
+    {
+        "Studio": "Lionsgate",
+        "Box Office": "$12,897,797",
+        "Date": "7/7/2023",
+        "Year": 2022,
+        "Movie": "JOY RIDE"
+      },
+      {
+        "Studio": "Lionsgate",
+        "Box Office": "$12,897,797",
+        "Date": "7/7/2023",
+        "Year": 2022,
+        "Movie": "JOY RIDE"
+      },
+      {
+        "Studio": "Lionsgate",
+        "Box Office": "$12,897,797",
+        "Date": "7/7/2023",
+        "Year": 2022,
+        "Movie": "JOY RIDE"
+      },
+    {
+      "Studio": "A24",
+      "Box Office": "$11,331,991",
+      "Date": "6/2/2023",
+      "Year": 2021,
+      "Movie": "PAST LIVES"
+    },
+    {
+        "Studio": "Lionsgate",
+        "Box Office": "$12,897,797",
+        "Date": "7/7/2023",
+        "Year": 2021,
+        "Movie": "JOY RIDE"
+      },
+      {
+        "Studio": "Lionsgate",
+        "Box Office": "$12,897,797",
+        "Date": "7/7/2023",
+        "Year": 1990,
+        "Movie": "JOY RIDE"
+      },
+      {
+        "Studio": "Lionsgate",
+        "Box Office": "$12,897,797",
+        "Date": "7/7/2023",
+        "Year": 2021,
+        "Movie": "JOY RIDE"
+      },
+      {
+        "Studio": "Lionsgate",
+        "Box Office": "$12,897,797",
+        "Date": "7/7/2023",
+        "Year": 2020,
+        "Movie": "JOY RIDE"
+      },
+    {
+      "Studio": "Warner Bros. Pictures",
+      "Box Office": "$636,238,427",
+      "Date": "7/21/2023",
+      "Year": 2025,
+      "Movie": "BARBIE"
+    }
+    
+]
