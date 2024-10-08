@@ -39,18 +39,17 @@
 </script>
 
 <!-- Render the Scrolly and Line components -->
-
+<section id="scrolly-section">
+<h2> Figure</h2>
 <Line data={movieData} {xGet} {yGet} stroke="#ff0000" />
-
+</section>
 <style>
+    
 	h2 {
 		position: sticky;
 		top: 4em;
 	}
 
-	.spacer {
-		height: 75vh;
-	}
 
 	.step {
 		height: 80vh;
@@ -61,4 +60,6 @@
 	.step p {
 		padding: 1rem;
 	}
+
+
 </style>

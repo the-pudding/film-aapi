@@ -5,22 +5,23 @@
 
 <!-- Render the Scrolly and Line components -->
 <section id="scrolly">
-	<h2>Scrolly <span>{value}</span></h2>
+	<h2>Scrolly</h2>
 	<div class="spacer" />
 	<Scrolly bind:value>
 			{#each [0, 1, 2, 3] as i}
 				{@const active = value === i}
 				<div class="step" class:active>
-					<p>i</p>
+					<h4>{i}</h4>
 				</div>
+				<div class ="pad"></div>
 			{/each}
+
 	</Scrolly>
 	<div class="spacer" />
 </section>
 
 <style>
 	h2 {
-		position: sticky;
 		top: 4em;
 	}
 
@@ -29,12 +30,16 @@
 	}
 
 	.step {
-		height: 80vh;
+		height: 50vh; 
 		background: var(--color-gray-100);
 		text-align: center;
 	}
 
 	.step p {
-		padding: 1rem;
+		padding: 10rem;
+	}
+
+	.pad {
+		padding: 5vh;
 	}
 </style>
