@@ -1,5 +1,4 @@
 <script>
-	import Scrolly from "$components/helpers/Scrolly.svelte";
 	import { scaleLinear } from "d3";
 	import movies from "$data/tier1_all.json";
 	import Line from "$components/layercake/line.svelte";
@@ -40,22 +39,8 @@
 </script>
 
 <!-- Render the Scrolly and Line components -->
-<section id="scrolly">
-	<h2>Scrolly <span>{value}</span></h2>
-	<div class="spacer" />
-	<Scrolly bind:value>
-		{#if movies.length > 0}
-			{#each [0, 1, 2, 3] as i}
-				{@const active = value === i}
-				<div class="step" class:active>
-					<p>{movies[i].Movie}</p>
-					<Line data={movieData} {xGet} {yGet} stroke="#ff0000" />
-				</div>
-			{/each}
-		{/if}
-	</Scrolly>
-	<div class="spacer" />
-</section>
+
+<Line data={movieData} {xGet} {yGet} stroke="#ff0000" />
 
 <style>
 	h2 {
