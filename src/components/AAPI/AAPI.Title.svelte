@@ -1,6 +1,10 @@
 <section id="title">
-    <h1><i>ASIAN </i></h1>
-    <h1 style="font-size: 8vh;"><i>"REPRESENTATION"</i></h1>
+    <h1><i>"ASIAN"</i></h1>
+    <h1 style="font-size: 9vh;"><i>REPRESENTATION</i></h1>
+    <br/>
+    <h3> We analyzed over 1,000 movies to see how many Asian characters were played by actors who don’t actually share their ethnic background. </h3>
+    <br/>
+    <h4> By Anna Li and Dorothy Lu</h4>
 </section>
 
 <style>
@@ -9,6 +13,20 @@
         text-align: center;
     }
     #title {
-        height: 100vh;
+        padding-top: 0em;
+        height: 90vh;
+    }
+
+    h3 {
+        padding-left: 10%;
+        padding-right: 10%;
+        text-align: center;
+        font-weight: 300;
+    }
+
+    h4 {
+        text-align: center;
+        font-size: 1em;
+        font-weight: 300;
     }
 </style>

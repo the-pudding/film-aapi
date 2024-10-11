@@ -6,15 +6,22 @@
 
 <div id="demo">
     <AAPITitle />
+
+    <section id="another-section">
+        <h2> insert section here</h2>
+    </section>
+
     <section id="scrolly-section">
         <div class="figure-background">
             <AAPITier1 />
         </div>
+
         <div class = "scrolly-content">
             <AAPIScrolly />
         </div>
     </section>
-    <section id="another">
+
+    <section id="another-section">
         <h2> insert another section here</h2>
     </section>
 </div>
@@ -26,25 +33,31 @@
 	}
     
     #scrolly-section {
+        padding-left: 3em;
         position: relative;
-        height: 1000vh; /* Adjust based on the length of your scrolly content */
+        display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+        width: 100%;
+        height: 790vh; /* Adjust based on the length of your scrolly content */
 
     }
-    #another {
-        height: 100vh;
+    #another-section {
+        height: 50vh;
     }
 
     .figure-background {
 		position: sticky;
 		top: 0;
 		left: 0;
-		width: 100%;
+		width: 50%;
 		height: 100vh; /* Full viewport height */
 		z-index: -1;
     }
 
     .scrolly-content {
 		position: relative;
+        width: 45%; 
 		z-index: 1; /* Keep it above the background */
 	}
 

@@ -47,6 +47,5 @@
 <style>
 	h2 {
 		position: sticky;
-		top: 4em;
 	}
 </style>

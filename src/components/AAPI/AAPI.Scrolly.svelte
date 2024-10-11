@@ -5,7 +5,6 @@
 
 <!-- Render the Scrolly and Line components -->
 <section id="scrolly">
-	<h2>Scrolly</h2>
 	<Scrolly bind:value>
 			{#each [0, 1, 2, 3] as i}
 				{@const active = value === i}
