@@ -33,7 +33,7 @@
 	}
     
     #scrolly-section {
-        padding-left: 3em;
+        padding-left: 5em;
         position: relative;
         display: flex;
 		justify-content: space-between;
