@@ -40,26 +40,13 @@
 
 <!-- Render the Scrolly and Line components -->
 <section id="scrolly-section">
-<h2> Figure</h2>
-<Line data={movieData} {xGet} {yGet} stroke="#ff0000" />
+    <h2> Figure section </h2>
+    <Line data={movieData} {xGet} {yGet} stroke="#ff0000" />
 </section>
+
 <style>
-    
 	h2 {
 		position: sticky;
 		top: 4em;
 	}
-
-
-	.step {
-		height: 80vh;
-		background: var(--color-gray-100);
-		text-align: center;
-	}
-
-	.step p {
-		padding: 1rem;
-	}
-
-
 </style>

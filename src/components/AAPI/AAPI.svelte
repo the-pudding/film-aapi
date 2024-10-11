@@ -1,10 +1,11 @@
 <script>
 	import AAPIScrolly from "$components/AAPI/AAPI.Scrolly.svelte";
+    import AAPITitle from "$components/AAPI/AAPI.Title.svelte";
     import AAPITier1 from "$components/AAPI/AAPI.Tier1.svelte";
 </script>
 
 <div id="demo">
-	<h1>AAPI ARTICLE</h1>
+    <AAPITitle />
     <section id="scrolly-section">
         <div class="figure-background">
             <AAPITier1 />
@@ -13,18 +14,24 @@
             <AAPIScrolly />
         </div>
     </section>
+    <section id="another">
+        <h2> insert another section here</h2>
+    </section>
 </div>
 
 <style>
-	#demo {
-		max-width: 40rem;
+    #demo {
 		padding: 16px;
 		margin: 0 auto;
 	}
+    
     #scrolly-section {
         position: relative;
-        height: 600vh; /* Adjust based on the length of your scrolly content */
+        height: 1000vh; /* Adjust based on the length of your scrolly content */
 
+    }
+    #another {
+        height: 100vh;
     }
 
     .figure-background {
