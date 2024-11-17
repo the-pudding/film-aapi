@@ -1,1 +1,148 @@
-{"meta":{"title":"Title TK","description":"Description tk."},"body":[{"section":"intro","content":[{"type":"h4","value":"An h4 element with no attributes"},{"type":"text","value":"Some random text here, followed by an img tag."},{"type":"img","value":{"src":"assets/demo/test.jpg","alt":"A cat"}},{"type":"Test","value":{"label":"I’m a custom component!","value":"50"}}]}]}
+{
+    "meta": [
+        {
+            "title": "Asian\" Representation",
+            "description": "We analyzed over 1,000 movies to see how many Asian characters were played by actors who don’t actually share their ethnic background.",
+            "url": "https://pudding.cool/2025/01/asian-representation",
+            "keywords": "",
+            "byline": "By <a href=https://pudding.cool/author/anna-li/ target=_blank>Jan Diehm</a> & <a href=https://pudding.cool/author/dorothy-lu/ target=_blank>Dorothy Lu</a>"
+        }
+    ],
+    "body": [
+        {
+            "section": "intro",
+            "id": 1,
+            "text": "My mother, Haimei, is a strong first generation immigrant from a small fishing village in China. She’s worked her whole life to build a wonderful life in New York City, and after her two children have grown up and moved out, all she really wants to do is settle into her comfortable white couch, cuddle with her small chihuahua Tom, and watch TV."
+        },
+        {
+            "section": "intro",
+            "id": 2,
+            "text": "It’s 10:12pm and she just came back from a long day of cleaning clothes at the laundromat she runs with her husband. She browses Netflix for a bit, and after a bit of scrolling, settles on watching Emily in Paris -- after all, she’s always had a not-so-secret obsession with the idea of living in France herself. It’s a bit of a pipe dream, but for tonight, maybe she can be Haimei in Paris."
+        },
+        {
+            "section": "intro",
+            "id": 3,
+            "text": "She’s on episode 2, and Mindy Chen is introduced—wow! Mindy was also born and raised in China, and Haimei sees her youthful energy being mirrored back at her. Ever since I was a child, I was obsessed with the idea of living in Paris, Mindy says. It's refreshing to see someone so similar to her represented on screen. Haimei decides she likes her."
+        },
+        {
+            "section": "intro",
+            "id": 4,
+            "text": "Something’s off, though. She watches a scene where Mindy's conversing with her father in Mandarin, but her pronunciation and cadence are strained; she’s clearly not that of a fluent speaker. Another scene shows her singing on a Chinese pop show, but everything’s a little off -- not only her singing, but also her mannerisms. It bothers Haimei, knowing how inaccurate everything is."
+        },
+        {
+            "section": "intro",
+            "id": 5,
+            "text": "Haimei does a quick Google search and confirms her doubts: Mindy is played by Ashley Park, a Korean-American woman. It makes her sad—do these casting directors think Korean and Chinese actors are interchangeable? Haimei loves Mindy as a character, but the way she’s being portrayed leaves a bad taste in her mouth -- all Haimei wants is for America to see her as a unique person with a distinct heritage, but it’s clear they see her as the same as any other Asian that has walked this land."
+        },
+        {
+            "section": "historical-context",
+            "id": 6,
+            "text": "For much of US history, Asian American representation was basically nonexistent. Starting in the 1900s, white actors played some of the most prominent Asian characters throughout films, including Charlie Chan and Dr. Fu Manchu. The “Yellowface” practices of the early 1900s were centered around white actors playing up ‘racial’ features, including ‘slanted’ eyes, a yellow skin color, black hair, and a distinct accent."
+        },
+        {
+            "section": "historical-context",
+            "id": 7,
+            "text": "Once Asian Americans did get to play themselves on screen, stereotypes limited the depth of representation; Bruce Lee’s career was limited to portraying a martial arts master and despite Anna May Wong’s popularity, her castings were always that of a ‘Dragon Lady’."
+        },
+        {
+            "section": "current",
+            "id": 8,
+            "text": "These days, movies like Crazy Rich Asians and Everything Everywhere All At Once have garnered support not only throughout the Asian American community, but also had critical international acclaim. Even more promising, in the past 16 years, the percentage of Asian characters with speaking roles increased from 3.4% to 15.9%, outpacing growth of any other ethnic group in Hollywood."
+        },
+        {
+            "section": "current",
+            "id": 9,
+            "text": "7.1% of the US population identifies as Asian American, yet only 5.9% of speaking characters in top movies from the past 15 years were Asian. We recognize that these movies have slowly started to encompass a multifaceted portrayal of the Asian experience, going beyond stereotypes and tokenized characters."
+        },
+        {
+            "section": "current",
+            "id": 10,
+            "text": "Asian American representation in the media is undoubtedly increasing and diversifying, which is really exciting to see as Asian Americans ourselves!"
+        },
+        {
+            "section": "tier1",
+            "id": 11,
+            "text": "Not only has the number of movies featuring Asians as main cast increased over the years, but so has their popularity in theaters."
+        },
+        {
+            "section": "tier1",
+            "id": 12,
+            "text": "One of the highest grossing movies of 2021, Spider-Man: No Way Home stars Filipino-American actor Jacob Balaton, playing Ned Leeds, a character deeply connected with his Filipino family and heritage."
+        },
+        {
+            "section": "tier1",
+            "id": 13,
+            "text": "Dwayne “The Rock” Johnson stars in Jumanji: Welcome to the Jungle, playing Dr. Eddie Bravestone,"
+        },
+        {
+            "section": "tier1",
+            "id": 14,
+            "text": "Harold & Kumar Go To White Castle, Gandhi OR The Joy Luck Club)"
+        },
+        {
+            "section": "transition",
+            "id": 15,
+            "text": "But what does “Asian American” even mean? The government recognizes “Asian Americans” as an official label, supporting the perception that all people originating from Asia are similar. Many people identify Asians as a monolith based on the ideas that they “look similar” and have similar backgrounds. However, more than half of Asian Americans identify most by their specific ethnicity, like “Chinese” or “Thai”, not by the term “Asian”."
+        },
+        {
+            "section": "transition",
+            "id": 16,
+            "text": "We used to like just take what we could get, but now that we’ve had these widespread successes, there’s more than one Asian trope so we have the room to try to capture nuance of different Asian ethnicities."
+        },
+        {
+            "section": "transition",
+            "id": 17,
+            "text": "It’s important to note that ‘accurate’ representation has nothing to do with actors looking a certain type of Asian. In fact, this stereotype is exactly what we’re trying to dispute; there is no certain look for a specific ethnicity. Rather, cultural elements such as language, religion, foods, and social customs impact how different ethnicities are represented."
+        },
+        {
+            "section": "thesis",
+            "id": 18,
+            "text": "Inaccurate representation of these elements perpetuate misunderstandings of how our cultures are perceived. When we substitute Asian actors to play other Asian characters, we lose nuance in the specificities of who gets to represent their own culture."
+        },
+        {
+            "section": "data-setup",
+            "id": 19,
+            "text": "These examples are what sparked our conversation regarding how Asian Americans are perceived by the media. Inaccurate representation is discouraging since it’s how the rest of the world sees our ethnicities, and for some people this may be their only exposure to Asian ethnicities — if done wrong, these stereotypes and inaccuracies will only continue to be perpetuated."
+        },
+        {
+            "section": "data-setup",
+            "id": 20,
+            "text": "We set out to explore how prevalent ethnic miscastings are for Asian roles in Hollywood. We collected data on hundreds of movies featuring Asian American actors as lead roles and determined if the ethnicity of the actor matched that of the character they played, and if this was relevant to the plot of the movie."
+        },
+        {
+            "section": "tier2",
+            "id": 21,
+            "text": "Not only has the number of movies featuring Asians as main cast increased over the years, but so has their popularity in theaters."
+        },
+        {
+            "section": "tier2",
+            "id": 22,
+            "text": "One of the highest grossing movies of 2021, Spider-Man: No Way Home stars Filipino-American actor Jacob Balaton, playing Ned Leeds, a character deeply connected with his Filipino family and heritage."
+        },
+        {
+            "section": "tier2",
+            "id": 23,
+            "text": "Dwayne “The Rock” Johnson stars in Jumanji: Welcome to the Jungle, playing Dr. Eddie Bravestone,"
+        },
+        {
+            "section": "tier2",
+            "id": 24,
+            "text": "Harold & Kumar Go To White Castle, Gandhi OR The Joy Luck Club)"
+        },
+        {
+            "section": "conclusion",
+            "id": 25,
+            "text": "The vast majority is accurate,"
+        },
+        {
+            "section": "conclusion",
+            "id": 26,
+            "text": "The vast majority is accurate,"
+        },
+        {
+            "section": "methodology",
+            "id": 27,
+            "text": "We collected year-end Hot 100 songs between 2008–2020 from Billboard. Then we researched each artist’s sexual orientation and gender identity with a mixed programmatic/manual approach that looked at Wikipedia pages, news articles, and social media profiles. We built 3 dictionaries: one to flag feminine gendered lyrics like “women”, “girl”, “her”, and “she”; one to flag masculine gendered lyrics like “man”, “boy”, “his”, and “he”; and one to flag relationship lyrics like “love”, “heart”, “kiss”, “sex”."
+        }
+    ]
+}
