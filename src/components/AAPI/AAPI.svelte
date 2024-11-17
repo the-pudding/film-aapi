@@ -5,11 +5,16 @@
 </script>
 
 <div id="demo">
-    <AAPITitle />
+    
 
-    <section id="another-section">
+    <section id="scrolly-section">
         <h2> insert section here</h2>
+        <div class = "scrolly-content">
+            <AAPIScrolly />
+        </div>
     </section>
+    <AAPITitle />
+    
 
     <section id="scrolly-section">
         <div class="figure-background">
@@ -43,7 +48,7 @@
 
     }
     #another-section {
-        height: 50vh;
+        height: 100vh;
     }
 
     .figure-background {

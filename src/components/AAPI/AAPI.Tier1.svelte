@@ -40,7 +40,7 @@
 
 <!-- Render the Scrolly and Line components -->
 <section id="scrolly-section">
-    <h2> Figure section </h2>
+    <h2> Tier 1 section </h2>
     <Line data={movieData} {xGet} {yGet} stroke="#ff0000" />
 </section>
 

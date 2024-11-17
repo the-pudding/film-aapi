@@ -1,48 +1,45 @@
 <script>
 	import Scrolly from "$components/helpers/Scrolly.svelte";
-	let value;
+
+	// Variables for managing scrolly value and spacing
+	export let value;
+	export let topPadding = "50vh"; // Default space above the scrolly component
+	export let bottomPadding = "50vh"; // Default space below the scrolly component
+	export let sectionWidth = "70vh"; // Width of the scrolly section
 </script>
 
-<!-- Render the Scrolly and Line components -->
-<section id="scrolly">
+<!-- Scrolly Component -->
+<section id="scrolly" style="padding-top: {topPadding}; padding-bottom: {bottomPadding};">
 	<Scrolly bind:value>
-			{#each [0, 1, 2, 3] as i}
-				{@const active = value === i}
-				<div class="step" class:active>
-					<h4>{i}</h4>
-				</div>
-				<div class ="pad"></div>
-			{/each}
-
+		{#each [0, 1, 2, 3] as i}
+			{@const active = value === i}
+			<div class="step" class:active>
+				<h4>{i}</h4>
+			</div>
+			<div class="pad"></div>
+		{/each}
 	</Scrolly>
-	<div class="spacer" />
 </section>
 
+<!-- Style -->
 <style>
-	h2 {
-		top: 4em;
-	}
-
-	.spacer {
-		height: 75vh;
+	#scrolly {
+		width: var(--scrolly-width, 100%); /* Defaults to full width */
+		margin-bottom: var(--scrolly-spacing, 100vh); /* Space after scrolly ends */
 	}
 
 	.step {
-		height: 50vh; 
-		width: 50vh;
+		height: 50vh;
+		width: var(--step-width, 50vh); /* Flexible width for steps */
 		background: var(--color-gray-100);
 		text-align: center;
 	}
 
-	.step p {
-		padding: 10rem;
-	}
-
 	.pad {
-		padding: 90vh;
+		height: var(--pad-height, 90vh); /* Padding between steps */
 	}
 
 	.scrolly {
-		padding-left: 70vh;
+		padding-left: var(--scrolly-left-padding, 70vh);
 	}
 </style>
