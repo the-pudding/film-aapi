@@ -2,8 +2,7 @@
     <h1><i>"ASIAN"</i></h1>
     <h1 style="font-size: 9vh;"><i>REPRESENTATION</i></h1>
     <br/>
-    <h3> We analyzed over 1,000 movies to see how many Asian characters were played by actors who don’t actually share their ethnic background. </h3>
-    <br/>
+
     <h4> By Anna Li and Dorothy Lu</h4>
 </section>
 
