@@ -4,10 +4,10 @@
 	import AAPI from "$components/AAPI/AAPI.svelte"
 	import Footer from "$components/Footer.svelte";
 
-	// const copy = getContext("copy");
+	const copy = getContext("copy");
 	// const data = getContext("data");
 </script>
 
 <!-- <Demo /> -->
-<AAPI />
+<AAPI {copy} />
 <Footer />

@@ -1,64 +1,40 @@
 <script>
-	import AAPIScrolly from "$components/AAPI/AAPI.Scrolly.svelte";
+	import AAPIIntro from "$components/AAPI/AAPI.Intro.svelte";
     import AAPITitle from "$components/AAPI/AAPI.Title.svelte";
     import AAPITier1 from "$components/AAPI/AAPI.Tier1.svelte";
+    import AAPITier2 from "$components/AAPI/AAPI.Tier2.svelte";
+    import AAPIText from "$components/AAPI/AAPI.Text.svelte";
+    import AAPITextHeader from "$components/AAPI/AAPI.TextHeader.svelte";
     import textData from "$data/copy.json";
-    let scrollyValue = 0;
-
-    // Filter text for the intro section
-    let introText = textData.body.filter((item) => item.section === "intro");
+    export let copy;
 </script>
 
 <div id="story">
 
-    <section id="scrolly-section">
-        <AAPIScrolly
-            bind:value={scrollyValue}
-            texts={introText}
-        />
-    </section>
-</div>
-
-<div>
-
+    <AAPIIntro texts={copy.introScrolly} />
     <AAPITitle />
-    
-    <section id="scrolly-section">
-        <div class="figure-background">
-            <AAPITier1 />
-        </div>
+    <AAPIText texts={copy.copy1}/>
+    <!-- PUT MOVIE POSTERS COMPONENT HERE -->
+    <AAPIText texts={copy.copy2}/>
+    <AAPITier1 texts={copy.tier1scrolly} />
+    <AAPIText texts={copy.copy3}/>
+    <AAPIText texts={copy.example1}/>
+    <!-- PUT EXAMPLE 1 COMPONENT HERE -->
+    <AAPIText texts={copy.example2}/>
+    <!-- PUT EXAMPLE 2 COMPONENT HERE -->
+    <AAPIText texts={copy.example3}/>
+    <!-- PUT EXAMPLE 3 COMPONENT HERE -->
+    <AAPIText texts={copy.copy4}/>
+    <AAPIText texts={copy.copy_datasetup}/>
+    <AAPITier2 texts={copy.tier2scrolly} />
+    <AAPIText texts={copy.conclusion}/>
 
-        <div>
-            <AAPIScrolly />
-        </div>
-    </section>
+    <AAPITextHeader text="Methodology" />
+    <AAPIText texts={copy.methodology}/>
 
-    <section id="another-section">
-        <h2> insert another section here</h2>
-    </section>
 </div>
-
 <style>
     #story {
         padding: 1em;
-	}
-    
-    #scrolly-section {
-        margin: 0px auto;
-        max-width: 30rem;
     }
-
-    #another-section {
-        height: 100vh;
-    }
-
-    .figure-background {
-		position: sticky;
-		top: 0;
-		left: 0;
-		width: 50%;
-		height: 100vh; /* Full viewport height */
-		z-index: -1;
-    }
-    
 </style>
