@@ -14,7 +14,7 @@
     <AAPIIntro texts={copy.introScrolly} />
     <AAPITitle />
     <AAPIText texts={copy.copy1}/>
-    <!-- PUT MOVIE POSTERS COMPONENT HERE f2-->
+    <!-- PUT MOVIE POSTERS COMPONENT HERE-->
     <AAPIText texts={copy.copy2}/>
     <AAPITier1 texts={copy.tier1scrolly} />
     <AAPIText texts={copy.copy3}/>
