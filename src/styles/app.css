@@ -100,24 +100,29 @@ p {
 
 .visualContainer {
 	position: sticky;
+	height: 100vh;
 	top: 0px;
 	left: 0px;
 	width: 100%;
-	height: 100vh;
+	z-index: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-.scrolly-section {
-	margin: 0px auto;
-	max-width: 30rem;
-}
 /* step = each individual scrolly box */
 .step {
 	height: 100vh;
+	max-width: 30rem;
+	margin: 0px auto;
 }
 .stepText {
 	background: var(--color-gray-100);
 	text-align: left;
 	padding: 1.5rem;
+	z-index: 1; /* Higher z-index to ensure text is above chart */
+	position: relative; /* Makes sure z-index works correctly */
+	opacity: 1; /* Ensure text is fully opaque */
 }
 .pad {
 	height: 100vh; /* Spacing between steps. 100vh = full viewport height */
