@@ -1,2599 +1,1857 @@
 [
   {
-    "Studio": "20th Century Studios",
-    "Box Office": "$40,774,685",
-    "Date": "9/29/2023",
+    "Movie": "THE CREATOR",
     "Year": 2023,
-    "Movie": "THE CREATOR"
+    "bo_revenue": 40774685
   },
   {
-    "Studio": "Lionsgate",
-    "Box Office": "$12,897,797",
-    "Date": "7/7/2023",
+    "Movie": "JOY RIDE",
     "Year": 2023,
-    "Movie": "JOY RIDE"
+    "bo_revenue": 12897797
   },
   {
-    "Studio": "A24",
-    "Box Office": "$11,331,991",
-    "Date": "6/2/2023",
+    "Movie": "PAST LIVES",
     "Year": 2023,
-    "Movie": "PAST LIVES"
+    "bo_revenue": 11331991
   },
   {
-    "Studio": "Warner Bros. Pictures",
-    "Box Office": "$636,238,427",
-    "Date": "7/21/2023",
+    "Movie": "BARBIE",
     "Year": 2023,
-    "Movie": "BARBIE"
+    "bo_revenue": 636238427
   },
   {
-    "Studio": "The Walt Disney Studios",
-    "Box Office": "$358,995,823",
-    "Date": "5/5/2023",
+    "Movie": "GUARDIANS OF THE GALAXY VOL. 3",
     "Year": 2023,
-    "Movie": "GUARDIANS OF THE GALAXY VOL. 3"
+    "bo_revenue": 358995823
   },
   {
-    "Studio": "Lionsgate",
-    "Box Office": "$187,131,811",
-    "Date": "3/24/2023",
+    "Movie": "JOHN WICK: CHAPTER 4",
     "Year": 2023,
-    "Movie": "JOHN WICK: CHAPTER 4"
+    "bo_revenue": 187131811
   },
   {
-    "Studio": "Universal Pictures",
-    "Box Office": "$146,126,021",
-    "Date": "5/19/2023",
+    "Movie": "FAST X",
     "Year": 2023,
-    "Movie": "FAST X"
+    "bo_revenue": 146126021
   },
   {
-    "Studio": "Warner Bros. Pictures",
-    "Box Office": "$124,481,229",
-    "Date": "12/22/2023",
+    "Movie": "AQUAMAN AND THE LOST KINGDOM",
     "Year": 2023,
-    "Movie": "AQUAMAN AND THE LOST KINGDOM"
+    "bo_revenue": 124481229
   },
   {
-    "Studio": "Universal Pictures",
-    "Box Office": "$95,159,014",
-    "Date": "1/6/2023",
+    "Movie": "M3GAN",
     "Year": 2023,
-    "Movie": "M3GAN"
+    "bo_revenue": 95159014
   },
   {
-    "Studio": "Warner Bros. Pictures",
-    "Box Office": "$60,619,198",
-    "Date": "12/25/2023",
+    "Movie": "THE COLOR PURPLE",
     "Year": 2023,
-    "Movie": "THE COLOR PURPLE"
+    "bo_revenue": 60619198
   },
   {
-    "Studio": "New Line Cinema",
-    "Box Office": "$57,638,015",
-    "Date": "3/17/2023",
+    "Movie": "SHAZAM! FURY OF THE GODS",
     "Year": 2023,
-    "Movie": "SHAZAM! FURY OF THE GODS"
+    "bo_revenue": 57638015
   },
   {
-    "Studio": "Columbia Pictures",
-    "Box Office": "$50,452,289",
-    "Date": "6/23/2023",
+    "Movie": "NO HARD FEELINGS",
     "Year": 2023,
-    "Movie": "NO HARD FEELINGS"
+    "bo_revenue": 50452289
   },
   {
-    "Studio": "20th Century Studios",
-    "Box Office": "$42,471,419",
-    "Date": "9/15/2023",
+    "Movie": "A HAUNTING IN VENICE",
     "Year": 2023,
-    "Movie": "A HAUNTING IN VENICE"
+    "bo_revenue": 42471419
   },
   {
-    "Studio": "Universal Pictures",
-    "Box Office": "$35,397,989",
-    "Date": "2/3/2023",
+    "Movie": "KNOCK AT THE CABIN",
     "Year": 2023,
-    "Movie": "KNOCK AT THE CABIN"
+    "bo_revenue": 35397989
   },
   {
-    "Studio": "Screen Gems",
-    "Box Office": "$32,502,034",
-    "Date": "1/20/2023",
+    "Movie": "MISSING",
     "Year": 2023,
-    "Movie": "MISSING"
+    "bo_revenue": 32502034
   },
   {
-    "Studio": "Focus Features",
-    "Box Office": "$28,153,030",
-    "Date": "6/16/2023",
+    "Movie": "ASTEROID CITY",
     "Year": 2023,
-    "Movie": "ASTEROID CITY"
+    "bo_revenue": 28153030
   },
   {
-    "Studio": "Skybound Entertainment",
-    "Box Office": "$17,297,903",
-    "Date": "4/14/2023",
+    "Movie": "RENFIELD",
     "Year": 2023,
-    "Movie": "RENFIELD"
+    "bo_revenue": 17297903
   },
   {
-    "Studio": "Big Beach",
-    "Box Office": "$1,924,928",
-    "Date": "8/11/2023",
+    "Movie": "JULES",
     "Year": 2023,
-    "Movie": "JULES"
+    "bo_revenue": 1924928
   },
   {
-    "Studio": "A24",
-    "Box Office": "$1,453,020",
-    "Date": "9/29/2023",
+    "Movie": "DICKS: THE MUSICAL",
     "Year": 2023,
-    "Movie": "DICKS: THE MUSICAL"
+    "bo_revenue": 1453020
   },
   {
-    "Studio": "Universal Pictures",
-    "Box Office": "$123,277,089",
-    "Date": "7/22/2022",
+    "Movie": "NOPE",
     "Year": 2022,
-    "Movie": "NOPE"
+    "bo_revenue": 123277089
   },
   {
-    "Studio": "Columbia Pictures",
-    "Box Office": "$103,368,605",
-    "Date": "8/5/2022",
+    "Movie": "BULLET TRAIN",
     "Year": 2022,
-    "Movie": "BULLET TRAIN"
+    "bo_revenue": 103368605
   },
   {
-    "Studio": "A24",
-    "Box Office": "$77,191,789",
-    "Date": "3/25/2022",
+    "Movie": "EVERYTHING EVERYWHERE ALL AT ONCE",
     "Year": 2022,
-    "Movie": "EVERYTHING EVERYWHERE ALL AT ONCE"
+    "bo_revenue": 77191789
   },
   {
-    "Studio": "DreamWorks Pictures",
-    "Box Office": "$13,013,697",
-    "Date": "8/5/2022",
+    "Movie": "EASTER SUNDAY",
     "Year": 2022,
-    "Movie": "EASTER SUNDAY"
+    "bo_revenue": 13013697
   },
   {
-    "Studio": "Stage 6 Films",
-    "Box Office": "$2,121,034",
-    "Date": "3/18/2022",
+    "Movie": "UMMA",
     "Year": 2022,
-    "Movie": "UMMA"
+    "bo_revenue": 2121034
   },
   {
-    "Studio": "The Walt Disney Studios",
-    "Box Office": "$411,331,615",
-    "Date": "5/6/2022",
+    "Movie": "DOCTOR STRANGE IN THE MULTIVERSE OF MADNESS",
     "Year": 2022,
-    "Movie": "DOCTOR STRANGE IN THE MULTIVERSE OF MADNESS"
+    "bo_revenue": 411331615
   },
   {
-    "Studio": "Universal Pictures",
-    "Box Office": "$376,851,088",
-    "Date": "6/10/2022",
+    "Movie": "JURASSIC WORLD DOMINION",
     "Year": 2022,
-    "Movie": "JURASSIC WORLD DOMINION"
+    "bo_revenue": 376851088
   },
   {
-    "Studio": "New Line Cinema",
-    "Box Office": "$168,362,301",
-    "Date": "10/21/2022",
+    "Movie": "BLACK ADAM",
     "Year": 2022,
-    "Movie": "BLACK ADAM"
+    "bo_revenue": 168362301
   },
   {
-    "Studio": "Paramount Players",
-    "Box Office": "$105,935,055",
-    "Date": "9/30/2022",
+    "Movie": "SMILE",
     "Year": 2022,
-    "Movie": "SMILE"
+    "bo_revenue": 105935055
   },
   {
-    "Studio": "3000 Pictures",
-    "Box Office": "$90,230,763",
-    "Date": "7/15/2022",
+    "Movie": "WHERE THE CRAWDADS SING",
     "Year": 2022,
-    "Movie": "WHERE THE CRAWDADS SING"
+    "bo_revenue": 90230763
   },
   {
-    "Studio": "Columbia Pictures",
-    "Box Office": "$46,934,371",
-    "Date": "10/7/2022",
+    "Movie": "LYLE, LYLE, CROCODILE",
     "Year": 2022,
-    "Movie": "LYLE, LYLE, CROCODILE"
+    "bo_revenue": 46934371
   },
   {
-    "Studio": "New Line Cinema",
-    "Box Office": "$45,309,412",
-    "Date": "9/23/2022",
+    "Movie": "DON'T WORRY DARLING",
     "Year": 2022,
-    "Movie": "DON'T WORRY DARLING"
+    "bo_revenue": 45309412
   },
   {
-    "Studio": "Searchlight Pictures",
-    "Box Office": "$38,528,411",
-    "Date": "11/18/2022",
+    "Movie": "THE MENU",
     "Year": 2022,
-    "Movie": "THE MENU"
+    "bo_revenue": 38528411
   },
   {
-    "Studio": "A24",
-    "Box Office": "$17,463,632",
-    "Date": "12/9/2022",
+    "Movie": "THE WHALE",
     "Year": 2022,
-    "Movie": "THE WHALE"
+    "bo_revenue": 17463632
   },
   {
-    "Studio": "Lionsgate",
-    "Box Office": "$13,280,007",
-    "Date": "11/23/2022",
+    "Movie": "GLASS ONION: A KNIVES OUT MYSTERY",
     "Year": 2022,
-    "Movie": "GLASS ONION: A KNIVES OUT MYSTERY"
+    "bo_revenue": 13280007
   },
   {
-    "Studio": "The Ingenious Group",
-    "Box Office": "$1,885,724",
-    "Date": "7/1/2022",
+    "Movie": "MR. MALCOLM'S LIST",
     "Year": 2022,
-    "Movie": "MR. MALCOLM'S LIST"
+    "bo_revenue": 1885724
   },
   {
-    "Studio": "Columbia Pictures",
-    "Box Office": "$804,793,482",
-    "Date": "12/17/2021",
+    "Movie": "SPIDER-MAN: NO WAY HOME",
     "Year": 2021,
-    "Movie": "SPIDER-MAN: NO WAY HOME"
+    "bo_revenue": 804793482
   },
   {
-    "Studio": "The Walt Disney Studios",
-    "Box Office": "$224,543,301",
-    "Date": "9/3/2021",
+    "Movie": "SHANG-CHI AND THE LEGEND OF THE TEN RINGS",
     "Year": 2021,
-    "Movie": "SHANG-CHI AND THE LEGEND OF THE TEN RINGS"
+    "bo_revenue": 224543301
   },
   {
-    "Studio": "The Walt Disney Studios",
-    "Box Office": "$164,870,240",
-    "Date": "11/5/2021",
+    "Movie": "ETERNALS",
     "Year": 2021,
-    "Movie": "ETERNALS"
+    "bo_revenue": 164870240
   },
   {
-    "Studio": "New Line Cinema",
-    "Box Office": "$42,201,014",
-    "Date": "4/23/2021",
+    "Movie": "MORTAL KOMBAT",
     "Year": 2021,
-    "Movie": "MORTAL KOMBAT"
+    "bo_revenue": 42201014
   },
   {
-    "Studio": "Paramount Pictures",
-    "Box Office": "$28,264,330",
-    "Date": "7/23/2021",
+    "Movie": "SNAKE EYES: G.I. JOE ORIGINS",
     "Year": 2021,
-    "Movie": "SNAKE EYES: G.I. JOE ORIGINS"
+    "bo_revenue": 28264330
   },
   {
-    "Studio": "The Walt Disney Studios",
-    "Box Office": "$116,987,523",
-    "Date": "7/30/2021",
+    "Movie": "JUNGLE CRUISE",
     "Year": 2021,
-    "Movie": "JUNGLE CRUISE"
+    "bo_revenue": 116987523
   },
   {
-    "Studio": "Warner Bros. Pictures",
-    "Box Office": "$108,327,838",
-    "Date": "10/22/2021",
+    "Movie": "DUNE",
     "Year": 2021,
-    "Movie": "DUNE"
+    "bo_revenue": 108327838
   },
   {
-    "Studio": "Universal Pictures",
-    "Box Office": "$48,242,515",
-    "Date": "7/23/2021",
+    "Movie": "OLD",
     "Year": 2021,
-    "Movie": "OLD"
+    "bo_revenue": 48242515
   },
   {
-    "Studio": "Warner Bros. Pictures",
-    "Box Office": "$37,686,807",
-    "Date": "12/22/2021",
+    "Movie": "THE MATRIX RESURRECTIONS",
     "Year": 2021,
-    "Movie": "THE MATRIX RESURRECTIONS"
+    "bo_revenue": 37686807
   },
   {
-    "Studio": "A24",
-    "Box Office": "$17,173,330",
-    "Date": "7/30/2021",
+    "Movie": "THE GREEN KNIGHT",
     "Year": 2021,
-    "Movie": "THE GREEN KNIGHT"
+    "bo_revenue": 17173330
   },
   {
-    "Studio": "Searchlight Pictures",
-    "Box Office": "$11,338,116",
-    "Date": "12/17/2021",
+    "Movie": "NIGHTMARE ALLEY",
     "Year": 2021,
-    "Movie": "NIGHTMARE ALLEY"
+    "bo_revenue": 11338116
   },
   {
-    "Studio": "Highwayman Films (DEFUNCT)",
-    "Box Office": "$2,143,005",
-    "Date": "2/19/2021",
+    "Movie": "NOMADLAND",
     "Year": 2021,
-    "Movie": "NOMADLAND"
+    "bo_revenue": 2143005
   },
   {
-    "Studio": "Warner Bros. Pictures",
-    "Box Office": "$84,158,470",
-    "Date": "2/7/2020",
+    "Movie": "BIRDS OF PREY (AND THE FANTABULOUS EMANCIPATION OF ONE HARLEY QUINN)",
     "Year": 2020,
-    "Movie": "BIRDS OF PREY (AND THE FANTABULOUS EMANCIPATION OF ONE HARLEY QUINN)"
+    "bo_revenue": 84158470
   },
   {
-    "Studio": "Miramax",
-    "Box Office": "$36,471,802",
-    "Date": "1/24/2020",
+    "Movie": "THE GENTLEMEN",
     "Year": 2020,
-    "Movie": "THE GENTLEMEN"
+    "bo_revenue": 36471802
   },
   {
-    "Studio": "Plan B Entertainment",
-    "Box Office": "$3,110,586",
-    "Date": "12/11/2020",
+    "Movie": "MINARI",
     "Year": 2020,
-    "Movie": "MINARI"
+    "bo_revenue": 3110586
   },
   {
-    "Studio": "Columbia Pictures",
-    "Box Office": "$204,417,856",
-    "Date": "1/17/2020",
+    "Movie": "BAD BOYS FOR LIFE",
     "Year": 2020,
-    "Movie": "BAD BOYS FOR LIFE"
+    "bo_revenue": 204417856
   },
   {
-    "Studio": "Paramount Pictures",
-    "Box Office": "$22,169,521",
-    "Date": "1/10/2020",
+    "Movie": "LIKE A BOSS",
     "Year": 2020,
-    "Movie": "LIKE A BOSS"
+    "bo_revenue": 22169521
   },
   {
-    "Studio": "Stage 6 Films",
-    "Box Office": "$21,221,811",
-    "Date": "1/3/2020",
+    "Movie": "THE GRUDGE",
     "Year": 2020,
-    "Movie": "THE GRUDGE"
+    "bo_revenue": 21221811
   },
   {
-    "Studio": "Orion Pictures",
-    "Box Office": "$3,439,666",
-    "Date": "8/28/2020",
+    "Movie": "BILL & TED FACE THE MUSIC",
     "Year": 2020,
-    "Movie": "BILL & TED FACE THE MUSIC"
+    "bo_revenue": 3439666
   },
   {
-    "Studio": "FilmNation Entertainment",
-    "Box Office": "$1,876,303",
-    "Date": "8/28/2020",
+    "Movie": "THE PERSONAL HISTORY OF DAVID COPPERFIELD",
     "Year": 2020,
-    "Movie": "THE PERSONAL HISTORY OF DAVID COPPERFIELD"
+    "bo_revenue": 1876303
   },
   {
-    "Studio": "Paramount Players",
-    "Box Office": "$1,070,722",
-    "Date": "10/16/2020",
+    "Movie": "LOVE AND MONSTERS",
     "Year": 2020,
-    "Movie": "LOVE AND MONSTERS"
+    "bo_revenue": 1070722
   },
   {
-    "Studio": "Universal Pictures",
-    "Box Office": "$73,286,659",
-    "Date": "6/28/2019",
+    "Movie": "YESTERDAY",
     "Year": 2019,
-    "Movie": "YESTERDAY"
+    "bo_revenue": 73286659
   },
   {
-    "Studio": "Universal Pictures",
-    "Box Office": "$35,150,758",
-    "Date": "11/8/2019",
+    "Movie": "LAST CHRISTMAS",
     "Year": 2019,
-    "Movie": "LAST CHRISTMAS"
+    "bo_revenue": 35150758
   },
   {
-    "Studio": "20th Century Studios",
-    "Box Office": "$22,370,459",
-    "Date": "7/12/2019",
+    "Movie": "STUBER",
     "Year": 2019,
-    "Movie": "STUBER"
+    "bo_revenue": 22370459
   },
   {
-    "Studio": "FilmNation Entertainment",
-    "Box Office": "$15,499,462",
-    "Date": "6/7/2019",
+    "Movie": "LATE NIGHT",
     "Year": 2019,
-    "Movie": "LATE NIGHT"
+    "bo_revenue": 15499462
   },
   {
-    "Studio": "The Walt Disney Studios",
-    "Box Office": "$355,559,224",
-    "Date": "5/24/2019",
+    "Movie": "ALADDIN",
     "Year": 2019,
-    "Movie": "ALADDIN"
+    "bo_revenue": 355559224
   },
   {
-    "Studio": "Warner Bros. Pictures",
-    "Box Office": "$144,105,355",
-    "Date": "5/10/2019",
+    "Movie": "POKEMON DETECTIVE PIKACHU",
     "Year": 2019,
-    "Movie": "POKEMON DETECTIVE PIKACHU"
+    "bo_revenue": 144105355
   },
   {
-    "Studio": "STXfilms",
-    "Box Office": "$104,963,606",
-    "Date": "9/13/2019",
+    "Movie": "HUSTLERS",
     "Year": 2019,
-    "Movie": "HUSTLERS"
+    "bo_revenue": 104963606
   },
   {
-    "Studio": "Ruyi Films",
-    "Box Office": "$56,846,811",
-    "Date": "11/8/2019",
+    "Movie": "MIDWAY",
     "Year": 2019,
-    "Movie": "MIDWAY"
+    "bo_revenue": 56846811
   },
   {
-    "Studio": "Depth Of Field Productions",
-    "Box Office": "$17,695,784",
-    "Date": "7/12/2019",
+    "Movie": "THE FAREWELL",
     "Year": 2019,
-    "Movie": "THE FAREWELL"
+    "bo_revenue": 17695784
   },
   {
-    "Studio": "Screen Australia",
-    "Box Office": "$9,651,617",
-    "Date": "3/22/2019",
+    "Movie": "HOTEL MUMBAI",
     "Year": 2019,
-    "Movie": "HOTEL MUMBAI"
+    "bo_revenue": 9651617
   },
   {
-    "Studio": "Warner Bros. Pictures",
-    "Box Office": "$4,950,034",
-    "Date": "5/17/2019",
+    "Movie": "THE SUN IS ALSO A STAR",
     "Year": 2019,
-    "Movie": "THE SUN IS ALSO A STAR"
+    "bo_revenue": 4950034
   },
   {
-    "Studio": "The Walt Disney Studios",
-    "Box Office": "$858,373,007",
-    "Date": "4/26/2019",
+    "Movie": "AVENGERS: ENDGAME",
     "Year": 2019,
-    "Movie": "AVENGERS: ENDGAME"
+    "bo_revenue": 858373007
   },
   {
-    "Studio": "The Walt Disney Studios",
-    "Box Office": "$426,829,848",
-    "Date": "3/8/2019",
+    "Movie": "CAPTAIN MARVEL",
     "Year": 2019,
-    "Movie": "CAPTAIN MARVEL"
+    "bo_revenue": 426829848
   },
   {
-    "Studio": "Columbia Pictures",
-    "Box Office": "$390,532,093",
-    "Date": "7/2/2019",
+    "Movie": "SPIDER-MAN: FAR FROM HOME",
     "Year": 2019,
-    "Movie": "SPIDER-MAN: FAR FROM HOME"
+    "bo_revenue": 390532093
   },
   {
-    "Studio": "Columbia Pictures",
-    "Box Office": "$316,831,255",
-    "Date": "12/13/2019",
+    "Movie": "JUMANJI: THE NEXT LEVEL",
     "Year": 2019,
-    "Movie": "JUMANJI: THE NEXT LEVEL"
+    "bo_revenue": 316831255
   },
   {
-    "Studio": "Universal Pictures",
-    "Box Office": "$173,810,107",
-    "Date": "8/2/2019",
+    "Movie": "FAST AND FURIOUS PRESENTS: HOBBS & SHAW",
     "Year": 2019,
-    "Movie": "FAST AND FURIOUS PRESENTS: HOBBS & SHAW"
+    "bo_revenue": 173810107
   },
   {
-    "Studio": "Lionsgate",
-    "Box Office": "$171,015,689",
-    "Date": "5/17/2019",
+    "Movie": "JOHN WICK: CHAPTER 3 - PARABELLUM",
     "Year": 2019,
-    "Movie": "JOHN WICK: CHAPTER 3 - PARABELLUM"
+    "bo_revenue": 171015689
   },
   {
-    "Studio": "Warner Bros. Pictures",
-    "Box Office": "$110,500,147",
-    "Date": "5/31/2019",
+    "Movie": "GODZILLA: KING OF THE MONSTERS",
     "Year": 2019,
-    "Movie": "GODZILLA: KING OF THE MONSTERS"
+    "bo_revenue": 110500147
   },
   {
-    "Studio": "Paramount Pictures",
-    "Box Office": "$48,546,775",
-    "Date": "10/11/2019",
+    "Movie": "GEMINI MAN",
     "Year": 2019,
-    "Movie": "GEMINI MAN"
+    "bo_revenue": 48546775
   },
   {
-    "Studio": "MGM Studios (DEFUNCT)",
-    "Box Office": "$22,958,890",
-    "Date": "2/14/2019",
+    "Movie": "FIGHTING WITH MY FAMILY",
     "Year": 2019,
-    "Movie": "FIGHTING WITH MY FAMILY"
+    "bo_revenue": 22958890
   },
   {
-    "Studio": "Lionsgate",
-    "Box Office": "$21,903,757",
-    "Date": "4/12/2019",
+    "Movie": "HELLBOY",
     "Year": 2019,
-    "Movie": "HELLBOY"
+    "bo_revenue": 21903757
   },
   {
-    "Studio": "Columbia Pictures",
-    "Box Office": "$17,803,079",
-    "Date": "11/15/2019",
+    "Movie": "CHARLIE'S ANGELS",
     "Year": 2019,
-    "Movie": "CHARLIE'S ANGELS"
+    "bo_revenue": 17803079
   },
   {
-    "Studio": "Riverstone Pictures",
-    "Box Office": "$4,046,438",
-    "Date": "1/11/2019",
+    "Movie": "REPLICAS",
     "Year": 2019,
-    "Movie": "REPLICAS"
+    "bo_revenue": 4046438
   },
   {
-    "Studio": "Warner Bros. Pictures",
-    "Box Office": "$174,052,665",
-    "Date": "8/15/2018",
+    "Movie": "CRAZY RICH ASIANS",
     "Year": 2018,
-    "Movie": "CRAZY RICH ASIANS"
+    "bo_revenue": 174052665
   },
   {
-    "Studio": "Warner Bros. Pictures",
-    "Box Office": "$139,377,770",
-    "Date": "6/8/2018",
+    "Movie": "OCEAN'S 8",
     "Year": 2018,
-    "Movie": "OCEAN'S 8"
+    "bo_revenue": 139377770
   },
   {
-    "Studio": "Legendary Entertainment",
-    "Box Office": "$67,796,360",
-    "Date": "7/13/2018",
+    "Movie": "SKYSCRAPER",
     "Year": 2018,
-    "Movie": "SKYSCRAPER"
+    "bo_revenue": 67796360
   },
   {
-    "Studio": "The Walt Disney Studios",
-    "Box Office": "$678,815,488",
-    "Date": "4/27/2018",
+    "Movie": "AVENGERS: INFINITY WAR",
     "Year": 2018,
-    "Movie": "AVENGERS: INFINITY WAR"
+    "bo_revenue": 678815488
   },
   {
-    "Studio": "Universal Pictures",
-    "Box Office": "$416,769,350",
-    "Date": "6/22/2018",
+    "Movie": "JURASSIC WORLD: FALLEN KINGDOM",
     "Year": 2018,
-    "Movie": "JURASSIC WORLD: FALLEN KINGDOM"
+    "bo_revenue": 416769350
   },
   {
-    "Studio": "Warner Bros. Pictures",
-    "Box Office": "$335,061,813",
-    "Date": "12/21/2018",
+    "Movie": "AQUAMAN",
     "Year": 2018,
-    "Movie": "AQUAMAN"
+    "bo_revenue": 335061813
   },
   {
-    "Studio": "20th Century Studios",
-    "Box Office": "$318,491,428",
-    "Date": "5/18/2018",
+    "Movie": "DEADPOOL 2",
     "Year": 2018,
-    "Movie": "DEADPOOL 2"
+    "bo_revenue": 318491428
   },
   {
-    "Studio": "The Walt Disney Studios",
-    "Box Office": "$216,648,748",
-    "Date": "7/6/2018",
+    "Movie": "ANT-MAN AND THE WASP",
     "Year": 2018,
-    "Movie": "ANT-MAN AND THE WASP"
+    "bo_revenue": 216648748
   },
   {
-    "Studio": "Columbia Pictures",
-    "Box Office": "$213,515,515",
-    "Date": "10/5/2018",
+    "Movie": "VENOM",
     "Year": 2018,
-    "Movie": "VENOM"
+    "bo_revenue": 213515515
   },
   {
-    "Studio": "Paramount Pictures",
-    "Box Office": "$127,195,594",
-    "Date": "12/21/2018",
+    "Movie": "BUMBLEBEE",
     "Year": 2018,
-    "Movie": "BUMBLEBEE"
+    "bo_revenue": 127195594
   },
   {
-    "Studio": "The Walt Disney Studios",
-    "Box Office": "$100,478,617",
-    "Date": "3/9/2018",
+    "Movie": "A WRINKLE IN TIME",
     "Year": 2018,
-    "Movie": "A WRINKLE IN TIME"
+    "bo_revenue": 100478617
   },
   {
-    "Studio": "New Line Cinema",
-    "Box Office": "$99,345,958",
-    "Date": "4/13/2018",
+    "Movie": "RAMPAGE",
     "Year": 2018,
-    "Movie": "RAMPAGE"
+    "bo_revenue": 99345958
   },
   {
-    "Studio": "Universal Pictures",
-    "Box Office": "$59,587,112",
-    "Date": "3/23/2018",
+    "Movie": "PACIFIC RIM: UPRISING",
     "Year": 2018,
-    "Movie": "PACIFIC RIM: UPRISING"
+    "bo_revenue": 59587112
   },
   {
-    "Studio": "Lionsgate",
-    "Box Office": "$53,548,591",
-    "Date": "9/14/2018",
+    "Movie": "A SIMPLE FAVOR",
     "Year": 2018,
-    "Movie": "A SIMPLE FAVOR"
+    "bo_revenue": 53548591
   },
   {
-    "Studio": "Davis Entertainment",
-    "Box Office": "$51,024,710",
-    "Date": "9/14/2018",
+    "Movie": "THE PREDATOR",
     "Year": 2018,
-    "Movie": "THE PREDATOR"
+    "bo_revenue": 51024710
   },
   {
-    "Studio": "Columbia Pictures",
-    "Box Office": "$46,700,639",
-    "Date": "10/12/2018",
+    "Movie": "GOOSEBUMPS 2: HAUNTED HALLOWEEN",
     "Year": 2018,
-    "Movie": "GOOSEBUMPS 2: HAUNTED HALLOWEEN"
+    "bo_revenue": 46700639
   },
   {
-    "Studio": "STXfilms",
-    "Box Office": "$39,282,232",
-    "Date": "12/21/2018",
+    "Movie": "SECOND ACT",
     "Year": 2018,
-    "Movie": "SECOND ACT"
+    "bo_revenue": 39282232
   },
   {
-    "Studio": "Stage 6 Films",
-    "Box Office": "$26,020,964",
-    "Date": "8/24/2018",
+    "Movie": "SEARCHING",
     "Year": 2018,
-    "Movie": "SEARCHING"
+    "bo_revenue": 26020964
   },
   {
-    "Studio": "Automatik (DEFUNCT)",
-    "Box Office": "$17,612,102",
-    "Date": "8/29/2018",
+    "Movie": "OPERATION FINALE",
     "Year": 2018,
-    "Movie": "OPERATION FINALE"
+    "bo_revenue": 17612102
   },
   {
-    "Studio": "Significant Productions",
-    "Box Office": "$17,493,102",
-    "Date": "7/6/2018",
+    "Movie": "SORRY TO BOTHER YOU",
     "Year": 2018,
-    "Movie": "SORRY TO BOTHER YOU"
+    "bo_revenue": 17493102
   },
   {
-    "Studio": "Screen Gems",
-    "Box Office": "$14,837,428",
-    "Date": "11/30/2018",
+    "Movie": "THE POSSESSION OF HANNAH GRACE",
     "Year": 2018,
-    "Movie": "THE POSSESSION OF HANNAH GRACE"
+    "bo_revenue": 14837428
   },
   {
-    "Studio": "LD Entertainment",
-    "Box Office": "$6,809,086",
-    "Date": "8/8/2018",
+    "Movie": "DOG DAYS",
     "Year": 2018,
-    "Movie": "DOG DAYS"
+    "bo_revenue": 6809086
   },
   {
-    "Studio": "The Ink Factory",
-    "Box Office": "$6,708,143",
-    "Date": "6/8/2018",
+    "Movie": "HOTEL ARTEMIS",
     "Year": 2018,
-    "Movie": "HOTEL ARTEMIS"
+    "bo_revenue": 6708143
   },
   {
-    "Studio": "Michael De Luca Productions",
-    "Box Office": "$3,143,065",
-    "Date": "9/21/2018",
+    "Movie": "THE SISTERS BROTHERS",
     "Year": 2018,
-    "Movie": "THE SISTERS BROTHERS"
+    "bo_revenue": 3143065
   },
   {
-    "Studio": "Giving Films",
-    "Box Office": "$1,201,437",
-    "Date": "8/20/2018",
+    "Movie": "AN INTERVIEW WITH GOD",
     "Year": 2018,
-    "Movie": "AN INTERVIEW WITH GOD"
+    "bo_revenue": 1201437
   },
   {
-    "Studio": "Paramount Pictures",
-    "Box Office": "$44,898,417",
-    "Date": "1/20/2017",
+    "Movie": "XXX: RETURN OF XANDER CAGE",
     "Year": 2017,
-    "Movie": "XXX: RETURN OF XANDER CAGE"
+    "bo_revenue": 44898417
   },
   {
-    "Studio": "FilmNation Entertainment",
-    "Box Office": "$42,873,134",
-    "Date": "6/23/2017",
+    "Movie": "THE BIG SICK",
     "Year": 2017,
-    "Movie": "THE BIG SICK"
+    "bo_revenue": 42873134
   },
   {
-    "Studio": "STXfilms",
-    "Box Office": "$34,393,516",
-    "Date": "10/13/2017",
+    "Movie": "THE FOREIGNER",
     "Year": 2017,
-    "Movie": "THE FOREIGNER"
+    "bo_revenue": 34393516
   },
   {
-    "Studio": "Paramount Pictures",
-    "Box Office": "$24,449,763",
-    "Date": "12/22/2017",
+    "Movie": "DOWNSIZING",
     "Year": 2017,
-    "Movie": "DOWNSIZING"
+    "bo_revenue": 24449763
   },
   {
-    "Studio": "The Walt Disney Studios",
-    "Box Office": "$620,181,391",
-    "Date": "12/15/2017",
+    "Movie": "STAR WARS: EPISODE VIII - THE LAST JEDI",
     "Year": 2017,
-    "Movie": "STAR WARS: EPISODE VIII - THE LAST JEDI"
+    "bo_revenue": 620181391
   },
   {
-    "Studio": "Columbia Pictures",
-    "Box Office": "$404,515,483",
-    "Date": "12/20/2017",
+    "Movie": "JUMANJI: WELCOME TO THE JUNGLE",
     "Year": 2017,
-    "Movie": "JUMANJI: WELCOME TO THE JUNGLE"
+    "bo_revenue": 404515483
   },
   {
-    "Studio": "The Walt Disney Studios",
-    "Box Office": "$389,813,110",
-    "Date": "5/5/2017",
+    "Movie": "GUARDIANS OF THE GALAXY VOL. 2",
     "Year": 2017,
-    "Movie": "GUARDIANS OF THE GALAXY VOL. 2"
+    "bo_revenue": 389813110
   },
   {
-    "Studio": "Warner Bros. Pictures",
-    "Box Office": "$229,024,299",
-    "Date": "11/17/2017",
+    "Movie": "JUSTICE LEAGUE",
     "Year": 2017,
-    "Movie": "JUSTICE LEAGUE"
+    "bo_revenue": 229024299
   },
   {
-    "Studio": "Universal Pictures",
-    "Box Office": "$226,008,391",
-    "Date": "4/14/2017",
+    "Movie": "THE FATE OF THE FURIOUS",
     "Year": 2017,
-    "Movie": "THE FATE OF THE FURIOUS"
+    "bo_revenue": 226008391
   },
   {
-    "Studio": "Universal Pictures",
-    "Box Office": "$104,897,535",
-    "Date": "12/22/2017",
+    "Movie": "PITCH PERFECT 3",
     "Year": 2017,
-    "Movie": "PITCH PERFECT 3"
+    "bo_revenue": 104897535
   },
   {
-    "Studio": "Summit Entertainment",
-    "Box Office": "$92,029,189",
-    "Date": "2/10/2017",
+    "Movie": "JOHN WICK: CHAPTER 2",
     "Year": 2017,
-    "Movie": "JOHN WICK: CHAPTER 2"
+    "bo_revenue": 92029189
   },
   {
-    "Studio": "Lionsgate",
-    "Box Office": "$85,364,456",
-    "Date": "3/24/2017",
+    "Movie": "POWER RANGERS",
     "Year": 2017,
-    "Movie": "POWER RANGERS"
+    "bo_revenue": 85364456
   },
   {
-    "Studio": "Paramount Pictures",
-    "Box Office": "$58,060,192",
-    "Date": "5/25/2017",
+    "Movie": "BAYWATCH",
     "Year": 2017,
-    "Movie": "BAYWATCH"
+    "bo_revenue": 58060192
   },
   {
-    "Studio": "New Line Cinema",
-    "Box Office": "$32,187,021",
-    "Date": "2/17/2017",
+    "Movie": "FIST FIGHT",
     "Year": 2017,
-    "Movie": "FIST FIGHT"
+    "bo_revenue": 32187021
   },
   {
-    "Studio": "Columbia Pictures",
-    "Box Office": "$30,234,029",
-    "Date": "3/24/2017",
+    "Movie": "LIFE",
     "Year": 2017,
-    "Movie": "LIFE"
+    "bo_revenue": 30234029
   },
   {
-    "Studio": "Searchlight Pictures",
-    "Box Office": "$12,638,534",
-    "Date": "9/22/2017",
+    "Movie": "BATTLE OF THE SEXES",
     "Year": 2017,
-    "Movie": "BATTLE OF THE SEXES"
+    "bo_revenue": 12638534
   },
   {
-    "Studio": "STXfilms",
-    "Box Office": "$7,885,298",
-    "Date": "2/3/2017",
+    "Movie": "THE SPACE BETWEEN US",
     "Year": 2017,
-    "Movie": "THE SPACE BETWEEN US"
+    "bo_revenue": 7885298
   },
   {
-    "Studio": "Star Thrower Entertainment",
-    "Box Office": "$3,024,317",
-    "Date": "8/11/2017",
+    "Movie": "INGRID GOES WEST",
     "Year": 2017,
-    "Movie": "INGRID GOES WEST"
+    "bo_revenue": 3024317
   },
   {
-    "Studio": "IM Global (DEFUNCT)",
-    "Box Office": "$2,280,013",
-    "Date": "2/24/2017",
+    "Movie": "COLLIDE",
     "Year": 2017,
-    "Movie": "COLLIDE"
+    "bo_revenue": 2280013
   },
   {
-    "Studio": "StarStream Entertainment (DEFUNCT)",
-    "Box Office": "$1,647,177",
-    "Date": "6/30/2017",
+    "Movie": "THE LITTLE HOURS",
     "Year": 2017,
-    "Movie": "THE LITTLE HOURS"
+    "bo_revenue": 1647177
   },
   {
-    "Studio": "The Weinstein Company (DEFUNCT)",
-    "Box Office": "$51,738,911",
-    "Date": "11/25/2016",
+    "Movie": "LION",
     "Year": 2016,
-    "Movie": "LION"
+    "bo_revenue": 51738911
   },
   {
-    "Studio": "Paramount Pictures",
-    "Box Office": "$7,100,183",
-    "Date": "12/23/2016",
+    "Movie": "SILENCE",
     "Year": 2016,
-    "Movie": "SILENCE"
+    "bo_revenue": 7100183
   },
   {
-    "Studio": "Playtone",
-    "Box Office": "$4,212,501",
-    "Date": "4/22/2016",
+    "Movie": "A HOLOGRAM FOR THE KING",
     "Year": 2016,
-    "Movie": "A HOLOGRAM FOR THE KING"
+    "bo_revenue": 4212501
   },
   {
-    "Studio": "Pressman Film",
-    "Box Office": "$3,866,803",
-    "Date": "4/29/2016",
+    "Movie": "THE MAN WHO KNEW INFINITY",
     "Year": 2016,
-    "Movie": "THE MAN WHO KNEW INFINITY"
+    "bo_revenue": 3866803
   },
   {
-    "Studio": "Warner Bros. Pictures",
-    "Box Office": "$330,360,201",
-    "Date": "3/25/2016",
+    "Movie": "BATMAN V SUPERMAN: DAWN OF JUSTICE",
     "Year": 2016,
-    "Movie": "BATMAN V SUPERMAN: DAWN OF JUSTICE"
+    "bo_revenue": 330360201
   },
   {
-    "Studio": "The Walt Disney Studios",
-    "Box Office": "$232,641,928",
-    "Date": "11/4/2016",
+    "Movie": "DOCTOR STRANGE",
     "Year": 2016,
-    "Movie": "DOCTOR STRANGE"
+    "bo_revenue": 232641928
   },
   {
-    "Studio": "Paramount Pictures",
-    "Box Office": "$158,848,346",
-    "Date": "7/22/2016",
+    "Movie": "STAR TREK BEYOND",
     "Year": 2016,
-    "Movie": "STAR TREK BEYOND"
+    "bo_revenue": 158848346
   },
   {
-    "Studio": "20th Century Studios",
-    "Box Office": "$155,442,490",
-    "Date": "5/27/2016",
+    "Movie": "X-MEN: APOCALYPSE",
     "Year": 2016,
-    "Movie": "X-MEN: APOCALYPSE"
+    "bo_revenue": 155442490
   },
   {
-    "Studio": "New Line Cinema",
-    "Box Office": "$127,440,880",
-    "Date": "6/17/2016",
+    "Movie": "CENTRAL INTELLIGENCE",
     "Year": 2016,
-    "Movie": "CENTRAL INTELLIGENCE"
+    "bo_revenue": 127440880
   },
   {
-    "Studio": "Universal Pictures",
-    "Box Office": "$91,221,834",
-    "Date": "1/15/2016",
+    "Movie": "RIDE ALONG 2",
     "Year": 2016,
-    "Movie": "RIDE ALONG 2"
+    "bo_revenue": 91221834
   },
   {
-    "Studio": "Universal Pictures",
-    "Box Office": "$55,455,774",
-    "Date": "5/20/2016",
+    "Movie": "NEIGHBORS 2: SORORITY RISING",
     "Year": 2016,
-    "Movie": "NEIGHBORS 2: SORORITY RISING"
+    "bo_revenue": 55455774
   },
   {
-    "Studio": "Paramount Pictures",
-    "Box Office": "$54,767,496",
-    "Date": "12/9/2016",
+    "Movie": "OFFICE CHRISTMAS PARTY",
     "Year": 2016,
-    "Movie": "OFFICE CHRISTMAS PARTY"
+    "bo_revenue": 54767496
   },
   {
-    "Studio": "Paramount Pictures",
-    "Box Office": "$28,848,702",
-    "Date": "2/12/2016",
+    "Movie": "ZOOLANDER 2",
     "Year": 2016,
-    "Movie": "ZOOLANDER 2"
+    "bo_revenue": 28848702
   },
   {
-    "Studio": "Lionsgate",
-    "Box Office": "$21,218,409",
-    "Date": "8/26/2016",
+    "Movie": "MECHANIC: RESURRECTION",
     "Year": 2016,
-    "Movie": "MECHANIC: RESURRECTION"
+    "bo_revenue": 21218409
   },
   {
-    "Studio": "STXfilms",
-    "Box Office": "$14,431,639",
-    "Date": "11/18/2016",
+    "Movie": "THE EDGE OF SEVENTEEN",
     "Year": 2016,
-    "Movie": "THE EDGE OF SEVENTEEN"
+    "bo_revenue": 14431639
   },
   {
-    "Studio": "20th Century Studios",
-    "Box Office": "$3,915,260",
-    "Date": "9/2/2016",
+    "Movie": "MORGAN",
     "Year": 2016,
-    "Movie": "MORGAN"
+    "bo_revenue": 3915260
   },
   {
-    "Studio": "Space Rocket Nation",
-    "Box Office": "$1,333,132",
-    "Date": "6/24/2016",
+    "Movie": "THE NEON DEMON",
     "Year": 2016,
-    "Movie": "THE NEON DEMON"
+    "bo_revenue": 1333132
   },
   {
-    "Studio": "Searchlight Pictures",
-    "Box Office": "$33,078,271",
-    "Date": "3/6/2015",
+    "Movie": "THE SECOND BEST EXOTIC MARIGOLD HOTEL",
     "Year": 2015,
-    "Movie": "THE SECOND BEST EXOTIC MARIGOLD HOTEL"
+    "bo_revenue": 33078271
   },
   {
-    "Studio": "Broad Green Pictures (DEFUNCT)",
-    "Box Office": "$3,447,641",
-    "Date": "8/21/2015",
+    "Movie": "LEARNING TO DRIVE",
     "Year": 2015,
-    "Movie": "LEARNING TO DRIVE"
+    "bo_revenue": 3447641
   },
   {
-    "Studio": "Four in a Billion Pictures",
-    "Box Office": "$1,700,685",
-    "Date": "9/11/2015",
+    "Movie": "MEET THE PATELS",
     "Year": 2015,
-    "Movie": "MEET THE PATELS"
+    "bo_revenue": 1700685
   },
   {
-    "Studio": "Universal Pictures",
-    "Box Office": "$652,198,016",
-    "Date": "6/12/2015",
+    "Movie": "JURASSIC WORLD",
     "Year": 2015,
-    "Movie": "JURASSIC WORLD"
+    "bo_revenue": 652198016
   },
   {
-    "Studio": "Universal Pictures",
-    "Box Office": "$351,032,918",
-    "Date": "4/3/2015",
+    "Movie": "FURIOUS 7",
     "Year": 2015,
-    "Movie": "FURIOUS 7"
+    "bo_revenue": 351032918
   },
   {
-    "Studio": "Lionsgate",
-    "Box Office": "$281,723,910",
-    "Date": "11/20/2015",
+    "Movie": "THE HUNGER GAMES: MOCKINGJAY PART 2",
     "Year": 2015,
-    "Movie": "THE HUNGER GAMES: MOCKINGJAY PART 2"
+    "bo_revenue": 281723910
   },
   {
-    "Studio": "Eon Productions",
-    "Box Office": "$200,074,610",
-    "Date": "11/6/2015",
+    "Movie": "SPECTRE",
     "Year": 2015,
-    "Movie": "SPECTRE"
+    "bo_revenue": 200074610
   },
   {
-    "Studio": "Universal Pictures",
-    "Box Office": "$183,785,422",
-    "Date": "5/15/2015",
+    "Movie": "PITCH PERFECT 2",
     "Year": 2015,
-    "Movie": "PITCH PERFECT 2"
+    "bo_revenue": 183785422
   },
   {
-    "Studio": "New Line Cinema",
-    "Box Office": "$155,190,839",
-    "Date": "5/29/2015",
+    "Movie": "SAN ANDREAS",
     "Year": 2015,
-    "Movie": "SAN ANDREAS"
+    "bo_revenue": 155190839
   },
   {
-    "Studio": "Columbia Pictures",
-    "Box Office": "$43,047,380",
-    "Date": "11/20/2015",
+    "Movie": "THE NIGHT BEFORE",
     "Year": 2015,
-    "Movie": "THE NIGHT BEFORE"
+    "bo_revenue": 43047380
   },
   {
-    "Studio": "Columbia Pictures",
-    "Box Office": "$31,569,276",
-    "Date": "3/6/2015",
+    "Movie": "CHAPPIE",
     "Year": 2015,
-    "Movie": "CHAPPIE"
+    "bo_revenue": 31569276
   },
   {
-    "Studio": "AI Film",
-    "Box Office": "$17,737,652",
-    "Date": "7/17/2015",
+    "Movie": "MR. HOLMES",
     "Year": 2015,
-    "Movie": "MR. HOLMES"
+    "bo_revenue": 17737652
   },
   {
-    "Studio": "Focus Features",
-    "Box Office": "$12,279,700",
-    "Date": "7/10/2015",
+    "Movie": "SELF/LESS",
     "Year": 2015,
-    "Movie": "SELF/LESS"
+    "bo_revenue": 12279700
   },
   {
-    "Studio": "TriStar Productions",
-    "Box Office": "$9,878,773",
-    "Date": "9/30/2015",
+    "Movie": "THE WALK",
     "Year": 2015,
-    "Movie": "THE WALK"
+    "bo_revenue": 9878773
   },
   {
-    "Studio": "Lionsgate",
-    "Box Office": "$7,696,143",
-    "Date": "1/23/2015",
+    "Movie": "MORTDECAI",
     "Year": 2015,
-    "Movie": "MORTDECAI"
+    "bo_revenue": 7696143
   },
   {
-    "Studio": "The Walt Disney Studios",
-    "Box Office": "$36,457,632",
-    "Date": "5/16/2014",
+    "Movie": "MILLION DOLLAR ARM",
     "Year": 2014,
-    "Movie": "MILLION DOLLAR ARM"
+    "bo_revenue": 36457632
   },
   {
-    "Studio": "Columbia Pictures",
-    "Box Office": "$6,105,183",
-    "Date": "12/25/2014",
+    "Movie": "THE INTERVIEW",
     "Year": 2014,
-    "Movie": "THE INTERVIEW"
+    "bo_revenue": 6105183
   },
   {
-    "Studio": "Lionsgate U.K.",
-    "Box Office": "$4,438,447",
-    "Date": "4/11/2014",
+    "Movie": "THE RAILWAY MAN",
     "Year": 2014,
-    "Movie": "THE RAILWAY MAN"
+    "bo_revenue": 4438447
   },
   {
-    "Studio": "Lionsgate",
-    "Box Office": "$337,135,892",
-    "Date": "11/21/2014",
+    "Movie": "THE HUNGER GAMES: MOCKINGJAY PART 1",
     "Year": 2014,
-    "Movie": "THE HUNGER GAMES: MOCKINGJAY PART 1"
+    "bo_revenue": 337135892
   },
   {
-    "Studio": "The Walt Disney Studios",
-    "Box Office": "$333,176,602",
-    "Date": "8/1/2014",
+    "Movie": "GUARDIANS OF THE GALAXY",
     "Year": 2014,
-    "Movie": "GUARDIANS OF THE GALAXY"
+    "bo_revenue": 333176602
   },
   {
-    "Studio": "Warner Bros. Pictures",
-    "Box Office": "$200,676,072",
-    "Date": "5/16/2014",
+    "Movie": "GODZILLA",
     "Year": 2014,
-    "Movie": "GODZILLA"
+    "bo_revenue": 200676072
   },
   {
-    "Studio": "20th Century Studios",
-    "Box Office": "$113,746,624",
-    "Date": "12/19/2014",
+    "Movie": "NIGHT AT THE MUSEUM: SECRET OF THE TOMB",
     "Year": 2014,
-    "Movie": "NIGHT AT THE MUSEUM: SECRET OF THE TOMB"
+    "bo_revenue": 113746624
   },
   {
-    "Studio": "MGM Studios (DEFUNCT)",
-    "Box Office": "$72,688,617",
-    "Date": "7/25/2014",
+    "Movie": "HERCULES",
     "Year": 2014,
-    "Movie": "HERCULES"
+    "bo_revenue": 72688617
   },
   {
-    "Studio": "20th Century Studios",
-    "Box Office": "$65,014,518",
-    "Date": "12/12/2014",
+    "Movie": "EXODUS: GODS AND KINGS",
     "Year": 2014,
-    "Movie": "EXODUS: GODS AND KINGS"
+    "bo_revenue": 65014518
   },
   {
-    "Studio": "Thunder Road Pictures",
-    "Box Office": "$43,037,839",
-    "Date": "10/24/2014",
+    "Movie": "JOHN WICK",
     "Year": 2014,
-    "Movie": "JOHN WICK"
+    "bo_revenue": 43037839
   },
   {
-    "Studio": "Bold Films",
-    "Box Office": "$32,381,152",
-    "Date": "10/31/2014",
+    "Movie": "NIGHTCRAWLER",
     "Year": 2014,
-    "Movie": "NIGHTCRAWLER"
+    "bo_revenue": 32381152
   },
   {
-    "Studio": "Relativity Media LLC",
-    "Box Office": "$30,698,007",
-    "Date": "2/21/2014",
+    "Movie": "3 DAYS TO KILL",
     "Year": 2014,
-    "Movie": "3 DAYS TO KILL"
+    "bo_revenue": 30698007
   },
   {
-    "Studio": "Screen Gems",
-    "Box Office": "$30,577,131",
-    "Date": "7/2/2014",
+    "Movie": "DELIVER US FROM EVIL",
     "Year": 2014,
-    "Movie": "DELIVER US FROM EVIL"
+    "bo_revenue": 30577131
   },
   {
-    "Studio": "Exclusive Media Group (DEFUNCT)",
-    "Box Office": "$16,170,641",
-    "Date": "6/27/2014",
+    "Movie": "BEGIN AGAIN",
     "Year": 2014,
-    "Movie": "BEGIN AGAIN"
+    "bo_revenue": 16170641
   },
   {
-    "Studio": "Scott Pictures",
-    "Box Office": "$1,359,916",
-    "Date": "1/24/2014",
+    "Movie": "GIMME SHELTER",
     "Year": 2014,
-    "Movie": "GIMME SHELTER"
+    "bo_revenue": 1359916
   },
   {
-    "Studio": "20th Century Studios",
-    "Box Office": "$132,556,859",
-    "Date": "7/26/2013",
+    "Movie": "THE WOLVERINE",
     "Year": 2013,
-    "Movie": "THE WOLVERINE"
+    "bo_revenue": 132556859
   },
   {
-    "Studio": "Universal Pictures",
-    "Box Office": "$38,362,481",
-    "Date": "12/25/2013",
+    "Movie": "47 RONIN",
     "Year": 2013,
-    "Movie": "47 RONIN"
+    "bo_revenue": 38362481
   },
   {
-    "Studio": "The Weinstein Company (DEFUNCT)",
-    "Box Office": "$6,594,968",
-    "Date": "8/23/2013",
+    "Movie": "THE GRANDMASTER",
     "Year": 2013,
-    "Movie": "THE GRANDMASTER"
+    "bo_revenue": 6594968
   },
   {
-    "Studio": "The Walt Disney Studios",
-    "Box Office": "$409,014,002",
-    "Date": "5/3/2013",
+    "Movie": "IRON MAN 3",
     "Year": 2013,
-    "Movie": "IRON MAN 3"
+    "bo_revenue": 409014002
   },
   {
-    "Studio": "Universal Pictures",
-    "Box Office": "$238,679,858",
-    "Date": "5/24/2013",
+    "Movie": "FAST & FURIOUS 6",
     "Year": 2013,
-    "Movie": "FAST & FURIOUS 6"
+    "bo_revenue": 238679858
   },
   {
-    "Studio": "Paramount Pictures",
-    "Box Office": "$228,778,666",
-    "Date": "5/16/2013",
+    "Movie": "STAR TREK INTO DARKNESS",
     "Year": 2013,
-    "Movie": "STAR TREK INTO DARKNESS"
+    "bo_revenue": 228778666
   },
   {
-    "Studio": "The Walt Disney Studios",
-    "Box Office": "$206,362,146",
-    "Date": "11/8/2013",
+    "Movie": "THOR: THE DARK WORLD",
     "Year": 2013,
-    "Movie": "THOR: THE DARK WORLD"
+    "bo_revenue": 206362146
   },
   {
-    "Studio": "Paramount Pictures",
-    "Box Office": "$122,523,069",
-    "Date": "3/28/2013",
+    "Movie": "G.I. JOE: RETALIATION",
     "Year": 2013,
-    "Movie": "G.I. JOE: RETALIATION"
+    "bo_revenue": 122523069
   },
   {
-    "Studio": "Warner Bros. Pictures",
-    "Box Office": "$112,200,080",
-    "Date": "5/23/2013",
+    "Movie": "THE HANGOVER PART III",
     "Year": 2013,
-    "Movie": "THE HANGOVER PART III"
+    "bo_revenue": 112200080
   },
   {
-    "Studio": "Summit Entertainment",
-    "Box Office": "$61,737,196",
-    "Date": "11/1/2013",
+    "Movie": "ENDER'S GAME",
     "Year": 2013,
-    "Movie": "ENDER'S GAME"
+    "bo_revenue": 61737196
   },
   {
-    "Studio": "Paramount Pictures",
-    "Box Office": "$49,875,298",
-    "Date": "4/26/2013",
+    "Movie": "PAIN AND GAIN",
     "Year": 2013,
-    "Movie": "PAIN AND GAIN"
+    "bo_revenue": 49875298
   },
   {
-    "Studio": "Summit Entertainment",
-    "Box Office": "$42,930,469",
-    "Date": "2/22/2013",
+    "Movie": "SNITCH",
     "Year": 2013,
-    "Movie": "SNITCH"
+    "bo_revenue": 42930469
   },
   {
-    "Studio": "Annapurna Pictures",
-    "Box Office": "$14,124,291",
-    "Date": "3/15/2013",
+    "Movie": "SPRING BREAKERS",
     "Year": 2013,
-    "Movie": "SPRING BREAKERS"
+    "bo_revenue": 14124291
   },
   {
-    "Studio": "Warner Bros. Pictures",
-    "Box Office": "$9,489,837",
-    "Date": "2/1/2013",
+    "Movie": "BULLET TO THE HEAD",
     "Year": 2013,
-    "Movie": "BULLET TO THE HEAD"
+    "bo_revenue": 9489837
   },
   {
-    "Studio": "Troublemaker Studios",
-    "Box Office": "$8,008,167",
-    "Date": "10/11/2013",
+    "Movie": "MACHETE KILLS",
     "Year": 2013,
-    "Movie": "MACHETE KILLS"
+    "bo_revenue": 8008167
   },
   {
-    "Studio": "Focus Features",
-    "Box Office": "$5,750,409",
-    "Date": "8/28/2013",
+    "Movie": "CLOSED CIRCUIT",
     "Year": 2013,
-    "Movie": "CLOSED CIRCUIT"
+    "bo_revenue": 5750409
   },
   {
-    "Studio": "Lionsgate",
-    "Box Office": "$1,378,600",
-    "Date": "7/19/2013",
+    "Movie": "GIRL MOST LIKELY",
     "Year": 2013,
-    "Movie": "GIRL MOST LIKELY"
+    "bo_revenue": 1378600
   },
   {
-    "Studio": "Court Five Productions",
-    "Box Office": "$1,162,643",
-    "Date": "10/11/2013",
+    "Movie": "ROMEO AND JULIET",
     "Year": 2013,
-    "Movie": "ROMEO AND JULIET"
+    "bo_revenue": 1162643
   },
   {
-    "Studio": "Universal Pictures",
-    "Box Office": "$15,634,097",
-    "Date": "11/2/2012",
+    "Movie": "THE MAN WITH THE IRON FISTS",
     "Year": 2012,
-    "Movie": "THE MAN WITH THE IRON FISTS"
+    "bo_revenue": 15634097
   },
   {
-    "Studio": "DreamWorks Pictures",
-    "Box Office": "$182,207,978",
-    "Date": "11/9/2012",
+    "Movie": "LINCOLN",
     "Year": 2012,
-    "Movie": "LINCOLN"
+    "bo_revenue": 182207978
   },
   {
-    "Studio": "New Line Cinema",
-    "Box Office": "$103,860,299",
-    "Date": "2/10/2012",
+    "Movie": "JOURNEY 2: THE MYSTERIOUS ISLAND",
     "Year": 2012,
-    "Movie": "JOURNEY 2: THE MYSTERIOUS ISLAND"
+    "bo_revenue": 103860299
   },
   {
-    "Studio": "Paramount Pictures",
-    "Box Office": "$59,650,229",
-    "Date": "5/16/2012",
+    "Movie": "THE DICTATOR",
     "Year": 2012,
-    "Movie": "THE DICTATOR"
+    "bo_revenue": 59650229
   },
   {
-    "Studio": "Columbia Pictures",
-    "Box Office": "$58,877,978",
-    "Date": "8/3/2012",
+    "Movie": "TOTAL RECALL",
     "Year": 2012,
-    "Movie": "TOTAL RECALL"
+    "bo_revenue": 58877978
   },
   {
-    "Studio": "20th Century Studios",
-    "Box Office": "$49,876,385",
-    "Date": "1/20/2012",
+    "Movie": "RED TAILS",
     "Year": 2012,
-    "Movie": "RED TAILS"
+    "bo_revenue": 49876385
   },
   {
-    "Studio": "Columbia Pictures",
-    "Box Office": "$20,275,451",
-    "Date": "8/24/2012",
+    "Movie": "PREMIUM RUSH",
     "Year": 2012,
-    "Movie": "PREMIUM RUSH"
+    "bo_revenue": 20275451
   },
   {
-    "Studio": "Warner Bros. Pictures",
-    "Box Office": "$36,392,510",
-    "Date": "3/25/2011",
+    "Movie": "SUCKER PUNCH",
     "Year": 2011,
-    "Movie": "SUCKER PUNCH"
+    "bo_revenue": 36392510
   },
   {
-    "Studio": "New Line Cinema",
-    "Box Office": "$35,061,037",
-    "Date": "11/4/2011",
+    "Movie": "A VERY HAROLD & KUMAR 3D CHRISTMAS",
     "Year": 2011,
-    "Movie": "A VERY HAROLD & KUMAR 3D CHRISTMAS"
+    "bo_revenue": 35061037
   },
   {
-    "Studio": "Universal Pictures",
-    "Box Office": "$209,837,679",
-    "Date": "4/29/2011",
+    "Movie": "FAST FIVE",
     "Year": 2011,
-    "Movie": "FAST FIVE"
+    "bo_revenue": 209837679
   },
   {
-    "Studio": "Columbia Pictures",
-    "Box Office": "$83,552,438",
-    "Date": "3/11/2011",
+    "Movie": "BATTLE: LOS ANGELES",
     "Year": 2011,
-    "Movie": "BATTLE: LOS ANGELES"
+    "bo_revenue": 83552438
   },
   {
-    "Studio": "Paramount Pictures",
-    "Box Office": "$73,864,513",
-    "Date": "11/23/2011",
+    "Movie": "HUGO",
     "Year": 2011,
-    "Movie": "HUGO"
+    "bo_revenue": 73864513
   },
   {
-    "Studio": "Columbia Pictures",
-    "Box Office": "$37,053,932",
-    "Date": "8/12/2011",
+    "Movie": "30 MINUTES OR LESS",
     "Year": 2011,
-    "Movie": "30 MINUTES OR LESS"
+    "bo_revenue": 37053932
   },
   {
-    "Studio": "CBS Films (DEFUNCT)",
-    "Box Office": "$27,865,580",
-    "Date": "3/4/2011",
+    "Movie": "BEASTLY",
     "Year": 2011,
-    "Movie": "BEASTLY"
+    "bo_revenue": 27865580
   },
   {
-    "Studio": "Lionsgate",
-    "Box Office": "$21,295,029",
-    "Date": "8/19/2011",
+    "Movie": "CONAN THE BARBARIAN",
     "Year": 2011,
-    "Movie": "CONAN THE BARBARIAN"
+    "bo_revenue": 21295029
   },
   {
-    "Studio": "20th Century Studios",
-    "Box Office": "$11,862,399",
-    "Date": "8/12/2011",
+    "Movie": "GLEE THE 3D CONCERT MOVIE",
     "Year": 2011,
-    "Movie": "GLEE THE 3D CONCERT MOVIE"
+    "bo_revenue": 11862399
   },
   {
-    "Studio": "The Weinstein Company (DEFUNCT)",
-    "Box Office": "$9,662,290",
-    "Date": "9/16/2011",
+    "Movie": "I DON'T KNOW HOW SHE DOES IT",
     "Year": 2011,
-    "Movie": "I DON'T KNOW HOW SHE DOES IT"
+    "bo_revenue": 9662290
   },
   {
-    "Studio": "Columbia Pictures",
-    "Box Office": "$176,591,622",
-    "Date": "6/11/2010",
+    "Movie": "THE KARATE KID",
     "Year": 2010,
-    "Movie": "THE KARATE KID"
+    "bo_revenue": 176591622
   },
   {
-    "Studio": "Paramount Pictures",
-    "Box Office": "$131,601,071",
-    "Date": "7/1/2010",
+    "Movie": "THE LAST AIRBENDER",
     "Year": 2010,
-    "Movie": "THE LAST AIRBENDER"
+    "bo_revenue": 131601071
   },
   {
-    "Studio": "Relativity Media LLC",
-    "Box Office": "$24,307,094",
-    "Date": "1/15/2010",
+    "Movie": "THE SPY NEXT DOOR",
     "Year": 2010,
-    "Movie": "THE SPY NEXT DOOR"
+    "bo_revenue": 24307094
   },
   {
-    "Studio": "Dharma Productions",
-    "Box Office": "$4,018,780",
-    "Date": "2/12/2010",
+    "Movie": "MY NAME IS KHAN",
     "Year": 2010,
-    "Movie": "MY NAME IS KHAN"
+    "bo_revenue": 4018780
   },
   {
-    "Studio": "Warner Bros. Pictures",
-    "Box Office": "$292,576,203",
-    "Date": "7/16/2010",
+    "Movie": "INCEPTION",
     "Year": 2010,
-    "Movie": "INCEPTION"
+    "bo_revenue": 292576203
   },
   {
-    "Studio": "Paramount Pictures",
-    "Box Office": "$171,050,332",
-    "Date": "12/22/2010",
+    "Movie": "TRUE GRIT",
     "Year": 2010,
-    "Movie": "TRUE GRIT"
+    "bo_revenue": 171050332
   },
   {
-    "Studio": "Paramount Pictures",
-    "Box Office": "$128,012,940",
-    "Date": "2/19/2010",
+    "Movie": "SHUTTER ISLAND",
     "Year": 2010,
-    "Movie": "SHUTTER ISLAND"
+    "bo_revenue": 128012940
   },
   {
-    "Studio": "Columbia Pictures",
-    "Box Office": "$119,219,984",
-    "Date": "8/6/2010",
+    "Movie": "THE OTHER GUYS",
     "Year": 2010,
-    "Movie": "THE OTHER GUYS"
+    "bo_revenue": 119219984
   },
   {
-    "Studio": "The Walt Disney Studios",
-    "Box Office": "$90,759,680",
-    "Date": "5/28/2010",
+    "Movie": "PRINCE OF PERSIA: THE SANDS OF TIME",
     "Year": 2010,
-    "Movie": "PRINCE OF PERSIA: THE SANDS OF TIME"
+    "bo_revenue": 90759680
   },
   {
-    "Studio": "20th Century Studios",
-    "Box Office": "$60,022,261",
-    "Date": "1/22/2010",
+    "Movie": "THE TOOTH FAIRY",
     "Year": 2010,
-    "Movie": "THE TOOTH FAIRY"
+    "bo_revenue": 60022261
   },
   {
-    "Studio": "20th Century Studios",
-    "Box Office": "$36,661,507",
-    "Date": "8/18/2010",
+    "Movie": "VAMPIRES SUCK",
     "Year": 2010,
-    "Movie": "VAMPIRES SUCK"
+    "bo_revenue": 36661507
   },
   {
-    "Studio": "Fox 2000 Pictures (DEFUNCT)",
-    "Box Office": "$26,167,004",
-    "Date": "7/23/2010",
+    "Movie": "RAMONA AND BEEZUS",
     "Year": 2010,
-    "Movie": "RAMONA AND BEEZUS"
+    "bo_revenue": 26167004
   },
   {
-    "Studio": "CBS Films (DEFUNCT)",
-    "Box Office": "$23,240,028",
-    "Date": "11/24/2010",
+    "Movie": "FASTER",
     "Year": 2010,
-    "Movie": "FASTER"
+    "bo_revenue": 23240028
   },
   {
-    "Studio": "Summit Entertainment",
-    "Box Office": "$17,630,471",
-    "Date": "4/30/2010",
+    "Movie": "FURRY VENGEANCE",
     "Year": 2010,
-    "Movie": "FURRY VENGEANCE"
+    "bo_revenue": 17630471
   },
   {
-    "Studio": "Madison Wells",
-    "Box Office": "$2,229,064",
-    "Date": "12/17/2010",
+    "Movie": "RABBIT HOLE",
     "Year": 2010,
-    "Movie": "RABBIT HOLE"
+    "bo_revenue": 2229064
   },
   {
-    "Studio": "20th Century Studios",
-    "Box Office": "$9,362,789",
-    "Date": "4/10/2009",
+    "Movie": "DRAGONBALL EVOLUTION",
     "Year": 2009,
-    "Movie": "DRAGONBALL EVOLUTION"
+    "bo_revenue": 9362789
   },
   {
-    "Studio": "Paramount Pictures",
-    "Box Office": "$257,730,027",
-    "Date": "5/8/2009",
+    "Movie": "STAR TREK",
     "Year": 2009,
-    "Movie": "STAR TREK"
+    "bo_revenue": 257730027
   },
   {
-    "Studio": "The Walt Disney Studios",
-    "Box Office": "$67,172,595",
-    "Date": "3/13/2009",
+    "Movie": "RACE TO WITCH MOUNTAIN",
     "Year": 2009,
-    "Movie": "RACE TO WITCH MOUNTAIN"
+    "bo_revenue": 67172595
   },
   {
-    "Studio": "DreamWorks Pictures",
-    "Box Office": "$28,596,825",
-    "Date": "1/30/2009",
+    "Movie": "THE UNINVITED",
     "Year": 2009,
-    "Movie": "THE UNINVITED"
+    "bo_revenue": 28596825
   },
   {
-    "Studio": "Screen Gems",
-    "Box Office": "$17,231,296",
-    "Date": "2/20/2009",
+    "Movie": "FIRED UP!",
     "Year": 2009,
-    "Movie": "FIRED UP!"
+    "bo_revenue": 17231296
   },
   {
-    "Studio": "Summit Entertainment",
-    "Box Office": "$11,965,289",
-    "Date": "9/11/2009",
+    "Movie": "SORORITY ROW",
     "Year": 2009,
-    "Movie": "SORORITY ROW"
+    "bo_revenue": 11965289
   },
   {
-    "Studio": "Walden Media",
-    "Box Office": "$5,210,993",
-    "Date": "8/14/2009",
+    "Movie": "BANDSLAM",
     "Year": 2009,
-    "Movie": "BANDSLAM"
+    "bo_revenue": 5210993
   },
   {
-    "Studio": "Liberty Films UK",
-    "Box Office": "$5,010,167",
-    "Date": "6/12/2009",
+    "Movie": "MOON",
     "Year": 2009,
-    "Movie": "MOON"
+    "bo_revenue": 5010167
   },
   {
-    "Studio": "Summit Entertainment",
-    "Box Office": "$3,531,765",
-    "Date": "5/15/2009",
+    "Movie": "THE BROTHERS BLOOM",
     "Year": 2009,
-    "Movie": "THE BROTHERS BLOOM"
+    "bo_revenue": 3531765
   },
   {
-    "Studio": "Searchlight Pictures",
-    "Box Office": "$141,319,933",
-    "Date": "11/12/2008",
+    "Movie": "SLUMDOG MILLIONAIRE",
     "Year": 2008,
-    "Movie": "SLUMDOG MILLIONAIRE"
+    "bo_revenue": 141319933
   },
   {
-    "Studio": "Universal Pictures",
-    "Box Office": "$102,277,515",
-    "Date": "8/1/2008",
+    "Movie": "THE MUMMY: TOMB OF THE DRAGON EMPEROR",
     "Year": 2008,
-    "Movie": "THE MUMMY: TOMB OF THE DRAGON EMPEROR"
+    "bo_revenue": 102277515
   },
   {
-    "Studio": "Lionsgate",
-    "Box Office": "$52,075,278",
-    "Date": "4/18/2008",
+    "Movie": "THE FORBIDDEN KINGDOM",
     "Year": 2008,
-    "Movie": "THE FORBIDDEN KINGDOM"
+    "bo_revenue": 52075278
   },
   {
-    "Studio": "New Line Cinema",
-    "Box Office": "$38,108,731",
-    "Date": "4/25/2008",
+    "Movie": "HAROLD & KUMAR ESCAPE FROM GUANTANAMO BAY",
     "Year": 2008,
-    "Movie": "HAROLD & KUMAR ESCAPE FROM GUANTANAMO BAY"
+    "bo_revenue": 38108731
   },
   {
-    "Studio": "Paramount Pictures",
-    "Box Office": "$32,200,130",
-    "Date": "6/20/2008",
+    "Movie": "THE LOVE GURU",
     "Year": 2008,
-    "Movie": "THE LOVE GURU"
+    "bo_revenue": 32200130
   },
   {
-    "Studio": "20th Century Studios",
-    "Box Office": "$22,531,705",
-    "Date": "8/29/2008",
+    "Movie": "BABYLON A.D.",
     "Year": 2008,
-    "Movie": "BABYLON A.D."
+    "bo_revenue": 22531705
   },
   {
-    "Studio": "Bluewater Pictures PTY Ltd. (DEFUNCT)",
-    "Box Office": "$1,031,873",
-    "Date": "5/23/2008",
+    "Movie": "THE CHILDREN OF HUANG SHI",
     "Year": 2008,
-    "Movie": "THE CHILDREN OF HUANG SHI"
+    "bo_revenue": 1031873
   },
   {
-    "Studio": "Warner Bros. Pictures",
-    "Box Office": "$130,319,217",
-    "Date": "6/20/2008",
+    "Movie": "GET SMART",
     "Year": 2008,
-    "Movie": "GET SMART"
+    "bo_revenue": 130319217
   },
   {
-    "Studio": "Columbia Pictures",
-    "Box Office": "$100,468,802",
-    "Date": "7/25/2008",
+    "Movie": "STEP BROTHERS",
     "Year": 2008,
-    "Movie": "STEP BROTHERS"
+    "bo_revenue": 100468802
   },
   {
-    "Studio": "The Walt Disney Studios",
-    "Box Office": "$90,559,417",
-    "Date": "10/24/2008",
+    "Movie": "HIGH SCHOOL MUSICAL 3: SENIOR YEAR",
     "Year": 2008,
-    "Movie": "HIGH SCHOOL MUSICAL 3: SENIOR YEAR"
+    "bo_revenue": 90559417
   },
   {
-    "Studio": "20th Century Studios",
-    "Box Office": "$79,366,982",
-    "Date": "12/12/2008",
+    "Movie": "THE DAY THE EARTH STOOD STILL",
     "Year": 2008,
-    "Movie": "THE DAY THE EARTH STOOD STILL"
+    "bo_revenue": 79366982
   },
   {
-    "Studio": "Paramount Pictures",
-    "Box Office": "$71,195,060",
-    "Date": "2/14/2008",
+    "Movie": "THE SPIDERWICK CHRONICLES",
     "Year": 2008,
-    "Movie": "THE SPIDERWICK CHRONICLES"
+    "bo_revenue": 71195060
   },
   {
-    "Studio": "Warner Bros. Pictures",
-    "Box Office": "$43,945,775",
-    "Date": "5/9/2008",
+    "Movie": "SPEED RACER",
     "Year": 2008,
-    "Movie": "SPEED RACER"
+    "bo_revenue": 43945775
   },
   {
-    "Studio": "Searchlight Pictures",
-    "Box Office": "$26,418,672",
-    "Date": "4/11/2008",
+    "Movie": "STREET KINGS",
     "Year": 2008,
-    "Movie": "STREET KINGS"
+    "bo_revenue": 26418672
   },
   {
-    "Studio": "20th Century Studios",
-    "Box Office": "$39,739,369",
-    "Date": "1/26/2007",
+    "Movie": "EPIC MOVIE",
     "Year": 2007,
-    "Movie": "EPIC MOVIE"
+    "bo_revenue": 39739369
   },
   {
-    "Studio": "New Line Cinema",
-    "Box Office": "$140,125,969",
-    "Date": "8/10/2007",
+    "Movie": "RUSH HOUR 3",
     "Year": 2007,
-    "Movie": "RUSH HOUR 3"
+    "bo_revenue": 140125969
   },
   {
-    "Studio": "Lionsgate",
-    "Box Office": "$22,486,415",
-    "Date": "8/24/2007",
+    "Movie": "WAR",
     "Year": 2007,
-    "Movie": "WAR"
+    "bo_revenue": 22486415
   },
   {
-    "Studio": "Searchlight Pictures",
-    "Box Office": "$13,569,255",
-    "Date": "3/9/2007",
+    "Movie": "THE NAMESAKE",
     "Year": 2007,
-    "Movie": "THE NAMESAKE"
+    "bo_revenue": 13569255
   },
   {
-    "Studio": "Universal Pictures",
-    "Box Office": "$227,471,079",
-    "Date": "8/3/2007",
+    "Movie": "THE BOURNE ULTIMATUM",
     "Year": 2007,
-    "Movie": "THE BOURNE ULTIMATUM"
+    "bo_revenue": 227471079
   },
   {
-    "Studio": "The Walt Disney Studios",
-    "Box Office": "$90,648,211",
-    "Date": "9/28/2007",
+    "Movie": "THE GAME PLAN",
     "Year": 2007,
-    "Movie": "THE GAME PLAN"
+    "bo_revenue": 90648211
   },
   {
-    "Studio": "Screen Gems",
-    "Box Office": "$61,356,230",
-    "Date": "1/12/2007",
+    "Movie": "STOMP THE YARD",
     "Year": 2007,
-    "Movie": "STOMP THE YARD"
+    "bo_revenue": 61356230
   },
   {
-    "Studio": "New Line Cinema",
-    "Box Office": "$39,015,022",
-    "Date": "4/20/2007",
+    "Movie": "FRACTURE",
     "Year": 2007,
-    "Movie": "FRACTURE"
+    "bo_revenue": 39015022
   },
   {
-    "Studio": "New Line Cinema",
-    "Box Office": "$8,135,030",
-    "Date": "1/5/2007",
+    "Movie": "CODE NAME: THE CLEANER",
     "Year": 2007,
-    "Movie": "CODE NAME: THE CLEANER"
+    "bo_revenue": 8135030
   },
   {
-    "Studio": "The De Laurentiis Company",
-    "Box Office": "$5,933,499",
-    "Date": "8/17/2007",
+    "Movie": "THE LAST LEGION",
     "Year": 2007,
-    "Movie": "THE LAST LEGION"
+    "bo_revenue": 5933499
   },
   {
-    "Studio": "Searchlight Pictures",
-    "Box Office": "$3,675,757",
-    "Date": "7/20/2007",
+    "Movie": "SUNSHINE",
     "Year": 2007,
-    "Movie": "SUNSHINE"
+    "bo_revenue": 3675757
   },
   {
-    "Studio": "Carol Baum Productions (DEFUNCT)",
-    "Box Office": "$2,429,374",
-    "Date": "6/22/2007",
+    "Movie": "YOU KILL ME",
     "Year": 2007,
-    "Movie": "YOU KILL ME"
+    "bo_revenue": 2429374
   },
   {
-    "Studio": "Universal Pictures",
-    "Box Office": "$7,191,832",
-    "Date": "4/21/2006",
+    "Movie": "AMERICAN DREAMZ",
     "Year": 2006,
-    "Movie": "AMERICAN DREAMZ"
+    "bo_revenue": 7191832
   },
   {
-    "Studio": "MGM Studios (DEFUNCT)",
-    "Box Office": "$4,261,359",
-    "Date": "12/1/2006",
+    "Movie": "NATIONAL LAMPOON'S VAN WILDER: THE RISE OF TAJ",
     "Year": 2006,
-    "Movie": "NATIONAL LAMPOON'S VAN WILDER: THE RISE OF TAJ"
+    "bo_revenue": 4261359
   },
   {
-    "Studio": "Warner Bros. Pictures",
-    "Box Office": "$200,081,199",
-    "Date": "6/28/2006",
+    "Movie": "SUPERMAN RETURNS",
     "Year": 2006,
-    "Movie": "SUPERMAN RETURNS"
+    "bo_revenue": 200081199
   },
   {
-    "Studio": "Warner Bros. Pictures",
-    "Box Office": "$52,330,120",
-    "Date": "6/16/2006",
+    "Movie": "THE LAKE HOUSE",
     "Year": 2006,
-    "Movie": "THE LAKE HOUSE"
+    "bo_revenue": 52330120
   },
   {
-    "Studio": "Warner Bros. Pictures",
-    "Box Office": "$43,545,371",
-    "Date": "12/22/2006",
+    "Movie": "WE ARE MARSHALL",
     "Year": 2006,
-    "Movie": "WE ARE MARSHALL"
+    "bo_revenue": 43545371
   },
   {
-    "Studio": "Columbia Pictures",
-    "Box Office": "$38,432,831",
-    "Date": "9/15/2006",
+    "Movie": "GRIDIRON GANG",
     "Year": 2006,
-    "Movie": "GRIDIRON GANG"
+    "bo_revenue": 38432831
   },
   {
-    "Studio": "MGM Studios (DEFUNCT)",
-    "Box Office": "$22,495,475",
-    "Date": "4/7/2006",
+    "Movie": "LUCKY NUMBER SLEVIN",
     "Year": 2006,
-    "Movie": "LUCKY NUMBER SLEVIN"
+    "bo_revenue": 22495475
   },
   {
-    "Studio": "Miramax",
-    "Box Office": "$7,836,399",
-    "Date": "8/4/2006",
+    "Movie": "THE NIGHT LISTENER",
     "Year": 2006,
-    "Movie": "THE NIGHT LISTENER"
+    "bo_revenue": 7836399
   },
   {
-    "Studio": "Columbia Pictures",
-    "Box Office": "$57,010,862",
-    "Date": "12/9/2005",
+    "Movie": "MEMOIRS OF A GEISHA",
     "Year": 2005,
-    "Movie": "MEMOIRS OF A GEISHA"
+    "bo_revenue": 57010862
   },
   {
-    "Studio": "Paradis Films",
-    "Box Office": "$1,444,592",
-    "Date": "8/5/2005",
+    "Movie": 2046,
     "Year": 2005,
-    "Movie": 2046
+    "bo_revenue": 1444592
   },
   {
-    "Studio": "Warner Bros. Pictures",
-    "Box Office": "$205,343,779",
-    "Date": "6/15/2005",
+    "Movie": "BATMAN BEGINS",
     "Year": 2005,
-    "Movie": "BATMAN BEGINS"
+    "bo_revenue": 205343779
   },
   {
-    "Studio": "Universal Pictures",
-    "Box Office": "$109,289,013",
-    "Date": "8/19/2005",
+    "Movie": "THE 40-YEAR-OLD VIRGIN",
     "Year": 2005,
-    "Movie": "THE 40-YEAR-OLD VIRGIN"
+    "bo_revenue": 109289013
   },
   {
-    "Studio": "Warner Bros. Pictures",
-    "Box Office": "$75,526,450",
-    "Date": "2/18/2005",
+    "Movie": "CONSTANTINE",
     "Year": 2005,
-    "Movie": "CONSTANTINE"
+    "bo_revenue": 75526450
   },
   {
-    "Studio": "Warner Independent Pictures (DEFUNCT)",
-    "Box Office": "$31,558,010",
-    "Date": "10/7/2005",
+    "Movie": "GOOD NIGHT, AND GOOD LUCK.",
     "Year": 2005,
-    "Movie": "GOOD NIGHT, AND GOOD LUCK."
+    "bo_revenue": 31558010
   },
   {
-    "Studio": "Universal Pictures",
-    "Box Office": "$28,048,609",
-    "Date": "10/21/2005",
+    "Movie": "DOOM",
     "Year": 2005,
-    "Movie": "DOOM"
+    "bo_revenue": 28048609
   },
   {
-    "Studio": "The Walt Disney Studios",
-    "Box Office": "$21,845,721",
-    "Date": "4/22/2005",
+    "Movie": "A LOT LIKE LOVE",
     "Year": 2005,
-    "Movie": "A LOT LIKE LOVE"
+    "bo_revenue": 21845721
   },
   {
-    "Studio": "New Line Cinema",
-    "Box Office": "$9,461,499",
-    "Date": "10/14/2005",
+    "Movie": "DOMINO",
     "Year": 2005,
-    "Movie": "DOMINO"
+    "bo_revenue": 9461499
   },
   {
-    "Studio": "Medusa",
-    "Box Office": "$2,001,431",
-    "Date": "9/23/2005",
+    "Movie": "OLIVER TWIST",
     "Year": 2005,
-    "Movie": "OLIVER TWIST"
+    "bo_revenue": 2001431
   },
   {
-    "Studio": "Franchise Pictures",
-    "Box Office": "$1,897,578",
-    "Date": "9/2/2005",
+    "Movie": "A SOUND OF THUNDER",
     "Year": 2005,
-    "Movie": "A SOUND OF THUNDER"
+    "bo_revenue": 1897578
   },
   {
-    "Studio": "Merchant Ivory Productions",
-    "Box Office": "$1,669,975",
-    "Date": "12/21/2005",
+    "Movie": "THE WHITE COUNTESS",
     "Year": 2005,
-    "Movie": "THE WHITE COUNTESS"
+    "bo_revenue": 1669975
   },
   {
-    "Studio": "Bob Yari Productions (DEFUNCT)",
-    "Box Office": "$1,328,688",
-    "Date": "9/16/2005",
+    "Movie": "THUMBSUCKER",
     "Year": 2005,
-    "Movie": "THUMBSUCKER"
+    "bo_revenue": 1328688
   },
   {
-    "Studio": "Miramax",
-    "Box Office": "$66,208,190",
-    "Date": "4/16/2004",
+    "Movie": "KILL BILL: VOL. 2",
     "Year": 2004,
-    "Movie": "KILL BILL: VOL. 2"
+    "bo_revenue": 66208190
   },
   {
-    "Studio": "Miramax",
-    "Box Office": "$53,614,101",
-    "Date": "8/27/2004",
+    "Movie": "HERO",
     "Year": 2004,
-    "Movie": "HERO"
+    "bo_revenue": 53614101
   },
   {
-    "Studio": "The Walt Disney Studios",
-    "Box Office": "$24,008,146",
-    "Date": "6/16/2004",
+    "Movie": "AROUND THE WORLD IN 80 DAYS",
     "Year": 2004,
-    "Movie": "AROUND THE WORLD IN 80 DAYS"
+    "bo_revenue": 24008146
   },
   {
-    "Studio": "New Line Cinema",
-    "Box Office": "$18,250,559",
-    "Date": "7/30/2004",
+    "Movie": "HAROLD & KUMAR GO TO WHITE CASTLE",
     "Year": 2004,
-    "Movie": "HAROLD & KUMAR GO TO WHITE CASTLE"
+    "bo_revenue": 18250559
   },
   {
-    "Studio": "EDKO Films Ltd.",
-    "Box Office": "$8,238,008",
-    "Date": "12/3/2004",
+    "Movie": "HOUSE OF FLYING DAGGERS",
     "Year": 2004,
-    "Movie": "HOUSE OF FLYING DAGGERS"
+    "bo_revenue": 8238008
   },
   {
-    "Studio": "Searchlight Pictures",
-    "Box Office": "$71,503,601",
-    "Date": "10/22/2004",
+    "Movie": "SIDEWAYS",
     "Year": 2004,
-    "Movie": "SIDEWAYS"
+    "bo_revenue": 71503601
   },
   {
-    "Studio": "Lionsgate",
-    "Box Office": "$55,185,049",
-    "Date": "10/29/2004",
+    "Movie": "SAW",
     "Year": 2004,
-    "Movie": "SAW"
+    "bo_revenue": 55185049
   },
   {
-    "Studio": "MGM Studios (DEFUNCT)",
-    "Box Office": "$46,341,171",
-    "Date": "4/2/2004",
+    "Movie": "WALKING TALL",
     "Year": 2004,
-    "Movie": "WALKING TALL"
+    "bo_revenue": 46341171
   },
   {
-    "Studio": "Paramount Pictures",
-    "Box Office": "$25,198,606",
-    "Date": "2/27/2004",
+    "Movie": "TWISTED",
     "Year": 2004,
-    "Movie": "TWISTED"
+    "bo_revenue": 25198606
   },
   {
-    "Studio": "Paramount Pictures",
-    "Box Office": "$8,725,818",
-    "Date": "8/27/2004",
+    "Movie": "SUSPECT ZERO",
     "Year": 2004,
-    "Movie": "SUSPECT ZERO"
+    "bo_revenue": 8725818
   },
   {
-    "Studio": "Universal Pictures",
-    "Box Office": "$6,810,055",
-    "Date": "7/30/2004",
+    "Movie": "THUNDERBIRDS",
     "Year": 2004,
-    "Movie": "THUNDERBIRDS"
+    "bo_revenue": 6810055
   },
   {
-    "Studio": "Warner Bros. Pictures",
-    "Box Office": "$111,127,272",
-    "Date": "12/5/2003",
+    "Movie": "THE LAST SAMURAI",
     "Year": 2003,
-    "Movie": "THE LAST SAMURAI"
+    "bo_revenue": 111127272
   },
   {
-    "Studio": "Miramax",
-    "Box Office": "$70,099,046",
-    "Date": "10/10/2003",
+    "Movie": "KILL BILL: VOL. 1",
     "Year": 2003,
-    "Movie": "KILL BILL: VOL. 1"
+    "bo_revenue": 70099046
   },
   {
-    "Studio": "The Walt Disney Studios",
-    "Box Office": "$60,476,874",
-    "Date": "2/7/2003",
+    "Movie": "SHANGHAI KNIGHTS",
     "Year": 2003,
-    "Movie": "SHANGHAI KNIGHTS"
+    "bo_revenue": 60476874
   },
   {
-    "Studio": "Searchlight Pictures",
-    "Box Office": "$32,543,457",
-    "Date": "3/12/2003",
+    "Movie": "BEND IT LIKE BECKHAM",
     "Year": 2003,
-    "Movie": "BEND IT LIKE BECKHAM"
+    "bo_revenue": 32543457
   },
   {
-    "Studio": "Screen Gems",
-    "Box Office": "$22,119,984",
-    "Date": "8/22/2003",
+    "Movie": "THE MEDALLION",
     "Year": 2003,
-    "Movie": "THE MEDALLION"
+    "bo_revenue": 22119984
   },
   {
-    "Studio": "Paramount Pictures",
-    "Box Office": "$3,802,395",
-    "Date": "4/11/2003",
+    "Movie": "BETTER LUCK TOMORROW",
     "Year": 2003,
-    "Movie": "BETTER LUCK TOMORROW"
+    "bo_revenue": 3802395
   },
   {
-    "Studio": "Warner Bros. Pictures",
-    "Box Office": "$281,553,691",
-    "Date": "5/15/2003",
+    "Movie": "THE MATRIX RELOADED",
     "Year": 2003,
-    "Movie": "THE MATRIX RELOADED"
+    "bo_revenue": 281553691
   },
   {
-    "Studio": "Warner Bros. Pictures",
-    "Box Office": "$139,270,916",
-    "Date": "11/5/2003",
+    "Movie": "THE MATRIX REVOLUTIONS",
     "Year": 2003,
-    "Movie": "THE MATRIX REVOLUTIONS"
+    "bo_revenue": 139270916
   },
   {
-    "Studio": "Columbia Pictures",
-    "Box Office": "$124,685,243",
-    "Date": "12/12/2003",
+    "Movie": "SOMETHING'S GOTTA GIVE",
     "Year": 2003,
-    "Movie": "SOMETHING'S GOTTA GIVE"
+    "bo_revenue": 124685243
   },
   {
-    "Studio": "Columbia Pictures",
-    "Box Office": "$100,814,333",
-    "Date": "6/27/2003",
+    "Movie": "CHARLIE'S ANGELS: FULL THROTTLE",
     "Year": 2003,
-    "Movie": "CHARLIE'S ANGELS: FULL THROTTLE"
+    "bo_revenue": 100814333
   },
   {
-    "Studio": "Columbia Pictures",
-    "Box Office": "$47,678,165",
-    "Date": "9/26/2003",
+    "Movie": "THE RUNDOWN",
     "Year": 2003,
-    "Movie": "THE RUNDOWN"
+    "bo_revenue": 47678165
   },
   {
-    "Studio": "The Walt Disney Studios",
-    "Box Office": "$43,610,732",
-    "Date": "9/26/2003",
+    "Movie": "UNDER THE TUSCAN SUN",
     "Year": 2003,
-    "Movie": "UNDER THE TUSCAN SUN"
+    "bo_revenue": 43610732
   },
   {
-    "Studio": "Alcon Entertainment",
-    "Box Office": "$21,905,274",
-    "Date": "12/12/2003",
+    "Movie": "LOVE DON'T COST A THING",
     "Year": 2003,
-    "Movie": "LOVE DON'T COST A THING"
+    "bo_revenue": 21905274
   },
   {
-    "Studio": "DreamWorks Pictures",
-    "Box Office": "$13,024,829",
-    "Date": "12/19/2003",
+    "Movie": "HOUSE OF SAND AND FOG",
     "Year": 2003,
-    "Movie": "HOUSE OF SAND AND FOG"
+    "bo_revenue": 13024829
   },
   {
-    "Studio": "Universal Pictures",
-    "Box Office": "$90,450,359",
-    "Date": "4/19/2002",
+    "Movie": "THE SCORPION KING",
     "Year": 2002,
-    "Movie": "THE SCORPION KING"
+    "bo_revenue": 90450359
   },
   {
-    "Studio": "DreamWorks Pictures",
-    "Box Office": "$50,548,004",
-    "Date": "9/27/2002",
+    "Movie": "THE TUXEDO",
     "Year": 2002,
-    "Movie": "THE TUXEDO"
+    "bo_revenue": 50548004
   },
   {
-    "Studio": "The Walt Disney Studios",
-    "Box Office": "$19,162,008",
-    "Date": "10/11/2002",
+    "Movie": "TUCK EVERLASTING",
     "Year": 2002,
-    "Movie": "TUCK EVERLASTING"
+    "bo_revenue": 19162008
   },
   {
-    "Studio": "Franchise Pictures",
-    "Box Office": "$14,307,966",
-    "Date": "9/20/2002",
+    "Movie": "BALLISTIC: ECKS VS. SEVER",
     "Year": 2002,
-    "Movie": "BALLISTIC: ECKS VS. SEVER"
+    "bo_revenue": 14307966
   },
   {
-    "Studio": "New Line Cinema",
-    "Box Office": "$226,138,462",
-    "Date": "8/3/2001",
+    "Movie": "RUSH HOUR 2",
     "Year": 2001,
-    "Movie": "RUSH HOUR 2"
+    "bo_revenue": 226138462
   },
   {
-    "Studio": "",
-    "Box Office": "$14,681,670",
-    "Date": "10/12/2001",
+    "Movie": "IRON MONKEY",
     "Year": 2001,
-    "Movie": "IRON MONKEY"
+    "bo_revenue": 14681670
   },
   {
-    "Studio": "Universal Pictures",
-    "Box Office": "$145,103,600",
-    "Date": "8/10/2001",
+    "Movie": "AMERICAN PIE 2",
     "Year": 2001,
-    "Movie": "AMERICAN PIE 2"
+    "bo_revenue": 145103600
   },
   {
-    "Studio": "Paramount Pictures",
-    "Box Office": "$40,188,974",
-    "Date": "9/14/2001",
+    "Movie": "HARDBALL",
     "Year": 2001,
-    "Movie": "HARDBALL"
+    "bo_revenue": 40188974
   },
   {
-    "Studio": "Warner Bros. Pictures",
-    "Box Office": "$25,178,172",
-    "Date": "2/16/2001",
+    "Movie": "SWEET NOVEMBER",
     "Year": 2001,
-    "Movie": "SWEET NOVEMBER"
+    "bo_revenue": 25178172
   },
   {
-    "Studio": "Recorded Picture Company",
-    "Box Office": "$6,731,433",
-    "Date": "6/15/2001",
+    "Movie": "SEXY BEAST",
     "Year": 2001,
-    "Movie": "SEXY BEAST"
+    "bo_revenue": 6731433
   },
   {
-    "Studio": "EDKO Films Ltd.",
-    "Box Office": "$128,026,808",
-    "Date": "12/8/2000",
+    "Movie": "CROUCHING TIGER, HIDDEN DRAGON",
     "Year": 2000,
-    "Movie": "CROUCHING TIGER, HIDDEN DRAGON"
+    "bo_revenue": 128026808
   },
   {
-    "Studio": "The Walt Disney Studios",
-    "Box Office": "$56,902,720",
-    "Date": "5/26/2000",
+    "Movie": "SHANGHAI NOON",
     "Year": 2000,
-    "Movie": "SHANGHAI NOON"
+    "bo_revenue": 56902720
   },
   {
-    "Studio": "Golden Harvest Company",
-    "Box Office": "$11,546,544",
-    "Date": "10/20/2000",
+    "Movie": "THE LEGEND OF DRUNKEN MASTER",
     "Year": 2000,
-    "Movie": "THE LEGEND OF DRUNKEN MASTER"
+    "bo_revenue": 11546544
   },
   {
-    "Studio": "Columbia Pictures",
-    "Box Office": "$125,305,551",
-    "Date": "11/3/2000",
+    "Movie": "CHARLIE'S ANGELS",
     "Year": 2000,
-    "Movie": "CHARLIE'S ANGELS"
+    "bo_revenue": 125305551
   },
   {
-    "Studio": "Paramount Pictures",
-    "Box Office": "$61,286,825",
-    "Date": "4/7/2000",
+    "Movie": "RULES OF ENGAGEMENT",
     "Year": 2000,
-    "Movie": "RULES OF ENGAGEMENT"
+    "bo_revenue": 61286825
   },
   {
-    "Studio": "Warner Bros. Pictures",
-    "Box Office": "$44,737,067",
-    "Date": "8/11/2000",
+    "Movie": "THE REPLACEMENTS",
     "Year": 2000,
-    "Movie": "THE REPLACEMENTS"
+    "bo_revenue": 44737067
   },
   {
-    "Studio": "Brillstein-Grey Entertainment (DEFUNCT)",
-    "Box Office": "$6,182,596",
-    "Date": "3/3/2000",
+    "Movie": "WHAT PLANET ARE YOU FROM?",
     "Year": 2000,
-    "Movie": "WHAT PLANET ARE YOU FROM?"
+    "bo_revenue": 6182596
   },
   {
-    "Studio": "Dimension Films (DEFUNCT)",
-    "Box Office": "$8,332,435",
-    "Date": "4/9/1999",
+    "Movie": "TWIN DRAGONS",
     "Year": 1999,
-    "Movie": "TWIN DRAGONS"
+    "bo_revenue": 8332435
   },
   {
-    "Studio": "Warner Bros. Pictures",
-    "Box Office": "$171,414,895",
-    "Date": "3/31/1999",
+    "Movie": "THE MATRIX",
     "Year": 1999,
-    "Movie": "THE MATRIX"
+    "bo_revenue": 171414895
   },
   {
-    "Studio": "Searchlight Pictures",
-    "Box Office": "$15,997,310",
-    "Date": "5/14/1999",
+    "Movie": "A MIDSUMMER NIGHT'S DREAM",
     "Year": 1999,
-    "Movie": "A MIDSUMMER NIGHT'S DREAM"
+    "bo_revenue": 15997310
   },
   {
-    "Studio": "Touchstone Pictures",
-    "Box Office": "$8,377,656",
-    "Date": "12/25/1999",
+    "Movie": "PLAY IT TO THE BONE",
     "Year": 1999,
-    "Movie": "PLAY IT TO THE BONE"
+    "bo_revenue": 8377656
   },
   {
-    "Studio": "Screen Gems",
-    "Box Office": "$1,974,761",
-    "Date": "6/4/1999",
+    "Movie": "LIMBO",
     "Year": 1999,
-    "Movie": "LIMBO"
+    "bo_revenue": 1974761
   },
   {
-    "Studio": "New Line Cinema",
-    "Box Office": "$141,153,692",
-    "Date": "9/18/1998",
+    "Movie": "RUSH HOUR",
     "Year": 1998,
-    "Movie": "RUSH HOUR"
+    "bo_revenue": 141153692
   },
   {
-    "Studio": "New Line Cinema",
-    "Box Office": "$9,303,970",
-    "Date": "3/20/1998",
+    "Movie": "MR. NICE GUY",
     "Year": 1998,
-    "Movie": "MR. NICE GUY"
+    "bo_revenue": 9303970
   },
   {
-    "Studio": "Warner Bros. Pictures",
-    "Box Office": "$64,406,199",
-    "Date": "6/5/1998",
+    "Movie": "A PERFECT MURDER",
     "Year": 1998,
-    "Movie": "A PERFECT MURDER"
+    "bo_revenue": 64406199
   },
   {
-    "Studio": "Hollywood Pictures (DEFUNCT)",
-    "Box Office": "$15,322,566",
-    "Date": "9/11/1998",
+    "Movie": "SIMON BIRCH",
     "Year": 1998,
-    "Movie": "SIMON BIRCH"
+    "bo_revenue": 15322566
   },
   {
-    "Studio": "MGM Studios (DEFUNCT)",
-    "Box Office": "$78,609,353",
-    "Date": "12/19/1997",
+    "Movie": "TOMORROW NEVER DIES",
     "Year": 1997,
-    "Movie": "TOMORROW NEVER DIES"
+    "bo_revenue": 78609353
   },
   {
-    "Studio": "Mandalay Pictures",
-    "Box Office": "$36,110,883",
-    "Date": "10/10/1997",
+    "Movie": "SEVEN YEARS IN TIBET",
     "Year": 1997,
-    "Movie": "SEVEN YEARS IN TIBET"
+    "bo_revenue": 36110883
   },
   {
-    "Studio": "New Line Cinema",
-    "Box Office": "$13,910,370",
-    "Date": "1/10/1997",
+    "Movie": "JACKIE CHAN'S FIRST STRIKE",
     "Year": 1997,
-    "Movie": "JACKIE CHAN'S FIRST STRIKE"
+    "bo_revenue": 13910370
   },
   {
-    "Studio": "Warner Bros. Pictures",
-    "Box Office": "$61,178,271",
-    "Date": "9/19/1997",
+    "Movie": "L.A. CONFIDENTIAL",
     "Year": 1997,
-    "Movie": "L.A. CONFIDENTIAL"
+    "bo_revenue": 61178271
   },
   {
-    "Studio": "Warner Bros. Pictures",
-    "Box Office": "$60,944,669",
-    "Date": "10/17/1997",
+    "Movie": "THE DEVIL'S ADVOCATE",
     "Year": 1997,
-    "Movie": "THE DEVIL'S ADVOCATE"
+    "bo_revenue": 60944669
   },
   {
-    "Studio": "Dimension Films (DEFUNCT)",
-    "Box Office": "$12,655,606",
-    "Date": "7/26/1996",
+    "Movie": "SUPERCOP",
     "Year": 1996,
-    "Movie": "SUPERCOP"
+    "bo_revenue": 12655606
   },
   {
-    "Studio": "20th Century Studios",
-    "Box Office": "$18,165,612",
-    "Date": "8/2/1996",
+    "Movie": "CHAIN REACTION",
     "Year": 1996,
-    "Movie": "CHAIN REACTION"
+    "bo_revenue": 18165612
   },
   {
-    "Studio": "New Line Cinema",
-    "Box Office": "$2,673,459",
-    "Date": "9/13/1996",
+    "Movie": "FEELING MINNESOTA",
     "Year": 1996,
-    "Movie": "FEELING MINNESOTA"
+    "bo_revenue": 2673459
   },
   {
-    "Studio": "Tristar Pictures",
-    "Box Office": "$18,390,619",
-    "Date": "5/26/1995",
+    "Movie": "JOHNNY MNEMONIC",
     "Year": 1995,
-    "Movie": "JOHNNY MNEMONIC"
+    "bo_revenue": 18390619
   },
   {
-    "Studio": "MGM Studios (DEFUNCT)",
-    "Box Office": "$58,310,275",
-    "Date": "7/7/1995",
+    "Movie": "SPECIES",
     "Year": 1995,
-    "Movie": "SPECIES"
+    "bo_revenue": 58310275
   },
   {
-    "Studio": "20th Century Studios",
-    "Box Office": "$46,421,961",
-    "Date": "8/11/1995",
+    "Movie": "A WALK IN THE CLOUDS",
     "Year": 1995,
-    "Movie": "A WALK IN THE CLOUDS"
+    "bo_revenue": 46421961
   },
   {
-    "Studio": "Castle Rock Entertainment",
-    "Box Office": "$21,691,126",
-    "Date": "3/24/1995",
+    "Movie": "DOLORES CLAIBORNE",
     "Year": 1995,
-    "Movie": "DOLORES CLAIBORNE"
+    "bo_revenue": 21691126
   },
   {
-    "Studio": "Paramount Pictures",
-    "Box Office": "$5,185,202",
-    "Date": "3/17/1995",
+    "Movie": "LOSING ISAIAH",
     "Year": 1995,
-    "Movie": "LOSING ISAIAH"
+    "bo_revenue": 5185202
   },
   {
-    "Studio": "Recorded Picture Company",
-    "Box Office": "$2,510,552",
-    "Date": "5/27/1994",
+    "Movie": "LITTLE BUDDHA",
     "Year": 1994,
-    "Movie": "LITTLE BUDDHA"
+    "bo_revenue": 2510552
   },
   {
-    "Studio": "20th Century Studios",
-    "Box Office": "$111,116,007",
-    "Date": "6/10/1994",
+    "Movie": "SPEED",
     "Year": 1994,
-    "Movie": "SPEED"
+    "bo_revenue": 111116007
   },
   {
-    "Studio": "David Foster Productions",
-    "Box Office": "$42,081,395",
-    "Date": "9/30/1994",
+    "Movie": "THE RIVER WILD",
     "Year": 1994,
-    "Movie": "THE RIVER WILD"
+    "bo_revenue": 42081395
   },
   {
-    "Studio": "Spring Creek Productions",
-    "Box Office": "$4,501,148",
-    "Date": "4/1/1994",
+    "Movie": "THE HOUSE OF THE SPIRITS",
     "Year": 1994,
-    "Movie": "THE HOUSE OF THE SPIRITS"
+    "bo_revenue": 4501148
   },
   {
-    "Studio": "Paramount Pictures",
-    "Box Office": "$153,350,449",
-    "Date": "7/2/1993",
+    "Movie": "THE FIRM",
     "Year": 1993,
-    "Movie": "THE FIRM"
+    "bo_revenue": 153350449
   },
   {
-    "Studio": "Warner Bros. Pictures",
-    "Box Office": "$60,507,520",
-    "Date": "5/7/1993",
+    "Movie": "DAVE",
     "Year": 1993,
-    "Movie": "DAVE"
+    "bo_revenue": 60507520
   },
   {
-    "Studio": "Universal Pictures",
-    "Box Office": "$45,385,937",
-    "Date": "6/11/1993",
+    "Movie": "JURASSIC PARK",
     "Year": 1993,
-    "Movie": "JURASSIC PARK"
+    "bo_revenue": 45385937
   },
   {
-    "Studio": "Samuel Goldwyn Films",
-    "Box Office": "$11,714,650",
-    "Date": "5/7/1993",
+    "Movie": "MUCH ADO ABOUT NOTHING",
     "Year": 1993,
-    "Movie": "MUCH ADO ABOUT NOTHING"
+    "bo_revenue": 11714650
   },
   {
-    "Studio": "Columbia Pictures",
-    "Box Office": "$7,883,354",
-    "Date": "5/14/1993",
+    "Movie": "LOST IN YONKERS",
     "Year": 1993,
-    "Movie": "LOST IN YONKERS"
+    "bo_revenue": 7883354
   },
   {
-    "Studio": "Paramount Pictures",
-    "Box Office": "$3,478,196",
-    "Date": "8/13/1993",
+    "Movie": "SEARCHING FOR BOBBY FISCHER",
     "Year": 1993,
-    "Movie": "SEARCHING FOR BOBBY FISCHER"
+    "bo_revenue": 3478196
   },
   {
-    "Studio": "Columbia Pictures",
-    "Box Office": "$80,346,243",
-    "Date": "11/13/1992",
+    "Movie": "BRAM STOKER'S DRACULA",
     "Year": 1992,
-    "Movie": "BRAM STOKER'S DRACULA"
+    "bo_revenue": 80346243
   },
   {
-    "Studio": "Universal Pictures",
-    "Box Office": "$49,541,282",
-    "Date": "9/11/1992",
+    "Movie": "SNEAKERS",
     "Year": 1992,
-    "Movie": "SNEAKERS"
+    "bo_revenue": 49541282
   },
   {
-    "Studio": "Tristar Pictures",
-    "Box Office": "$48,263,845",
-    "Date": "12/20/1991",
+    "Movie": "BUGSY",
     "Year": 1991,
-    "Movie": "BUGSY"
+    "bo_revenue": 48263845
   },
   {
-    "Studio": "20th Century Studios",
-    "Box Office": "$35,509,611",
-    "Date": "7/12/1991",
+    "Movie": "POINT BREAK",
     "Year": 1991,
-    "Movie": "POINT BREAK"
+    "bo_revenue": 35509611
   },
   {
-    "Studio": "Orion Pictures",
-    "Box Office": "$33,053,814",
-    "Date": "7/18/1991",
+    "Movie": "BILL & TED'S BOGUS JOURNEY",
     "Year": 1991,
-    "Movie": "BILL & TED'S BOGUS JOURNEY"
+    "bo_revenue": 33053814
   },
   {
-    "Studio": "Orion Pictures",
-    "Box Office": "$3,268,778",
-    "Date": "8/16/1991",
+    "Movie": "MYSTERY DATE",
     "Year": 1991,
-    "Movie": "MYSTERY DATE"
+    "bo_revenue": 3268778
   },
   {
-    "Studio": "Tristar Pictures",
-    "Box Office": "$12,816,447",
-    "Date": "4/6/1990",
+    "Movie": "I LOVE YOU TO DEATH",
     "Year": 1990,
-    "Movie": "I LOVE YOU TO DEATH"
+    "bo_revenue": 12816447
   },
   {
-    "Studio": "Universal Pictures",
-    "Box Office": "$95,611,522",
-    "Date": "8/2/1989",
+    "Movie": "PARENTHOOD",
     "Year": 1989,
-    "Movie": "PARENTHOOD"
+    "bo_revenue": 95611522
   },
   {
-    "Studio": "Orion Pictures",
-    "Box Office": "$35,393,506",
-    "Date": "2/17/1989",
+    "Movie": "BILL & TED'S EXCELLENT ADVENTURE",
     "Year": 1989,
-    "Movie": "BILL & TED'S EXCELLENT ADVENTURE"
+    "bo_revenue": 35393506
   },
   {
-    "Studio": "Warner Bros. Pictures",
-    "Box Office": "$31,910,860",
-    "Date": "12/23/1988",
+    "Movie": "DANGEROUS LIAISONS",
     "Year": 1988,
-    "Movie": "DANGEROUS LIAISONS"
+    "bo_revenue": 31910860
   },
   {
-    "Studio": "Incorporated Television Company (ITC) (DEFUNCT)",
-    "Box Office": "$6,711,906",
-    "Date": "10/21/1988",
+    "Movie": "WITHOUT A CLUE",
     "Year": 1988,
-    "Movie": "WITHOUT A CLUE"
+    "bo_revenue": 6711906
   },
   {
-    "Studio": "Orion Pictures",
-    "Box Office": "$3,169,445",
-    "Date": "9/2/1988",
+    "Movie": "EIGHT MEN OUT",
     "Year": 1988,
-    "Movie": "EIGHT MEN OUT"
+    "bo_revenue": 3169445
   },
   {
-    "Studio": "Paramount Pictures",
-    "Box Office": "$75,506,789",
-    "Date": "12/12/1986",
+    "Movie": "GOLDEN CHILD, THE",
     "Year": 1986,
-    "Movie": "GOLDEN CHILD, THE"
+    "bo_revenue": 75506789
   },
   {
-    "Studio": "United Artists Media Group (DEFUNCT)",
-    "Box Office": "$12,423,446",
-    "Date": "1/31/1986",
+    "Movie": "YOUNGBLOOD",
     "Year": 1986,
-    "Movie": "YOUNGBLOOD"
+    "bo_revenue": 12423446
   },
   {
-    "Studio": "Warner Bros. Pictures",
-    "Box Office": "$57,530,813",
-    "Date": "6/7/1985",
+    "Movie": "THE GOONIES",
     "Year": 1985,
-    "Movie": "THE GOONIES"
+    "bo_revenue": 57530813
   },
   {
-    "Studio": "Paramount Pictures",
-    "Box Office": "$42,267,353",
-    "Date": "5/23/1984",
+    "Movie": "INDIANA JONES AND THE TEMPLE OF DOOM",
     "Year": 1984,
-    "Movie": "INDIANA JONES AND THE TEMPLE OF DOOM"
+    "bo_revenue": 42267353
   },
   {
-    "Studio": "Cannon Group (Defunct)",
-    "Box Office": "$21,630,009",
-    "Date": "11/16/1984",
+    "Movie": "MISSING IN ACTION",
     "Year": 1984,
-    "Movie": "MISSING IN ACTION"
+    "bo_revenue": 21630009
   },
   {
-    "Studio": "Universal Pictures",
-    "Box Office": "$6,754,007",
-    "Date": "4/13/1984",
+    "Movie": "ICEMAN",
     "Year": 1984,
-    "Movie": "ICEMAN"
+    "bo_revenue": 6754007
   },
   {
-    "Studio": "International Film Corporation (DEFUNCT)",
-    "Box Office": "$51,857,886",
-    "Date": "12/10/1982",
+    "Movie": "GANDHI",
     "Year": 1982,
-    "Movie": "GANDHI"
+    "bo_revenue": 51857886
   },
   {
-    "Studio": "Golden Harvest Company",
-    "Box Office": "$20,007,072",
-    "Date": "6/19/1981",
+    "Movie": "THE CANNONBALL RUN",
     "Year": 1981,
-    "Movie": "THE CANNONBALL RUN"
+    "bo_revenue": 20007072
   }
 ]
