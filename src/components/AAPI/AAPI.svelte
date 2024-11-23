@@ -19,7 +19,7 @@
     <AAPITier1 texts={copy.tier1scrolly} />
     <AAPIText texts={copy.copy3}/>
     <AAPIText texts={copy.example1}/>
-    <!-- PUT EXAMPLE 1 COMPONENT HERE -->
+    <!-- PUT EXAMPLE 1 COMPONENT HERE gyvh-->
     <AAPIText texts={copy.example2}/>
     <!-- PUT EXAMPLE 2 COMPONENT HERE -->
     <AAPIText texts={copy.example3}/>
