@@ -1,240 +1,189 @@
 <script>
+	import { onMount } from "svelte";
+	import * as d3 from "d3"; // Import d3.js
 	import Scrolly from "$components/helpers/Scrolly.svelte";
 	let value = 0;
 	export let texts;
-  
-	import { onMount, afterUpdate } from 'svelte';
-	import { scaleLinear } from 'd3-scale';
-	import { max, group } from 'd3-array';
-	import { select } from 'd3-selection';
-	import { axisBottom, axisLeft } from 'd3-axis';
-  
-	// Importing the data from an external JSON file
-	import data from "$data/tier2_all.json"; // Ensure the path is correct
-  
-	// Group data by Release.Year and count actors per year
-	const groupedData = group(data, d => d["Release.Year"]);
-	const years = Array.from(groupedData.keys());
-  
-	// Variables for chart dimensions, dynamically set in onMount and afterUpdate
-	let svg;
-	let width;
-	let height;
-  
-	// Helper function to update dimensions on resize
-	const updateDimensions = () => {
-	  width = svg.node().clientWidth;
-	  height = svg.node().clientHeight;
-	};
 
-	// Define the vertical spacing between dots
-	const verticalSpacing = 5;
+	// Data file import
+	import movies from "$data/tier1_all.json"; 
 
-	// Calculate the maximum number of actors in any year dynamically
-	const maxActorsInYear = Math.max(...years.map(year => groupedData.get(year)?.length || 0));
+	// Process movie data and count movies per year
+	let moviesPerYear = {};
+	let boxOfficePerYear = {};
 
+	movies.forEach(movie => {
+		const year = movie.Year;
+		const boxOffice = movie.bo_revenue || 0; // Handle missing box office values
 
-	const renderChart1 = () => {
-		// Update the dimensions immediately before rendering the chart
-		updateDimensions();
+		// Count movies per year
+		if (moviesPerYear[year]) {
+			moviesPerYear[year]++;
+		} else {
+			moviesPerYear[year] = 1;
+		}
 
-		// Calculate dot radius dynamically based on width
-		const dotRadius = width / 100; // Adjust this value based on your needs
+		// Accumulate box office revenue per year
+		if (boxOfficePerYear[year]) {
+			boxOfficePerYear[year] += boxOffice;
+		} else {
+			boxOfficePerYear[year] = boxOffice;
+		}
+	});
 
-		// Select the SVG container and clear any previous content
-		svg.selectAll("*").remove();
+	// Get the range of years (from the first year to the last year in the dataset)
+	const minYear = d3.min(movies, movie => movie.Year);
+	const maxYear = d3.max(movies, movie => movie.Year);
 
-		// Scale for X axis (Release Year)
-		const xScale = scaleLinear()
-			.domain([Math.min(...years), Math.max(...years)])
-			.range([50, width - 50]);
+	// Generate a list of all years from minYear to maxYear
+	const allYears = d3.range(minYear, maxYear + 1);
 
-		// Calculate the total height required for the dots
-		const requiredHeight = maxActorsInYear * (dotRadius * 2 + verticalSpacing);
+	// Create an array of objects with each year, its movie count, and box office revenue
+	let years = allYears.map(year => ({
+		year,
+		count: moviesPerYear[year] || 0,  // Default to 0 if no movies for the year
+		boxOffice: boxOfficePerYear[year] || 0, // Default to 0 if no box office data
+	}));
 
-		// Scale for Y axis (Actor Count)
-		const yScale = scaleLinear()
-			.domain([0, maxActorsInYear]) // Set domain to the actor count range
-			.range([height - 50, height - 50 - requiredHeight]); // Keep fixed spacing
+	// Dimensions of the chart
+	const width = 900;
+	const height = 600;
+	const margin = { top: 20, right: 60, bottom: 50, left: 60 };
 
-		// Create X axis and add it to the SVG
-		svg.append("g")
-			.attr("transform", `translate(0, ${height - 50})`)
-			.call(axisBottom(xScale).tickFormat(d => d.toString())); // Remove commas from year labels
+	// Set up scales for bar chart (movies count)
+	const xScale = d3.scaleBand()
+		.domain(allYears)
+		.range([margin.left, width - margin.right])
+		.padding(0.1);
 
-		// Create Y axis and add it to the SVG
-		svg.append("g")
-			.attr("transform", `translate(50, 0)`)
-			.call(axisLeft(yScale).ticks(maxActorsInYear)); // Dynamically set the ticks to match actor counts
+	const yScaleMovies = d3.scaleLinear()
+		.domain([0, d3.max(years, d => d.count)]) // Use the max count for y-axis
+		.range([height - margin.bottom, margin.top]);
 
-		// Create dots for each actor, stacked by year
-		years.forEach((year, i) => {
-			const actorsInYear = groupedData.get(year);
-			actorsInYear.forEach((actor, j) => {
-			svg.append("circle")
-				.attr("class", "dot")
-				.attr("cx", xScale(year))
-				.attr("cy", yScale(j + 1)) // Use yScale to position dots dynamically
-				.attr("r", dotRadius) // Dynamically adjusted dot size
-				.attr("fill", "steelblue")
-				.style("opacity", 0.7)
-				.on('mouseover', function(event, d) {
-				select(this).attr('fill', 'darkblue'); // Change color on hover
-				})
-				.on('mouseout', function(event, d) {
-				select(this).attr('fill', 'steelblue'); // Reset color when mouse leaves
-				});
-			});
-		});
-		};
+	// Set up scale for line chart (box office revenue)
+	const yScaleRevenue = d3.scaleLinear()
+		.domain([0, d3.max(years, d => d.boxOffice)]) // Max revenue for the line chart
+		.range([height - margin.bottom, margin.top]);
 
+	// Axis generators
+	// Update x-axis to show ticks every 5 years
+	const tickValues = d3.range(1985, maxYear + 1, 5);  // This creates an array of years every 5 years
 
-	const renderChart2 = () => {
-		// Update the dimensions immediately before rendering the chart
-		updateDimensions();
+	const xAxis = d3.axisBottom(xScale)
+		.tickValues(tickValues)  // Use tickValues to specify the custom tick positions
+		.tickFormat(d3.format("d")); // Format the tick labels to just show the year (e.g., 2010, 2015, 2020)
 
-		// Calculate dot radius dynamically based on width
-		const dotRadius = width / 100; // Adjust this value based on your needs
+	// Format box office revenue on the right y-axis to show in "3m", "10k" style
+	const revenueFormat = d3.format(".2s"); // This formats the revenue as 3m, 200k, etc.
 
-		// Select the SVG container and clear any previous content
-		svg.selectAll("*").remove();
+	const yAxisMovies = d3.axisLeft(yScaleMovies);
+	const yAxisRevenue = d3.axisRight(yScaleRevenue)
+		.tickFormat(d => revenueFormat(d));  // Apply the custom format to the revenue axis
 
-		// Scale for X axis (Release Year)
-		const xScale = scaleLinear()
-			.domain([Math.min(...years), Math.max(...years)])
-			.range([50, width - 50]);
+	// Line generator for box office revenue
+	const lineGenerator = d3.line()
+		.x(d => xScale(d.year) + xScale.bandwidth() / 2)  // Position line in the middle of each band
+		.y(d => yScaleRevenue(d.boxOffice));
 
-		// Calculate the total height required for the dots
-		const requiredHeight = maxActorsInYear * (dotRadius * 2 + verticalSpacing);
-
-		// Scale for Y axis (Actor Count)
-		const yScale = scaleLinear()
-			.domain([0, maxActorsInYear]) // Set domain to the actor count range
-			.range([height - 50, height - 50 - requiredHeight]); // Keep fixed spacing
-
-		// Create X axis and add it to the SVG
-		svg.append("g")
-			.attr("transform", `translate(0, ${height - 50})`)
-			.call(axisBottom(xScale).tickFormat(d => d.toString())); // Remove commas from year labels
-
-		// Create Y axis and add it to the SVG
-		svg.append("g")
-			.attr("transform", `translate(50, 0)`)
-			.call(axisLeft(yScale).ticks(maxActorsInYear)); // Dynamically set the ticks to match actor counts
-
-		// Create dots for each actor, stacked by year
-		years.forEach((year, i) => {
-			const actorsInYear = groupedData.get(year);
-			actorsInYear.forEach((actor, j) => {
-			svg.append("circle")
-				.attr("class", "dot")
-				.attr("cx", xScale(year))
-				.attr("cy", yScale(j + 1)) // Use yScale to position dots dynamically
-				.attr("r", dotRadius) // Dynamically adjusted dot size
-				.attr("fill", actor["Match.Count"] === 1 ? "green" : "red")
-				.style("opacity", 0.7)
-				.on('mouseover', function(event, d) {
-				select(this).attr('fill', actor["Match.Count"] === 1 ? "darkgreen" : "darkred"); // Change color on hover
-				})
-				.on('mouseout', function(event, d) {
-				select(this).attr('fill', actor["Match.Count"] === 1 ? "green" : "red"); // Reset color when mouse leaves
-				});
-			});
-		});
-		};
-
-		const renderChart3 = () => {
-		// Update the dimensions immediately before rendering the chart
-		updateDimensions();
-
-		// Calculate dot radius dynamically based on width
-		const dotRadius = width / 100; // Adjust this value based on your needs
-
-		// Select the SVG container and clear any previous content
-		svg.selectAll("*").remove();
-
-		// Scale for X axis (Release Year)
-		const xScale = scaleLinear()
-			.domain([Math.min(...years), Math.max(...years)])
-			.range([50, width - 50]);
-
-		// Calculate the total height required for the dots
-		const requiredHeight = maxActorsInYear * (dotRadius * 2 + verticalSpacing);
-
-		// Scale for Y axis (Actor Count)
-		const yScale = scaleLinear()
-			.domain([0, maxActorsInYear]) // Set domain to the actor count range
-			.range([height - 50, height - 50 - requiredHeight]); // Keep fixed spacing
-
-		// Create X axis and add it to the SVG
-		svg.append("g")
-			.attr("transform", `translate(0, ${height - 50})`)
-			.call(axisBottom(xScale).tickFormat(d => d.toString())); // Remove commas from year labels
-
-		// Create Y axis and add it to the SVG
-		svg.append("g")
-			.attr("transform", `translate(50, 0)`)
-			.call(axisLeft(yScale).ticks(maxActorsInYear)); // Dynamically set the ticks to match actor counts
-
-		// Create dots for each actor, stacked by year
-		years.forEach((year, i) => {
-			const actorsInYear = groupedData.get(year);
-			actorsInYear.forEach((actor, j) => {
-			svg.append("circle")
-				.attr("class", "dot")
-				.attr("cx", xScale(year))
-				.attr("cy", yScale(j + 1)) // Use yScale to position dots dynamically
-				.attr("r", dotRadius) // Dynamically adjusted dot size
-				.attr("fill", actor["Match.Count"] === 1 ? "green" : "red")
-				.style("opacity", 0.7)
-				.on('mouseover', function(event, d) {
-				select(this).attr('fill', actor["Match.Count"] === 1 ? "darkgreen" : "darkred"); // Change color on hover
-				})
-				.on('mouseout', function(event, d) {
-				select(this).attr('fill', actor["Match.Count"] === 1 ? "green" : "red"); // Reset color when mouse leaves
-				});
-			});
-		});
-		};
-	// Call renderChart when the component is mounted
-
-
-	$: {
-    if (value === 1) {
-      renderChart1();
-    } else if (value === 2) {
-	  renderChart2();
-    } 
-  }
-
+	// Create the chart when the component mounts
 	onMount(() => {
-	  svg = select("#chart");
-	  renderChart1();
-  
+		// Select the SVG container
+		const svg = d3.select("#barChart")
+			.attr("width", width)
+			.attr("height", height);
+
+		// Create the bars for number of movies
+		svg.selectAll(".bar")
+			.data(years)
+			.enter()
+			.append("rect")
+			.attr("class", "bar")
+			.attr("x", d => xScale(d.year))
+			.attr("y", d => yScaleMovies(d.count))
+			.attr("width", xScale.bandwidth())
+			.attr("height", d => height - margin.bottom - yScaleMovies(d.count)) // height of the bar
+			.attr("fill", "steelblue");
+		
+
+		// Add X-axis
+		svg.append("g")
+			.attr("transform", `translate(0, ${height - margin.bottom})`)
+			.call(xAxis)
+			.selectAll("text")
+			.style("text-anchor", "middle")
+			.attr("transform");
+
+		// Add Y-axis for number of movies
+		svg.append("g")
+			.attr("transform", `translate(${margin.left}, 0)`)
+			.call(yAxisMovies);
+
+		// Add Y-axis for box office revenue (on the right side)
+		svg.append("g")
+			.attr("transform", `translate(${width - margin.right}, 0)`)
+			.call(yAxisRevenue);
+
+		// Add axis labels
+		svg.append("text")
+			.attr("transform", `translate(${width / 2}, ${height - 10})`)
+			.style("text-anchor", "middle")
+			.text("Year");
+
+		svg.append("text")
+			.attr("transform", "rotate(-90)")
+			.attr("y", 15)
+			.attr("x", -height / 2)
+			.style("text-anchor", "middle")
+			.text("Number of Movies");
+
+		svg.append("text")
+			.attr("transform", "rotate(-90)")
+			.attr("y", width -10)
+			.attr("x", -height / 2)
+			.style("text-anchor", "middle")
+			.text("Box Office Revenue");
+
+		// Create the line for box office revenue
+		svg.append("path")
+			.data([years])
+			.attr("class", "line")
+			.attr("d", lineGenerator)
+			.attr("fill", "none")
+			.attr("stroke", "red")
+			.attr("stroke-width", 2);
 
 	});
-  
-	// Update the chart after the component is updated (responsive resize)
-  </script>
-  
-  <style>
-	/* Style for the chart container */
-	#chart {
-		width: 100%;
-		height: 100vh;  /* Let the height be dynamic */
+</script>
 
+<style>
+	.bar {
+		transition: fill 0.3s ease;
 	}
-  
-	/* Optional: Style for the dots */
-	.dot {
-	  transition: all 0.2s ease;
+
+	.axis text {
+		font-size: 12px;
 	}
-  </style>
-  
-  <!-- SVG element where the chart will render -->
-  <section class="scrolly-section">
+
+	.axis path,
+	.axis line {
+		fill: none;
+		stroke: #000;
+		stroke-width: 1px;
+	}
+
+	.line {
+		transition: stroke 0.3s ease;
+	}
+
+	.line:hover {
+		stroke: darkred;
+	}
+</style>
+
+
+<section class="scrolly-section">
 	<div class="visualContainer">
-	  <svg id="chart"></svg>
+		<svg id="barChart"></svg>
 	</div>
 	<Scrolly bind:value>
 	  {#each texts as text, i}
@@ -247,4 +196,3 @@
 	  {/each}
 	</Scrolly>
   </section>
-  
