@@ -119,16 +119,16 @@
 			  y={yGet(d)}
 			  width={barWidth - 5}
 			  height={400 - yGet(d)}
-			  fill={d.year >= 2000 && d.year <= 2005 && value > 0.5 && value <= 1? 'yellow' : 
-			  	(d.year >= 2018 && d.year <= 2023 && value > 1) ? 'green' :
-				(d.year >= 2000 && d.year <= 2005 && value > 0.75) ? 'steelblue' :
+			  fill={d.year >= 2000 && d.year <= 2005 && value > 1 && value <= 2? 'yellow' : 
+			  	(d.year >= 2018 && d.year <= 2023 && value > 2) ? 'green' :
+				(d.year >= 2000 && d.year <= 2005 && value > 1) ? 'steelblue' :
 				'steelblue'} 
 			  stroke="black"
 			  stroke-width="1" />
 		  {/each}
   
         <!-- Animate the line for Box Office Revenue as we scroll -->
-		{#if value >= 1} <!-- Line will start drawing when value >= 1 -->
+		{#if value >= 0} <!-- Line will start drawing when value >= 1 -->
 		<g>
 		  {#each movieData as d, i}
 			{#if i > 0 && value >= i / movieData.length}
