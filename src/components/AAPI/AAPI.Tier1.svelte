@@ -1,214 +1,179 @@
 <script>
-	import Scrolly from "$components/helpers/Scrolly.svelte";
-	let value = 0;
-	export let texts;
-  
-	import { scaleLinear } from "d3";
-	import movies from "$data/tier1_all.json";
-  
-	// Process the movie data and count movies per year
+	import { onMount } from "svelte";
+	import * as d3 from "d3"; // Import d3.js
+
+	// Data file import
+	import movies from "$data/tier1_all.json"; 
+
+	// Process movie data and count movies per year
 	let moviesPerYear = {};
 	let boxOfficePerYear = {};
-  
-	// Accumulate the count of movies and sum of box office revenue per year
+
 	movies.forEach(movie => {
-	  // Count the number of movies
-	  if (moviesPerYear[movie.Year]) {
-		moviesPerYear[movie.Year]++;
-	  } else {
-		moviesPerYear[movie.Year] = 1;
-	  }
-  
-	  // Sum the box office revenue
-	  const revenue = movie.bo_revenue || 0;
-	  if (boxOfficePerYear[movie.Year]) {
-		boxOfficePerYear[movie.Year] += revenue;
-	  } else {
-		boxOfficePerYear[movie.Year] = revenue;
-	  }
+		const year = movie.Year;
+		const boxOffice = movie.bo_revenue || 0; // Handle missing box office values
+
+		// Count movies per year
+		if (moviesPerYear[year]) {
+			moviesPerYear[year]++;
+		} else {
+			moviesPerYear[year] = 1;
+		}
+
+		// Accumulate box office revenue per year
+		if (boxOfficePerYear[year]) {
+			boxOfficePerYear[year] += boxOffice;
+		} else {
+			boxOfficePerYear[year] = boxOffice;
+		}
 	});
-  
-	let movieData = Object.keys(moviesPerYear).map(year => ({
-	  year: +year,
-	  count: moviesPerYear[year],
-	  boxOffice: boxOfficePerYear[year] || 0, // Default to 0 if no box office revenue
+
+	// Get the range of years (from the first year to the last year in the dataset)
+	const minYear = d3.min(movies, movie => movie.Year);
+	const maxYear = d3.max(movies, movie => movie.Year);
+
+	// Generate a list of all years from minYear to maxYear
+	const allYears = d3.range(minYear, maxYear + 1);
+
+	// Create an array of objects with each year, its movie count, and box office revenue
+	let years = allYears.map(year => ({
+		year,
+		count: moviesPerYear[year] || 0,  // Default to 0 if no movies for the year
+		boxOffice: boxOfficePerYear[year] || 0, // Default to 0 if no box office data
 	}));
-  
-	// Define scales for x and y axes
-	const xScale = scaleLinear()
-	  .domain([Math.min(...movieData.map(d => d.year)), Math.max(...movieData.map(d => d.year))])
-	  .range([0, 450]);
-  
-	const yScale = scaleLinear()
-	  .domain([0, Math.max(...movieData.map(d => d.count))])
-	  .range([400, 0]);
-  
-	const yBoxOfficeScale = scaleLinear()
-	  .domain([0, Math.max(...movieData.map(d => d.boxOffice))])
-	  .range([400, 0]);
-  
-	// Getters for x and y coordinates
-	function xGet(d) {
-	  return xScale(d.year);
-	}
-  
-	function yGet(d) {
-	  return yScale(d.count);
-	}
-  
-	function yBoxOfficeGet(d) {
-	  return yBoxOfficeScale(d.boxOffice);
-	}
-  
-	// Bar width can be based on the number of data points
-	const barWidth = 15;
-  
-	// Determine which years to display as labels (every 10 years)
-	const xAxisLabels = [];
-	const minYear = Math.min(...movieData.map(d => d.year));
-	const maxYear = Math.max(...movieData.map(d => d.year));
-  
-	// Collect the years that are multiples of 10 for x-axis labels
-	for (let year = 1980; year <= maxYear; year += 10) {
-	  xAxisLabels.push(year);
-	}
-  
-	// Calculate the middle of each 10-year period
-	function getLabelXPosition(year) {
-	  const startX = xScale(year);
-	  const endX = xScale(year + 10);
-	  return (startX + endX) / 2;
+
+	// Dimensions of the chart
+	const width = 900;
+	const height = 600;
+	const margin = { top: 20, right: 60, bottom: 50, left: 60 };
+
+	// Set up scales for bar chart (movies count)
+	const xScale = d3.scaleBand()
+		.domain(allYears)
+		.range([margin.left, width - margin.right])
+		.padding(0.1);
+
+	const yScaleMovies = d3.scaleLinear()
+		.domain([0, d3.max(years, d => d.count)]) // Use the max count for y-axis
+		.range([height - margin.bottom, margin.top]);
+
+	// Set up scale for line chart (box office revenue)
+	const yScaleRevenue = d3.scaleLinear()
+		.domain([0, d3.max(years, d => d.boxOffice)]) // Max revenue for the line chart
+		.range([height - margin.bottom, margin.top]);
+
+	// Axis generators
+	// Update x-axis to show ticks every 5 years
+	const tickValues = d3.range(1980, maxYear + 1, 5);  // This creates an array of years every 5 years
+
+	const xAxis = d3.axisBottom(xScale)
+		.tickValues(tickValues)  // Use tickValues to specify the custom tick positions
+		.tickFormat(d3.format("d")); // Format the tick labels to just show the year (e.g., 2010, 2015, 2020)
+
+	// Format box office revenue on the right y-axis to show in "3m", "10k" style
+	const revenueFormat = d3.format(".2s"); // This formats the revenue as 3m, 200k, etc.
+
+	const yAxisMovies = d3.axisLeft(yScaleMovies);
+	const yAxisRevenue = d3.axisRight(yScaleRevenue)
+		.tickFormat(d => revenueFormat(d));  // Apply the custom format to the revenue axis
+
+	// Line generator for box office revenue
+	const lineGenerator = d3.line()
+		.x(d => xScale(d.year) + xScale.bandwidth() / 2)  // Position line in the middle of each band
+		.y(d => yScaleRevenue(d.boxOffice));
+
+	// Create the chart when the component mounts
+	onMount(() => {
+		// Select the SVG container
+		const svg = d3.select("#barChart")
+			.attr("width", width)
+			.attr("height", height);
+
+		// Create the bars for number of movies
+		svg.selectAll(".bar")
+			.data(years)
+			.enter()
+			.append("rect")
+			.attr("class", "bar")
+			.attr("x", d => xScale(d.year))
+			.attr("y", d => yScaleMovies(d.count))
+			.attr("width", xScale.bandwidth())
+			.attr("height", d => height - margin.bottom - yScaleMovies(d.count)) // height of the bar
+			.attr("fill", "steelblue");
+
+		// Add X-axis
+		svg.append("g")
+			.attr("transform", `translate(0, ${height - margin.bottom})`)
+			.call(xAxis)
+			.selectAll("text")
+			.style("text-anchor", "middle")
+			.attr("transform");
+
+		// Add Y-axis for number of movies
+		svg.append("g")
+			.attr("transform", `translate(${margin.left}, 0)`)
+			.call(yAxisMovies);
+
+		// Add Y-axis for box office revenue (on the right side)
+		svg.append("g")
+			.attr("transform", `translate(${width - margin.right}, 0)`)
+			.call(yAxisRevenue);
+
+		// Add axis labels
+		svg.append("text")
+			.attr("transform", `translate(${width / 2}, ${height - 10})`)
+			.style("text-anchor", "middle")
+			.text("Year");
+
+		svg.append("text")
+			.attr("transform", "rotate(-90)")
+			.attr("y", 15)
+			.attr("x", -height / 2)
+			.style("text-anchor", "middle")
+			.text("Number of Movies");
+
+		svg.append("text")
+			.attr("transform", "rotate(-90)")
+			.attr("y", width - margin.right - 10)
+			.attr("x", height / 2)
+			.style("text-anchor", "middle")
+			.text("Box Office Revenue");
+
+		// Create the line for box office revenue
+		svg.append("path")
+			.data([years])
+			.attr("class", "line")
+			.attr("d", lineGenerator)
+			.attr("fill", "none")
+			.attr("stroke", "red")
+			.attr("stroke-width", 2);
+
+	});
+</script>
+
+<style>
+	.bar {
+		transition: fill 0.3s ease;
 	}
 
-  </script>
-    <section class="scrolly-section">
-  <!-- Scrolly Component -->
-	<div class="visualContainer">
-	  <!-- Render the Scrolly and Bar chart components -->
-		<svg width="7500" height="7000">
-		<!-- Title at the top of the plot -->
-        <text
-          x="250" 
-          y="20"
-          text-anchor="middle"
-          font-size="18px"
-          font-weight="bold"
-          fill="black">
-          Movies with Asian in Main Cast
-		
-        </text>
-		  <!-- Render horizontal grid lines for every 5 units on the y-axis -->
-		  {#each Array(Math.floor(Math.max(...movieData.map(d => d.count)) / 5)).fill() as _, i}
-			<line
-			  x1="20"
-			  x2="600"
-			  y1={yScale((i + 1) * 5)}
-			  y2={yScale((i + 1) * 5)}
-			  stroke="black"
-			  stroke-width="1"
-			  opacity="0.3"
-			  stroke-dasharray="4, 2" />
-		  {/each}
-  
-		  <!-- Render bars for each movie data -->
-		  {#each movieData as d}
-			<rect
-			  x={xGet(d)}
-			  y={yGet(d)}
-			  width={barWidth - 5}
-			  height={400 - yGet(d)}
-			  fill={d.year >= 2000 && d.year <= 2005 && value > 1 && value <= 2? 'yellow' : 
-			  	(d.year >= 2018 && d.year <= 2023 && value > 2) ? 'green' :
-				(d.year >= 2000 && d.year <= 2005 && value > 1) ? 'steelblue' :
-				'steelblue'} 
-			  stroke="black"
-			  stroke-width="1" />
-		  {/each}
-  
-        <!-- Animate the line for Box Office Revenue as we scroll -->
-		{#if value >= 0} <!-- Line will start drawing when value >= 1 -->
-		<g>
-		  {#each movieData as d, i}
-			{#if i > 0 && value >= i / movieData.length}
-			  <line
-				x1={xGet(movieData[i - 1])}
-				y1={yBoxOfficeGet(movieData[i - 1])}
-				x2={xGet(d)}
-				y2={yBoxOfficeGet(d)}
-				stroke="red"
-				stroke-width="2" />
-			{/if}
-		  {/each}
-		</g>
-	  {/if}
-  
-		  <!-- X-axis line -->
-		  <g transform="translate(0, 400)">
-			<line x1="0" x2="600" y1="0" y2="0" stroke="black" stroke-width="2" />
-		  </g>
-  
-		  <!-- Y-axis labels (5, 10, 15, ...) -->
-		  {#each Array(Math.floor(Math.max(...movieData.map(d => d.count)) / 5)).fill() as _, i}
-			<text
-			  x="20"
-			  y={yScale((i + 1) * 5)}
-			  alignment-baseline="middle"
-			  text-anchor="end"
-			  font-size="12px"
-			  fill="black">
-			  {((i + 1) * 5)}
-			</text>
-		  {/each}
-  
-		  <!-- X-axis labels for every 10 years, centered in the middle of the period -->
-		  {#each xAxisLabels as label}
-			<text
-			  x={getLabelXPosition(label)}
-			  y="350"
-			  text-anchor="middle"
-			  font-size="12px"
-			  fill="black">
-			  {label}
-			</text>
-		  {/each}
-		</svg>
-	
-	</div>
-  
-	<!-- Scrolly Component: Scrollable steps with text -->
-	<Scrolly bind:value>
-	  {#each texts as text, i}
-		{@const active = value === i}
-		<div class="step">
-		  <div class="stepText">
-			<p>{text.text}</p>
-		  </div>
-		</div>
-	  {/each}
-	</Scrolly>
-</section>
-  
-  <style>
-	h2 {
-	  position: sticky;
+	.axis text {
+		font-size: 12px;
 	}
-  
-	.visualContainer {
-	  width: 90%;
-	  height: 100vh;
+
+	.axis path,
+	.axis line {
+		fill: none;
+		stroke: #000;
+		stroke-width: 1px;
 	}
-  
-	.stepText {
-	  font-size: 18px;
-	  text-align: center;
+
+	.line {
+		transition: stroke 0.3s ease;
 	}
-  
-	svg {
-	  width: 100%;
-	  height: 100%;
-	  display: flex;
-	  justify-content: center;
-	  align-items: center;
+
+	.line:hover {
+		stroke: darkred;
 	}
-  </style>
-  
+</style>
+
+<svg id="barChart"></svg>
