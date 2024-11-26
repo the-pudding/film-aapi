@@ -13,12 +13,14 @@
 	const years = Array.from(groupedDataByYear.keys()).sort((a, b) => a - b);
   
 	// Chart dimensions
-	const width = 1200;
-	const dotRadius = width / 100; // Size of the dots
-	const verticalSpacing = dotRadius * 2 + 5; // Space between dots
+	let width = 1200;
+	let height = 800;
+	let dotRadius = width / 100; // Size of the dots
+
+	let verticalSpacing = dotRadius * 2 + 5; // Space between dots
   
 	// X Scale
-	const xScale = scaleLinear()
+	let xScale = scaleLinear()
 	  .domain([Math.min(...years), Math.max(...years)])
 	  .range([50, width - 50]);
   
@@ -85,10 +87,21 @@
 	  }
 	  lastMovieIndex = null;
 	};
+
+	$: {
+		width,height;
+		dotRadius = width / 100; // Size of the dots
+		xScale = scaleLinear()
+			.domain([Math.min(...years), Math.max(...years)])
+			.range([50, width - 50]);
+
+		console.log(width, height);
+		verticalSpacing = dotRadius * 2 + 5;
+	}
   </script>
   
   <section class="scrolly-section">
-	<div class="visualContainer">
+	<div class="visualContainer" bind:clientWidth={width} bind:clientHeight={height}>
 	  {#if value <= 1}
 	  {@html resetYearDotCounter()}
 	  {#each years as year, yearIndex}
@@ -215,13 +228,16 @@
 	  background-color: steelblue;
 	  top: var(--y);
 	  left: var(--x);
-	  border-radius: 30%;
 	  transition: transform 0.2s, opacity 0.2s;
+	  outline-width: 3px;
+	  outline-color: black;
 	  z-index: 4;
+
 	}
   
 	.oval:hover {
 	  background-color: blue;
+
 	  opacity: 1;
 	}
   </style>
