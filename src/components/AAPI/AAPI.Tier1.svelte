@@ -81,12 +81,10 @@
 	}
 
   </script>
-  
+    <section class="scrolly-section">
   <!-- Scrolly Component -->
-  <section class="scrolly-section">
 	<div class="visualContainer">
 	  <!-- Render the Scrolly and Bar chart components -->
-	  <section id="scrolly-section">
 		<svg width="7500" height="7000">
 		<!-- Title at the top of the plot -->
         <text
@@ -174,7 +172,7 @@
 			</text>
 		  {/each}
 		</svg>
-	  </section>
+	
 	</div>
   
 	<!-- Scrolly Component: Scrollable steps with text -->
@@ -188,7 +186,7 @@
 		</div>
 	  {/each}
 	</Scrolly>
-  </section>
+</section>
   
   <style>
 	h2 {
@@ -197,10 +195,7 @@
   
 	.visualContainer {
 	  width: 90%;
-	  height: 450px;
-	  display: flex;
-	  justify-content: center;
-	  align-items: center;
+	  height: 100vh;
 	}
   
 	.stepText {
@@ -211,6 +206,9 @@
 	svg {
 	  width: 100%;
 	  height: 100%;
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
 	}
   </style>
   

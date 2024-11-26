@@ -104,7 +104,6 @@ p {
 	top: 0px;
 	left: 0px;
 	width: 100%;
-	z-index: 0;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -120,7 +119,6 @@ p {
 	background: var(--color-gray-100);
 	text-align: left;
 	padding: 1.5rem;
-	z-index: 1; /* Higher z-index to ensure text is above chart */
 	position: relative; /* Makes sure z-index works correctly */
 	opacity: 1; /* Ensure text is fully opaque */
 }

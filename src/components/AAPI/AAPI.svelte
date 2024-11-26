@@ -34,6 +34,7 @@
 
     <AAPITextHeader text="Methodology" />
     <AAPIText texts={copy.methodology}/>
+    
     <AAPItest texts={copy.tier2scrolly} />
 
 </div>

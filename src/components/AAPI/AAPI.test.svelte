@@ -4,64 +4,111 @@
     export let texts;
   
     import { scaleLinear } from "d3-scale";
-    import { max, group } from "d3-array";
+    import { group } from "d3-array";
   
     // Import data
     import data from "$data/tier2_all.json";
   
     // Group data by Movie
     const groupedDataByMovie = group(data, (d) => d["Media"]);
-    const years = Array.from(
-      new Set(data.map((d) => d["Release.Year"]))
-    ).sort((a, b) => a - b);
+    const years = Array.from(new Set(data.map((d) => d["Release.Year"]))).sort(
+      (a, b) => a - b
+    );
   
-    // Chart dimensions
-    const width = 800; // Chart width
+    console.log("Years:", years);
+
+    const width = 1000;
+  
     const dotRadius = width / 100; // Size of the dots
     const verticalSpacing = dotRadius * 2 + 5; // Space between dots
     const groupSpacing = 0; // Space between movie groups
   
+    
     // X Scale
     const xScale = scaleLinear()
       .domain([Math.min(...years), Math.max(...years)])
       .range([50, width - 50]);
   
-    // Calculate total height dynamically based on groups
-    const containerHeight =
-      Array.from(groupedDataByMovie.values()).length *
-      (max(groupedDataByMovie, (actors) => actors.length) * verticalSpacing +
-        groupSpacing);
+      
+    // Total vertical offset for each year
+    const yearOffsets = {};
+    // Calculate container height dynamically
+        const totalActors = data.length;
+    const containerHeight = totalActors * (verticalSpacing + dotRadius);
+    // Function to calculate vertical position for each actor
+   // Function to calculate vertical position for each actor
+const getActorYPosition = (year, movieIndex, actorIndex, numActors) => {
+  if (!yearOffsets[year]) {
+    yearOffsets[year] = 0; // Initialize offset for the year
+  }
+
+  // Start position + movie group spacing + actor spacing within the movie
+  const yPosition =
+    yearOffsets[year] + movieIndex * groupSpacing + actorIndex * verticalSpacing;
+
+  // Increase the offset for the next movie in this year
+  if (actorIndex === numActors - 1) {
+    yearOffsets[year] += numActors * verticalSpacing + groupSpacing;
+  }
+
+  // Flip the yPosition relative to the total container height
+  return yPosition;
+};
+const getOvalPosition = (year, movieIndex, actorIndex, numActors) => {
+  if (!yearOffsets[year]) {
+    yearOffsets[year] = 0; // Initialize offset for the year
+  }
+
+  // Start position + movie group spacing + actor spacing within the movie
+  const yPosition =
+    yearOffsets[year] + movieIndex * groupSpacing + actorIndex * verticalSpacing;
+
+  // Increase the offset for the next movie in this year
+  if (actorIndex === numActors - 1) {
+    yearOffsets[year] += numActors * verticalSpacing + groupSpacing;
+  }
+
+  // Flip the yPosition relative to the total container height
+  return yPosition;
+};
+
   </script>
-  
+
+
+
   <section class="scrolly-section">
-    <div class="visualContainer" style="height: {containerHeight}px;">
+    <div class="visualContainer">
       <!-- Render ovals for each movie -->
-      {#each Array.from(groupedDataByMovie.entries()) as [movie, actors]}
-        <div
-          class="movie-oval"
-          style="
-            --cx: {(Math.min(...actors.map(a => xScale(a['Release.Year']))) + Math.max(...actors.map(a => xScale(a['Release.Year'])))) / 2}px;
-            --cy: {actors.length * verticalSpacing + groupSpacing + (actors.length * verticalSpacing) / 2}px;
-            --rx: {(Math.max(...actors.map(a => xScale(a['Release.Year']))) - Math.min(...actors.map(a => xScale(a['Release.Year'])))) / 2}px;
-            --ry: {actors.length * verticalSpacing / 2}px;
-          "
-          title={movie}
-        ></div>
-      {/each}
+<!-- Render ovals for each movie -->
+<!-- Render ovals for each movie -->
+{#each Array.from(groupedDataByMovie.entries()) as [movie, actors], movieIndex}
+  <div
+    class="movie-oval"
+    style="
+      --cx: {(Math.min(...actors.map(a => xScale(a['Release.Year']))) + Math.max(...actors.map(a => xScale(a['Release.Year'])))) / 2}px;
+      --cy: {getOvalPosition(actors['Release.Year'], movieIndex, 0, actors.length)}px;
+      --rx: {(Math.max(...actors.map(a => xScale(a['Release.Year']))) - Math.min(...actors.map(a => xScale(a['Release.Year'])))) / 2}px;
+      --ry: {(actors.length * verticalSpacing) / 2}px;
+    "
+    title={movie}
+  ></div>
+{/each}
+
   
       <!-- Render dots -->
-      {#each Array.from(groupedDataByMovie.entries()) as [movie, actors]}
+      {#each Array.from(groupedDataByMovie.entries()) as [movie, actors], movieIndex}
         {#each actors as actor, actorIndex}
-          <div
-            class="dot"
-            style="
-              --x: {xScale(actor['Release.Year'])}px; 
-              --y: {actors.length * verticalSpacing + groupSpacing + actorIndex * verticalSpacing}px; 
-              background-color: {value === 1 ? 'grey' : actor['Match.Count'] === 1 ? 'green' : 'red'};
-              width: {dotRadius * 2}px; 
-              height: {dotRadius * 2}px;"
-            title="{actor['Media']}"
-          ></div>
+        <div 
+        class="dot"
+        style="
+          --x: {xScale(actor['Release.Year'])}px;
+          --y: {600-getActorYPosition(actor['Release.Year'], movieIndex, actorIndex, actors.length)}px;
+          background-color: {value === 1 ? 'grey' : actor['Match.Count'] === 1 ? 'green' : 'red'};
+          width: {dotRadius * 2}px;
+          height: {dotRadius * 2}px;"
+        title="{actor['Media'] + actor['Actor'] + actor['Release.Year']}"
+      ></div>
+      
         {/each}
       {/each}
     </div>
@@ -76,9 +123,9 @@
       {/each}
     </Scrolly>
   </section>
+  
   <style>
     .visualContainer {
-      position: relative;
       width: 100%;
       background: #f9f9f9;
     }
