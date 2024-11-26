@@ -11,7 +11,7 @@
 
 	<!-- ALL THE VISUALS HAPPEN IN HERE -->
 	<div class="visualContainer">
-		{value}
+
 	</div>
 
 

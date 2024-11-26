@@ -1,198 +1,228 @@
 <script>
-	import { onMount } from "svelte";
-	import * as d3 from "d3"; // Import d3.js
+	import { scaleLinear } from "d3-scale";
+	import { group } from "d3-array";
 	import Scrolly from "$components/helpers/Scrolly.svelte";
-	let value = 0;
 	export let texts;
-
-	// Data file import
-	import movies from "$data/tier1_all.json"; 
-
-	// Process movie data and count movies per year
-	let moviesPerYear = {};
-	let boxOfficePerYear = {};
-
-	movies.forEach(movie => {
-		const year = movie.Year;
-		const boxOffice = movie.bo_revenue || 0; // Handle missing box office values
-
-		// Count movies per year
-		if (moviesPerYear[year]) {
-			moviesPerYear[year]++;
-		} else {
-			moviesPerYear[year] = 1;
+  
+	// Import data
+	import data from "$data/tier2_all.json";
+	let value = 0;
+  
+	// Group data by Year and then by Movie
+	const groupedDataByYear = group(data, (d) => d["Release.Year"], (d) => d["Media"]);
+	const years = Array.from(groupedDataByYear.keys()).sort((a, b) => a - b);
+  
+	// Chart dimensions
+	const width = 1200;
+	const dotRadius = width / 100; // Size of the dots
+	const verticalSpacing = dotRadius * 2 + 5; // Space between dots
+  
+	// X Scale
+	const xScale = scaleLinear()
+	  .domain([Math.min(...years), Math.max(...years)])
+	  .range([50, width - 50]);
+  
+	// Keep track of how many dots have been placed for each year
+	const yearDotCounter = {};
+	const yearOvalCounter = {};
+	let lastMovieIndex = -1;
+	let lastYear = null;
+  
+	// Function to calculate Y position for a dot
+	const getDotYPosition = (year, movieIndex) => {
+	  if (!yearDotCounter[year]) {
+		yearDotCounter[year] = 0; // Initialize counter for the year
+	  }
+	  if (year !== lastYear) {
+		lastYear = year; // Update last year
+		lastMovieIndex = -1; // Reset movie index tracker
+	}
+  
+	  let currentYPosition = yearDotCounter[year] * verticalSpacing; // Calculate Y based on current count
+	  yearDotCounter[year]++; // Increment the count for this year
+	  if (movieIndex !== lastMovieIndex) {
+		if (!yearOvalCounter[year]) {
+		  yearOvalCounter[year] = []; // Initialize oval counter for the year
 		}
-
-		// Accumulate box office revenue per year
-		if (boxOfficePerYear[year]) {
-			boxOfficePerYear[year] += boxOffice;
-		} else {
-			boxOfficePerYear[year] = boxOffice;
-		}
-	});
-
-	// Get the range of years (from the first year to the last year in the dataset)
-	const minYear = d3.min(movies, movie => movie.Year);
-	const maxYear = d3.max(movies, movie => movie.Year);
-
-	// Generate a list of all years from minYear to maxYear
-	const allYears = d3.range(minYear, maxYear + 1);
-
-	// Create an array of objects with each year, its movie count, and box office revenue
-	let years = allYears.map(year => ({
-		year,
-		count: moviesPerYear[year] || 0,  // Default to 0 if no movies for the year
-		boxOffice: boxOfficePerYear[year] || 0, // Default to 0 if no box office data
-	}));
-
-	// Dimensions of the chart
-	const width = 900;
-	const height = 600;
-	const margin = { top: 20, right: 60, bottom: 50, left: 60 };
-
-	// Set up scales for bar chart (movies count)
-	const xScale = d3.scaleBand()
-		.domain(allYears)
-		.range([margin.left, width - margin.right])
-		.padding(0.1);
-
-	const yScaleMovies = d3.scaleLinear()
-		.domain([0, d3.max(years, d => d.count)]) // Use the max count for y-axis
-		.range([height - margin.bottom, margin.top]);
-
-	// Set up scale for line chart (box office revenue)
-	const yScaleRevenue = d3.scaleLinear()
-		.domain([0, d3.max(years, d => d.boxOffice)]) // Max revenue for the line chart
-		.range([height - margin.bottom, margin.top]);
-
-	// Axis generators
-	// Update x-axis to show ticks every 5 years
-	const tickValues = d3.range(1985, maxYear + 1, 5);  // This creates an array of years every 5 years
-
-	const xAxis = d3.axisBottom(xScale)
-		.tickValues(tickValues)  // Use tickValues to specify the custom tick positions
-		.tickFormat(d3.format("d")); // Format the tick labels to just show the year (e.g., 2010, 2015, 2020)
-
-	// Format box office revenue on the right y-axis to show in "3m", "10k" style
-	const revenueFormat = d3.format(".2s"); // This formats the revenue as 3m, 200k, etc.
-
-	const yAxisMovies = d3.axisLeft(yScaleMovies);
-	const yAxisRevenue = d3.axisRight(yScaleRevenue)
-		.tickFormat(d => revenueFormat(d));  // Apply the custom format to the revenue axis
-
-	// Line generator for box office revenue
-	const lineGenerator = d3.line()
-		.x(d => xScale(d.year) + xScale.bandwidth() / 2)  // Position line in the middle of each band
-		.y(d => yScaleRevenue(d.boxOffice));
-
-	// Create the chart when the component mounts
-	onMount(() => {
-		// Select the SVG container
-		const svg = d3.select("#barChart")
-			.attr("width", width)
-			.attr("height", height);
-
-		// Create the bars for number of movies
-		svg.selectAll(".bar")
-			.data(years)
-			.enter()
-			.append("rect")
-			.attr("class", "bar")
-			.attr("x", d => xScale(d.year))
-			.attr("y", d => yScaleMovies(d.count))
-			.attr("width", xScale.bandwidth())
-			.attr("height", d => height - margin.bottom - yScaleMovies(d.count)) // height of the bar
-			.attr("fill", "steelblue");
-		
-
-		// Add X-axis
-		svg.append("g")
-			.attr("transform", `translate(0, ${height - margin.bottom})`)
-			.call(xAxis)
-			.selectAll("text")
-			.style("text-anchor", "middle")
-			.attr("transform");
-
-		// Add Y-axis for number of movies
-		svg.append("g")
-			.attr("transform", `translate(${margin.left}, 0)`)
-			.call(yAxisMovies);
-
-		// Add Y-axis for box office revenue (on the right side)
-		svg.append("g")
-			.attr("transform", `translate(${width - margin.right}, 0)`)
-			.call(yAxisRevenue);
-
-		// Add axis labels
-		svg.append("text")
-			.attr("transform", `translate(${width / 2}, ${height - 10})`)
-			.style("text-anchor", "middle")
-			.text("Year");
-
-		svg.append("text")
-			.attr("transform", "rotate(-90)")
-			.attr("y", 15)
-			.attr("x", -height / 2)
-			.style("text-anchor", "middle")
-			.text("Number of Movies");
-
-		svg.append("text")
-			.attr("transform", "rotate(-90)")
-			.attr("y", width -10)
-			.attr("x", -height / 2)
-			.style("text-anchor", "middle")
-			.text("Box Office Revenue");
-
-		// Create the line for box office revenue
-		svg.append("path")
-			.data([years])
-			.attr("class", "line")
-			.attr("d", lineGenerator)
-			.attr("fill", "none")
-			.attr("stroke", "red")
-			.attr("stroke-width", 2);
-
-	});
-</script>
-
-<style>
-	.bar {
-		transition: fill 0.3s ease;
+		// Add current dot position to oval counter for this movie
+		yearOvalCounter[year].push(currentYPosition);
+		lastMovieIndex = movieIndex;
+	  }
+	  
+	  return currentYPosition;
+	};
+  
+  
+	const getOvalYPosition = (year, movieIndex) => {
+	// Ensure yearOvalCounter is initialized for the year
+	if (!yearOvalCounter[year]) {
+	  yearOvalCounter[year] = [];
 	}
-
-	.axis text {
-		font-size: 12px;
+  
+	// If this is the first movie of the year
+	if (yearOvalCounter[year][movieIndex] === undefined) {
+	  // Use the current yearDotCounter value as the starting position
+	  yearOvalCounter[year][movieIndex] = yearDotCounter[year];
 	}
-
-	.axis path,
-	.axis line {
-		fill: none;
-		stroke: #000;
-		stroke-width: 1px;
-	}
-
-	.line {
-		transition: stroke 0.3s ease;
-	}
-
-	.line:hover {
-		stroke: darkred;
-	}
-</style>
-
-
-<section class="scrolly-section">
+  
+	// Calculate the Y position based on the starting position for this movie
+	const position = yearOvalCounter[year][movieIndex];
+	return position;
+  };
+  
+	const getOvalHeight = (actorLength) => {
+	  if (actorLength === 1) {
+		return verticalSpacing+actorLength;
+	  }
+	  return verticalSpacing*actorLength;
+	};
+  
+	// Function to reset the counter before re-rendering
+	const resetYearDotCounter = () => {
+	  for (const year of years) {
+		yearDotCounter[year] = 0;
+		yearOvalCounter[year] = [];
+	  }
+	  lastMovieIndex = null;
+	};
+  </script>
+  
+  <section class="scrolly-section">
 	<div class="visualContainer">
-		<svg id="barChart"></svg>
+	  {#if value <= 1}
+	  {@html resetYearDotCounter()}
+	  {#each years as year, yearIndex}
+	  <!-- Render movies within the year -->
+	  {#each Array.from(groupedDataByYear.get(year)?.entries() || []) as [movie, actors], movieIndex}
+		<!-- Render dots for each actor in the movie -->
+		{#each actors as actor, actorIndex}
+		  <div
+			class="dot"
+			style="
+			  --x: {xScale(year)}px;
+			  --y: {getDotYPosition(year, movieIndex)}px;
+			  background-color: {'steelblue'};
+			  width: {dotRadius * 2}px;
+			  height: {dotRadius * 2}px;"
+			title="{actor['Media'] + ' (' + actor['Release.Year'] + ')'}"
+		  ></div>
+		{/each}
+	  {/each}
+	{/each}
+	{/if}
+  
+	{#if value == (2) | value == 3}
+	{@html resetYearDotCounter()}
+	{#each years as year, yearIndex}
+	<!-- Render movies within the year -->
+	{#each Array.from(groupedDataByYear.get(year)?.entries() || []) as [movie, actors], movieIndex}
+	  <!-- Render dots for each actor in the movie -->
+	  {#each actors as actor, actorIndex}
+		<div
+		  class="dot"
+		  style="
+			--x: {xScale(year)}px;
+			--y: {getDotYPosition(year, movieIndex)}px;
+			background-color: {actor['Match.Count'] === 1 ? 'green' : 'red'};
+			width: {dotRadius * 2}px;
+			height: {dotRadius * 2}px;"
+		  title="{actor['Media'] + ' (' + actor['Release.Year'] + ')'}"
+		></div>
+	  {/each}
+	{/each}
+	{/each}
+	{/if}
+  
+	  {#if value >= 4}
+	  <!-- Reset counter before rendering dots -->
+	  {@html resetYearDotCounter()}
+		
+	  <!-- Iterates through each year, then each movie, then each actor -->
+	  {#each years as year, yearIndex}
+		{#each Array.from(groupedDataByYear.get(year)?.entries() || []) as [movie, actors], movieIndex}
+		  {#each actors as actor, actorIndex}
+
+		  	<!-- Render each dot -->
+			<div
+			  class="dot-noHover"
+			  style="
+				--x: {xScale(year)}px;
+				--y: {getDotYPosition(year, movieIndex)}px;
+				background-color: {actor['Match.Count'] === 1 ? 'green' : 'red'};
+				width: {dotRadius * 2}px;
+				height: {dotRadius * 2}px;"
+			  title="{actor['Media'] + ' (' + actor['Release.Year'] + ')'}"
+			></div>
+		  {/each}
+
+		  <!-- Render each oval -->
+		  <div
+		  class="oval"
+		  style="
+			--x: {xScale(year)}px;
+			--y: {getOvalYPosition(year, movieIndex)}px;
+			width: {dotRadius*2+1}px;
+			opacity: {'50%'};
+			height: {getOvalHeight(actors.length)}px;
+		  "
+		  title={"oval"+movie}
+		></div>
+		{/each}
+	  {/each}
+	  {/if}
 	</div>
-	<Scrolly bind:value>
-	  {#each texts as text, i}
+  
+	  <Scrolly bind:value>
+		{#each texts as text, i}
 		{@const active = value === i}
 		<div class="step">
 		  <div class="stepText">
-			<p>{text.text}</p>
+		  <p>{text.text}</p>
 		  </div>
 		</div>
-	  {/each}
-	</Scrolly>
+		{/each}
+	  </Scrolly>
+  
+
+	
   </section>
+  
+  <style>  
+	.dot {
+	  position: absolute;
+	  top: var(--y);
+	  left: var(--x);
+	  border-radius: 50%;
+	  transition: transform 0.2s, opacity 0.2s;
+	  z-index:3;
+	}
+  
+	.dot:hover {
+	  transform: scale(1.2);
+	  opacity: 1;
+	}
+	.dot-noHover {
+	  position: absolute;
+	  top: var(--y);
+	  left: var(--x);
+	  border-radius: 50%;
+	  transition: transform 0.2s, opacity 0.2s;
+	  z-index:3;
+	}
+  
+	.oval {
+	  position: absolute;
+	  background-color: steelblue;
+	  top: var(--y);
+	  left: var(--x);
+	  border-radius: 30%;
+	  transition: transform 0.2s, opacity 0.2s;
+	  z-index: 4;
+	}
+  
+	.oval:hover {
+	  background-color: blue;
+	  opacity: 1;
+	}
+  </style>
+  

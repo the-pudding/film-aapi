@@ -97,11 +97,10 @@ p {
 	font-size: var(--16px, 16px);
 }
 
-
 .visualContainer {
 	position: sticky;
 	height: 100vh;
-	top: 0px;
+	top: 10px;
 	left: 0px;
 	width: 100%;
 	display: flex;
