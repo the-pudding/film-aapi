@@ -64,14 +64,11 @@
 
 	// Axis generators
 	// Update x-axis to show ticks every 5 years
-	const tickValues = d3.range(1980, maxYear + 1, 5);  // This creates an array of years every 5 years
+	const tickValues = d3.range(1985, maxYear + 1, 5);  // This creates an array of years every 5 years
 
 	const xAxis = d3.axisBottom(xScale)
 		.tickValues(tickValues)  // Use tickValues to specify the custom tick positions
 		.tickFormat(d3.format("d")); // Format the tick labels to just show the year (e.g., 2010, 2015, 2020)
-
-	// Format box office revenue on the right y-axis to show in "3m", "10k" style
-	const revenueFormat = d3.format(".2s"); // This formats the revenue as 3m, 200k, etc.
 
 	const yAxisMovies = d3.axisLeft(yScaleMovies);
 	const yAxisRevenue = d3.axisRight(yScaleRevenue)
@@ -114,10 +111,7 @@
 			.attr("transform", `translate(${margin.left}, 0)`)
 			.call(yAxisMovies);
 
-		// Add Y-axis for box office revenue (on the right side)
-		svg.append("g")
-			.attr("transform", `translate(${width - margin.right}, 0)`)
-			.call(yAxisRevenue);
+
 
 		// Add axis labels
 		svg.append("text")
@@ -139,14 +133,6 @@
 			.style("text-anchor", "middle")
 			.text("Box Office Revenue");
 
-		// Create the line for box office revenue
-		svg.append("path")
-			.data([years])
-			.attr("class", "line")
-			.attr("d", lineGenerator)
-			.attr("fill", "none")
-			.attr("stroke", "red")
-			.attr("stroke-width", 2);
 
 	});
 </script>
