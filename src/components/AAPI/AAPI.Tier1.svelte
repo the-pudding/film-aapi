@@ -86,6 +86,15 @@
 			.attr("width", width)
 			.attr("height", height);
 
+	    // Add the chart title
+		svg.append("text")
+      .attr("x", width / 2)
+      .attr("y", margin.top )  // Position it just above the chart
+      .attr("text-anchor", "middle")
+      .style("font-size", "18px")
+      .style("font-weight", "bold")
+      .text("Movies with Asian Main Cast");
+
 		// Create the bars for number of movies
 		svg.selectAll(".bar")
 			.data(years)
