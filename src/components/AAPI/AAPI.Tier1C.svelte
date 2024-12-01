@@ -29,7 +29,11 @@
   
     // Create axis generators
     const xAxis = d3.axisBottom(xScale)
-      .tickValues(d3.range(Math.min(...years.map(d => d.year)), Math.max(...years.map(d => d.year)), 10)); // Custom ticks every 10 years
+  .tickValues([
+    ...d3.range(Math.min(...years.map(d => d.year)), Math.max(...years.map(d => d.year)), 10),
+    2020 // Manually add 2020 to the list of ticks
+  ]);
+// Custom ticks every 10 years
   
     const yAxis = d3.axisLeft(yScale)
       .tickFormat(d3.format(".0s")); // Format large numbers with "k", "M", etc.
