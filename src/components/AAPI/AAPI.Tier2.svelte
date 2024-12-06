@@ -96,7 +96,6 @@
 			.range([50, width - 50]);
 
 		console.log(width, height);
-		verticalSpacing = dotRadius * 2 + 5;
 	}
   </script>
   
