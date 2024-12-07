@@ -25,67 +25,81 @@
 	  .range([50, width - 50]);
   
 	// Keep track of how many dots have been placed for each year
-	const yearDotCounter = {};
-	const yearOvalCounter = {};
+	let yearDotCounter = {};
+	let yearOvalCounter = {};
 	let lastMovieIndex = -1;
 	let lastYear = null;
   
 	// Function to calculate Y position for a dot
-	const getDotYPosition = (year, movieIndex) => {
-	  if (!yearDotCounter[year]) {
-		yearDotCounter[year] = 0; // Initialize counter for the year
-	  }
-	  if (year !== lastYear) {
-		lastYear = year; // Update last year
-		lastMovieIndex = -1; // Reset movie index tracker
-	}
-  
-	  let currentYPosition = yearDotCounter[year] * verticalSpacing; // Calculate Y based on current count
-	  yearDotCounter[year]++; // Increment the count for this year
-	  if (movieIndex !== lastMovieIndex) {
-		if (!yearOvalCounter[year]) {
-		  yearOvalCounter[year] = []; // Initialize oval counter for the year
+	const getDotYPosition = (year, movieIndex, actorLength) => {
+		if (!yearDotCounter[year]) {
+			yearDotCounter[year] = 0; // Initialize counter for the year
 		}
-		// Add current dot position to oval counter for this movie
-		yearOvalCounter[year].push(currentYPosition);
-		lastMovieIndex = movieIndex;
-	  }
-	  
-	  return currentYPosition;
+
+		// If the year changes, reset the counter and keep track of which year we were at
+		if (year !== lastYear) {
+			lastYear = year; // Update last year
+			lastMovieIndex = -1; // Reset movie index tracker
+		}
+		
+		// Calculate Y position of the dot. 
+		// Multiplies the number of dots already placed for the year with the size of the dot
+		let currentYPosition = height - (yearDotCounter[year] * verticalSpacing)-(3*verticalSpacing); 
+
+		yearDotCounter[year]++; // Increment the count of dots placed for this year, so the next loop is accurate
+
+		// movieIndex keeps track of the grouping of the movies. 
+		// This is mostly for calculating the hover state of the third graph, where they're grouped by movie
+		// We enter this if statement if we detect we're onto a new movie grouping
+		if (movieIndex !== lastMovieIndex) {
+
+			// If we're in a new year, start a new counter for the ovals 
+			if (!yearOvalCounter[year]) {
+			yearOvalCounter[year] = []; 
+			}
+
+			// Since it's a new movie detected, we push the first Y dot potition of that movie to the oval dict.
+			// We subtract one dot's worth to align it
+			// subtract from height so that it starts from the bottom of the screen
+			yearOvalCounter[year].push(currentYPosition - (verticalSpacing*actorLength)+verticalSpacing);
+			lastMovieIndex = movieIndex;
+	  	}
+		console.log(`Dot - Year: ${year}, MovieIndex: ${movieIndex}, Y: ${currentYPosition}`);
+
+	  	return currentYPosition;
 	};
   
   
 	const getOvalYPosition = (year, movieIndex) => {
-	// Ensure yearOvalCounter is initialized for the year
-	if (!yearOvalCounter[year]) {
-	  yearOvalCounter[year] = [];
-	}
-  
-	// If this is the first movie of the year
-	if (yearOvalCounter[year][movieIndex] === undefined) {
-	  // Use the current yearDotCounter value as the starting position
-	  yearOvalCounter[year][movieIndex] = yearDotCounter[year];
-	}
-  
-	// Calculate the Y position based on the starting position for this movie
-	const position = yearOvalCounter[year][movieIndex];
-	return position;
+		// Ensure yearOvalCounter is initialized for the year
+		if (!yearOvalCounter[year]) {
+		yearOvalCounter[year] = [];
+		}
+	
+		// If this is the first movie of the year 
+		if (yearOvalCounter[year][movieIndex] === undefined) {
+		// Use the current yearDotCounter value as the starting position
+			yearOvalCounter[year][movieIndex] = yearDotCounter[year];
+		}
+	
+		// Calculate the Y position based on the starting position for this movie
+		const position = yearOvalCounter[year][movieIndex];
+		console.log(`Oval - Year: ${year}, MovieIndex: ${movieIndex}, Y: ${position}`);
+
+		return position;
   };
   
 	const getOvalHeight = (actorLength) => {
-	  if (actorLength === 1) {
-		return verticalSpacing+actorLength;
-	  }
-	  return verticalSpacing*actorLength;
+		return verticalSpacing*actorLength;
 	};
   
 	// Function to reset the counter before re-rendering
 	const resetYearDotCounter = () => {
-	  for (const year of years) {
-		yearDotCounter[year] = 0;
-		yearOvalCounter[year] = [];
-	  }
-	  lastMovieIndex = null;
+		for (const year of years) {
+			yearDotCounter[year] = 0;
+			yearOvalCounter[year] = [];
+		}
+		lastMovieIndex = null;
 	};
 
 	$: {
@@ -95,8 +109,8 @@
 			.domain([Math.min(...years), Math.max(...years)])
 			.range([50, width - 50]);
 
-		console.log(width, height);
 	}
+
   </script>
   
   <section class="scrolly-section">
@@ -159,7 +173,7 @@
 			  class="dot-noHover"
 			  style="
 				--x: {xScale(year)}px;
-				--y: {getDotYPosition(year, movieIndex)}px;
+				--y: {getDotYPosition(year, movieIndex, actors.length)}px;
 				background-color: {actor['Match.Count'] === 1 ? 'green' : 'red'};
 				width: {dotRadius * 2}px;
 				height: {dotRadius * 2}px;"
