@@ -43,8 +43,8 @@
 	}));
   
 	// Dimensions of the chart
-	const width = 900;
-	const height = 600;
+	const width = 700;
+	const height = 300;
 	const margin = { top: 40, right: 60, bottom: 50, left: 60 }; // Increased top margin for title
   
 	// Set up scales for bar chart (movies count)
@@ -69,14 +69,9 @@
 	  .tickValues(tickValues)  // Use tickValues to specify the custom tick positions
 	  .tickFormat(d3.format("d")); // Format the tick labels to just show the year (e.g., 2010, 2015, 2020)
   
-	const yAxisMovies = d3.axisLeft(yScaleMovies);
-	const yAxisRevenue = d3.axisRight(yScaleRevenue)
-	  .tickFormat(d => revenueFormat(d));  // Apply the custom format to the revenue axis
-  
-	// Line generator for box office revenue
-	const lineGenerator = d3.line()
-	  .x(d => xScale(d.year) + xScale.bandwidth() / 2)  // Position line in the middle of each band
-	  .y(d => yScaleRevenue(d.boxOffice));
+	const yAxisMovies = d3.axisLeft(yScaleMovies).ticks(d3.max(years, d => d.count) / 5);
+	// Apply the custom format to the revenue axis
+
   
 	// Create the chart when the component mounts
 	onMount(() => {
@@ -85,20 +80,21 @@
 		.attr("width", width)
 		.attr("height", height);
   
+	// Add the dotted lines for the y-axis every 5 movie counts
+	const movieCountTicks = d3.range(0, d3.max(years, d => d.count), 5); // Create ticks every 5 movie counts
 
-	  // Add the dotted lines for the y-axis
-	  svg.selectAll(".grid")
-		.data(yScaleMovies.ticks()) // Get ticks for grid lines
+			svg.selectAll(".grid")
+		.data(movieCountTicks) // Use the custom movie count ticks
 		.enter()
 		.append("line")
 		.attr("class", "grid")
-		.attr("x1", margin.left)
-		.attr("x2", width - margin.right)
-		.attr("y1", d => yScaleMovies(d))
-		.attr("y2", d => yScaleMovies(d))
-		.attr("stroke", "#ccc")
-		.attr("stroke-dasharray", "4 4")  // Make the line dotted
-		.attr("stroke-width", 1);
+		.attr("x1", margin.left)  // Start the line at the left margin
+		.attr("x2", width - margin.right)  // End the line at the right margin
+		.attr("y1", d => yScaleMovies(d))  // Position the line based on the yScaleMovies
+		.attr("y2", d => yScaleMovies(d))  // Keep the line horizontal
+		.attr("stroke", "#ccc")  // Light gray color for the grid lines
+		.attr("stroke-dasharray", "4 4")  // Dotted line style
+		.attr("stroke-width", 1);  // Line width
 		
 	  // Add the chart title
 	  svg.append("text")
@@ -107,7 +103,7 @@
 		.attr("text-anchor", "middle")
 		.style("font-size", "18px")
 		.style("font-weight", "bold")
-		.text("Movies with Asian Main Cast");
+		//.text("Movies with Asian Main Cast");
   
 	  // Create the bars for number of movies
 	  svg.selectAll(".bar")
@@ -139,8 +135,8 @@
 	  // Add axis labels
 	  svg.append("text")
 		.attr("transform", `translate(${width / 2}, ${height - 10})`)
-		.style("text-anchor", "middle")
-		.text("Year");
+		.style("text-anchor", "middle");
+		//.text("Year");
   
 	  svg.append("text")
 		.attr("transform", "rotate(-90)")
@@ -149,12 +145,6 @@
 		.style("text-anchor", "middle")
 		.text("Number of Movies");
   
-	  svg.append("text")
-		.attr("transform", "rotate(-90)")
-		.attr("y", width - margin.right - 10)
-		.attr("x", height / 2)
-		.style("text-anchor", "middle")
-		.text("Box Office Revenue");
   
 	});
   </script>
