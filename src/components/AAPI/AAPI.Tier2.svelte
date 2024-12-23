@@ -17,7 +17,7 @@
 	let height = 800;
 	let dotRadius = width / 100; // Size of the dots
 
-	let verticalSpacing = dotRadius * 2 + 5; // Space between dots
+	let verticalSpacing = dotRadius+dotRadius; // Space between dots
   
 	// X Scale
 	let xScale = scaleLinear()
@@ -218,7 +218,6 @@
 	  position: absolute;
 	  top: var(--y);
 	  left: var(--x);
-	  border-radius: 50%;
 	  transition: transform 0.2s, opacity 0.2s;
 	  z-index:3;
 	}
@@ -231,7 +230,6 @@
 	  position: absolute;
 	  top: var(--y);
 	  left: var(--x);
-	  border-radius: 50%;
 	  transition: transform 0.2s, opacity 0.2s;
 	  z-index:3;
 	}
