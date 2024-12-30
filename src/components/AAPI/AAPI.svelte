@@ -1,16 +1,25 @@
 <script>
-	import AAPIIntro from "$components/AAPI/AAPI.Intro.svelte";
+	import wordmark from "$svg/wordmark-shadow.svg";
+    import AAPIIntro from "$components/AAPI/AAPI.Intro.svelte";
     import AAPITitle from "$components/AAPI/AAPI.Title.svelte";
     import AAPITier1 from "$components/AAPI/AAPI.Tier1.svelte";
     import AAPITier2 from "$components/AAPI/AAPI.Tier2.svelte";
     import AAPITier2a from "$components/AAPI/AAPI.Tier2a.svelte";
     import AAPIText from "$components/AAPI/AAPI.Text.svelte";
-    import AAPITextHeader from "$components/AAPI/AAPI.TextHeader.svelte";
-    import textData from "$data/copy.json";
     export let copy;
 </script>
 
 <div id="story">
+    
+    <header>
+        <div class="top-background">
+        <div class="wordmark">
+            <a href="https://pudding.cool" aria-label="The Pudding" target="_self"
+                >{@html wordmark}</a
+            >
+        </div>
+
+    </header>
 
     <AAPIIntro texts={copy.introScrolly} />
     <AAPITitle />
@@ -31,21 +40,41 @@
     <AAPITier2a texts={copy.tier2scrolly} />
 
     <AAPIText texts={copy.conclusion}/>
-
-
-    <AAPITextHeader text="Methodology" />
     <AAPIText texts={copy.methodology}/>
     
 
 </div>
 <style>
+    .wordmark {
+		max-width: 10em;
+		transform: rotate(-4deg);
+        padding: 15px;
+	}
+
+	.wordmark a {
+		border: none;
+		display: block;
+		color: var(--color-fg);
+	}
+
+	.wordmark a:hover {
+		background-color: transparent;
+	}
+    
     #story {
-        padding: 1em;
         min-height: 100vh; /* Ensures it fills at least the viewport height */
         background: linear-gradient(to bottom, #A0E648, #7FB639, #598028);
         background-size: 100% 100%;
         display: flex;
         flex-direction: column;
-        padding: 20px;
     }
+
+    .top-background {
+        background: url('$svg/illustrations/backgroundtop.png') no-repeat center top;
+        background-size: cover; /* Ensures the image covers the div */
+        margin: 0 auto;
+        height: 100vh; /* Adjust height as needed */
+        width: 100%; /* Spans the full width */
+        }
+
 </style>
