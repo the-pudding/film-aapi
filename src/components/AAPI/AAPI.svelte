@@ -3,6 +3,7 @@
     import AAPITitle from "$components/AAPI/AAPI.Title.svelte";
     import AAPITier1 from "$components/AAPI/AAPI.Tier1.svelte";
     import AAPITier2 from "$components/AAPI/AAPI.Tier2.svelte";
+    import AAPITier2a from "$components/AAPI/AAPI.Tier2a.svelte";
     import AAPIText from "$components/AAPI/AAPI.Text.svelte";
     import AAPITextHeader from "$components/AAPI/AAPI.TextHeader.svelte";
     import textData from "$data/copy.json";
@@ -27,6 +28,7 @@
     <AAPIText texts={copy.copy4}/>
     <AAPIText texts={copy.copy_datasetup}/>
     <AAPITier2 texts={copy.tier2scrolly} />
+    <AAPITier2a texts={copy.tier2scrolly} />
 
     <AAPIText texts={copy.conclusion}/>
 
