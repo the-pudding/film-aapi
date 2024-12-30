@@ -41,5 +41,11 @@
 <style>
     #story {
         padding: 1em;
+        min-height: 100vh; /* Ensures it fills at least the viewport height */
+        background: linear-gradient(to bottom, #A0E648, #7FB639, #598028);
+        background-size: 100% 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
     }
 </style>
