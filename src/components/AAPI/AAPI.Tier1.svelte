@@ -1,184 +1,161 @@
 <script>
 	import { onMount } from "svelte";
 	import * as d3 from "d3"; // Import d3.js
-  
+	
 	// Data file import
 	import movies from "$data/tier1_all.json"; 
-  
+	
 	// Process movie data and count movies per year
 	let moviesPerYear = {};
-	let boxOfficePerYear = {};
-  
+	
 	movies.forEach(movie => {
 	  const year = movie.Year;
-	  const boxOffice = movie.bo_revenue || 0; // Handle missing box office values
-  
+	
 	  // Count movies per year
 	  if (moviesPerYear[year]) {
 		moviesPerYear[year]++;
 	  } else {
 		moviesPerYear[year] = 1;
 	  }
-  
-	  // Accumulate box office revenue per year
-	  if (boxOfficePerYear[year]) {
-		boxOfficePerYear[year] += boxOffice;
-	  } else {
-		boxOfficePerYear[year] = boxOffice;
-	  }
 	});
-  
+	
 	// Get the range of years (from the first year to the last year in the dataset)
 	const minYear = d3.min(movies, movie => movie.Year);
 	const maxYear = d3.max(movies, movie => movie.Year);
-  
-	// Generate a list of all years from minYear to maxYear
-	const allYears = d3.range(minYear, maxYear + 1);
-  
-	// Create an array of objects with each year, its movie count, and box office revenue
-	let years = allYears.map(year => ({
-	  year,
-	  count: moviesPerYear[year] || 0,  // Default to 0 if no movies for the year
-	  boxOffice: boxOfficePerYear[year] || 0, // Default to 0 if no box office data
-	}));
-  
+	
+	// Create an array of objects with each year and its movie count
+	let years = d3.range(minYear, maxYear + 1);
+	
+	// Group movies by every 5 years
+	let groupedYears = [];
+	for (let i = minYear; i <= maxYear; i += 5) {
+	  let groupStart = i;
+	  let groupEnd = i + 4;
+	  if (groupEnd > 2023) {
+		groupEnd = 2023;
+	  }
+	  
+	  // Sum up movies for the 5-year range (group)
+	  let groupMovies = years
+		.filter(year => year >= groupStart && year <= groupEnd)
+		.reduce((sum, year) => sum + (moviesPerYear[year] || 0), 0);
+	  
+	  groupedYears.push({ 
+		startYear: groupStart, 
+		endYear: groupEnd, 
+		count: groupMovies 
+	  });
+	}
+	
 	// Dimensions of the chart
-	const width = 700;
-	const height = 300;
-	const margin = { top: 40, right: 60, bottom: 50, left: 60 }; // Increased top margin for title
-  
-	// Set up scales for bar chart (movies count)
+	const width = 800;
+	const height = 400;
+	const margin = { top: 40, right: 60, bottom: 50, left: 60 };
+	
+	// Set up scales for grouped bar chart (movie count)
 	const xScale = d3.scaleBand()
-	  .domain(allYears)
+	  .domain(groupedYears.map(d => `${d.startYear}-${d.endYear}`))
 	  .range([margin.left, width - margin.right])
 	  .padding(0.1);
-  
+	
 	const yScaleMovies = d3.scaleLinear()
-	  .domain([0, d3.max(years, d => d.count)]) // Use the max count for y-axis
+	  .domain([0, 100]) // manual 100 to include top line
 	  .range([height - margin.bottom, margin.top]);
-  
-	// Set up scale for line chart (box office revenue)
-	const yScaleRevenue = d3.scaleLinear()
-	  .domain([0, d3.max(years, d => d.boxOffice)]) // Max revenue for the line chart
-	  .range([height - margin.bottom, margin.top]);
-  
+	
 	// Axis generators
-	const tickValues = d3.range(1985, maxYear + 1, 5);  // This creates an array of years every 5 years
-  
-	const xAxis = d3.axisBottom(xScale)
-	  .tickValues(tickValues)  // Use tickValues to specify the custom tick positions
-	  .tickFormat(d3.format("d")); // Format the tick labels to just show the year (e.g., 2010, 2015, 2020)
-  
-	const yAxisMovies = d3.axisLeft(yScaleMovies).ticks(d3.max(years, d => d.count) / 5);
-	// Apply the custom format to the revenue axis
+	const xAxis = d3.axisBottom(xScale);
+	const yAxisMovies = d3.axisLeft(yScaleMovies)
+	  .tickValues([0, 20, 40, 60, 80, 100]);  // Keep 0 for the label
 
-  
+	
 	// Create the chart when the component mounts
 	onMount(() => {
 	  // Select the SVG container
-	  const svg = d3.select("#barChart")
+	  const svg = d3.select("#groupedBarChart")
 		.attr("width", width)
 		.attr("height", height);
-  
-	// Add the dotted lines for the y-axis every 5 movie counts
-	const movieCountTicks = d3.range(0, d3.max(years, d => d.count), 5); // Create ticks every 5 movie counts
-
-			svg.selectAll(".grid")
-		.data(movieCountTicks) // Use the custom movie count ticks
-		.enter()
-		.append("line")
-		.attr("class", "grid")
-		.attr("x1", margin.left)  // Start the line at the left margin
-		.attr("x2", width - margin.right)  // End the line at the right margin
-		.attr("y1", d => yScaleMovies(d))  // Position the line based on the yScaleMovies
-		.attr("y2", d => yScaleMovies(d))  // Keep the line horizontal
-		.attr("stroke", "#ccc")  // Light gray color for the grid lines
-		.attr("stroke-dasharray", "4 4")  // Dotted line style
-		.attr("stroke-width", 1);  // Line width
-		
-	  // Add the chart title
+	
+	  // Add the chart title back
 	  svg.append("text")
 		.attr("x", width / 2)
-		.attr("y", margin.top - 10)  // Position it just above the chart
+		.attr("y", margin.top - 10)
 		.attr("text-anchor", "middle")
 		.style("font-size", "18px")
 		.style("font-weight", "bold")
-		//.text("Movies with Asian Main Cast");
-  
-	  // Create the bars for number of movies
+		.text("Asian Movie Releases, 1981-2023"); // Title text
+	
+	  // Add dotted gridlines for the Y-axis ticks at every 20 units (excluding 0)
+	  svg.append("g")
+		.attr("class", "grid")
+		.selectAll("line")
+		.data([20, 40, 60, 80, 100])  // Exclude 0 from gridline data
+		.enter()
+		.append("line")
+		.attr("x1", margin.left)  // Start of the line (left side)
+		.attr("x2", width - margin.right)  // End of the line (right side)
+		.attr("y1", d => yScaleMovies(d))  // Y position based on the tick
+		.attr("y2", d => yScaleMovies(d))  // Same Y position for both ends (horizontal line)
+		.style("stroke", "gray")  // Line color
+		.style("stroke-dasharray", "3, 1")  // Dotted line style (4px dash, 4px space)
+		.style("stroke-width", 1);  // Line thickness
+		
+		
+	  // Create the bars for the grouped bar chart
 	  svg.selectAll(".bar")
-		.data(years)
+		.data(groupedYears)
 		.enter()
 		.append("rect")
 		.attr("class", "bar")
-		.attr("x", d => xScale(d.year))
+		.attr("x", d => xScale(`${d.startYear}-${d.endYear}`))
 		.attr("y", d => yScaleMovies(d.count))
 		.attr("width", xScale.bandwidth())
 		.attr("height", d => height - margin.bottom - yScaleMovies(d.count)) // height of the bar
-		.attr("fill", "steelblue");
-  
+		.attr("fill", "green");
+	
 	  // Add X-axis
 	  svg.append("g")
 		.attr("transform", `translate(0, ${height - margin.bottom})`)
 		.call(xAxis)
 		.selectAll("text")
 		.style("text-anchor", "middle")
-		.attr("transform");
-  
-	  // Add Y-axis for number of movies
-	  svg.append("g")
+		.style("fill", "gray");
+	  
+	  // Add Y-axis for number of movies with every 20 units
+	  const yAxisGroup = svg.append("g")
 		.attr("transform", `translate(${margin.left}, 0)`)
 		.call(yAxisMovies);
-  
+	  
+	  // Remove the Y-axis line (vertical line)
+	  yAxisGroup.select(".domain").remove(); // Remove the axis line (domain)
+	  
+	  // Add Y-axis ticks and labels color
+	  yAxisGroup.selectAll("text")
+		.style("fill", "gray");
 	
-  
-	  // Add axis labels
-	  svg.append("text")
-		.attr("transform", `translate(${width / 2}, ${height - 10})`)
-		.style("text-anchor", "middle");
-		//.text("Year");
-  
-	  svg.append("text")
-		.attr("transform", "rotate(-90)")
-		.attr("y", 15)
-		.attr("x", -height / 2)
-		.style("text-anchor", "middle")
-		.text("Number of Movies");
-  
-  
+	
 	});
   </script>
   
-  <style>
-	.bar {
-	  transition: fill 0.3s ease;
-	}
+  <svg id="groupedBarChart"></svg>
   
-	.axis text {
-	  font-size: 12px;
-	}
+  <style>
   
 	.axis path,
 	.axis line {
 	  fill: none;
-	  stroke: #000;
+	  stroke: none; /* Remove the axis line */
 	  stroke-width: 1px;
-	}
-  
-	.line {
-	  transition: stroke 0.3s ease;
-	}
-  
-	.line:hover {
-	  stroke: darkred;
 	}
   
 	.grid {
 	  stroke-dasharray: 4 4; /* Creates dotted lines */
-	  stroke: #ccc;
+	  stroke: gray;
 	  stroke-width: 1px;
 	}
-  </style>
   
-  <svg id="barChart"></svg>
+	/* Optionally hide the ticks by selecting tick marks and hiding them */
+	.tick line {
+	  stroke: none; /* Hide the tick lines */
+	}
+  </style>
   
