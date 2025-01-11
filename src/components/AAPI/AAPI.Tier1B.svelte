@@ -45,8 +45,8 @@
   }
   
   // Dimensions of the chart
-  const width = 800;
-  const height = 400;
+  const width = 450;
+  const height = 220;
   const margin = { top: 40, right: 60, bottom: 60, left: 60 }; // Increased bottom margin for label
   
   // Set up scales for bar chart (box office revenue)
@@ -64,8 +64,10 @@
   
   // Format the revenue on the Y-axis with "k", "M", etc.
   const yAxis = d3.axisLeft(yScale)
-    .tickFormat(d3.format(".0s")) // This will display values like 10k, 1M, etc.
-    .ticks(6); // Number of ticks on the Y-axis for better granularity
+  .tickFormat(d => d3.format(".0s")(d).replace("G", "B"))
+  .ticks(6);
+ // Number of ticks on the Y-axis for better granularity
+  
   
   // Create the chart when the component mounts
   onMount(() => {
@@ -74,14 +76,29 @@
       .attr("width", width)
       .attr("height", height);
 
+      // Add dotted gridlines for the Y-axis ticks at every 20 units (excluding 0)
+      svg.append("g")
+      .attr("class", "grid")
+      .selectAll("line")
+      .data([2000000000, 4000000000, 6000000000, 8000000000, 10000000000])  // Exclude 0 from gridline data
+      .enter()
+      .append("line")
+      .attr("x1", margin.left)  // Start of the line (left side)
+      .attr("x2", width - margin.right)  // End of the line (right side)
+      .attr("y1", d => yScale(d))  // Y position based on the tick
+      .attr("y2", d => yScale(d))  // Same Y position for both ends (horizontal line)
+      .style("stroke", "gray")  // Line color
+      .style("stroke-dasharray", "4, 4")  // Dotted line style (4px dash, 4px space)
+      .style("stroke-width", 1);  // Line thickness
 
-  // Add the chart title back
+
+  // Add the chart title
   svg.append("text")
 		.attr("x", width / 2)
 		.attr("y", margin.top - 10)
 		.attr("text-anchor", "middle")
-		.style("font-size", "18px")
-		.style("font-weight", "bold")
+		.style("font-size", "12px")
+		//.style("font-weight", "bold")
 		.text("Asian Movie Box Office Revenue USD, 1981-2023"); // Title text
   
     // Add bars for box office revenue (grouped by 5 years)
@@ -94,7 +111,7 @@
       .attr("y", d => yScale(d.boxOffice))
       .attr("width", xScale.bandwidth())
       .attr("height", d => height - margin.bottom - yScale(d.boxOffice))
-      .attr("fill", "steelblue");
+      .attr("fill", "#EE830C");
   
     // Add X-axis
     svg.append("g")
@@ -116,20 +133,7 @@
     yAxisGroup.selectAll("text")
       .style("fill", "gray");
   
-    // Add dotted gridlines for the Y-axis ticks at every 20 units (excluding 0)
-    svg.append("g")
-      .attr("class", "grid")
-      .selectAll("line")
-      .data([2000000000, 4000000000, 6000000000, 8000000000, 10000000000])  // Exclude 0 from gridline data
-      .enter()
-      .append("line")
-      .attr("x1", margin.left)  // Start of the line (left side)
-      .attr("x2", width - margin.right)  // End of the line (right side)
-      .attr("y1", d => yScale(d))  // Y position based on the tick
-      .attr("y2", d => yScale(d))  // Same Y position for both ends (horizontal line)
-      .style("stroke", "gray")  // Line color
-      .style("stroke-dasharray", "4, 4")  // Dotted line style (4px dash, 4px space)
-      .style("stroke-width", 1);  // Line thickness
+
   });
 </script>
 
