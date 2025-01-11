@@ -46,9 +46,10 @@
 </div>
 <style>
     .wordmark {
-		max-width: 10em;
+		max-width: 8em;
 		transform: rotate(-4deg);
         padding: 15px;
+        margin: 0 auto;
 	}
 
 	.wordmark a {
