@@ -1,7 +1,7 @@
 
 
 <script>
-	//the last one that works with the artificial let window = 1
+	//try with the undefined window in line 13
 	import { onMount } from "svelte";
 	import * as d3 from "d3"; // Import d3.js
 	
@@ -10,7 +10,7 @@
 	
 	// Process movie data and count movies per year
 	let moviesPerYear = {};
-	let window = 1;
+	let window = typeof globalThis !== "undefined" ? globalThis : {};
 	
 	movies.forEach(movie => {
 	  const year = movie.Year;
