@@ -50,7 +50,7 @@
 	// Initial chart dimensions
 	const maxWidth = 450;
 	const maxHeight = 220;
-	const margin = { top: 60, right: 40, bottom: 30, left: 40 };
+	const margin = { top: 30, right: 20, bottom: 20, left: 20 };
 	
 	let width = Math.min(window.innerWidth, maxWidth); // Dynamic width, constrained to maxWidth
 	let height = Math.min(window.innerHeight, maxHeight); // Dynamic height, constrained to maxHeight
