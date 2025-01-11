@@ -82,7 +82,7 @@
 			.attr("y", margin.top - 30)
 			.attr("text-anchor", "middle")
 			.style("font-size", "12px")
-			.style("font-weight", "bold")
+			//.style("font-weight", "bold")
 			.text("Hollywood Movies with Asian Leads, 1981-2023");
 	
 		// Add dotted gridlines for the Y-axis ticks
