@@ -230,13 +230,14 @@
 
 
 	// Add the chart title
+
 	svg.append("text")
-		.attr("x", width / 2)
-		.attr("y", margin.top - 30)
-		.attr("text-anchor", "middle")
+		.attr("x", margin.left)
+		.attr("y", margin.top - 25)
+		.attr("text-anchor", "start")
 		.style("font-size", "12px")
-		.style("font-weight", "bold")
-		.text("Hollywood Movies with Asian Leads, 1981-2023");
+		//.style("font-weight", "bold")
+		.text("Hollywood Movies with Asian Leads, 1981-2020");
 
 	// Add Y-axis ticks and labels color
 	  // Add Y-axis ticks and labels color
