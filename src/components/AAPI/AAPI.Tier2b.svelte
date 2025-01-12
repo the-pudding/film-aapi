@@ -56,7 +56,7 @@
     .grid-container {
       display: grid;
       grid-template-columns: repeat(10, 1fr); /* Adjusted to 10 columns */
-      gap: 0; /* No padding */
+      gap: 1px; /* No padding */
     }
   
     .square {
@@ -65,7 +65,7 @@
       justify-content: center;
       width: var(--square-size, 10px);
       height: var(--square-size, 10px);
-      border: 1px solid darkgreen; /* Add thin dark green border */
+      /*border: 1px solid darkgreen; Add thin dark green border */
       color: var(--square-color, red); /* Match text color to background */
 
       cursor: pointer;
