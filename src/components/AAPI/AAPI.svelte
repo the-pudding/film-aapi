@@ -5,6 +5,7 @@
     import AAPITier1 from "$components/AAPI/AAPI.Tier1.svelte";
     import AAPITier2 from "$components/AAPI/AAPI.Tier2.svelte";
     import AAPITier2a from "$components/AAPI/AAPI.Tier2a.svelte";
+    import AAPITier2b from "$components/AAPI/AAPI.Tier2b.svelte";
     import AAPIText from "$components/AAPI/AAPI.Text.svelte";
     export let copy;
 </script>
@@ -38,6 +39,7 @@
     <AAPIText texts={copy.copy_datasetup}/>
     <AAPITier2 texts={copy.tier2scrolly} />
     <AAPITier2a texts={copy.tier2scrolly} />
+    <AAPITier2b texts={copy.tier2scrolly} />
 
     <AAPIText texts={copy.conclusion}/>
     <AAPIText texts={copy.methodology}/>

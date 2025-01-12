@@ -7,6 +7,7 @@
 	
 	// Process movie data and count movies per year
 	let moviesPerYear = {};
+	let window = 100%
 	
 	movies.forEach(movie => {
 	  const year = movie.Year;
