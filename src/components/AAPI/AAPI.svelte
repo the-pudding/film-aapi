@@ -3,6 +3,7 @@
     import AAPIIntro from "$components/AAPI/AAPI.Intro.svelte";
     import AAPITitle from "$components/AAPI/AAPI.Title.svelte";
     import AAPITier1 from "$components/AAPI/AAPI.Tier1.svelte";
+    import AAPITier1B from "$components/AAPI/AAPI.Tier1B.svelte";
     import AAPITier2 from "$components/AAPI/AAPI.Tier2.svelte";
     import AAPITier2a from "$components/AAPI/AAPI.Tier2a.svelte";
     import AAPITier2b from "$components/AAPI/AAPI.Tier2b.svelte";
@@ -22,12 +23,13 @@
 
     </header>
 
-    <AAPIIntro texts={copy.introScrolly} />
-    <AAPITitle />
+    <!--AAPIIntro texts={copy.introScrolly} /-->
+    <!--AAPITitle /-->
     <AAPIText texts={copy.copy1}/>
     <!-- PUT MOVIE POSTERS COMPONENT HERE f-->
     <AAPIText texts={copy.copy2}/>
     <AAPITier1 texts={copy.tier1scrolly} />
+    <AAPITier1B texts={copy.tier1scrolly} />
     <AAPIText texts={copy.copy3}/>
     <AAPIText texts={copy.example1}/>
     <!-- PUT EXAMPLE 1 COMPONENT HERE gyvh-->
