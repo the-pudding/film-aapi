@@ -26,6 +26,10 @@
     <!--AAPIIntro texts={copy.introScrolly} /-->
     <!--AAPITitle /-->
     <AAPIText texts={copy.copy1}/>
+    <div 
+        class="amw"
+        role = "img"
+        aria-label="hi"></div>
     <!-- PUT MOVIE POSTERS COMPONENT HERE f-->
     <AAPIText texts={copy.copy2}/>
     <AAPITier1 texts={copy.tier1scrolly} />
@@ -80,6 +84,15 @@
         margin: 0 auto;
         height: 100vh; /* Adjust height as needed */
         width: 100%; /* Spans the full width */
+        }
+
+    .amw {
+        background: url('$svg/illustrations/annamaewong.jpg') no-repeat center top;
+        /*background-size: cover; /* Ensures the image covers the div */
+        margin: 0 auto;
+        height: 40vh; /* Adjust height as needed */
+        width: 30%; /* Spans the full width */
+        background-size: contain;
         }
 
 </style>
