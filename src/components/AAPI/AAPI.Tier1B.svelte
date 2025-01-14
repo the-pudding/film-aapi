@@ -91,7 +91,7 @@
     svg.append("g")
       .attr("class", "grid")
       .selectAll("line")
-      .data([2000000000, 4000000000, 6000000000, 8000000000, 10000000000])  // Exclude 0 from gridline data
+      .data([3000000000, 6000000000, 9000000000, 12000000000, 15000000000])  // Exclude 0 from gridline data
       .enter()
       .append("line")
       .attr("x1", margin.left)  // Start of the line (left side)
@@ -187,7 +187,7 @@
       svg.append("g")
       .attr("class", "grid")
       .selectAll("line")
-      .data([2000000000, 4000000000, 6000000000, 8000000000, 10000000000])  // Exclude 0 from gridline data
+      .data([3000000000, 6000000000, 9000000000, 12000000000, 15000000000])  // Exclude 0 from gridline data
       .enter()
       .append("line")
       .attr("x1", margin.left)  // Start of the line (left side)
