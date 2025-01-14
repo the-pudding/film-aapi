@@ -1,499 +1,2202 @@
 [
   {
-    "Movie Name": 2046,
-    "Studio": "Paradis Films",
-    "Box Office": 2340239,
-    "Release Date": "8/5/2005",
-    "Year": 2005
-  },
-  {
-    "Movie Name": "47 RONIN",
-    "Studio": "Universal Pictures",
-    "Box Office": 51405725,
-    "Release Date": "12/25/2013",
-    "Year": 2013
-  },
-  {
-    "Movie Name": "A HOLOGRAM FOR THE KING",
-    "Studio": "Playtone",
-    "Box Office": 5476251,
-    "Release Date": "4/22/2016",
-    "Year": 2016
-  },
-  {
-    "Movie Name": "AMERICAN DREAMZ",
-    "Studio": "Universal Pictures",
-    "Box Office": 11219258,
-    "Release Date": "4/21/2006",
-    "Year": 2006
-  },
-  {
-    "Movie Name": "AROUND THE WORLD IN 80 DAYS",
-    "Studio": "The Walt Disney Studios",
-    "Box Office": 40093604,
-    "Release Date": "6/16/2004",
-    "Year": 2004
-  },
-  {
-    "Movie Name": "BEND IT LIKE BECKHAM",
-    "Studio": "Searchlight Pictures",
-    "Box Office": 55323877,
-    "Release Date": "3/12/2003",
-    "Year": 2003
-  },
-  {
-    "Movie Name": "BULLET TRAIN",
-    "Studio": "Columbia Pictures",
-    "Box Office": 113705466,
-    "Release Date": "8/5/2022",
-    "Year": 2022
-  },
-  {
-    "Movie Name": "CRAZY RICH ASIANS",
-    "Studio": "Warner Bros. Pictures",
-    "Box Office": 215825305,
-    "Release Date": "8/15/2018",
-    "Year": 2018
-  },
-  {
-    "Movie Name": "CROUCHING TIGER, HIDDEN DRAGON",
-    "Studio": "EDKO Films Ltd.",
-    "Box Office": 234289059,
-    "Release Date": "12/8/2000",
-    "Year": 2000
-  },
-  {
-    "Movie Name": "DOWNSIZING",
-    "Studio": "Paramount Pictures",
-    "Box Office": 31051199,
-    "Release Date": "12/22/2017",
-    "Year": 2017
-  },
-  {
-    "Movie Name": "EASTER SUNDAY",
-    "Studio": "DreamWorks Pictures",
-    "Box Office": 14315067,
-    "Release Date": "8/5/2022",
-    "Year": 2022
-  },
-  {
-    "Movie Name": "ETERNALS",
-    "Studio": "The Walt Disney Studios",
-    "Box Office": 194546883,
-    "Release Date": "11/5/2021",
-    "Year": 2021
-  },
-  {
-    "Movie Name": "EVERYTHING EVERYWHERE ALL AT ONCE",
-    "Studio": "A24",
-    "Box Office": 84910968,
-    "Release Date": "3/25/2022",
-    "Year": 2022
-  },
-  {
-    "Movie Name": "GANDHI",
-    "Studio": "International Film Corporation (DEFUNCT)",
-    "Box Office": 169575287,
-    "Release Date": "12/10/1982",
-    "Year": 1982
-  },
-  {
-    "Movie Name": "HOTEL MUMBAI",
-    "Studio": "Screen Australia",
-    "Box Office": 11871489,
-    "Release Date": "3/22/2019",
-    "Year": 2019
-  },
-  {
-    "Movie Name": "HOUSE OF FLYING DAGGERS",
-    "Studio": "EDKO Films Ltd.",
-    "Box Office": 13757473,
-    "Release Date": "12/3/2004",
-    "Year": 2004
-  },
-  {
-    "Movie Name": "INDIANA JONES AND THE TEMPLE OF DOOM",
-    "Studio": "Paramount Pictures",
-    "Box Office": 128070080,
-    "Release Date": "5/23/1984",
-    "Year": 1984
-  },
-  {
-    "Movie Name": "JACKIE CHAN'S FIRST STRIKE",
-    "Studio": "New Line Cinema",
-    "Box Office": 26986118,
-    "Release Date": "1/10/1997",
-    "Year": 1997
-  },
-  {
-    "Movie Name": "JOHNNY MNEMONIC",
-    "Studio": "Tristar Pictures",
-    "Box Office": 37700769,
-    "Release Date": "5/26/1995",
-    "Year": 1995
-  },
-  {
-    "Movie Name": "JOY RIDE",
-    "Studio": "Lionsgate",
-    "Box Office": 13284731,
-    "Release Date": "7/7/2023",
-    "Year": 2023
-  },
-  {
-    "Movie Name": "KILL BILL: VOL. 1",
-    "Studio": "Miramax",
-    "Box Office": 119168378,
-    "Release Date": "10/10/2003",
-    "Year": 2003
-  },
-  {
-    "Movie Name": "KILL BILL: VOL. 2",
-    "Studio": "Miramax",
-    "Box Office": 110567677,
-    "Release Date": "4/16/2004",
-    "Year": 2004
-  },
-  {
-    "Movie Name": "LEARNING TO DRIVE",
-    "Studio": "Broad Green Pictures (DEFUNCT)",
-    "Box Office": 4550886,
-    "Release Date": "8/21/2015",
-    "Year": 2015
-  },
-  {
-    "Movie Name": "LION",
-    "Studio": "The Weinstein Company (DEFUNCT)",
-    "Box Office": 67260584,
-    "Release Date": "11/25/2016",
-    "Year": 2016
-  },
-  {
-    "Movie Name": "MEMOIRS OF A GEISHA",
-    "Studio": "Columbia Pictures",
-    "Box Office": 92357596,
-    "Release Date": "12/9/2005",
-    "Year": 2005
-  },
-  {
-    "Movie Name": "MIDWAY",
-    "Studio": "Ruyi Films",
-    "Box Office": 69921578,
-    "Release Date": "11/8/2019",
-    "Year": 2019
-  },
-  {
-    "Movie Name": "MILLION DOLLAR ARM",
-    "Studio": "The Walt Disney Studios",
-    "Box Office": 48124074,
-    "Release Date": "5/16/2014",
-    "Year": 2014
-  },
-  {
-    "Movie Name": "MINARI",
-    "Studio": "Plan B Entertainment",
-    "Box Office": 3732703,
-    "Release Date": "12/11/2020",
-    "Year": 2020
-  },
-  {
-    "Movie Name": "MISSING IN ACTION",
-    "Studio": "Cannon Group (Defunct)",
-    "Box Office": 65538927,
-    "Release Date": "11/16/1984",
-    "Year": 1984
-  },
-  {
-    "Movie Name": "MORTAL KOMBAT",
-    "Studio": "New Line Cinema",
-    "Box Office": 49797197,
-    "Release Date": "4/23/2021",
-    "Year": 2021
-  },
-  {
-    "Movie Name": "MR. NICE GUY",
-    "Studio": "New Line Cinema",
-    "Box Office": 17770583,
-    "Release Date": "3/20/1998",
-    "Year": 1998
-  },
-  {
-    "Movie Name": "MY NAME IS KHAN",
-    "Studio": "Dharma Productions",
-    "Box Office": 5706668,
-    "Release Date": "2/12/2010",
-    "Year": 2010
-  },
-  {
-    "Movie Name": "NATIONAL LAMPOON'S VAN WILDER: THE RISE OF TAJ",
-    "Studio": "MGM Studios (DEFUNCT)",
-    "Box Office": 6647720,
-    "Release Date": "12/1/2006",
-    "Year": 2006
-  },
-  {
-    "Movie Name": "PAST LIVES",
-    "Studio": "A24",
-    "Box Office": 11671951,
-    "Release Date": "6/2/2023",
-    "Year": 2023
-  },
-  {
-    "Movie Name": "POKEMON DETECTIVE PIKACHU",
-    "Studio": "Warner Bros. Pictures",
-    "Box Office": 177249587,
-    "Release Date": "5/10/2019",
-    "Year": 2019
-  },
-  {
-    "Movie Name": "RUSH HOUR",
-    "Studio": "New Line Cinema",
-    "Box Office": 269603552,
-    "Release Date": "9/18/1998",
-    "Year": 1998
-  },
-  {
-    "Movie Name": "RUSH HOUR 2",
-    "Studio": "New Line Cinema",
-    "Box Office": 398003693,
-    "Release Date": "8/3/2001",
-    "Year": 2001
-  },
-  {
-    "Movie Name": "RUSH HOUR 3",
-    "Studio": "New Line Cinema",
-    "Box Office": 212991473,
-    "Release Date": "8/10/2007",
-    "Year": 2007
-  },
-  {
-    "Movie Name": "SEVEN YEARS IN TIBET",
-    "Studio": "Mandalay Pictures",
-    "Box Office": 70055113,
-    "Release Date": "10/10/1997",
-    "Year": 1997
-  },
-  {
-    "Movie Name": "SHANG-CHI AND THE LEGEND OF THE TEN RINGS",
-    "Studio": "The Walt Disney Studios",
-    "Box Office": 264961095,
-    "Release Date": "9/3/2021",
-    "Year": 2021
-  },
-  {
-    "Movie Name": "SHANGHAI KNIGHTS",
-    "Studio": "The Walt Disney Studios",
-    "Box Office": 102810686,
-    "Release Date": "2/7/2003",
-    "Year": 2003
-  },
-  {
-    "Movie Name": "SHANGHAI NOON",
-    "Studio": "The Walt Disney Studios",
-    "Box Office": 104131978,
-    "Release Date": "5/26/2000",
-    "Year": 2000
-  },
-  {
-    "Movie Name": "SILENCE",
-    "Studio": "Paramount Pictures",
-    "Box Office": 9230238,
-    "Release Date": "12/23/2016",
-    "Year": 2016
-  },
-  {
-    "Movie Name": "SKYSCRAPER",
-    "Studio": "Legendary Entertainment",
-    "Box Office": 84067486,
-    "Release Date": "7/13/2018",
-    "Year": 2018
-  },
-  {
-    "Movie Name": "SLUMDOG MILLIONAIRE",
-    "Studio": "Searchlight Pictures",
-    "Box Office": 206327102,
-    "Release Date": "11/12/2008",
-    "Year": 2008
-  },
-  {
-    "Movie Name": "SPIDER-MAN: NO WAY HOME",
-    "Studio": "Columbia Pictures",
-    "Box Office": 949656309,
-    "Release Date": "12/17/2021",
-    "Year": 2021
-  },
-  {
-    "Movie Name": "SUPERCOP",
-    "Studio": "Dimension Films (DEFUNCT)",
-    "Box Office": 25311212,
-    "Release Date": "7/26/1996",
-    "Year": 1996
-  },
-  {
-    "Movie Name": "THE BIG SICK",
-    "Studio": "FilmNation Entertainment",
-    "Box Office": 54448880,
-    "Release Date": "6/23/2017",
-    "Year": 2017
-  },
-  {
-    "Movie Name": "THE CHILDREN OF HUANG SHI",
-    "Studio": "Bluewater Pictures PTY Ltd. (DEFUNCT)",
-    "Box Office": 1506535,
-    "Release Date": "5/23/2008",
-    "Year": 2008
-  },
-  {
-    "Movie Name": "THE FAREWELL",
-    "Studio": "Depth Of Field Productions",
-    "Box Office": 21765814,
-    "Release Date": "7/12/2019",
-    "Year": 2019
-  },
-  {
-    "Movie Name": "THE FORBIDDEN KINGDOM",
-    "Studio": "Lionsgate",
-    "Box Office": 76029906,
-    "Release Date": "4/18/2008",
-    "Year": 2008
-  },
-  {
-    "Movie Name": "THE FOREIGNER",
-    "Studio": "STXfilms",
-    "Box Office": 43679765,
-    "Release Date": "10/13/2017",
-    "Year": 2017
-  },
-  {
-    "Movie Name": "THE GRANDMASTER",
-    "Studio": "The Weinstein Company (DEFUNCT)",
-    "Box Office": 8837257,
-    "Release Date": "8/23/2013",
-    "Year": 2013
-  },
-  {
-    "Movie Name": "THE INTERVIEW",
-    "Studio": "Columbia Pictures",
-    "Box Office": 8058842,
-    "Release Date": "12/25/2014",
-    "Year": 2014
-  },
-  {
-    "Movie Name": "THE KARATE KID",
-    "Studio": "Columbia Pictures",
-    "Box Office": 250760103,
-    "Release Date": "6/11/2010",
-    "Year": 2010
-  },
-  {
-    "Movie Name": "THE LAST SAMURAI",
-    "Studio": "Warner Bros. Pictures",
-    "Box Office": 188916362,
-    "Release Date": "12/5/2003",
-    "Year": 2003
-  },
-  {
-    "Movie Name": "THE LEGEND OF DRUNKEN MASTER",
-    "Studio": "Golden Harvest Company",
-    "Box Office": 21130176,
-    "Release Date": "10/20/2000",
-    "Year": 2000
-  },
-  {
-    "Movie Name": "THE MAN WHO KNEW INFINITY",
-    "Studio": "Pressman Film",
-    "Box Office": 5026844,
-    "Release Date": "4/29/2016",
-    "Year": 2016
-  },
-  {
-    "Movie Name": "THE MAN WITH THE IRON FISTS",
-    "Studio": "Universal Pictures",
-    "Box Office": 21262372,
-    "Release Date": "11/2/2012",
-    "Year": 2012
-  },
-  {
-    "Movie Name": "THE MEDALLION",
-    "Studio": "Screen Gems",
-    "Box Office": 37603973,
-    "Release Date": "8/22/2003",
-    "Year": 2003
-  },
-  {
-    "Movie Name": "THE MUMMY: TOMB OF THE DRAGON EMPEROR",
-    "Studio": "Universal Pictures",
-    "Box Office": 149325172,
-    "Release Date": "8/1/2008",
-    "Year": 2008
-  },
-  {
-    "Movie Name": "THE NAMESAKE",
-    "Studio": "Searchlight Pictures",
-    "Box Office": 20625268,
-    "Release Date": "3/9/2007",
-    "Year": 2007
-  },
-  {
-    "Movie Name": "THE RAILWAY MAN",
-    "Studio": "Lionsgate U.K.",
-    "Box Office": 5858750,
-    "Release Date": "4/11/2014",
-    "Year": 2014
-  },
-  {
-    "Movie Name": "THE SECOND BEST EXOTIC MARIGOLD HOTEL",
-    "Studio": "Searchlight Pictures",
-    "Box Office": 43663318,
-    "Release Date": "3/6/2015",
-    "Year": 2015
-  },
-  {
-    "Movie Name": "THE SPY NEXT DOOR",
-    "Studio": "Relativity Media LLC",
-    "Box Office": 34516073,
-    "Release Date": "1/15/2010",
-    "Year": 2010
-  },
-  {
-    "Movie Name": "THE SUN IS ALSO A STAR",
-    "Studio": "Warner Bros. Pictures",
-    "Box Office": 6088542,
-    "Release Date": "5/17/2019",
-    "Year": 2019
-  },
-  {
-    "Movie Name": "THE WOLVERINE",
-    "Studio": "20th Century Studios",
-    "Box Office": 177626191,
-    "Release Date": "7/26/2013",
-    "Year": 2013
-  },
-  {
-    "Movie Name": "TOMORROW NEVER DIES",
-    "Studio": "MGM Studios (DEFUNCT)",
-    "Box Office": 152502145,
-    "Release Date": "12/19/1997",
-    "Year": 1997
-  },
-  {
-    "Movie Name": "TWIN DRAGONS",
-    "Studio": "Dimension Films (DEFUNCT)",
-    "Box Office": 15664978,
-    "Release Date": "4/9/1999",
-    "Year": 1999
-  },
-  {
-    "Movie Name": "UMMA",
-    "Studio": "Stage 6 Films",
-    "Box Office": 2333137,
-    "Release Date": "3/18/2022",
-    "Year": 2022
-  },
-  {
-    "Movie Name": "WAR",
-    "Studio": "Lionsgate",
-    "Box Office": 34179351,
-    "Release Date": "8/24/2007",
-    "Year": 2007
+    "Media": "47 RONIN",
+    "Release.Year": 2013,
+    "Director.name": "Carl Eric Rinsch",
+    "Character.Name": "Kai",
+    "Actor": "Keanu Reeves",
+    "Character.Ethnicity..Cleaned.": "Multiethnic",
+    "Actor.Ethnicity..Cleaned.": "Multiethnic",
+    "Match.Count": 0
+  },
+  {
+    "Media": "A HOLOGRAM FOR THE KING",
+    "Release.Year": 2016,
+    "Director.name": "Tom Tykwer",
+    "Character.Name": "Yousef",
+    "Actor": "Omar Elba",
+    "Character.Ethnicity..Cleaned.": "Saudi Arabian",
+    "Actor.Ethnicity..Cleaned.": "Egyptian",
+    "Match.Count": 0
+  },
+  {
+    "Media": "A HOLOGRAM FOR THE KING",
+    "Release.Year": 2016,
+    "Director.name": "Tom Tykwer",
+    "Character.Name": "Zahra",
+    "Actor": "Sarita Choudhury",
+    "Character.Ethnicity..Cleaned.": "Saudi Arabian",
+    "Actor.Ethnicity..Cleaned.": "Multiethnic",
+    "Match.Count": 0
+  },
+  {
+    "Media": "AMERICAN DREAMZ",
+    "Release.Year": 2006,
+    "Director.name": "Paul Weitz",
+    "Character.Name": "Iqbal Riza",
+    "Actor": "Winter Jones (Tony Yalda)",
+    "Character.Ethnicity..Cleaned.": "Iraqi",
+    "Actor.Ethnicity..Cleaned.": "Assyrian",
+    "Match.Count": 0
+  },
+  {
+    "Media": "BABYLON A.D.",
+    "Release.Year": 2008,
+    "Director.name": "Mathiey Kassovitz",
+    "Character.Name": "Sister Rebekah",
+    "Actor": "Michelle Yeoh",
+    "Character.Ethnicity..Cleaned.": "Mongolian",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 0
+  },
+  {
+    "Media": "CRAZY RICH ASIANS",
+    "Release.Year": 2018,
+    "Director.name": "Jon M. Chu",
+    "Character.Name": "Nick Young",
+    "Actor": "Henry Golding",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Multiethnic",
+    "Match.Count": 0
+  },
+  {
+    "Media": "CRAZY RICH ASIANS",
+    "Release.Year": 2018,
+    "Director.name": "Jon M. Chu",
+    "Character.Name": "Goh Wye Mun",
+    "Actor": "Ken Jeong",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Korean",
+    "Match.Count": 0
+  },
+  {
+    "Media": "ETERNALS",
+    "Release.Year": 2021,
+    "Director.name": "Chloé Zhao",
+    "Character.Name": "Kingo",
+    "Actor": "Kumail Nanjiani",
+    "Character.Ethnicity..Cleaned.": "Indian",
+    "Actor.Ethnicity..Cleaned.": "Pakistani",
+    "Match.Count": 0
+  },
+  {
+    "Media": "KILL BILL: VOL. 1",
+    "Release.Year": 2003,
+    "Director.name": "Quentin Tarantino",
+    "Character.Name": "O-Ren Ishii",
+    "Actor": "Lucy Liu",
+    "Character.Ethnicity..Cleaned.": "Japanese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 0
+  },
+  {
+    "Media": "KILL BILL: VOL. 2",
+    "Release.Year": 2004,
+    "Director.name": "Quentin Tarantino",
+    "Character.Name": "Johnny Mo",
+    "Actor": "Chia-Hui Liu",
+    "Character.Ethnicity..Cleaned.": "Japanese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 0
+  },
+  {
+    "Media": "KILL BILL: VOL. 2",
+    "Release.Year": 2004,
+    "Director.name": "Quentin Tarantino",
+    "Character.Name": "O-Ren Ishii",
+    "Actor": "Lucy Liu",
+    "Character.Ethnicity..Cleaned.": "Japanese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 0
+  },
+  {
+    "Media": "LITTLE BUDDHA",
+    "Release.Year": 1994,
+    "Director.name": "Bernardo Bertolucci",
+    "Character.Name": "Siddhartha",
+    "Actor": "Keanu Reeves",
+    "Character.Ethnicity..Cleaned.": "Nepalese",
+    "Actor.Ethnicity..Cleaned.": "Multiethnic",
+    "Match.Count": 0
+  },
+  {
+    "Media": "LITTLE BUDDHA",
+    "Release.Year": 1994,
+    "Director.name": "Bernardo Bertolucci",
+    "Character.Name": "Lama Norbu",
+    "Actor": "Ruocheng Ying",
+    "Character.Ethnicity..Cleaned.": "Nepalese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 0
+  },
+  {
+    "Media": "MEMOIRS OF A GEISHA",
+    "Release.Year": 2005,
+    "Director.name": "Rob Marshall",
+    "Character.Name": "Hatsumomo",
+    "Actor": "Gong Li",
+    "Character.Ethnicity..Cleaned.": "Japanese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 0
+  },
+  {
+    "Media": "MEMOIRS OF A GEISHA",
+    "Release.Year": 2005,
+    "Director.name": "Rob Marshall",
+    "Character.Name": "Mameha",
+    "Actor": "Michelle Yeoh",
+    "Character.Ethnicity..Cleaned.": "Japanese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 0
+  },
+  {
+    "Media": "MEMOIRS OF A GEISHA",
+    "Release.Year": 2005,
+    "Director.name": "Rob Marshall",
+    "Character.Name": "Sayuri",
+    "Actor": "Ziyi Zhang",
+    "Character.Ethnicity..Cleaned.": "Japanese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 0
+  },
+  {
+    "Media": "MISSING IN ACTION",
+    "Release.Year": 1984,
+    "Director.name": "Joseph Zito",
+    "Character.Name": "General Tran",
+    "Actor": "James Hong",
+    "Character.Ethnicity..Cleaned.": "Vietnamese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 0
+  },
+  {
+    "Media": "MORTAL KOMBAT",
+    "Release.Year": 2021,
+    "Director.name": "Simon McQuoid",
+    "Character.Name": "Sub-Zero",
+    "Actor": "Joe Taslim",
+    "Character.Ethnicity..Cleaned.": "Japanese",
+    "Actor.Ethnicity..Cleaned.": "Indonesian",
+    "Match.Count": 0
+  },
+  {
+    "Media": "SEVEN YEARS IN TIBET",
+    "Release.Year": 1997,
+    "Director.name": "Jean-Jacques Annaud",
+    "Character.Name": "Ngawang Jigme",
+    "Actor": "BD Wong",
+    "Character.Ethnicity..Cleaned.": "Tibetan",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 0
+  },
+  {
+    "Media": "SEVEN YEARS IN TIBET",
+    "Release.Year": 1997,
+    "Director.name": "Jean-Jacques Annaud",
+    "Character.Name": "Dalai Lama",
+    "Actor": "Jamyang Jamtsho Wangchuk",
+    "Character.Ethnicity..Cleaned.": "Tibetan",
+    "Actor.Ethnicity..Cleaned.": "Bhutanese",
+    "Match.Count": 0
+  },
+  {
+    "Media": "SEVEN YEARS IN TIBET",
+    "Release.Year": 1997,
+    "Director.name": "Jean-Jacques Annaud",
+    "Character.Name": "Great Mother",
+    "Actor": "Jetsun Pema",
+    "Character.Ethnicity..Cleaned.": "Tibetan",
+    "Actor.Ethnicity..Cleaned.": "Bhutanese",
+    "Match.Count": 0
+  },
+  {
+    "Media": "SEVEN YEARS IN TIBET",
+    "Release.Year": 1997,
+    "Director.name": "Jean-Jacques Annaud",
+    "Character.Name": "Kungo Tsarong",
+    "Actor": "Mako",
+    "Character.Ethnicity..Cleaned.": "Tibetan",
+    "Actor.Ethnicity..Cleaned.": "Japanese",
+    "Match.Count": 0
+  },
+  {
+    "Media": "THE BIG SICK",
+    "Release.Year": 2017,
+    "Director.name": "Michael Showalter",
+    "Character.Name": "Azmat",
+    "Actor": "Anupam Kher",
+    "Character.Ethnicity..Cleaned.": "Pakistani",
+    "Actor.Ethnicity..Cleaned.": "Indian",
+    "Match.Count": 0
+  },
+  {
+    "Media": "THE BIG SICK",
+    "Release.Year": 2017,
+    "Director.name": "Michael Showalter",
+    "Character.Name": "Sharmeen",
+    "Actor": "Zenobia Shroff",
+    "Character.Ethnicity..Cleaned.": "Pakistani",
+    "Actor.Ethnicity..Cleaned.": "Indian",
+    "Match.Count": 0
+  },
+  {
+    "Media": "THE GRANDMASTER",
+    "Release.Year": 2013,
+    "Director.name": "Kar Wai Wong",
+    "Character.Name": "Zhang Yongcheng",
+    "Actor": "Hye-kyo Song",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Korean",
+    "Match.Count": 0
+  },
+  {
+    "Media": "THE MAN WITH THE IRON FISTS",
+    "Release.Year": 2012,
+    "Director.name": "RZA",
+    "Character.Name": "Bronze Lion",
+    "Actor": "Cung Le",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Vietnamese",
+    "Match.Count": 0
+  },
+  {
+    "Media": "THE MAN WITH THE IRON FISTS",
+    "Release.Year": 2012,
+    "Director.name": "RZA",
+    "Character.Name": "Lady Silk",
+    "Actor": "Jamie Chung",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Korean",
+    "Match.Count": 0
+  },
+  {
+    "Media": "THE MAN WITH THE IRON FISTS",
+    "Release.Year": 2012,
+    "Director.name": "RZA",
+    "Character.Name": "X-Blade",
+    "Actor": "Rick Yune",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Korean",
+    "Match.Count": 0
+  },
+  {
+    "Media": "THE WOLVERINE",
+    "Release.Year": 2013,
+    "Director.name": "James Mangold",
+    "Character.Name": "Harada",
+    "Actor": "Will Yun Lee",
+    "Character.Ethnicity..Cleaned.": "Japanese",
+    "Actor.Ethnicity..Cleaned.": "Korean",
+    "Match.Count": 0
+  },
+  {
+    "Media": "2046",
+    "Release.Year": 2005,
+    "Director.name": "Kar Wai Wong",
+    "Character.Name": "Lulu",
+    "Actor": "Carina Lau",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "2046",
+    "Release.Year": 2005,
+    "Director.name": "Kar Wai Wong",
+    "Character.Name": "Mimi's Boyfriend",
+    "Actor": "Chang Chen",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "2046",
+    "Release.Year": 2005,
+    "Director.name": "Kar Wai Wong",
+    "Character.Name": "Wang Jing-wen",
+    "Actor": "Faye Wong",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "2046",
+    "Release.Year": 2005,
+    "Director.name": "Kar Wai Wong",
+    "Character.Name": "Su Li-zhen",
+    "Actor": "Gong Li",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "2046",
+    "Release.Year": 2005,
+    "Director.name": "Kar Wai Wong",
+    "Character.Name": "Su Li-zhen",
+    "Actor": "Maggie Cheung",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "2046",
+    "Release.Year": 2005,
+    "Director.name": "Kar Wai Wong",
+    "Character.Name": "Tak",
+    "Actor": "Takuya Kimura",
+    "Character.Ethnicity..Cleaned.": "Japanese",
+    "Actor.Ethnicity..Cleaned.": "Japanese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "2046",
+    "Release.Year": 2005,
+    "Director.name": "Kar Wai Wong",
+    "Character.Name": "Chow Mo-wan",
+    "Actor": "Tony Chiu Wai Leung",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "2046",
+    "Release.Year": 2005,
+    "Director.name": "Kar Wai Wong",
+    "Character.Name": "Bai Ling",
+    "Actor": "Ziyi Zhang",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "47 RONIN",
+    "Release.Year": 2013,
+    "Director.name": "Carl Eric Rinsch",
+    "Character.Name": "Oishi",
+    "Actor": "Hiroyuki Sanada",
+    "Character.Ethnicity..Cleaned.": "Japanese",
+    "Actor.Ethnicity..Cleaned.": "Japanese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "47 RONIN",
+    "Release.Year": 2013,
+    "Director.name": "Carl Eric Rinsch",
+    "Character.Name": "Mika",
+    "Actor": "Ko Shibasaki",
+    "Character.Ethnicity..Cleaned.": "Japanese",
+    "Actor.Ethnicity..Cleaned.": "Japanese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "47 RONIN",
+    "Release.Year": 2013,
+    "Director.name": "Carl Eric Rinsch",
+    "Character.Name": "Lady Mizuki",
+    "Actor": "Rinko Kikuchi",
+    "Character.Ethnicity..Cleaned.": "Japanese",
+    "Actor.Ethnicity..Cleaned.": "Japanese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "47 RONIN",
+    "Release.Year": 2013,
+    "Director.name": "Carl Eric Rinsch",
+    "Character.Name": "Lord Kira",
+    "Actor": "Tadanobu Asano",
+    "Character.Ethnicity..Cleaned.": "Japanese",
+    "Actor.Ethnicity..Cleaned.": "Japanese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "AMERICAN DREAMZ",
+    "Release.Year": 2006,
+    "Director.name": "Paul Weitz",
+    "Character.Name": "Omer Obeidi",
+    "Actor": "Sam Golzari",
+    "Character.Ethnicity..Cleaned.": "Iraqi",
+    "Actor.Ethnicity..Cleaned.": "Iranian",
+    "Match.Count": 1
+  },
+  {
+    "Media": "AROUND THE WORLD IN 80 DAYS",
+    "Release.Year": 2004,
+    "Director.name": "Frank Coraci",
+    "Character.Name": "Lau Xing",
+    "Actor": "Jackie Chan",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "BEND IT LIKE BECKHAM",
+    "Release.Year": 2003,
+    "Director.name": "Gurinder Chadha",
+    "Character.Name": "Mr. Bhamra",
+    "Actor": "Anupam Kher",
+    "Character.Ethnicity..Cleaned.": "Indian",
+    "Actor.Ethnicity..Cleaned.": "Indian",
+    "Match.Count": 1
+  },
+  {
+    "Media": "BEND IT LIKE BECKHAM",
+    "Release.Year": 2003,
+    "Director.name": "Gurinder Chadha",
+    "Character.Name": "Jess' Bhamra",
+    "Actor": "Archie Panjabi",
+    "Character.Ethnicity..Cleaned.": "Indian",
+    "Actor.Ethnicity..Cleaned.": "Indian",
+    "Match.Count": 1
+  },
+  {
+    "Media": "BEND IT LIKE BECKHAM",
+    "Release.Year": 2003,
+    "Director.name": "Gurinder Chadha",
+    "Character.Name": "Pinky Bhamra",
+    "Actor": "Parminder Nagra",
+    "Character.Ethnicity..Cleaned.": "Indian",
+    "Actor.Ethnicity..Cleaned.": "Indian",
+    "Match.Count": 1
+  },
+  {
+    "Media": "BULLET TRAIN",
+    "Release.Year": 2022,
+    "Director.name": "David Leitch",
+    "Character.Name": "Kimura",
+    "Actor": "Andrew Koji",
+    "Character.Ethnicity..Cleaned.": "Japanese",
+    "Actor.Ethnicity..Cleaned.": "Multiethnic",
+    "Match.Count": 1
+  },
+  {
+    "Media": "BULLET TRAIN",
+    "Release.Year": 2022,
+    "Director.name": "David Leitch",
+    "Character.Name": "Elder",
+    "Actor": "Hiroyuki Sanada",
+    "Character.Ethnicity..Cleaned.": "Japanese",
+    "Actor.Ethnicity..Cleaned.": "Japanese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "CRAZY RICH ASIANS",
+    "Release.Year": 2018,
+    "Director.name": "Jon M. Chu",
+    "Character.Name": "Peik Lin Goh",
+    "Actor": "Awkwafina",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Multiethnic",
+    "Match.Count": 1
+  },
+  {
+    "Media": "CRAZY RICH ASIANS",
+    "Release.Year": 2018,
+    "Director.name": "Jon M. Chu",
+    "Character.Name": "Rachel Chu",
+    "Actor": "Constance Wu",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "CRAZY RICH ASIANS",
+    "Release.Year": 2018,
+    "Director.name": "Jon M. Chu",
+    "Character.Name": "Astrid Young Teo",
+    "Actor": "Gemma Chan",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "CRAZY RICH ASIANS",
+    "Release.Year": 2018,
+    "Director.name": "Jon M. Chu",
+    "Character.Name": "Ah Ma",
+    "Actor": "Lisa Lu",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "CRAZY RICH ASIANS",
+    "Release.Year": 2018,
+    "Director.name": "Jon M. Chu",
+    "Character.Name": "Eleanor Young",
+    "Actor": "Michelle Yeoh",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "CROUCHING TIGER, HIDDEN DRAGON",
+    "Release.Year": 2000,
+    "Director.name": "Ang Lee",
+    "Character.Name": "Lo Dark Cloud",
+    "Actor": "Chang Chen",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "CROUCHING TIGER, HIDDEN DRAGON",
+    "Release.Year": 2000,
+    "Director.name": "Ang Lee",
+    "Character.Name": "Master Li Mu Bai",
+    "Actor": "Chow Yun-Fat",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "CROUCHING TIGER, HIDDEN DRAGON",
+    "Release.Year": 2000,
+    "Director.name": "Ang Lee",
+    "Character.Name": "Yu Shu Lien",
+    "Actor": "Michelle Yeoh",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "CROUCHING TIGER, HIDDEN DRAGON",
+    "Release.Year": 2000,
+    "Director.name": "Ang Lee",
+    "Character.Name": "Jen Yu",
+    "Actor": "Ziyi Zhang",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "DOWNSIZING",
+    "Release.Year": 2017,
+    "Director.name": "Alexander Payne",
+    "Character.Name": "Ngoc Lan Tran",
+    "Actor": "Hong Chau",
+    "Character.Ethnicity..Cleaned.": "Vietnamese",
+    "Actor.Ethnicity..Cleaned.": "Vietnamese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "EASTER SUNDAY",
+    "Release.Year": 2022,
+    "Director.name": "Jay Chandrasekhar",
+    "Character.Name": "Junior",
+    "Actor": "Brandon Wardell",
+    "Character.Ethnicity..Cleaned.": "Filipino",
+    "Actor.Ethnicity..Cleaned.": "Multiethnic",
+    "Match.Count": 1
+  },
+  {
+    "Media": "EASTER SUNDAY",
+    "Release.Year": 2022,
+    "Director.name": "Jay Chandrasekhar",
+    "Character.Name": "Joe Valencia",
+    "Actor": "Jo Koy",
+    "Character.Ethnicity..Cleaned.": "Filipino",
+    "Actor.Ethnicity..Cleaned.": "Multiethnic",
+    "Match.Count": 1
+  },
+  {
+    "Media": "EASTER SUNDAY",
+    "Release.Year": 2022,
+    "Director.name": "Jay Chandrasekhar",
+    "Character.Name": "Tita Theresa",
+    "Actor": "Tia Carrere",
+    "Character.Ethnicity..Cleaned.": "Filipino",
+    "Actor.Ethnicity..Cleaned.": "Multiethnic",
+    "Match.Count": 1
+  },
+  {
+    "Media": "EASTER SUNDAY",
+    "Release.Year": 2022,
+    "Director.name": "Jay Chandrasekhar",
+    "Character.Name": "Eugene",
+    "Actor": "Eugene Cordero",
+    "Character.Ethnicity..Cleaned.": "Filipino",
+    "Actor.Ethnicity..Cleaned.": "Filipino",
+    "Match.Count": 1
+  },
+  {
+    "Media": "ETERNALS",
+    "Release.Year": 2021,
+    "Director.name": "Chloé Zhao",
+    "Character.Name": "Karun",
+    "Actor": "Harish Patel",
+    "Character.Ethnicity..Cleaned.": "Indian",
+    "Actor.Ethnicity..Cleaned.": "Indian",
+    "Match.Count": 1
+  },
+  {
+    "Media": "EVERYTHING EVERYWHERE ALL AT ONCE",
+    "Release.Year": 2022,
+    "Director.name": "Daniel Kwan, Daniel Scheinert",
+    "Character.Name": "Joy Wang",
+    "Actor": "Stephanie Hsu",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "EVERYTHING EVERYWHERE ALL AT ONCE",
+    "Release.Year": 2022,
+    "Director.name": "Daniel Kwan, Daniel Scheinert",
+    "Character.Name": "Gong Gong",
+    "Actor": "James Hong",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "EVERYTHING EVERYWHERE ALL AT ONCE",
+    "Release.Year": 2022,
+    "Director.name": "Daniel Kwan, Daniel Scheinert",
+    "Character.Name": "Waymond Wang",
+    "Actor": "Ke Huy Quan",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "EVERYTHING EVERYWHERE ALL AT ONCE",
+    "Release.Year": 2022,
+    "Director.name": "Daniel Kwan, Daniel Scheinert",
+    "Character.Name": "Evelyn Wang",
+    "Actor": "Michelle Yeoh",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "GANDHI",
+    "Release.Year": 1982,
+    "Director.name": "Richard Attenborough",
+    "Character.Name": "Mahatma Gandhi",
+    "Actor": "Ben Kingsley",
+    "Character.Ethnicity..Cleaned.": "Indian",
+    "Actor.Ethnicity..Cleaned.": "Multiethnic",
+    "Match.Count": 1
+  },
+  {
+    "Media": "HOTEL MUMBAI",
+    "Release.Year": 2019,
+    "Director.name": "Anthony Maras",
+    "Character.Name": "Hemant Oberoi",
+    "Actor": "Anupam Kher",
+    "Character.Ethnicity..Cleaned.": "Indian",
+    "Actor.Ethnicity..Cleaned.": "Indian",
+    "Match.Count": 1
+  },
+  {
+    "Media": "HOTEL MUMBAI",
+    "Release.Year": 2019,
+    "Director.name": "Anthony Maras",
+    "Character.Name": "Arjun",
+    "Actor": "Dev Patel",
+    "Character.Ethnicity..Cleaned.": "Indian",
+    "Actor.Ethnicity..Cleaned.": "Indian",
+    "Match.Count": 1
+  },
+  {
+    "Media": "HOTEL MUMBAI",
+    "Release.Year": 2019,
+    "Director.name": "Anthony Maras",
+    "Character.Name": "Zahra",
+    "Actor": "Nazanin Boniadi",
+    "Character.Ethnicity..Cleaned.": "Iranian",
+    "Actor.Ethnicity..Cleaned.": "Iranian",
+    "Match.Count": 1
+  },
+  {
+    "Media": "HOUSE OF FLYING DAGGERS",
+    "Release.Year": 2004,
+    "Director.name": "Yimou Zhang",
+    "Character.Name": "Jin",
+    "Actor": "Takeshi Kaneshiro",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Multiethnic",
+    "Match.Count": 1
+  },
+  {
+    "Media": "HOUSE OF FLYING DAGGERS",
+    "Release.Year": 2004,
+    "Director.name": "Yimou Zhang",
+    "Character.Name": "Leo",
+    "Actor": "Andy Lau",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "HOUSE OF FLYING DAGGERS",
+    "Release.Year": 2004,
+    "Director.name": "Yimou Zhang",
+    "Character.Name": "Xiao Mei",
+    "Actor": "Ziyi Zhang",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "INDIANA JONES AND THE TEMPLE OF DOOM",
+    "Release.Year": 1984,
+    "Director.name": "Steven Spielberg",
+    "Character.Name": "Chattar Lal",
+    "Actor": "Roshan Seth",
+    "Character.Ethnicity..Cleaned.": "Indian",
+    "Actor.Ethnicity..Cleaned.": "Multiethnic",
+    "Match.Count": 1
+  },
+  {
+    "Media": "INDIANA JONES AND THE TEMPLE OF DOOM",
+    "Release.Year": 1984,
+    "Director.name": "Steven Spielberg",
+    "Character.Name": "Mola Ram",
+    "Actor": "Amrish Puri",
+    "Character.Ethnicity..Cleaned.": "Indian",
+    "Actor.Ethnicity..Cleaned.": "Indian",
+    "Match.Count": 1
+  },
+  {
+    "Media": "INDIANA JONES AND THE TEMPLE OF DOOM",
+    "Release.Year": 1984,
+    "Director.name": "Steven Spielberg",
+    "Character.Name": "Short Round",
+    "Actor": "Ke Huy Quan",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "IRON MONKEY",
+    "Release.Year": 2001,
+    "Director.name": "Woo Ping Yuen",
+    "Character.Name": "Wong Kei-Ying",
+    "Actor": "Donnie Yen",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "JACKIE CHAN'S FIRST STRIKE",
+    "Release.Year": 1997,
+    "Director.name": "Stanley Tong",
+    "Character.Name": "Chan Ka Kui",
+    "Actor": "Jackie Chan",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "JOHNNY MNEMONIC",
+    "Release.Year": 1995,
+    "Director.name": "Robert Longo",
+    "Character.Name": "Takahashi",
+    "Actor": "Takeshi Kitano",
+    "Character.Ethnicity..Cleaned.": "Japanese",
+    "Actor.Ethnicity..Cleaned.": "Japanese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "Joy Ride",
+    "Release.Year": 2023,
+    "Director.name": "Adele Lim",
+    "Character.Name": "Kat",
+    "Actor": "Stephanie Hsu",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "Joy Ride",
+    "Release.Year": 2023,
+    "Director.name": "Adele Lim",
+    "Character.Name": "Audrey",
+    "Actor": "Ashley Park III",
+    "Character.Ethnicity..Cleaned.": "Korean",
+    "Actor.Ethnicity..Cleaned.": "Korean",
+    "Match.Count": 1
+  },
+  {
+    "Media": "Joy Ride",
+    "Release.Year": 2023,
+    "Director.name": "Adele Lim",
+    "Character.Name": "Deadeye",
+    "Actor": "Sabrina Wu",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "Joy Ride",
+    "Release.Year": 2023,
+    "Director.name": "Adele Lim",
+    "Character.Name": "Lolo",
+    "Actor": "Sherry Cola",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "KILL BILL: VOL. 1",
+    "Release.Year": 2003,
+    "Director.name": "Quentin Tarantino",
+    "Character.Name": "Gogo",
+    "Actor": "Chiaki Kuriyama",
+    "Character.Ethnicity..Cleaned.": "Japanese",
+    "Actor.Ethnicity..Cleaned.": "Japanese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "KILL BILL: VOL. 1",
+    "Release.Year": 2003,
+    "Director.name": "Quentin Tarantino",
+    "Character.Name": "Hattori Hanzo",
+    "Actor": "Shin'ichi Chiba",
+    "Character.Ethnicity..Cleaned.": "Japanese",
+    "Actor.Ethnicity..Cleaned.": "Japanese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "KILL BILL: VOL. 2",
+    "Release.Year": 2004,
+    "Director.name": "Quentin Tarantino",
+    "Character.Name": "Pai Mei",
+    "Actor": "Chia-Hui Liu",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "KILL BILL: VOL. 2",
+    "Release.Year": 2004,
+    "Director.name": "Quentin Tarantino",
+    "Character.Name": "Hattori Hanzo",
+    "Actor": "Shin'ichi Chiba",
+    "Character.Ethnicity..Cleaned.": "Japanese",
+    "Actor.Ethnicity..Cleaned.": "Japanese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "LEARNING TO DRIVE",
+    "Release.Year": 2015,
+    "Director.name": "Isabel Coixet",
+    "Character.Name": "Darwan",
+    "Actor": "Ben Kingsley",
+    "Character.Ethnicity..Cleaned.": "Indian",
+    "Actor.Ethnicity..Cleaned.": "Multiethnic",
+    "Match.Count": 1
+  },
+  {
+    "Media": "LION",
+    "Release.Year": 2016,
+    "Director.name": "Garth Davis",
+    "Character.Name": "Guddu",
+    "Actor": "Abhishek Bharate",
+    "Character.Ethnicity..Cleaned.": "Indian",
+    "Actor.Ethnicity..Cleaned.": "Indian",
+    "Match.Count": 1
+  },
+  {
+    "Media": "LION",
+    "Release.Year": 2016,
+    "Director.name": "Garth Davis",
+    "Character.Name": "Mrs Sood",
+    "Actor": "Deepti Naval",
+    "Character.Ethnicity..Cleaned.": "Indian",
+    "Actor.Ethnicity..Cleaned.": "Indian",
+    "Match.Count": 1
+  },
+  {
+    "Media": "LION",
+    "Release.Year": 2016,
+    "Director.name": "Garth Davis",
+    "Character.Name": "Saroo Brierley",
+    "Actor": "Dev Patel",
+    "Character.Ethnicity..Cleaned.": "Indian",
+    "Actor.Ethnicity..Cleaned.": "Indian",
+    "Match.Count": 1
+  },
+  {
+    "Media": "LION",
+    "Release.Year": 2016,
+    "Director.name": "Garth Davis",
+    "Character.Name": "Mantosh Brierley",
+    "Actor": "Divian Ladwa",
+    "Character.Ethnicity..Cleaned.": "Indian",
+    "Actor.Ethnicity..Cleaned.": "Indian",
+    "Match.Count": 1
+  },
+  {
+    "Media": "LION",
+    "Release.Year": 2016,
+    "Director.name": "Garth Davis",
+    "Character.Name": "Kamla",
+    "Actor": "Priyanka Bose",
+    "Character.Ethnicity..Cleaned.": "Indian",
+    "Actor.Ethnicity..Cleaned.": "Indian",
+    "Match.Count": 1
+  },
+  {
+    "Media": "LION",
+    "Release.Year": 2016,
+    "Director.name": "Garth Davis",
+    "Character.Name": "Young Saroo Bierley",
+    "Actor": "Sunny Pawar",
+    "Character.Ethnicity..Cleaned.": "Indian",
+    "Actor.Ethnicity..Cleaned.": "Indian",
+    "Match.Count": 1
+  },
+  {
+    "Media": "LION",
+    "Release.Year": 2016,
+    "Director.name": "Garth Davis",
+    "Character.Name": "Noor",
+    "Actor": "Tannishtha Chatterjee",
+    "Character.Ethnicity..Cleaned.": "Indian",
+    "Actor.Ethnicity..Cleaned.": "Indian",
+    "Match.Count": 1
+  },
+  {
+    "Media": "MEMOIRS OF A GEISHA",
+    "Release.Year": 2005,
+    "Director.name": "Rob Marshall",
+    "Character.Name": "Chairman",
+    "Actor": "Ken Watanabe",
+    "Character.Ethnicity..Cleaned.": "Japanese",
+    "Actor.Ethnicity..Cleaned.": "Japanese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "MIDWAY",
+    "Release.Year": 2019,
+    "Director.name": "Roland Emmerich",
+    "Character.Name": "Admiral Yamamoto",
+    "Actor": "Etsushi Toyokawa",
+    "Character.Ethnicity..Cleaned.": "Japanese",
+    "Actor.Ethnicity..Cleaned.": "Japanese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "MIDWAY",
+    "Release.Year": 2019,
+    "Director.name": "Roland Emmerich",
+    "Character.Name": "Rear Admiral Tamon Yamaguchi",
+    "Actor": "Jun Kunimura",
+    "Character.Ethnicity..Cleaned.": "Japanese",
+    "Actor.Ethnicity..Cleaned.": "Japanese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "MIDWAY",
+    "Release.Year": 2019,
+    "Director.name": "Roland Emmerich",
+    "Character.Name": "Admiral Nagumo",
+    "Actor": "Tadanobu Asano",
+    "Character.Ethnicity..Cleaned.": "Japanese",
+    "Actor.Ethnicity..Cleaned.": "Japanese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "MILLION DOLLAR ARM",
+    "Release.Year": 2014,
+    "Director.name": "Craig Gillespie",
+    "Character.Name": "Aash Shah",
+    "Actor": "Aasif Mandvi",
+    "Character.Ethnicity..Cleaned.": "Indian",
+    "Actor.Ethnicity..Cleaned.": "Indian",
+    "Match.Count": 1
+  },
+  {
+    "Media": "MILLION DOLLAR ARM",
+    "Release.Year": 2014,
+    "Director.name": "Craig Gillespie",
+    "Character.Name": "Rinku",
+    "Actor": "Suraj Sharma",
+    "Character.Ethnicity..Cleaned.": "Indian",
+    "Actor.Ethnicity..Cleaned.": "Indian",
+    "Match.Count": 1
+  },
+  {
+    "Media": "Minari",
+    "Release.Year": 2020,
+    "Director.name": "Lee Isaac Chung",
+    "Character.Name": "David",
+    "Actor": "Alan Kim",
+    "Character.Ethnicity..Cleaned.": "Korean",
+    "Actor.Ethnicity..Cleaned.": "Korean",
+    "Match.Count": 1
+  },
+  {
+    "Media": "Minari",
+    "Release.Year": 2020,
+    "Director.name": "Lee Isaac Chung",
+    "Character.Name": "Anne",
+    "Actor": "Noel Cho",
+    "Character.Ethnicity..Cleaned.": "Korean",
+    "Actor.Ethnicity..Cleaned.": "Korean",
+    "Match.Count": 1
+  },
+  {
+    "Media": "Minari",
+    "Release.Year": 2020,
+    "Director.name": "Lee Isaac Chung",
+    "Character.Name": "Jacob",
+    "Actor": "Steven Yeun",
+    "Character.Ethnicity..Cleaned.": "Korean",
+    "Actor.Ethnicity..Cleaned.": "Korean",
+    "Match.Count": 1
+  },
+  {
+    "Media": "Minari",
+    "Release.Year": 2020,
+    "Director.name": "Lee Isaac Chung",
+    "Character.Name": "Soonja",
+    "Actor": "Yeo-jeong Yoon",
+    "Character.Ethnicity..Cleaned.": "Korean",
+    "Actor.Ethnicity..Cleaned.": "Korean",
+    "Match.Count": 1
+  },
+  {
+    "Media": "Minari",
+    "Release.Year": 2020,
+    "Director.name": "Lee Isaac Chung",
+    "Character.Name": "Monica",
+    "Actor": "Yeri Han",
+    "Character.Ethnicity..Cleaned.": "Korean",
+    "Actor.Ethnicity..Cleaned.": "Korean",
+    "Match.Count": 1
+  },
+  {
+    "Media": "MORTAL KOMBAT",
+    "Release.Year": 2021,
+    "Director.name": "Simon McQuoid",
+    "Character.Name": "Shang Tsung",
+    "Actor": "Chin Han",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "MORTAL KOMBAT",
+    "Release.Year": 2021,
+    "Director.name": "Simon McQuoid",
+    "Character.Name": "Scorpion",
+    "Actor": "Hiroyuki Sanada",
+    "Character.Ethnicity..Cleaned.": "Japanese",
+    "Actor.Ethnicity..Cleaned.": "Japanese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "MORTAL KOMBAT",
+    "Release.Year": 2021,
+    "Director.name": "Simon McQuoid",
+    "Character.Name": "Liu Kang",
+    "Actor": "Ludi Lin",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "MORTAL KOMBAT",
+    "Release.Year": 2021,
+    "Director.name": "Simon McQuoid",
+    "Character.Name": "Raiden",
+    "Actor": "Tadanobu Asano",
+    "Character.Ethnicity..Cleaned.": "Japanese",
+    "Actor.Ethnicity..Cleaned.": "Japanese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "MR. NICE GUY",
+    "Release.Year": 1998,
+    "Director.name": "Sammo Hung",
+    "Character.Name": "Jackie",
+    "Actor": "Jackie Chan",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "MY NAME IS KHAN",
+    "Release.Year": 2010,
+    "Director.name": "Karan Johar",
+    "Character.Name": "Mandira",
+    "Actor": "Kajol",
+    "Character.Ethnicity..Cleaned.": "Indian",
+    "Actor.Ethnicity..Cleaned.": "Indian",
+    "Match.Count": 1
+  },
+  {
+    "Media": "MY NAME IS KHAN",
+    "Release.Year": 2010,
+    "Director.name": "Karan Johar",
+    "Character.Name": "Rizwan Khan",
+    "Actor": "Shah Rukh Khan",
+    "Character.Ethnicity..Cleaned.": "Indian",
+    "Actor.Ethnicity..Cleaned.": "Indian",
+    "Match.Count": 1
+  },
+  {
+    "Media": "NATIONAL LAMPOON'S VAN WILDER: THE RISE OF TAJ",
+    "Release.Year": 2006,
+    "Director.name": "Mort Nathan",
+    "Character.Name": "Taj Mahal Badalandabad",
+    "Actor": "Kal Penn",
+    "Character.Ethnicity..Cleaned.": "Indian",
+    "Actor.Ethnicity..Cleaned.": "Indian",
+    "Match.Count": 1
+  },
+  {
+    "Media": "PAST LIVES",
+    "Release.Year": 2023,
+    "Director.name": "Celine Song",
+    "Character.Name": "Nora",
+    "Actor": "Greta Lee",
+    "Character.Ethnicity..Cleaned.": "Korean",
+    "Actor.Ethnicity..Cleaned.": "Korean",
+    "Match.Count": 1
+  },
+  {
+    "Media": "PAST LIVES",
+    "Release.Year": 2023,
+    "Director.name": "Celine Song",
+    "Character.Name": "Hae Sung",
+    "Actor": "Teo Yoo",
+    "Character.Ethnicity..Cleaned.": "Korean",
+    "Actor.Ethnicity..Cleaned.": "Korean",
+    "Match.Count": 1
+  },
+  {
+    "Media": "POKEMON DETECTIVE PIKACHU",
+    "Release.Year": 2019,
+    "Director.name": "Rob Letterman",
+    "Character.Name": "Detective Yoshida",
+    "Actor": "Ken Watanabe",
+    "Character.Ethnicity..Cleaned.": "Japanese",
+    "Actor.Ethnicity..Cleaned.": "Japanese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "RUSH HOUR",
+    "Release.Year": 1998,
+    "Director.name": "Brett Ratner",
+    "Character.Name": "Lee",
+    "Actor": "Jackie Chan",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "RUSH HOUR 2",
+    "Release.Year": 2001,
+    "Director.name": "Brett Ratner",
+    "Character.Name": "Lee",
+    "Actor": "Jackie Chan",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "RUSH HOUR 2",
+    "Release.Year": 2001,
+    "Director.name": "Brett Ratner",
+    "Character.Name": "Ricky Tan",
+    "Actor": "John Lone",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "RUSH HOUR 2",
+    "Release.Year": 2001,
+    "Director.name": "Brett Ratner",
+    "Character.Name": "Hu Li",
+    "Actor": "Ziyi Zhang",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "RUSH HOUR 3",
+    "Release.Year": 2007,
+    "Director.name": "Brett Ratner",
+    "Character.Name": "Kenji",
+    "Actor": "Hiroyuki Sanada",
+    "Character.Ethnicity..Cleaned.": "Japanese",
+    "Actor.Ethnicity..Cleaned.": "Japanese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "RUSH HOUR 3",
+    "Release.Year": 2007,
+    "Director.name": "Brett Ratner",
+    "Character.Name": "Lee",
+    "Actor": "Jackie Chan",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "RUSH HOUR 3",
+    "Release.Year": 2007,
+    "Director.name": "Brett Ratner",
+    "Character.Name": "Dragon Lady",
+    "Actor": "Youki Kudoh",
+    "Character.Ethnicity..Cleaned.": "Japanese",
+    "Actor.Ethnicity..Cleaned.": "Japanese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "SEVEN YEARS IN TIBET",
+    "Release.Year": 1997,
+    "Director.name": "Jean-Jacques Annaud",
+    "Character.Name": "Pema Lhaki",
+    "Actor": "Lhakpa Tsamchoe",
+    "Character.Ethnicity..Cleaned.": "Tibetan",
+    "Actor.Ethnicity..Cleaned.": "Tibetan",
+    "Match.Count": 1
+  },
+  {
+    "Media": "SHANG-CHI AND THE LEGEND OF THE TEN RINGS",
+    "Release.Year": 2021,
+    "Director.name": "Destin Daniel Cretton",
+    "Character.Name": "Katy",
+    "Actor": "Awkwafina",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Multiethnic",
+    "Match.Count": 1
+  },
+  {
+    "Media": "SHANG-CHI AND THE LEGEND OF THE TEN RINGS",
+    "Release.Year": 2021,
+    "Director.name": "Destin Daniel Cretton",
+    "Character.Name": "Wong",
+    "Actor": "Benedict Wong",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "SHANG-CHI AND THE LEGEND OF THE TEN RINGS",
+    "Release.Year": 2021,
+    "Director.name": "Destin Daniel Cretton",
+    "Character.Name": "Jiang Li",
+    "Actor": "Fala Chen",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "SHANG-CHI AND THE LEGEND OF THE TEN RINGS",
+    "Release.Year": 2021,
+    "Director.name": "Destin Daniel Cretton",
+    "Character.Name": "Xialing",
+    "Actor": "Meng'Er Zhang",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "SHANG-CHI AND THE LEGEND OF THE TEN RINGS",
+    "Release.Year": 2021,
+    "Director.name": "Destin Daniel Cretton",
+    "Character.Name": "Jiang Nan",
+    "Actor": "Michelle Yeoh",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "SHANG-CHI AND THE LEGEND OF THE TEN RINGS",
+    "Release.Year": 2021,
+    "Director.name": "Destin Daniel Cretton",
+    "Character.Name": "Shang-Chi",
+    "Actor": "Simu Liu",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "SHANG-CHI AND THE LEGEND OF THE TEN RINGS",
+    "Release.Year": 2021,
+    "Director.name": "Destin Daniel Cretton",
+    "Character.Name": "Wenwu",
+    "Actor": "Tony Chiu Wai Leung",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "SHANGHAI KNIGHTS",
+    "Release.Year": 2003,
+    "Director.name": "David Dobkin",
+    "Character.Name": "Wu Chow",
+    "Actor": "Donnie Yen",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "SHANGHAI KNIGHTS",
+    "Release.Year": 2003,
+    "Director.name": "David Dobkin",
+    "Character.Name": "Chon Wang",
+    "Actor": "Jackie Chan",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "SHANGHAI NOON",
+    "Release.Year": 2000,
+    "Director.name": "Tom Dey",
+    "Character.Name": "Chon Wang",
+    "Actor": "Jackie Chan",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "SHANGHAI NOON",
+    "Release.Year": 2000,
+    "Director.name": "Tom Dey",
+    "Character.Name": "Princess Pei Pei",
+    "Actor": "Lucy Liu",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "SIGHT",
+    "Release.Year": 2024,
+    "Director.name": "Andrew Hyatt",
+    "Character.Name": "Ming",
+    "Actor": "Ben Wang (II)",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "SIGHT",
+    "Release.Year": 2024,
+    "Director.name": "Andrew Hyatt",
+    "Character.Name": "Anle",
+    "Actor": "Danni Wang",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "SIGHT",
+    "Release.Year": 2024,
+    "Director.name": "Andrew Hyatt",
+    "Character.Name": "Young Ming",
+    "Actor": "Jayden Zhang",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "SIGHT",
+    "Release.Year": 2024,
+    "Director.name": "Andrew Hyatt",
+    "Character.Name": "Zhensheng",
+    "Actor": "Raymond Ma",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "SIGHT",
+    "Release.Year": 2024,
+    "Director.name": "Andrew Hyatt",
+    "Character.Name": "Dr. Ming Wang",
+    "Actor": "Terry Chen",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "SILENCE",
+    "Release.Year": 2016,
+    "Director.name": "Martin Scorsese",
+    "Character.Name": "Mokichi",
+    "Actor": "Shinya Tsukamoto",
+    "Character.Ethnicity..Cleaned.": "Japanese",
+    "Actor.Ethnicity..Cleaned.": "Japanese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "SILENCE",
+    "Release.Year": 2016,
+    "Director.name": "Martin Scorsese",
+    "Character.Name": "Interpreter",
+    "Actor": "Tadanobu Asano",
+    "Character.Ethnicity..Cleaned.": "Japanese",
+    "Actor.Ethnicity..Cleaned.": "Japanese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "SKYSCRAPER",
+    "Release.Year": 2018,
+    "Director.name": "Rawson Marshall Thurber",
+    "Character.Name": "Xia",
+    "Actor": "Hannah Quinlivan",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Multiethnic",
+    "Match.Count": 1
+  },
+  {
+    "Media": "SKYSCRAPER",
+    "Release.Year": 2018,
+    "Director.name": "Rawson Marshall Thurber",
+    "Character.Name": "Inspector Wu",
+    "Actor": "Byron Mann",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "SKYSCRAPER",
+    "Release.Year": 2018,
+    "Director.name": "Rawson Marshall Thurber",
+    "Character.Name": "Zhao Long Ji",
+    "Actor": "Chin Han",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "SLUMDOG MILLIONAIRE",
+    "Release.Year": 2008,
+    "Director.name": "Danny Boyle",
+    "Character.Name": "Prem",
+    "Actor": "Anil Kapoor",
+    "Character.Ethnicity..Cleaned.": "Indian",
+    "Actor.Ethnicity..Cleaned.": "Indian",
+    "Match.Count": 1
+  },
+  {
+    "Media": "SLUMDOG MILLIONAIRE",
+    "Release.Year": 2008,
+    "Director.name": "Danny Boyle",
+    "Character.Name": "Older Jamal",
+    "Actor": "Dev Patel",
+    "Character.Ethnicity..Cleaned.": "Indian",
+    "Actor.Ethnicity..Cleaned.": "Indian",
+    "Match.Count": 1
+  },
+  {
+    "Media": "SLUMDOG MILLIONAIRE",
+    "Release.Year": 2008,
+    "Director.name": "Danny Boyle",
+    "Character.Name": "Older Latika",
+    "Actor": "Freida Pinto",
+    "Character.Ethnicity..Cleaned.": "Indian",
+    "Actor.Ethnicity..Cleaned.": "Indian",
+    "Match.Count": 1
+  },
+  {
+    "Media": "SLUMDOG MILLIONAIRE",
+    "Release.Year": 2008,
+    "Director.name": "Danny Boyle",
+    "Character.Name": "Police Inspector",
+    "Actor": "Irrfan Khan",
+    "Character.Ethnicity..Cleaned.": "Indian",
+    "Actor.Ethnicity..Cleaned.": "Indian",
+    "Match.Count": 1
+  },
+  {
+    "Media": "SLUMDOG MILLIONAIRE",
+    "Release.Year": 2008,
+    "Director.name": "Danny Boyle",
+    "Character.Name": "Older Salim",
+    "Actor": "Madhur Mittal",
+    "Character.Ethnicity..Cleaned.": "Indian",
+    "Actor.Ethnicity..Cleaned.": "Indian",
+    "Match.Count": 1
+  },
+  {
+    "Media": "SPIDER-MAN: NO WAY HOME",
+    "Release.Year": 2021,
+    "Director.name": "John Watts",
+    "Character.Name": "Ned",
+    "Actor": "Jacob Batalon",
+    "Character.Ethnicity..Cleaned.": "Filipino",
+    "Actor.Ethnicity..Cleaned.": "Filipino",
+    "Match.Count": 1
+  },
+  {
+    "Media": "SUPERCOP",
+    "Release.Year": 1996,
+    "Director.name": "Stanley Tong",
+    "Character.Name": "Detective Kevin Chan",
+    "Actor": "Jackie Chan",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "SUPERCOP",
+    "Release.Year": 1996,
+    "Director.name": "Stanley Tong",
+    "Character.Name": "Chaibat",
+    "Actor": "Kenneth Tsang",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "SUPERCOP",
+    "Release.Year": 1996,
+    "Director.name": "Stanley Tong",
+    "Character.Name": "May",
+    "Actor": "Maggie Cheung",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "SUPERCOP",
+    "Release.Year": 1996,
+    "Director.name": "Stanley Tong",
+    "Character.Name": "Chief of Security Yang",
+    "Actor": "Michelle Yeoh",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "SUPERCOP",
+    "Release.Year": 1996,
+    "Director.name": "Stanley Tong",
+    "Character.Name": "Panther",
+    "Actor": "Wah Yuen",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "THE BIG SICK",
+    "Release.Year": 2017,
+    "Director.name": "Michael Showalter",
+    "Character.Name": "Naveed",
+    "Actor": "Adeel Akhtar",
+    "Character.Ethnicity..Cleaned.": "Pakistani",
+    "Actor.Ethnicity..Cleaned.": "Multiethnic",
+    "Match.Count": 1
+  },
+  {
+    "Media": "THE BIG SICK",
+    "Release.Year": 2017,
+    "Director.name": "Michael Showalter",
+    "Character.Name": "Kumail",
+    "Actor": "Kumail Nanjiani",
+    "Character.Ethnicity..Cleaned.": "Pakistani",
+    "Actor.Ethnicity..Cleaned.": "Pakistani",
+    "Match.Count": 1
+  },
+  {
+    "Media": "THE CHILDREN OF HUANG SHI",
+    "Release.Year": 2008,
+    "Director.name": "Roger Spottiswoode",
+    "Character.Name": "Jack",
+    "Actor": "Chow Yun-Fat",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "THE CHILDREN OF HUANG SHI",
+    "Release.Year": 2008,
+    "Director.name": "Roger Spottiswoode",
+    "Character.Name": "Mrs. Wang",
+    "Actor": "Michelle Yeoh",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "THE FAREWELL",
+    "Release.Year": 2019,
+    "Director.name": "Lulu Wang",
+    "Character.Name": "Billi",
+    "Actor": "Awkwafina",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Multiethnic",
+    "Match.Count": 1
+  },
+  {
+    "Media": "THE FAREWELL",
+    "Release.Year": 2019,
+    "Director.name": "Lulu Wang",
+    "Character.Name": "Jian",
+    "Actor": "Diana Lin",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "THE FAREWELL",
+    "Release.Year": 2019,
+    "Director.name": "Lulu Wang",
+    "Character.Name": "Uncle Haibin",
+    "Actor": "Jianguo Yongbo",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "THE FAREWELL",
+    "Release.Year": 2019,
+    "Director.name": "Lulu Wang",
+    "Character.Name": "Haiyan",
+    "Actor": "Tzi Ma",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "THE FAREWELL",
+    "Release.Year": 2019,
+    "Director.name": "Lulu Wang",
+    "Character.Name": "Nai Nai",
+    "Actor": "Zhao Shuzhen",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "THE FORBIDDEN KINGDOM",
+    "Release.Year": 2008,
+    "Director.name": "Rob Minkoff",
+    "Character.Name": "The Jade Warlord",
+    "Actor": "Collin Chou",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "THE FORBIDDEN KINGDOM",
+    "Release.Year": 2008,
+    "Director.name": "Rob Minkoff",
+    "Character.Name": "Ni Chang",
+    "Actor": "Bingbing Li",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "THE FORBIDDEN KINGDOM",
+    "Release.Year": 2008,
+    "Director.name": "Rob Minkoff",
+    "Character.Name": "Old Hop/Lu Yan",
+    "Actor": "Jackie Chan",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "THE FORBIDDEN KINGDOM",
+    "Release.Year": 2008,
+    "Director.name": "Rob Minkoff",
+    "Character.Name": "The Monkey King/Silent Monk",
+    "Actor": "Jet Li",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "THE FOREIGNER",
+    "Release.Year": 2017,
+    "Director.name": "Martin Campbell",
+    "Character.Name": "Quan",
+    "Actor": "Jackie Chan",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "THE GRANDMASTER",
+    "Release.Year": 2013,
+    "Director.name": "Kar Wai Wong",
+    "Character.Name": "Ding Lianshan",
+    "Actor": "Benshan Zhao",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "THE GRANDMASTER",
+    "Release.Year": 2013,
+    "Director.name": "Kar Wai Wong",
+    "Character.Name": "The Razor Yixiantian",
+    "Actor": "Chang Chen",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "THE GRANDMASTER",
+    "Release.Year": 2013,
+    "Director.name": "Kar Wai Wong",
+    "Character.Name": "Ip Man",
+    "Actor": "Tony Chiu Wai Leung",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "THE GRANDMASTER",
+    "Release.Year": 2013,
+    "Director.name": "Kar Wai Wong",
+    "Character.Name": "San Jiang Shui",
+    "Actor": "Xiaoshenyang",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "THE GRANDMASTER",
+    "Release.Year": 2013,
+    "Director.name": "Kar Wai Wong",
+    "Character.Name": "Gong Er",
+    "Actor": "Ziyi Zhang",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "THE INTERVIEW",
+    "Release.Year": 2013,
+    "Director.name": "Evan Goldberg, Seth Rogen",
+    "Character.Name": "Kim Jung-Un",
+    "Actor": "Randall Park",
+    "Character.Ethnicity..Cleaned.": "Korean",
+    "Actor.Ethnicity..Cleaned.": "Korean",
+    "Match.Count": 1
+  },
+  {
+    "Media": "THE KARATE KID",
+    "Release.Year": 2010,
+    "Director.name": "Harald Zwart",
+    "Character.Name": "Mr. Han",
+    "Actor": "Jackie Chan",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "THE KARATE KID",
+    "Release.Year": 2010,
+    "Director.name": "Harald Zwart",
+    "Character.Name": "Meiying's Dad",
+    "Actor": "Zhensu Wu",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "THE KARATE KID",
+    "Release.Year": 2010,
+    "Director.name": "Harald Zwart",
+    "Character.Name": "Meiying's Mom",
+    "Actor": "Zhiheng Wang",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "THE LAST SAMURAI",
+    "Release.Year": 2003,
+    "Director.name": "Edward Zwick",
+    "Character.Name": "Ujio",
+    "Actor": "Hiroyuki Sanada",
+    "Character.Ethnicity..Cleaned.": "Japanese",
+    "Actor.Ethnicity..Cleaned.": "Japanese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "THE LAST SAMURAI",
+    "Release.Year": 2003,
+    "Director.name": "Edward Zwick",
+    "Character.Name": "Katsumoto",
+    "Actor": "Ken Watanabe",
+    "Character.Ethnicity..Cleaned.": "Japanese",
+    "Actor.Ethnicity..Cleaned.": "Japanese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "THE LAST SAMURAI",
+    "Release.Year": 2003,
+    "Director.name": "Edward Zwick",
+    "Character.Name": "Taka",
+    "Actor": "Koyuki",
+    "Character.Ethnicity..Cleaned.": "Japanese",
+    "Actor.Ethnicity..Cleaned.": "Japanese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "THE LEGEND OF DRUNKEN MASTER",
+    "Release.Year": 2000,
+    "Director.name": "Chia-Liang Liu",
+    "Character.Name": "Ling",
+    "Actor": "Anita Mui",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "THE LEGEND OF DRUNKEN MASTER",
+    "Release.Year": 2000,
+    "Director.name": "Chia-Liang Liu",
+    "Character.Name": "Master Fu Wen-Chi",
+    "Actor": "Chia-Liang Liu",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "THE LEGEND OF DRUNKEN MASTER",
+    "Release.Year": 2000,
+    "Director.name": "Chia-Liang Liu",
+    "Character.Name": "Wong Fei-hung",
+    "Actor": "Jackie Chan",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "THE LEGEND OF DRUNKEN MASTER",
+    "Release.Year": 2000,
+    "Director.name": "Chia-Liang Liu",
+    "Character.Name": "Wong Kei-ying",
+    "Actor": "Ti Lung",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "THE MAN WHO KNEW INFINITY",
+    "Release.Year": 2016,
+    "Director.name": "Matt Brown (XIII)",
+    "Character.Name": "Srinivasa Ramanujan",
+    "Actor": "Dev Patel",
+    "Character.Ethnicity..Cleaned.": "Indian",
+    "Actor.Ethnicity..Cleaned.": "Indian",
+    "Match.Count": 1
+  },
+  {
+    "Media": "THE MAN WHO KNEW INFINITY",
+    "Release.Year": 2016,
+    "Director.name": "Matt Brown (XIII)",
+    "Character.Name": "Janaki",
+    "Actor": "Devika Bhise",
+    "Character.Ethnicity..Cleaned.": "Indian",
+    "Actor.Ethnicity..Cleaned.": "Indian",
+    "Match.Count": 1
+  },
+  {
+    "Media": "THE MAN WITH THE IRON FISTS",
+    "Release.Year": 2012,
+    "Director.name": "RZA",
+    "Character.Name": "Silver Lion",
+    "Actor": "Byron Mann",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "THE MAN WITH THE IRON FISTS",
+    "Release.Year": 2012,
+    "Director.name": "RZA",
+    "Character.Name": "Madame Blossom",
+    "Actor": "Lucy Liu",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "THE MAN WITH THE IRON FISTS",
+    "Release.Year": 2012,
+    "Director.name": "RZA",
+    "Character.Name": "Chi Chi",
+    "Actor": "Zhu Zhu",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "THE MEDALLION",
+    "Release.Year": 2003,
+    "Director.name": "Gordon Chan",
+    "Character.Name": "Eddie Yang",
+    "Actor": "Jackie Chan",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "THE MUMMY: TOMB OF THE DRAGON EMPEROR",
+    "Release.Year": 2008,
+    "Director.name": "Rob Cohen",
+    "Character.Name": "General Yang",
+    "Actor": "Anthony Wong",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Multiethnic",
+    "Match.Count": 1
+  },
+  {
+    "Media": "THE MUMMY: TOMB OF THE DRAGON EMPEROR",
+    "Release.Year": 2008,
+    "Director.name": "Rob Cohen",
+    "Character.Name": "Ming Guo",
+    "Actor": "Russell Wong",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Multiethnic",
+    "Match.Count": 1
+  },
+  {
+    "Media": "THE MUMMY: TOMB OF THE DRAGON EMPEROR",
+    "Release.Year": 2008,
+    "Director.name": "Rob Cohen",
+    "Character.Name": "Lin",
+    "Actor": "Isabella Leong",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "THE MUMMY: TOMB OF THE DRAGON EMPEROR",
+    "Release.Year": 2008,
+    "Director.name": "Rob Cohen",
+    "Character.Name": "Emperor",
+    "Actor": "Jet Li",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "THE MUMMY: TOMB OF THE DRAGON EMPEROR",
+    "Release.Year": 2008,
+    "Director.name": "Rob Cohen",
+    "Character.Name": "Zi Yuan",
+    "Actor": "Michelle Yeoh",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "THE NAMESAKE",
+    "Release.Year": 2007,
+    "Director.name": "Mira Nair",
+    "Character.Name": "Ashoke",
+    "Actor": "Irrfan Khan",
+    "Character.Ethnicity..Cleaned.": "Indian",
+    "Actor.Ethnicity..Cleaned.": "Indian",
+    "Match.Count": 1
+  },
+  {
+    "Media": "THE NAMESAKE",
+    "Release.Year": 2007,
+    "Director.name": "Mira Nair",
+    "Character.Name": "Gogol/Nikhil",
+    "Actor": "Kal Penn",
+    "Character.Ethnicity..Cleaned.": "Indian",
+    "Actor.Ethnicity..Cleaned.": "Indian",
+    "Match.Count": 1
+  },
+  {
+    "Media": "THE NAMESAKE",
+    "Release.Year": 2007,
+    "Director.name": "Mira Nair",
+    "Character.Name": "Ashima",
+    "Actor": "Tabu",
+    "Character.Ethnicity..Cleaned.": "Indian",
+    "Actor.Ethnicity..Cleaned.": "Indian",
+    "Match.Count": 1
+  },
+  {
+    "Media": "THE NAMESAKE",
+    "Release.Year": 2007,
+    "Director.name": "Mira Nair",
+    "Character.Name": "Moushumi Mazumder",
+    "Actor": "Zuleikha Robinson",
+    "Character.Ethnicity..Cleaned.": "Indian",
+    "Actor.Ethnicity..Cleaned.": "Multiethnic",
+    "Match.Count": 1
+  },
+  {
+    "Media": "THE RAILWAY MAN",
+    "Release.Year": 2012,
+    "Director.name": "Jonathan Teplitzky",
+    "Character.Name": "Nagase",
+    "Actor": "Hiroyuki Sanada",
+    "Character.Ethnicity..Cleaned.": "Japanese",
+    "Actor.Ethnicity..Cleaned.": "Japanese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "THE RAILWAY MAN",
+    "Release.Year": 2012,
+    "Director.name": "Jonathan Teplitzky",
+    "Character.Name": "Young Nagase",
+    "Actor": "Tanroh Ishida",
+    "Character.Ethnicity..Cleaned.": "Japanese",
+    "Actor.Ethnicity..Cleaned.": "Japanese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "THE SECOND BEST EXOTIC MARIGOLD HOTEL",
+    "Release.Year": 2015,
+    "Director.name": "John Madden",
+    "Character.Name": "Sonny Kapoor",
+    "Actor": "Dev Patel",
+    "Character.Ethnicity..Cleaned.": "Indian",
+    "Actor.Ethnicity..Cleaned.": "Indian",
+    "Match.Count": 1
+  },
+  {
+    "Media": "THE SPY NEXT DOOR",
+    "Release.Year": 2010,
+    "Director.name": "Brian Levant",
+    "Character.Name": "Bob Ho",
+    "Actor": "Jackie Chan",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "THE SUN IS ALSO A STAR",
+    "Release.Year": 2018,
+    "Director.name": "Ry Russo-Young",
+    "Character.Name": "Daniel Bae",
+    "Actor": "Charles Melton",
+    "Character.Ethnicity..Cleaned.": "Korean",
+    "Actor.Ethnicity..Cleaned.": "Multiethnic",
+    "Match.Count": 1
+  },
+  {
+    "Media": "THE WOLVERINE",
+    "Release.Year": 2013,
+    "Director.name": "James Mangold",
+    "Character.Name": "Noburo Mori",
+    "Actor": "Brian Tee",
+    "Character.Ethnicity..Cleaned.": "Japanese",
+    "Actor.Ethnicity..Cleaned.": "Japanese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "THE WOLVERINE",
+    "Release.Year": 2013,
+    "Director.name": "James Mangold",
+    "Character.Name": "Yashida",
+    "Actor": "Hal Yamanouchi",
+    "Character.Ethnicity..Cleaned.": "Japanese",
+    "Actor.Ethnicity..Cleaned.": "Japanese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "THE WOLVERINE",
+    "Release.Year": 2013,
+    "Director.name": "James Mangold",
+    "Character.Name": "Shingen",
+    "Actor": "Hiroyuki Sanada",
+    "Character.Ethnicity..Cleaned.": "Japanese",
+    "Actor.Ethnicity..Cleaned.": "Japanese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "THE WOLVERINE",
+    "Release.Year": 2013,
+    "Director.name": "James Mangold",
+    "Character.Name": "Yukio",
+    "Actor": "Rila Fukushima",
+    "Character.Ethnicity..Cleaned.": "Japanese",
+    "Actor.Ethnicity..Cleaned.": "Japanese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "THE WOLVERINE",
+    "Release.Year": 2013,
+    "Director.name": "James Mangold",
+    "Character.Name": "Mariko",
+    "Actor": "Tao Okamoto",
+    "Character.Ethnicity..Cleaned.": "Japanese",
+    "Actor.Ethnicity..Cleaned.": "Japanese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "TOMORROW NEVER DIES",
+    "Release.Year": 1997,
+    "Director.name": "Roger Spottiswoode",
+    "Character.Name": "Wai Lin",
+    "Actor": "Michelle Yeoh",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "TWIN DRAGONS",
+    "Release.Year": 1999,
+    "Director.name": "Ringo Lam",
+    "Character.Name": "John Ma",
+    "Actor": "Jackie Chan",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "TWIN DRAGONS",
+    "Release.Year": 1999,
+    "Director.name": "Ringo Lam",
+    "Character.Name": "Barbara",
+    "Actor": "Maggie Cheung",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "TWIN DRAGONS",
+    "Release.Year": 1999,
+    "Director.name": "Ringo Lam",
+    "Character.Name": "Tammy",
+    "Actor": "Nina Li Chi",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
+  },
+  {
+    "Media": "UMMA",
+    "Release.Year": 2022,
+    "Director.name": "Iris K. Shim",
+    "Character.Name": "Umma",
+    "Actor": "MeeWha Alana lee",
+    "Character.Ethnicity..Cleaned.": "Korean",
+    "Actor.Ethnicity..Cleaned.": "Korean",
+    "Match.Count": 1
+  },
+  {
+    "Media": "UMMA",
+    "Release.Year": 2022,
+    "Director.name": "Iris K. Shim",
+    "Character.Name": "Amanda",
+    "Actor": "Sandra Oh",
+    "Character.Ethnicity..Cleaned.": "Korean",
+    "Actor.Ethnicity..Cleaned.": "Korean",
+    "Match.Count": 1
+  },
+  {
+    "Media": "WAR",
+    "Release.Year": 2007,
+    "Director.name": "Philip G Atwell",
+    "Character.Name": "Rogue / Li Chang",
+    "Actor": "Jet Li",
+    "Character.Ethnicity..Cleaned.": "Chinese",
+    "Actor.Ethnicity..Cleaned.": "Chinese",
+    "Match.Count": 1
   }
 ]
