@@ -1,1857 +1,1857 @@
 [
   {
-    "Movie": "THE CREATOR",
-    "Year": 2023,
-    "bo_revenue": 40774685
-  },
-  {
-    "Movie": "JOY RIDE",
-    "Year": 2023,
-    "bo_revenue": 12897797
-  },
-  {
-    "Movie": "PAST LIVES",
-    "Year": 2023,
-    "bo_revenue": 11331991
-  },
-  {
     "Movie": "BARBIE",
     "Year": 2023,
-    "bo_revenue": 636238427
+    "bo_revenue": 655325580
   },
   {
     "Movie": "GUARDIANS OF THE GALAXY VOL. 3",
     "Year": 2023,
-    "bo_revenue": 358995823
+    "bo_revenue": 369765698
   },
   {
     "Movie": "JOHN WICK: CHAPTER 4",
     "Year": 2023,
-    "bo_revenue": 187131811
+    "bo_revenue": 192745765
   },
   {
     "Movie": "FAST X",
     "Year": 2023,
-    "bo_revenue": 146126021
+    "bo_revenue": 150509802
   },
   {
     "Movie": "AQUAMAN AND THE LOST KINGDOM",
     "Year": 2023,
-    "bo_revenue": 124481229
+    "bo_revenue": 128215666
   },
   {
     "Movie": "M3GAN",
     "Year": 2023,
-    "bo_revenue": 95159014
+    "bo_revenue": 98013784
   },
   {
     "Movie": "THE COLOR PURPLE",
     "Year": 2023,
-    "bo_revenue": 60619198
+    "bo_revenue": 62437774
   },
   {
     "Movie": "SHAZAM! FURY OF THE GODS",
     "Year": 2023,
-    "bo_revenue": 57638015
+    "bo_revenue": 59367155
   },
   {
     "Movie": "NO HARD FEELINGS",
     "Year": 2023,
-    "bo_revenue": 50452289
+    "bo_revenue": 51965858
   },
   {
     "Movie": "A HAUNTING IN VENICE",
     "Year": 2023,
-    "bo_revenue": 42471419
+    "bo_revenue": 43745562
+  },
+  {
+    "Movie": "THE CREATOR",
+    "Year": 2023,
+    "bo_revenue": 41997926
   },
   {
     "Movie": "KNOCK AT THE CABIN",
     "Year": 2023,
-    "bo_revenue": 35397989
+    "bo_revenue": 36459929
   },
   {
     "Movie": "MISSING",
     "Year": 2023,
-    "bo_revenue": 32502034
+    "bo_revenue": 33477095
   },
   {
     "Movie": "ASTEROID CITY",
     "Year": 2023,
-    "bo_revenue": 28153030
+    "bo_revenue": 28997621
   },
   {
     "Movie": "RENFIELD",
     "Year": 2023,
-    "bo_revenue": 17297903
+    "bo_revenue": 17816840
+  },
+  {
+    "Movie": "JOY RIDE",
+    "Year": 2023,
+    "bo_revenue": 13284731
+  },
+  {
+    "Movie": "PAST LIVES",
+    "Year": 2023,
+    "bo_revenue": 11671951
   },
   {
     "Movie": "JULES",
     "Year": 2023,
-    "bo_revenue": 1924928
+    "bo_revenue": 1982676
   },
   {
     "Movie": "DICKS: THE MUSICAL",
     "Year": 2023,
-    "bo_revenue": 1453020
-  },
-  {
-    "Movie": "NOPE",
-    "Year": 2022,
-    "bo_revenue": 123277089
-  },
-  {
-    "Movie": "BULLET TRAIN",
-    "Year": 2022,
-    "bo_revenue": 103368605
-  },
-  {
-    "Movie": "EVERYTHING EVERYWHERE ALL AT ONCE",
-    "Year": 2022,
-    "bo_revenue": 77191789
-  },
-  {
-    "Movie": "EASTER SUNDAY",
-    "Year": 2022,
-    "bo_revenue": 13013697
-  },
-  {
-    "Movie": "UMMA",
-    "Year": 2022,
-    "bo_revenue": 2121034
+    "bo_revenue": 1496611
   },
   {
     "Movie": "DOCTOR STRANGE IN THE MULTIVERSE OF MADNESS",
     "Year": 2022,
-    "bo_revenue": 411331615
+    "bo_revenue": 452464777
   },
   {
     "Movie": "JURASSIC WORLD DOMINION",
     "Year": 2022,
-    "bo_revenue": 376851088
+    "bo_revenue": 414536197
   },
   {
     "Movie": "BLACK ADAM",
     "Year": 2022,
-    "bo_revenue": 168362301
+    "bo_revenue": 185198531
+  },
+  {
+    "Movie": "NOPE",
+    "Year": 2022,
+    "bo_revenue": 135604798
   },
   {
     "Movie": "SMILE",
     "Year": 2022,
-    "bo_revenue": 105935055
+    "bo_revenue": 116528561
+  },
+  {
+    "Movie": "BULLET TRAIN",
+    "Year": 2022,
+    "bo_revenue": 113705466
   },
   {
     "Movie": "WHERE THE CRAWDADS SING",
     "Year": 2022,
-    "bo_revenue": 90230763
+    "bo_revenue": 99253839
+  },
+  {
+    "Movie": "EVERYTHING EVERYWHERE ALL AT ONCE",
+    "Year": 2022,
+    "bo_revenue": 84910968
   },
   {
     "Movie": "LYLE, LYLE, CROCODILE",
     "Year": 2022,
-    "bo_revenue": 46934371
+    "bo_revenue": 51627808
   },
   {
     "Movie": "DON'T WORRY DARLING",
     "Year": 2022,
-    "bo_revenue": 45309412
+    "bo_revenue": 49840353
   },
   {
     "Movie": "THE MENU",
     "Year": 2022,
-    "bo_revenue": 38528411
+    "bo_revenue": 42381252
   },
   {
     "Movie": "THE WHALE",
     "Year": 2022,
-    "bo_revenue": 17463632
+    "bo_revenue": 19209995
   },
   {
     "Movie": "GLASS ONION: A KNIVES OUT MYSTERY",
     "Year": 2022,
-    "bo_revenue": 13280007
+    "bo_revenue": 14608008
+  },
+  {
+    "Movie": "EASTER SUNDAY",
+    "Year": 2022,
+    "bo_revenue": 14315067
+  },
+  {
+    "Movie": "UMMA",
+    "Year": 2022,
+    "bo_revenue": 2333137
   },
   {
     "Movie": "MR. MALCOLM'S LIST",
     "Year": 2022,
-    "bo_revenue": 1885724
+    "bo_revenue": 2074296
   },
   {
     "Movie": "SPIDER-MAN: NO WAY HOME",
     "Year": 2021,
-    "bo_revenue": 804793482
+    "bo_revenue": 949656309
   },
   {
     "Movie": "SHANG-CHI AND THE LEGEND OF THE TEN RINGS",
     "Year": 2021,
-    "bo_revenue": 224543301
+    "bo_revenue": 264961095
   },
   {
     "Movie": "ETERNALS",
     "Year": 2021,
-    "bo_revenue": 164870240
-  },
-  {
-    "Movie": "MORTAL KOMBAT",
-    "Year": 2021,
-    "bo_revenue": 42201014
-  },
-  {
-    "Movie": "SNAKE EYES: G.I. JOE ORIGINS",
-    "Year": 2021,
-    "bo_revenue": 28264330
+    "bo_revenue": 194546883
   },
   {
     "Movie": "JUNGLE CRUISE",
     "Year": 2021,
-    "bo_revenue": 116987523
+    "bo_revenue": 138045277
   },
   {
     "Movie": "DUNE",
     "Year": 2021,
-    "bo_revenue": 108327838
+    "bo_revenue": 127826849
   },
   {
     "Movie": "OLD",
     "Year": 2021,
-    "bo_revenue": 48242515
+    "bo_revenue": 56926168
+  },
+  {
+    "Movie": "MORTAL KOMBAT",
+    "Year": 2021,
+    "bo_revenue": 49797197
   },
   {
     "Movie": "THE MATRIX RESURRECTIONS",
     "Year": 2021,
-    "bo_revenue": 37686807
+    "bo_revenue": 44470432
+  },
+  {
+    "Movie": "SNAKE EYES: G.I. JOE ORIGINS",
+    "Year": 2021,
+    "bo_revenue": 33351909
   },
   {
     "Movie": "THE GREEN KNIGHT",
     "Year": 2021,
-    "bo_revenue": 17173330
+    "bo_revenue": 20264529
   },
   {
     "Movie": "NIGHTMARE ALLEY",
     "Year": 2021,
-    "bo_revenue": 11338116
+    "bo_revenue": 13378977
   },
   {
     "Movie": "NOMADLAND",
     "Year": 2021,
-    "bo_revenue": 2143005
-  },
-  {
-    "Movie": "BIRDS OF PREY (AND THE FANTABULOUS EMANCIPATION OF ONE HARLEY QUINN)",
-    "Year": 2020,
-    "bo_revenue": 84158470
-  },
-  {
-    "Movie": "THE GENTLEMEN",
-    "Year": 2020,
-    "bo_revenue": 36471802
-  },
-  {
-    "Movie": "MINARI",
-    "Year": 2020,
-    "bo_revenue": 3110586
+    "bo_revenue": 2528746
   },
   {
     "Movie": "BAD BOYS FOR LIFE",
     "Year": 2020,
-    "bo_revenue": 204417856
+    "bo_revenue": 245301427
+  },
+  {
+    "Movie": "BIRDS OF PREY (AND THE FANTABULOUS EMANCIPATION OF ONE HARLEY QUINN)",
+    "Year": 2020,
+    "bo_revenue": 100990164
+  },
+  {
+    "Movie": "THE GENTLEMEN",
+    "Year": 2020,
+    "bo_revenue": 43766162
   },
   {
     "Movie": "LIKE A BOSS",
     "Year": 2020,
-    "bo_revenue": 22169521
+    "bo_revenue": 26603425
   },
   {
     "Movie": "THE GRUDGE",
     "Year": 2020,
-    "bo_revenue": 21221811
+    "bo_revenue": 25466173
   },
   {
     "Movie": "BILL & TED FACE THE MUSIC",
     "Year": 2020,
-    "bo_revenue": 3439666
+    "bo_revenue": 4127599
+  },
+  {
+    "Movie": "MINARI",
+    "Year": 2020,
+    "bo_revenue": 3732703
   },
   {
     "Movie": "THE PERSONAL HISTORY OF DAVID COPPERFIELD",
     "Year": 2020,
-    "bo_revenue": 1876303
+    "bo_revenue": 2251564
   },
   {
     "Movie": "LOVE AND MONSTERS",
     "Year": 2020,
-    "bo_revenue": 1070722
-  },
-  {
-    "Movie": "YESTERDAY",
-    "Year": 2019,
-    "bo_revenue": 73286659
-  },
-  {
-    "Movie": "LAST CHRISTMAS",
-    "Year": 2019,
-    "bo_revenue": 35150758
-  },
-  {
-    "Movie": "STUBER",
-    "Year": 2019,
-    "bo_revenue": 22370459
-  },
-  {
-    "Movie": "LATE NIGHT",
-    "Year": 2019,
-    "bo_revenue": 15499462
-  },
-  {
-    "Movie": "ALADDIN",
-    "Year": 2019,
-    "bo_revenue": 355559224
-  },
-  {
-    "Movie": "POKEMON DETECTIVE PIKACHU",
-    "Year": 2019,
-    "bo_revenue": 144105355
-  },
-  {
-    "Movie": "HUSTLERS",
-    "Year": 2019,
-    "bo_revenue": 104963606
-  },
-  {
-    "Movie": "MIDWAY",
-    "Year": 2019,
-    "bo_revenue": 56846811
-  },
-  {
-    "Movie": "THE FAREWELL",
-    "Year": 2019,
-    "bo_revenue": 17695784
-  },
-  {
-    "Movie": "HOTEL MUMBAI",
-    "Year": 2019,
-    "bo_revenue": 9651617
-  },
-  {
-    "Movie": "THE SUN IS ALSO A STAR",
-    "Year": 2019,
-    "bo_revenue": 4950034
+    "bo_revenue": 1284866
   },
   {
     "Movie": "AVENGERS: ENDGAME",
     "Year": 2019,
-    "bo_revenue": 858373007
+    "bo_revenue": 1055798799
   },
   {
     "Movie": "CAPTAIN MARVEL",
     "Year": 2019,
-    "bo_revenue": 426829848
+    "bo_revenue": 525000713
   },
   {
     "Movie": "SPIDER-MAN: FAR FROM HOME",
     "Year": 2019,
-    "bo_revenue": 390532093
+    "bo_revenue": 480354474
+  },
+  {
+    "Movie": "ALADDIN",
+    "Year": 2019,
+    "bo_revenue": 437337846
   },
   {
     "Movie": "JUMANJI: THE NEXT LEVEL",
     "Year": 2019,
-    "bo_revenue": 316831255
+    "bo_revenue": 389702444
   },
   {
     "Movie": "FAST AND FURIOUS PRESENTS: HOBBS & SHAW",
     "Year": 2019,
-    "bo_revenue": 173810107
+    "bo_revenue": 213786432
   },
   {
     "Movie": "JOHN WICK: CHAPTER 3 - PARABELLUM",
     "Year": 2019,
-    "bo_revenue": 171015689
+    "bo_revenue": 210349297
+  },
+  {
+    "Movie": "POKEMON DETECTIVE PIKACHU",
+    "Year": 2019,
+    "bo_revenue": 177249587
   },
   {
     "Movie": "GODZILLA: KING OF THE MONSTERS",
     "Year": 2019,
-    "bo_revenue": 110500147
+    "bo_revenue": 135915181
+  },
+  {
+    "Movie": "h",
+    "Year": 2019,
+    "bo_revenue": 129105235
+  },
+  {
+    "Movie": "YESTERDAY",
+    "Year": 2019,
+    "bo_revenue": 90142591
+  },
+  {
+    "Movie": "MIDWAY",
+    "Year": 2019,
+    "bo_revenue": 69921578
   },
   {
     "Movie": "GEMINI MAN",
     "Year": 2019,
-    "bo_revenue": 48546775
+    "bo_revenue": 59712533
+  },
+  {
+    "Movie": "LAST CHRISTMAS",
+    "Year": 2019,
+    "bo_revenue": 43235432
   },
   {
     "Movie": "FIGHTING WITH MY FAMILY",
     "Year": 2019,
-    "bo_revenue": 22958890
+    "bo_revenue": 28239435
+  },
+  {
+    "Movie": "STUBER",
+    "Year": 2019,
+    "bo_revenue": 27515665
   },
   {
     "Movie": "HELLBOY",
     "Year": 2019,
-    "bo_revenue": 21903757
+    "bo_revenue": 26941621
   },
   {
     "Movie": "CHARLIE'S ANGELS",
     "Year": 2019,
-    "bo_revenue": 17803079
+    "bo_revenue": 21897787
+  },
+  {
+    "Movie": "THE FAREWELL",
+    "Year": 2019,
+    "bo_revenue": 21765814
+  },
+  {
+    "Movie": "LATE NIGHT",
+    "Year": 2019,
+    "bo_revenue": 19064338
+  },
+  {
+    "Movie": "HOTEL MUMBAI",
+    "Year": 2019,
+    "bo_revenue": 11871489
+  },
+  {
+    "Movie": "THE SUN IS ALSO A STAR",
+    "Year": 2019,
+    "bo_revenue": 6088542
   },
   {
     "Movie": "REPLICAS",
     "Year": 2019,
-    "bo_revenue": 4046438
-  },
-  {
-    "Movie": "CRAZY RICH ASIANS",
-    "Year": 2018,
-    "bo_revenue": 174052665
-  },
-  {
-    "Movie": "OCEAN'S 8",
-    "Year": 2018,
-    "bo_revenue": 139377770
-  },
-  {
-    "Movie": "SKYSCRAPER",
-    "Year": 2018,
-    "bo_revenue": 67796360
+    "bo_revenue": 4977119
   },
   {
     "Movie": "AVENGERS: INFINITY WAR",
     "Year": 2018,
-    "bo_revenue": 678815488
+    "bo_revenue": 841731205
   },
   {
     "Movie": "JURASSIC WORLD: FALLEN KINGDOM",
     "Year": 2018,
-    "bo_revenue": 416769350
+    "bo_revenue": 516793994
   },
   {
     "Movie": "AQUAMAN",
     "Year": 2018,
-    "bo_revenue": 335061813
+    "bo_revenue": 415476648
   },
   {
     "Movie": "DEADPOOL 2",
     "Year": 2018,
-    "bo_revenue": 318491428
+    "bo_revenue": 394929371
   },
   {
     "Movie": "ANT-MAN AND THE WASP",
     "Year": 2018,
-    "bo_revenue": 216648748
+    "bo_revenue": 268644448
   },
   {
     "Movie": "VENOM",
     "Year": 2018,
-    "bo_revenue": 213515515
+    "bo_revenue": 264759239
+  },
+  {
+    "Movie": "CRAZY RICH ASIANS",
+    "Year": 2018,
+    "bo_revenue": 215825305
+  },
+  {
+    "Movie": "OCEAN'S 8",
+    "Year": 2018,
+    "bo_revenue": 172828435
   },
   {
     "Movie": "BUMBLEBEE",
     "Year": 2018,
-    "bo_revenue": 127195594
+    "bo_revenue": 157722537
   },
   {
     "Movie": "A WRINKLE IN TIME",
     "Year": 2018,
-    "bo_revenue": 100478617
+    "bo_revenue": 124593485
   },
   {
     "Movie": "RAMPAGE",
     "Year": 2018,
-    "bo_revenue": 99345958
+    "bo_revenue": 123188988
+  },
+  {
+    "Movie": "SKYSCRAPER",
+    "Year": 2018,
+    "bo_revenue": 84067486
   },
   {
     "Movie": "PACIFIC RIM: UPRISING",
     "Year": 2018,
-    "bo_revenue": 59587112
+    "bo_revenue": 73888019
   },
   {
     "Movie": "A SIMPLE FAVOR",
     "Year": 2018,
-    "bo_revenue": 53548591
+    "bo_revenue": 66400253
   },
   {
     "Movie": "THE PREDATOR",
     "Year": 2018,
-    "bo_revenue": 51024710
+    "bo_revenue": 63270640
   },
   {
     "Movie": "GOOSEBUMPS 2: HAUNTED HALLOWEEN",
     "Year": 2018,
-    "bo_revenue": 46700639
+    "bo_revenue": 57908792
   },
   {
     "Movie": "SECOND ACT",
     "Year": 2018,
-    "bo_revenue": 39282232
+    "bo_revenue": 48709968
   },
   {
     "Movie": "SEARCHING",
     "Year": 2018,
-    "bo_revenue": 26020964
+    "bo_revenue": 32265995
   },
   {
     "Movie": "OPERATION FINALE",
     "Year": 2018,
-    "bo_revenue": 17612102
+    "bo_revenue": 21839006
   },
   {
     "Movie": "SORRY TO BOTHER YOU",
     "Year": 2018,
-    "bo_revenue": 17493102
+    "bo_revenue": 21691446
   },
   {
     "Movie": "THE POSSESSION OF HANNAH GRACE",
     "Year": 2018,
-    "bo_revenue": 14837428
+    "bo_revenue": 18398411
   },
   {
     "Movie": "DOG DAYS",
     "Year": 2018,
-    "bo_revenue": 6809086
+    "bo_revenue": 8443267
   },
   {
     "Movie": "HOTEL ARTEMIS",
     "Year": 2018,
-    "bo_revenue": 6708143
+    "bo_revenue": 8318097
   },
   {
     "Movie": "THE SISTERS BROTHERS",
     "Year": 2018,
-    "bo_revenue": 3143065
+    "bo_revenue": 3897401
   },
   {
     "Movie": "AN INTERVIEW WITH GOD",
     "Year": 2018,
-    "bo_revenue": 1201437
-  },
-  {
-    "Movie": "XXX: RETURN OF XANDER CAGE",
-    "Year": 2017,
-    "bo_revenue": 44898417
-  },
-  {
-    "Movie": "THE BIG SICK",
-    "Year": 2017,
-    "bo_revenue": 42873134
-  },
-  {
-    "Movie": "THE FOREIGNER",
-    "Year": 2017,
-    "bo_revenue": 34393516
-  },
-  {
-    "Movie": "DOWNSIZING",
-    "Year": 2017,
-    "bo_revenue": 24449763
+    "bo_revenue": 1489782
   },
   {
     "Movie": "STAR WARS: EPISODE VIII - THE LAST JEDI",
     "Year": 2017,
-    "bo_revenue": 620181391
+    "bo_revenue": 787630367
   },
   {
     "Movie": "JUMANJI: WELCOME TO THE JUNGLE",
     "Year": 2017,
-    "bo_revenue": 404515483
+    "bo_revenue": 513734663
   },
   {
     "Movie": "GUARDIANS OF THE GALAXY VOL. 2",
     "Year": 2017,
-    "bo_revenue": 389813110
+    "bo_revenue": 495062650
   },
   {
     "Movie": "JUSTICE LEAGUE",
     "Year": 2017,
-    "bo_revenue": 229024299
+    "bo_revenue": 290860860
   },
   {
     "Movie": "THE FATE OF THE FURIOUS",
     "Year": 2017,
-    "bo_revenue": 226008391
+    "bo_revenue": 287030657
   },
   {
     "Movie": "PITCH PERFECT 3",
     "Year": 2017,
-    "bo_revenue": 104897535
+    "bo_revenue": 133219869
   },
   {
     "Movie": "JOHN WICK: CHAPTER 2",
     "Year": 2017,
-    "bo_revenue": 92029189
+    "bo_revenue": 116877070
   },
   {
     "Movie": "POWER RANGERS",
     "Year": 2017,
-    "bo_revenue": 85364456
+    "bo_revenue": 108412859
   },
   {
     "Movie": "BAYWATCH",
     "Year": 2017,
-    "bo_revenue": 58060192
+    "bo_revenue": 73736444
+  },
+  {
+    "Movie": "XXX: RETURN OF XANDER CAGE",
+    "Year": 2017,
+    "bo_revenue": 57020990
+  },
+  {
+    "Movie": "THE BIG SICK",
+    "Year": 2017,
+    "bo_revenue": 54448880
+  },
+  {
+    "Movie": "THE FOREIGNER",
+    "Year": 2017,
+    "bo_revenue": 43679765
   },
   {
     "Movie": "FIST FIGHT",
     "Year": 2017,
-    "bo_revenue": 32187021
+    "bo_revenue": 40877517
   },
   {
     "Movie": "LIFE",
     "Year": 2017,
-    "bo_revenue": 30234029
+    "bo_revenue": 38397217
+  },
+  {
+    "Movie": "DOWNSIZING",
+    "Year": 2017,
+    "bo_revenue": 31051199
   },
   {
     "Movie": "BATTLE OF THE SEXES",
     "Year": 2017,
-    "bo_revenue": 12638534
+    "bo_revenue": 16050938
   },
   {
     "Movie": "THE SPACE BETWEEN US",
     "Year": 2017,
-    "bo_revenue": 7885298
+    "bo_revenue": 10014328
   },
   {
     "Movie": "INGRID GOES WEST",
     "Year": 2017,
-    "bo_revenue": 3024317
+    "bo_revenue": 3840883
   },
   {
     "Movie": "COLLIDE",
     "Year": 2017,
-    "bo_revenue": 2280013
+    "bo_revenue": 2895617
   },
   {
     "Movie": "THE LITTLE HOURS",
     "Year": 2017,
-    "bo_revenue": 1647177
-  },
-  {
-    "Movie": "LION",
-    "Year": 2016,
-    "bo_revenue": 51738911
-  },
-  {
-    "Movie": "SILENCE",
-    "Year": 2016,
-    "bo_revenue": 7100183
-  },
-  {
-    "Movie": "A HOLOGRAM FOR THE KING",
-    "Year": 2016,
-    "bo_revenue": 4212501
-  },
-  {
-    "Movie": "THE MAN WHO KNEW INFINITY",
-    "Year": 2016,
-    "bo_revenue": 3866803
+    "bo_revenue": 2091915
   },
   {
     "Movie": "BATMAN V SUPERMAN: DAWN OF JUSTICE",
     "Year": 2016,
-    "bo_revenue": 330360201
+    "bo_revenue": 429468261
   },
   {
     "Movie": "DOCTOR STRANGE",
     "Year": 2016,
-    "bo_revenue": 232641928
+    "bo_revenue": 302434506
   },
   {
     "Movie": "STAR TREK BEYOND",
     "Year": 2016,
-    "bo_revenue": 158848346
+    "bo_revenue": 206502850
   },
   {
     "Movie": "X-MEN: APOCALYPSE",
     "Year": 2016,
-    "bo_revenue": 155442490
+    "bo_revenue": 202075237
   },
   {
     "Movie": "CENTRAL INTELLIGENCE",
     "Year": 2016,
-    "bo_revenue": 127440880
+    "bo_revenue": 165673144
   },
   {
     "Movie": "RIDE ALONG 2",
     "Year": 2016,
-    "bo_revenue": 91221834
+    "bo_revenue": 118588384
   },
   {
     "Movie": "NEIGHBORS 2: SORORITY RISING",
     "Year": 2016,
-    "bo_revenue": 55455774
+    "bo_revenue": 72092506
   },
   {
     "Movie": "OFFICE CHRISTMAS PARTY",
     "Year": 2016,
-    "bo_revenue": 54767496
+    "bo_revenue": 71197745
+  },
+  {
+    "Movie": "LION",
+    "Year": 2016,
+    "bo_revenue": 67260584
   },
   {
     "Movie": "ZOOLANDER 2",
     "Year": 2016,
-    "bo_revenue": 28848702
+    "bo_revenue": 37503313
   },
   {
     "Movie": "MECHANIC: RESURRECTION",
     "Year": 2016,
-    "bo_revenue": 21218409
+    "bo_revenue": 27583932
   },
   {
     "Movie": "THE EDGE OF SEVENTEEN",
     "Year": 2016,
-    "bo_revenue": 14431639
+    "bo_revenue": 18761131
+  },
+  {
+    "Movie": "SILENCE",
+    "Year": 2016,
+    "bo_revenue": 9230238
+  },
+  {
+    "Movie": "A HOLOGRAM FOR THE KING",
+    "Year": 2016,
+    "bo_revenue": 5476251
   },
   {
     "Movie": "MORGAN",
     "Year": 2016,
-    "bo_revenue": 3915260
+    "bo_revenue": 5089838
+  },
+  {
+    "Movie": "THE MAN WHO KNEW INFINITY",
+    "Year": 2016,
+    "bo_revenue": 5026844
   },
   {
     "Movie": "THE NEON DEMON",
     "Year": 2016,
-    "bo_revenue": 1333132
-  },
-  {
-    "Movie": "THE SECOND BEST EXOTIC MARIGOLD HOTEL",
-    "Year": 2015,
-    "bo_revenue": 33078271
-  },
-  {
-    "Movie": "LEARNING TO DRIVE",
-    "Year": 2015,
-    "bo_revenue": 3447641
-  },
-  {
-    "Movie": "MEET THE PATELS",
-    "Year": 2015,
-    "bo_revenue": 1700685
+    "bo_revenue": 1733072
   },
   {
     "Movie": "JURASSIC WORLD",
     "Year": 2015,
-    "bo_revenue": 652198016
+    "bo_revenue": 860901381
   },
   {
     "Movie": "FURIOUS 7",
     "Year": 2015,
-    "bo_revenue": 351032918
+    "bo_revenue": 463363452
   },
   {
     "Movie": "THE HUNGER GAMES: MOCKINGJAY PART 2",
     "Year": 2015,
-    "bo_revenue": 281723910
+    "bo_revenue": 371875561
   },
   {
     "Movie": "SPECTRE",
     "Year": 2015,
-    "bo_revenue": 200074610
+    "bo_revenue": 264098485
   },
   {
     "Movie": "PITCH PERFECT 2",
     "Year": 2015,
-    "bo_revenue": 183785422
+    "bo_revenue": 242596757
   },
   {
     "Movie": "SAN ANDREAS",
     "Year": 2015,
-    "bo_revenue": 155190839
+    "bo_revenue": 204851907
   },
   {
     "Movie": "THE NIGHT BEFORE",
     "Year": 2015,
-    "bo_revenue": 43047380
+    "bo_revenue": 56822542
+  },
+  {
+    "Movie": "THE SECOND BEST EXOTIC MARIGOLD HOTEL",
+    "Year": 2015,
+    "bo_revenue": 43663318
   },
   {
     "Movie": "CHAPPIE",
     "Year": 2015,
-    "bo_revenue": 31569276
+    "bo_revenue": 41671444
   },
   {
     "Movie": "MR. HOLMES",
     "Year": 2015,
-    "bo_revenue": 17737652
+    "bo_revenue": 23413701
   },
   {
     "Movie": "SELF/LESS",
     "Year": 2015,
-    "bo_revenue": 12279700
+    "bo_revenue": 16209204
   },
   {
     "Movie": "THE WALK",
     "Year": 2015,
-    "bo_revenue": 9878773
+    "bo_revenue": 13039980
   },
   {
     "Movie": "MORTDECAI",
     "Year": 2015,
-    "bo_revenue": 7696143
+    "bo_revenue": 10158909
   },
   {
-    "Movie": "MILLION DOLLAR ARM",
-    "Year": 2014,
-    "bo_revenue": 36457632
+    "Movie": "LEARNING TO DRIVE",
+    "Year": 2015,
+    "bo_revenue": 4550886
   },
   {
-    "Movie": "THE INTERVIEW",
-    "Year": 2014,
-    "bo_revenue": 6105183
-  },
-  {
-    "Movie": "THE RAILWAY MAN",
-    "Year": 2014,
-    "bo_revenue": 4438447
+    "Movie": "MEET THE PATELS",
+    "Year": 2015,
+    "bo_revenue": 2244904
   },
   {
     "Movie": "THE HUNGER GAMES: MOCKINGJAY PART 1",
     "Year": 2014,
-    "bo_revenue": 337135892
+    "bo_revenue": 445019377
   },
   {
     "Movie": "GUARDIANS OF THE GALAXY",
     "Year": 2014,
-    "bo_revenue": 333176602
+    "bo_revenue": 439793115
   },
   {
     "Movie": "GODZILLA",
     "Year": 2014,
-    "bo_revenue": 200676072
+    "bo_revenue": 264892415
   },
   {
     "Movie": "NIGHT AT THE MUSEUM: SECRET OF THE TOMB",
     "Year": 2014,
-    "bo_revenue": 113746624
+    "bo_revenue": 150145544
   },
   {
     "Movie": "HERCULES",
     "Year": 2014,
-    "bo_revenue": 72688617
+    "bo_revenue": 95948974
   },
   {
     "Movie": "EXODUS: GODS AND KINGS",
     "Year": 2014,
-    "bo_revenue": 65014518
+    "bo_revenue": 85819164
   },
   {
     "Movie": "JOHN WICK",
     "Year": 2014,
-    "bo_revenue": 43037839
+    "bo_revenue": 56809947
+  },
+  {
+    "Movie": "MILLION DOLLAR ARM",
+    "Year": 2014,
+    "bo_revenue": 48124074
   },
   {
     "Movie": "NIGHTCRAWLER",
     "Year": 2014,
-    "bo_revenue": 32381152
+    "bo_revenue": 42743121
   },
   {
     "Movie": "3 DAYS TO KILL",
     "Year": 2014,
-    "bo_revenue": 30698007
+    "bo_revenue": 40521369
   },
   {
     "Movie": "DELIVER US FROM EVIL",
     "Year": 2014,
-    "bo_revenue": 30577131
+    "bo_revenue": 40361813
   },
   {
     "Movie": "BEGIN AGAIN",
     "Year": 2014,
-    "bo_revenue": 16170641
+    "bo_revenue": 21345246
+  },
+  {
+    "Movie": "THE INTERVIEW",
+    "Year": 2014,
+    "bo_revenue": 8058842
+  },
+  {
+    "Movie": "THE RAILWAY MAN",
+    "Year": 2014,
+    "bo_revenue": 5858750
   },
   {
     "Movie": "GIMME SHELTER",
     "Year": 2014,
-    "bo_revenue": 1359916
-  },
-  {
-    "Movie": "THE WOLVERINE",
-    "Year": 2013,
-    "bo_revenue": 132556859
-  },
-  {
-    "Movie": "47 RONIN",
-    "Year": 2013,
-    "bo_revenue": 38362481
-  },
-  {
-    "Movie": "THE GRANDMASTER",
-    "Year": 2013,
-    "bo_revenue": 6594968
+    "bo_revenue": 1795089
   },
   {
     "Movie": "IRON MAN 3",
     "Year": 2013,
-    "bo_revenue": 409014002
+    "bo_revenue": 548078763
   },
   {
     "Movie": "FAST & FURIOUS 6",
     "Year": 2013,
-    "bo_revenue": 238679858
+    "bo_revenue": 319831010
   },
   {
     "Movie": "STAR TREK INTO DARKNESS",
     "Year": 2013,
-    "bo_revenue": 228778666
+    "bo_revenue": 306563412
   },
   {
     "Movie": "THOR: THE DARK WORLD",
     "Year": 2013,
-    "bo_revenue": 206362146
+    "bo_revenue": 276525276
+  },
+  {
+    "Movie": "THE WOLVERINE",
+    "Year": 2013,
+    "bo_revenue": 177626191
   },
   {
     "Movie": "G.I. JOE: RETALIATION",
     "Year": 2013,
-    "bo_revenue": 122523069
+    "bo_revenue": 164180912
   },
   {
     "Movie": "THE HANGOVER PART III",
     "Year": 2013,
-    "bo_revenue": 112200080
+    "bo_revenue": 150348107
   },
   {
     "Movie": "ENDER'S GAME",
     "Year": 2013,
-    "bo_revenue": 61737196
+    "bo_revenue": 82727843
   },
   {
     "Movie": "PAIN AND GAIN",
     "Year": 2013,
-    "bo_revenue": 49875298
+    "bo_revenue": 66832899
   },
   {
     "Movie": "SNITCH",
     "Year": 2013,
-    "bo_revenue": 42930469
+    "bo_revenue": 57526828
+  },
+  {
+    "Movie": "47 RONIN",
+    "Year": 2013,
+    "bo_revenue": 51405725
   },
   {
     "Movie": "SPRING BREAKERS",
     "Year": 2013,
-    "bo_revenue": 14124291
+    "bo_revenue": 18926550
   },
   {
     "Movie": "BULLET TO THE HEAD",
     "Year": 2013,
-    "bo_revenue": 9489837
+    "bo_revenue": 12716382
   },
   {
     "Movie": "MACHETE KILLS",
     "Year": 2013,
-    "bo_revenue": 8008167
+    "bo_revenue": 10730944
+  },
+  {
+    "Movie": "THE GRANDMASTER",
+    "Year": 2013,
+    "bo_revenue": 8837257
   },
   {
     "Movie": "CLOSED CIRCUIT",
     "Year": 2013,
-    "bo_revenue": 5750409
+    "bo_revenue": 7705548
   },
   {
     "Movie": "GIRL MOST LIKELY",
     "Year": 2013,
-    "bo_revenue": 1378600
+    "bo_revenue": 1847324
   },
   {
     "Movie": "ROMEO AND JULIET",
     "Year": 2013,
-    "bo_revenue": 1162643
-  },
-  {
-    "Movie": "THE MAN WITH THE IRON FISTS",
-    "Year": 2012,
-    "bo_revenue": 15634097
+    "bo_revenue": 1557942
   },
   {
     "Movie": "LINCOLN",
     "Year": 2012,
-    "bo_revenue": 182207978
+    "bo_revenue": 247802850
   },
   {
     "Movie": "JOURNEY 2: THE MYSTERIOUS ISLAND",
     "Year": 2012,
-    "bo_revenue": 103860299
+    "bo_revenue": 141250007
   },
   {
     "Movie": "THE DICTATOR",
     "Year": 2012,
-    "bo_revenue": 59650229
+    "bo_revenue": 81124311
   },
   {
     "Movie": "TOTAL RECALL",
     "Year": 2012,
-    "bo_revenue": 58877978
+    "bo_revenue": 80074050
   },
   {
     "Movie": "RED TAILS",
     "Year": 2012,
-    "bo_revenue": 49876385
+    "bo_revenue": 67831884
   },
   {
     "Movie": "PREMIUM RUSH",
     "Year": 2012,
-    "bo_revenue": 20275451
+    "bo_revenue": 27574613
   },
   {
-    "Movie": "SUCKER PUNCH",
-    "Year": 2011,
-    "bo_revenue": 36392510
-  },
-  {
-    "Movie": "A VERY HAROLD & KUMAR 3D CHRISTMAS",
-    "Year": 2011,
-    "bo_revenue": 35061037
+    "Movie": "THE MAN WITH THE IRON FISTS",
+    "Year": 2012,
+    "bo_revenue": 21262372
   },
   {
     "Movie": "FAST FIVE",
     "Year": 2011,
-    "bo_revenue": 209837679
+    "bo_revenue": 293772751
   },
   {
     "Movie": "BATTLE: LOS ANGELES",
     "Year": 2011,
-    "bo_revenue": 83552438
+    "bo_revenue": 116973413
   },
   {
     "Movie": "HUGO",
     "Year": 2011,
-    "bo_revenue": 73864513
+    "bo_revenue": 103410318
   },
   {
     "Movie": "30 MINUTES OR LESS",
     "Year": 2011,
-    "bo_revenue": 37053932
+    "bo_revenue": 51875505
+  },
+  {
+    "Movie": "SUCKER PUNCH",
+    "Year": 2011,
+    "bo_revenue": 50949514
+  },
+  {
+    "Movie": "A VERY HAROLD & KUMAR 3D CHRISTMAS",
+    "Year": 2011,
+    "bo_revenue": 49085452
   },
   {
     "Movie": "BEASTLY",
     "Year": 2011,
-    "bo_revenue": 27865580
+    "bo_revenue": 39011812
   },
   {
     "Movie": "CONAN THE BARBARIAN",
     "Year": 2011,
-    "bo_revenue": 21295029
+    "bo_revenue": 29813041
   },
   {
     "Movie": "GLEE THE 3D CONCERT MOVIE",
     "Year": 2011,
-    "bo_revenue": 11862399
+    "bo_revenue": 16607359
   },
   {
     "Movie": "I DON'T KNOW HOW SHE DOES IT",
     "Year": 2011,
-    "bo_revenue": 9662290
-  },
-  {
-    "Movie": "THE KARATE KID",
-    "Year": 2010,
-    "bo_revenue": 176591622
-  },
-  {
-    "Movie": "THE LAST AIRBENDER",
-    "Year": 2010,
-    "bo_revenue": 131601071
-  },
-  {
-    "Movie": "THE SPY NEXT DOOR",
-    "Year": 2010,
-    "bo_revenue": 24307094
-  },
-  {
-    "Movie": "MY NAME IS KHAN",
-    "Year": 2010,
-    "bo_revenue": 4018780
+    "bo_revenue": 13527206
   },
   {
     "Movie": "INCEPTION",
     "Year": 2010,
-    "bo_revenue": 292576203
+    "bo_revenue": 415458208
+  },
+  {
+    "Movie": "THE KARATE KID",
+    "Year": 2010,
+    "bo_revenue": 250760103
   },
   {
     "Movie": "TRUE GRIT",
     "Year": 2010,
-    "bo_revenue": 171050332
+    "bo_revenue": 242891471
+  },
+  {
+    "Movie": "THE LAST AIRBENDER",
+    "Year": 2010,
+    "bo_revenue": 186873521
   },
   {
     "Movie": "SHUTTER ISLAND",
     "Year": 2010,
-    "bo_revenue": 128012940
+    "bo_revenue": 181778375
   },
   {
     "Movie": "THE OTHER GUYS",
     "Year": 2010,
-    "bo_revenue": 119219984
+    "bo_revenue": 169292377
   },
   {
     "Movie": "PRINCE OF PERSIA: THE SANDS OF TIME",
     "Year": 2010,
-    "bo_revenue": 90759680
+    "bo_revenue": 128878746
   },
   {
     "Movie": "THE TOOTH FAIRY",
     "Year": 2010,
-    "bo_revenue": 60022261
+    "bo_revenue": 85231611
   },
   {
     "Movie": "VAMPIRES SUCK",
     "Year": 2010,
-    "bo_revenue": 36661507
+    "bo_revenue": 52059340
   },
   {
     "Movie": "RAMONA AND BEEZUS",
     "Year": 2010,
-    "bo_revenue": 26167004
+    "bo_revenue": 37157146
+  },
+  {
+    "Movie": "THE SPY NEXT DOOR",
+    "Year": 2010,
+    "bo_revenue": 34516073
   },
   {
     "Movie": "FASTER",
     "Year": 2010,
-    "bo_revenue": 23240028
+    "bo_revenue": 33000840
   },
   {
     "Movie": "FURRY VENGEANCE",
     "Year": 2010,
-    "bo_revenue": 17630471
+    "bo_revenue": 25035269
+  },
+  {
+    "Movie": "MY NAME IS KHAN",
+    "Year": 2010,
+    "bo_revenue": 5706668
   },
   {
     "Movie": "RABBIT HOLE",
     "Year": 2010,
-    "bo_revenue": 2229064
-  },
-  {
-    "Movie": "DRAGONBALL EVOLUTION",
-    "Year": 2009,
-    "bo_revenue": 9362789
+    "bo_revenue": 3165271
   },
   {
     "Movie": "STAR TREK",
     "Year": 2009,
-    "bo_revenue": 257730027
+    "bo_revenue": 376285839
   },
   {
     "Movie": "RACE TO WITCH MOUNTAIN",
     "Year": 2009,
-    "bo_revenue": 67172595
+    "bo_revenue": 98071989
   },
   {
     "Movie": "THE UNINVITED",
     "Year": 2009,
-    "bo_revenue": 28596825
+    "bo_revenue": 41751365
   },
   {
     "Movie": "FIRED UP!",
     "Year": 2009,
-    "bo_revenue": 17231296
+    "bo_revenue": 25157692
   },
   {
     "Movie": "SORORITY ROW",
     "Year": 2009,
-    "bo_revenue": 11965289
+    "bo_revenue": 17469322
+  },
+  {
+    "Movie": "DRAGONBALL EVOLUTION",
+    "Year": 2009,
+    "bo_revenue": 13669672
   },
   {
     "Movie": "BANDSLAM",
     "Year": 2009,
-    "bo_revenue": 5210993
+    "bo_revenue": 7608050
   },
   {
     "Movie": "MOON",
     "Year": 2009,
-    "bo_revenue": 5010167
+    "bo_revenue": 7314844
   },
   {
     "Movie": "THE BROTHERS BLOOM",
     "Year": 2009,
-    "bo_revenue": 3531765
+    "bo_revenue": 5156377
   },
   {
     "Movie": "SLUMDOG MILLIONAIRE",
     "Year": 2008,
-    "bo_revenue": 141319933
-  },
-  {
-    "Movie": "THE MUMMY: TOMB OF THE DRAGON EMPEROR",
-    "Year": 2008,
-    "bo_revenue": 102277515
-  },
-  {
-    "Movie": "THE FORBIDDEN KINGDOM",
-    "Year": 2008,
-    "bo_revenue": 52075278
-  },
-  {
-    "Movie": "HAROLD & KUMAR ESCAPE FROM GUANTANAMO BAY",
-    "Year": 2008,
-    "bo_revenue": 38108731
-  },
-  {
-    "Movie": "THE LOVE GURU",
-    "Year": 2008,
-    "bo_revenue": 32200130
-  },
-  {
-    "Movie": "BABYLON A.D.",
-    "Year": 2008,
-    "bo_revenue": 22531705
-  },
-  {
-    "Movie": "THE CHILDREN OF HUANG SHI",
-    "Year": 2008,
-    "bo_revenue": 1031873
+    "bo_revenue": 206327102
   },
   {
     "Movie": "GET SMART",
     "Year": 2008,
-    "bo_revenue": 130319217
+    "bo_revenue": 190266057
+  },
+  {
+    "Movie": "THE MUMMY: TOMB OF THE DRAGON EMPEROR",
+    "Year": 2008,
+    "bo_revenue": 149325172
   },
   {
     "Movie": "STEP BROTHERS",
     "Year": 2008,
-    "bo_revenue": 100468802
+    "bo_revenue": 146684451
   },
   {
     "Movie": "HIGH SCHOOL MUSICAL 3: SENIOR YEAR",
     "Year": 2008,
-    "bo_revenue": 90559417
+    "bo_revenue": 132216749
   },
   {
     "Movie": "THE DAY THE EARTH STOOD STILL",
     "Year": 2008,
-    "bo_revenue": 79366982
+    "bo_revenue": 115875794
   },
   {
     "Movie": "THE SPIDERWICK CHRONICLES",
     "Year": 2008,
-    "bo_revenue": 71195060
+    "bo_revenue": 103944788
+  },
+  {
+    "Movie": "THE FORBIDDEN KINGDOM",
+    "Year": 2008,
+    "bo_revenue": 76029906
   },
   {
     "Movie": "SPEED RACER",
     "Year": 2008,
-    "bo_revenue": 43945775
+    "bo_revenue": 64160832
+  },
+  {
+    "Movie": "HAROLD & KUMAR ESCAPE FROM GUANTANAMO BAY",
+    "Year": 2008,
+    "bo_revenue": 55638747
+  },
+  {
+    "Movie": "THE LOVE GURU",
+    "Year": 2008,
+    "bo_revenue": 47012190
   },
   {
     "Movie": "STREET KINGS",
     "Year": 2008,
-    "bo_revenue": 26418672
+    "bo_revenue": 38571261
   },
   {
-    "Movie": "EPIC MOVIE",
-    "Year": 2007,
-    "bo_revenue": 39739369
+    "Movie": "BABYLON A.D.",
+    "Year": 2008,
+    "bo_revenue": 32896289
   },
   {
-    "Movie": "RUSH HOUR 3",
-    "Year": 2007,
-    "bo_revenue": 140125969
-  },
-  {
-    "Movie": "WAR",
-    "Year": 2007,
-    "bo_revenue": 22486415
-  },
-  {
-    "Movie": "THE NAMESAKE",
-    "Year": 2007,
-    "bo_revenue": 13569255
+    "Movie": "THE CHILDREN OF HUANG SHI",
+    "Year": 2008,
+    "bo_revenue": 1506535
   },
   {
     "Movie": "THE BOURNE ULTIMATUM",
     "Year": 2007,
-    "bo_revenue": 227471079
+    "bo_revenue": 345756040
+  },
+  {
+    "Movie": "RUSH HOUR 3",
+    "Year": 2007,
+    "bo_revenue": 212991473
   },
   {
     "Movie": "THE GAME PLAN",
     "Year": 2007,
-    "bo_revenue": 90648211
+    "bo_revenue": 137785281
   },
   {
     "Movie": "STOMP THE YARD",
     "Year": 2007,
-    "bo_revenue": 61356230
+    "bo_revenue": 93261470
+  },
+  {
+    "Movie": "EPIC MOVIE",
+    "Year": 2007,
+    "bo_revenue": 60403841
   },
   {
     "Movie": "FRACTURE",
     "Year": 2007,
-    "bo_revenue": 39015022
+    "bo_revenue": 59302833
+  },
+  {
+    "Movie": "WAR",
+    "Year": 2007,
+    "bo_revenue": 34179351
+  },
+  {
+    "Movie": "THE NAMESAKE",
+    "Year": 2007,
+    "bo_revenue": 20625268
   },
   {
     "Movie": "CODE NAME: THE CLEANER",
     "Year": 2007,
-    "bo_revenue": 8135030
+    "bo_revenue": 12365246
   },
   {
     "Movie": "THE LAST LEGION",
     "Year": 2007,
-    "bo_revenue": 5933499
+    "bo_revenue": 9018918
   },
   {
     "Movie": "SUNSHINE",
     "Year": 2007,
-    "bo_revenue": 3675757
+    "bo_revenue": 5587151
   },
   {
     "Movie": "YOU KILL ME",
     "Year": 2007,
-    "bo_revenue": 2429374
-  },
-  {
-    "Movie": "AMERICAN DREAMZ",
-    "Year": 2006,
-    "bo_revenue": 7191832
-  },
-  {
-    "Movie": "NATIONAL LAMPOON'S VAN WILDER: THE RISE OF TAJ",
-    "Year": 2006,
-    "bo_revenue": 4261359
+    "bo_revenue": 3692648
   },
   {
     "Movie": "SUPERMAN RETURNS",
     "Year": 2006,
-    "bo_revenue": 200081199
+    "bo_revenue": 312126670
   },
   {
     "Movie": "THE LAKE HOUSE",
     "Year": 2006,
-    "bo_revenue": 52330120
+    "bo_revenue": 81634987
   },
   {
     "Movie": "WE ARE MARSHALL",
     "Year": 2006,
-    "bo_revenue": 43545371
+    "bo_revenue": 67930779
   },
   {
     "Movie": "GRIDIRON GANG",
     "Year": 2006,
-    "bo_revenue": 38432831
+    "bo_revenue": 59955216
   },
   {
     "Movie": "LUCKY NUMBER SLEVIN",
     "Year": 2006,
-    "bo_revenue": 22495475
+    "bo_revenue": 35092941
   },
   {
     "Movie": "THE NIGHT LISTENER",
     "Year": 2006,
-    "bo_revenue": 7836399
+    "bo_revenue": 12224782
   },
   {
-    "Movie": "MEMOIRS OF A GEISHA",
-    "Year": 2005,
-    "bo_revenue": 57010862
+    "Movie": "AMERICAN DREAMZ",
+    "Year": 2006,
+    "bo_revenue": 11219258
   },
   {
-    "Movie": 2046,
-    "Year": 2005,
-    "bo_revenue": 1444592
+    "Movie": "NATIONAL LAMPOON'S VAN WILDER: THE RISE OF TAJ",
+    "Year": 2006,
+    "bo_revenue": 6647720
   },
   {
     "Movie": "BATMAN BEGINS",
     "Year": 2005,
-    "bo_revenue": 205343779
+    "bo_revenue": 332656922
   },
   {
     "Movie": "THE 40-YEAR-OLD VIRGIN",
     "Year": 2005,
-    "bo_revenue": 109289013
+    "bo_revenue": 177048201
   },
   {
     "Movie": "CONSTANTINE",
     "Year": 2005,
-    "bo_revenue": 75526450
+    "bo_revenue": 122352849
+  },
+  {
+    "Movie": "MEMOIRS OF A GEISHA",
+    "Year": 2005,
+    "bo_revenue": 92357596
   },
   {
     "Movie": "GOOD NIGHT, AND GOOD LUCK.",
     "Year": 2005,
-    "bo_revenue": 31558010
+    "bo_revenue": 51123976
   },
   {
     "Movie": "DOOM",
     "Year": 2005,
-    "bo_revenue": 28048609
+    "bo_revenue": 45438747
   },
   {
     "Movie": "A LOT LIKE LOVE",
     "Year": 2005,
-    "bo_revenue": 21845721
+    "bo_revenue": 35390068
   },
   {
     "Movie": "DOMINO",
     "Year": 2005,
-    "bo_revenue": 9461499
+    "bo_revenue": 15327628
   },
   {
     "Movie": "OLIVER TWIST",
     "Year": 2005,
-    "bo_revenue": 2001431
+    "bo_revenue": 3242318
   },
   {
     "Movie": "A SOUND OF THUNDER",
     "Year": 2005,
-    "bo_revenue": 1897578
+    "bo_revenue": 3074076
   },
   {
     "Movie": "THE WHITE COUNTESS",
     "Year": 2005,
-    "bo_revenue": 1669975
+    "bo_revenue": 2705360
+  },
+  {
+    "Movie": 2046,
+    "Year": 2005,
+    "bo_revenue": 2340239
   },
   {
     "Movie": "THUMBSUCKER",
     "Year": 2005,
-    "bo_revenue": 1328688
-  },
-  {
-    "Movie": "KILL BILL: VOL. 2",
-    "Year": 2004,
-    "bo_revenue": 66208190
-  },
-  {
-    "Movie": "HERO",
-    "Year": 2004,
-    "bo_revenue": 53614101
-  },
-  {
-    "Movie": "AROUND THE WORLD IN 80 DAYS",
-    "Year": 2004,
-    "bo_revenue": 24008146
-  },
-  {
-    "Movie": "HAROLD & KUMAR GO TO WHITE CASTLE",
-    "Year": 2004,
-    "bo_revenue": 18250559
-  },
-  {
-    "Movie": "HOUSE OF FLYING DAGGERS",
-    "Year": 2004,
-    "bo_revenue": 8238008
+    "bo_revenue": 2152475
   },
   {
     "Movie": "SIDEWAYS",
     "Year": 2004,
-    "bo_revenue": 71503601
+    "bo_revenue": 119411014
+  },
+  {
+    "Movie": "KILL BILL: VOL. 2",
+    "Year": 2004,
+    "bo_revenue": 110567677
   },
   {
     "Movie": "SAW",
     "Year": 2004,
-    "bo_revenue": 55185049
+    "bo_revenue": 92159032
+  },
+  {
+    "Movie": "HERO",
+    "Year": 2004,
+    "bo_revenue": 89535549
   },
   {
     "Movie": "WALKING TALL",
     "Year": 2004,
-    "bo_revenue": 46341171
+    "bo_revenue": 77389756
   },
   {
     "Movie": "TWISTED",
     "Year": 2004,
-    "bo_revenue": 25198606
+    "bo_revenue": 42081672
+  },
+  {
+    "Movie": "AROUND THE WORLD IN 80 DAYS",
+    "Year": 2004,
+    "bo_revenue": 40093604
+  },
+  {
+    "Movie": "HAROLD & KUMAR GO TO WHITE CASTLE",
+    "Year": 2004,
+    "bo_revenue": 30478434
   },
   {
     "Movie": "SUSPECT ZERO",
     "Year": 2004,
-    "bo_revenue": 8725818
+    "bo_revenue": 14572116
+  },
+  {
+    "Movie": "HOUSE OF FLYING DAGGERS",
+    "Year": 2004,
+    "bo_revenue": 13757473
   },
   {
     "Movie": "THUNDERBIRDS",
     "Year": 2004,
-    "bo_revenue": 6810055
-  },
-  {
-    "Movie": "THE LAST SAMURAI",
-    "Year": 2003,
-    "bo_revenue": 111127272
-  },
-  {
-    "Movie": "KILL BILL: VOL. 1",
-    "Year": 2003,
-    "bo_revenue": 70099046
-  },
-  {
-    "Movie": "SHANGHAI KNIGHTS",
-    "Year": 2003,
-    "bo_revenue": 60476874
-  },
-  {
-    "Movie": "BEND IT LIKE BECKHAM",
-    "Year": 2003,
-    "bo_revenue": 32543457
-  },
-  {
-    "Movie": "THE MEDALLION",
-    "Year": 2003,
-    "bo_revenue": 22119984
-  },
-  {
-    "Movie": "BETTER LUCK TOMORROW",
-    "Year": 2003,
-    "bo_revenue": 3802395
+    "bo_revenue": 11372792
   },
   {
     "Movie": "THE MATRIX RELOADED",
     "Year": 2003,
-    "bo_revenue": 281553691
+    "bo_revenue": 478641275
   },
   {
     "Movie": "THE MATRIX REVOLUTIONS",
     "Year": 2003,
-    "bo_revenue": 139270916
+    "bo_revenue": 236760557
   },
   {
     "Movie": "SOMETHING'S GOTTA GIVE",
     "Year": 2003,
-    "bo_revenue": 124685243
+    "bo_revenue": 211964913
+  },
+  {
+    "Movie": "THE LAST SAMURAI",
+    "Year": 2003,
+    "bo_revenue": 188916362
   },
   {
     "Movie": "CHARLIE'S ANGELS: FULL THROTTLE",
     "Year": 2003,
-    "bo_revenue": 100814333
+    "bo_revenue": 171384366
+  },
+  {
+    "Movie": "KILL BILL: VOL. 1",
+    "Year": 2003,
+    "bo_revenue": 119168378
+  },
+  {
+    "Movie": "SHANGHAI KNIGHTS",
+    "Year": 2003,
+    "bo_revenue": 102810686
   },
   {
     "Movie": "THE RUNDOWN",
     "Year": 2003,
-    "bo_revenue": 47678165
+    "bo_revenue": 81052881
   },
   {
     "Movie": "UNDER THE TUSCAN SUN",
     "Year": 2003,
-    "bo_revenue": 43610732
+    "bo_revenue": 74138244
+  },
+  {
+    "Movie": "BEND IT LIKE BECKHAM",
+    "Year": 2003,
+    "bo_revenue": 55323877
+  },
+  {
+    "Movie": "THE MEDALLION",
+    "Year": 2003,
+    "bo_revenue": 37603973
   },
   {
     "Movie": "LOVE DON'T COST A THING",
     "Year": 2003,
-    "bo_revenue": 21905274
+    "bo_revenue": 37238966
   },
   {
     "Movie": "HOUSE OF SAND AND FOG",
     "Year": 2003,
-    "bo_revenue": 13024829
+    "bo_revenue": 22142209
+  },
+  {
+    "Movie": "BETTER LUCK TOMORROW",
+    "Year": 2003,
+    "bo_revenue": 6464072
   },
   {
     "Movie": "THE SCORPION KING",
     "Year": 2002,
-    "bo_revenue": 90450359
+    "bo_revenue": 157383625
   },
   {
     "Movie": "THE TUXEDO",
     "Year": 2002,
-    "bo_revenue": 50548004
+    "bo_revenue": 87953527
   },
   {
     "Movie": "TUCK EVERLASTING",
     "Year": 2002,
-    "bo_revenue": 19162008
+    "bo_revenue": 33341894
   },
   {
     "Movie": "BALLISTIC: ECKS VS. SEVER",
     "Year": 2002,
-    "bo_revenue": 14307966
+    "bo_revenue": 24895861
   },
   {
     "Movie": "RUSH HOUR 2",
     "Year": 2001,
-    "bo_revenue": 226138462
-  },
-  {
-    "Movie": "IRON MONKEY",
-    "Year": 2001,
-    "bo_revenue": 14681670
+    "bo_revenue": 398003693
   },
   {
     "Movie": "AMERICAN PIE 2",
     "Year": 2001,
-    "bo_revenue": 145103600
+    "bo_revenue": 255382336
   },
   {
     "Movie": "HARDBALL",
     "Year": 2001,
-    "bo_revenue": 40188974
+    "bo_revenue": 70732594
   },
   {
     "Movie": "SWEET NOVEMBER",
     "Year": 2001,
-    "bo_revenue": 25178172
+    "bo_revenue": 44313583
+  },
+  {
+    "Movie": "IRON MONKEY",
+    "Year": 2001,
+    "bo_revenue": 25839739
   },
   {
     "Movie": "SEXY BEAST",
     "Year": 2001,
-    "bo_revenue": 6731433
+    "bo_revenue": 11847322
   },
   {
     "Movie": "CROUCHING TIGER, HIDDEN DRAGON",
     "Year": 2000,
-    "bo_revenue": 128026808
-  },
-  {
-    "Movie": "SHANGHAI NOON",
-    "Year": 2000,
-    "bo_revenue": 56902720
-  },
-  {
-    "Movie": "THE LEGEND OF DRUNKEN MASTER",
-    "Year": 2000,
-    "bo_revenue": 11546544
+    "bo_revenue": 234289059
   },
   {
     "Movie": "CHARLIE'S ANGELS",
     "Year": 2000,
-    "bo_revenue": 125305551
+    "bo_revenue": 229309158
   },
   {
     "Movie": "RULES OF ENGAGEMENT",
     "Year": 2000,
-    "bo_revenue": 61286825
+    "bo_revenue": 112154890
+  },
+  {
+    "Movie": "SHANGHAI NOON",
+    "Year": 2000,
+    "bo_revenue": 104131978
   },
   {
     "Movie": "THE REPLACEMENTS",
     "Year": 2000,
-    "bo_revenue": 44737067
+    "bo_revenue": 81868833
+  },
+  {
+    "Movie": "THE LEGEND OF DRUNKEN MASTER",
+    "Year": 2000,
+    "bo_revenue": 21130176
   },
   {
     "Movie": "WHAT PLANET ARE YOU FROM?",
     "Year": 2000,
-    "bo_revenue": 6182596
-  },
-  {
-    "Movie": "TWIN DRAGONS",
-    "Year": 1999,
-    "bo_revenue": 8332435
+    "bo_revenue": 11314151
   },
   {
     "Movie": "THE MATRIX",
     "Year": 1999,
-    "bo_revenue": 171414895
+    "bo_revenue": 322260003
   },
   {
     "Movie": "A MIDSUMMER NIGHT'S DREAM",
     "Year": 1999,
-    "bo_revenue": 15997310
+    "bo_revenue": 30074943
   },
   {
     "Movie": "PLAY IT TO THE BONE",
     "Year": 1999,
-    "bo_revenue": 8377656
+    "bo_revenue": 15749993
+  },
+  {
+    "Movie": "TWIN DRAGONS",
+    "Year": 1999,
+    "bo_revenue": 15664978
   },
   {
     "Movie": "LIMBO",
     "Year": 1999,
-    "bo_revenue": 1974761
+    "bo_revenue": 3712551
   },
   {
     "Movie": "RUSH HOUR",
     "Year": 1998,
-    "bo_revenue": 141153692
-  },
-  {
-    "Movie": "MR. NICE GUY",
-    "Year": 1998,
-    "bo_revenue": 9303970
+    "bo_revenue": 269603552
   },
   {
     "Movie": "A PERFECT MURDER",
     "Year": 1998,
-    "bo_revenue": 64406199
+    "bo_revenue": 123015840
   },
   {
     "Movie": "SIMON BIRCH",
     "Year": 1998,
-    "bo_revenue": 15322566
+    "bo_revenue": 29266101
+  },
+  {
+    "Movie": "MR. NICE GUY",
+    "Year": 1998,
+    "bo_revenue": 17770583
   },
   {
     "Movie": "TOMORROW NEVER DIES",
     "Year": 1997,
-    "bo_revenue": 78609353
-  },
-  {
-    "Movie": "SEVEN YEARS IN TIBET",
-    "Year": 1997,
-    "bo_revenue": 36110883
-  },
-  {
-    "Movie": "JACKIE CHAN'S FIRST STRIKE",
-    "Year": 1997,
-    "bo_revenue": 13910370
+    "bo_revenue": 152502145
   },
   {
     "Movie": "L.A. CONFIDENTIAL",
     "Year": 1997,
-    "bo_revenue": 61178271
+    "bo_revenue": 118685846
   },
   {
     "Movie": "THE DEVIL'S ADVOCATE",
     "Year": 1997,
-    "bo_revenue": 60944669
+    "bo_revenue": 118232658
   },
   {
-    "Movie": "SUPERCOP",
-    "Year": 1996,
-    "bo_revenue": 12655606
+    "Movie": "SEVEN YEARS IN TIBET",
+    "Year": 1997,
+    "bo_revenue": 70055113
+  },
+  {
+    "Movie": "JACKIE CHAN'S FIRST STRIKE",
+    "Year": 1997,
+    "bo_revenue": 26986118
   },
   {
     "Movie": "CHAIN REACTION",
     "Year": 1996,
-    "bo_revenue": 18165612
+    "bo_revenue": 36331224
+  },
+  {
+    "Movie": "SUPERCOP",
+    "Year": 1996,
+    "bo_revenue": 25311212
   },
   {
     "Movie": "FEELING MINNESOTA",
     "Year": 1996,
-    "bo_revenue": 2673459
-  },
-  {
-    "Movie": "JOHNNY MNEMONIC",
-    "Year": 1995,
-    "bo_revenue": 18390619
+    "bo_revenue": 5346918
   },
   {
     "Movie": "SPECIES",
     "Year": 1995,
-    "bo_revenue": 58310275
+    "bo_revenue": 119536064
   },
   {
     "Movie": "A WALK IN THE CLOUDS",
     "Year": 1995,
-    "bo_revenue": 46421961
+    "bo_revenue": 95165020
   },
   {
     "Movie": "DOLORES CLAIBORNE",
     "Year": 1995,
-    "bo_revenue": 21691126
+    "bo_revenue": 44466808
+  },
+  {
+    "Movie": "JOHNNY MNEMONIC",
+    "Year": 1995,
+    "bo_revenue": 37700769
   },
   {
     "Movie": "LOSING ISAIAH",
     "Year": 1995,
-    "bo_revenue": 5185202
-  },
-  {
-    "Movie": "LITTLE BUDDHA",
-    "Year": 1994,
-    "bo_revenue": 2510552
+    "bo_revenue": 10629664
   },
   {
     "Movie": "SPEED",
     "Year": 1994,
-    "bo_revenue": 111116007
+    "bo_revenue": 234454775
   },
   {
     "Movie": "THE RIVER WILD",
     "Year": 1994,
-    "bo_revenue": 42081395
+    "bo_revenue": 88791743
   },
   {
     "Movie": "THE HOUSE OF THE SPIRITS",
     "Year": 1994,
-    "bo_revenue": 4501148
+    "bo_revenue": 9497422
+  },
+  {
+    "Movie": "LITTLE BUDDHA",
+    "Year": 1994,
+    "bo_revenue": 5297265
   },
   {
     "Movie": "THE FIRM",
     "Year": 1993,
-    "bo_revenue": 153350449
+    "bo_revenue": 331236970
   },
   {
     "Movie": "DAVE",
     "Year": 1993,
-    "bo_revenue": 60507520
+    "bo_revenue": 130696243
   },
   {
     "Movie": "JURASSIC PARK",
     "Year": 1993,
-    "bo_revenue": 45385937
+    "bo_revenue": 98033624
   },
   {
     "Movie": "MUCH ADO ABOUT NOTHING",
     "Year": 1993,
-    "bo_revenue": 11714650
+    "bo_revenue": 25303644
   },
   {
     "Movie": "LOST IN YONKERS",
     "Year": 1993,
-    "bo_revenue": 7883354
+    "bo_revenue": 17028045
   },
   {
     "Movie": "SEARCHING FOR BOBBY FISCHER",
     "Year": 1993,
-    "bo_revenue": 3478196
+    "bo_revenue": 7512903
   },
   {
     "Movie": "BRAM STOKER'S DRACULA",
     "Year": 1992,
-    "bo_revenue": 80346243
+    "bo_revenue": 179172122
   },
   {
     "Movie": "SNEAKERS",
     "Year": 1992,
-    "bo_revenue": 49541282
+    "bo_revenue": 110477059
   },
   {
     "Movie": "BUGSY",
     "Year": 1991,
-    "bo_revenue": 48263845
+    "bo_revenue": 110524205
   },
   {
     "Movie": "POINT BREAK",
     "Year": 1991,
-    "bo_revenue": 35509611
+    "bo_revenue": 81317009
   },
   {
     "Movie": "BILL & TED'S BOGUS JOURNEY",
     "Year": 1991,
-    "bo_revenue": 33053814
+    "bo_revenue": 75693234
   },
   {
     "Movie": "MYSTERY DATE",
     "Year": 1991,
-    "bo_revenue": 3268778
+    "bo_revenue": 7485502
   },
   {
     "Movie": "I LOVE YOU TO DEATH",
     "Year": 1990,
-    "bo_revenue": 12816447
+    "bo_revenue": 31015802
   },
   {
     "Movie": "PARENTHOOD",
     "Year": 1989,
-    "bo_revenue": 95611522
+    "bo_revenue": 243809381
   },
   {
     "Movie": "BILL & TED'S EXCELLENT ADVENTURE",
     "Year": 1989,
-    "bo_revenue": 35393506
+    "bo_revenue": 90253440
   },
   {
     "Movie": "DANGEROUS LIAISONS",
     "Year": 1988,
-    "bo_revenue": 31910860
+    "bo_revenue": 85201996
   },
   {
     "Movie": "WITHOUT A CLUE",
     "Year": 1988,
-    "bo_revenue": 6711906
+    "bo_revenue": 17920789
   },
   {
     "Movie": "EIGHT MEN OUT",
     "Year": 1988,
-    "bo_revenue": 3169445
+    "bo_revenue": 8462418
   },
   {
     "Movie": "GOLDEN CHILD, THE",
     "Year": 1986,
-    "bo_revenue": 75506789
+    "bo_revenue": 212174077
   },
   {
     "Movie": "YOUNGBLOOD",
     "Year": 1986,
-    "bo_revenue": 12423446
+    "bo_revenue": 34909883
   },
   {
     "Movie": "THE GOONIES",
     "Year": 1985,
-    "bo_revenue": 57530813
+    "bo_revenue": 167989974
   },
   {
     "Movie": "INDIANA JONES AND THE TEMPLE OF DOOM",
     "Year": 1984,
-    "bo_revenue": 42267353
+    "bo_revenue": 128070080
   },
   {
     "Movie": "MISSING IN ACTION",
     "Year": 1984,
-    "bo_revenue": 21630009
+    "bo_revenue": 65538927
   },
   {
     "Movie": "ICEMAN",
     "Year": 1984,
-    "bo_revenue": 6754007
+    "bo_revenue": 20464641
   },
   {
     "Movie": "GANDHI",
     "Year": 1982,
-    "bo_revenue": 51857886
+    "bo_revenue": 169575287
   },
   {
     "Movie": "THE CANNONBALL RUN",
     "Year": 1981,
-    "bo_revenue": 20007072
+    "bo_revenue": 71025106
   }
 ]
