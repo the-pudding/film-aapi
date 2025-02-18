@@ -12,7 +12,7 @@
   
     let width = 1200;
     let height = 800;
-    let dotRadius = width / 100;
+    let dotRadius = width / 200;
     const COLUMN_COUNT = 4;
     const MAX_MOVIES = 20; // Limit to top 20 movies
   
@@ -122,7 +122,7 @@
                     position: absolute;
                     left: {(j % 5) * (dotRadius * 2 + 5)}px;
                     top: {Math.floor(j / 5) * (dotRadius * 2 + 5)}px;
-                    width: {dotRadius * 2}px;
+                    width: {10}px;
                     height: {dotRadius * 2}px;
                     border-radius: 50%;
                     background-color: {actor.matchCount === 1 ? 'darkblue' : 'yellow'};

@@ -142,7 +142,7 @@
     {#if value == (4) || value == 5}
     <div class="movies-grid large-grid">
       {#each allMovies as movie, i}
-        <div class="movie-box" style="width: {boxSize}px; height: {150}px;">
+        <div class="movie-box" style="width: {boxSize/2}px; height: {80}px;">
           <div class="grid" style="width: {boxSize}px;">
             {#each movie.actors as actor, j}
               <div
@@ -197,7 +197,7 @@
       display: grid;
       grid-template-columns: repeat(5, 1fr);
       grid-template-rows: repeat(4, auto);
-      gap: 10px 20px;
+      gap: 10px 5px;
       justify-content: center;
     }
 
