@@ -76,7 +76,7 @@
     
     #story {
         min-height: 100vh; /* Ensures it fills at least the viewport height */
-        background: linear-gradient(to bottom, #A0E648, #7FB639, #598028);
+        background: white;
         background-size: 100% 100%;
         display: flex;
         flex-direction: column;
