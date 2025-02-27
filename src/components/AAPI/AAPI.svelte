@@ -4,11 +4,7 @@
     import AAPITitle from "$components/AAPI/AAPI.Title.svelte";
     import AAPITier1 from "$components/AAPI/AAPI.Tier1.svelte";
     import AAPITier1B from "$components/AAPI/AAPI.Tier1B.svelte";
-    import AAPITier2 from "$components/AAPI/AAPI.Tier2.svelte";
-    import AAPITier2a from "$components/AAPI/AAPI.Tier2a.svelte";
     import AAPITier2finalfinal from "$components/AAPI/AAPI.Tier2finalfinal.svelte";
-    import AAPITier2final from "$components/AAPI/AAPI.Tier2final.svelte";
-    import AAPITier2tetris from "$components/AAPI/AAPI.Tier2tetris.svelte";
     import AAPIText from "$components/AAPI/AAPI.Text.svelte";
     export let copy;
 </script>
@@ -43,15 +39,10 @@
     <!-- PUT EXAMPLE 2 COMPONENT HERE -->
     <AAPIText texts={copy.example3}/>
     <!-- PUT EXAMPLE 3 COMPONENT HERE -->
-    <AAPITier2final texts={copy.tier2scrolly} />
     <AAPIText texts={copy.copy4}/>
     <AAPIText texts={copy.copy_datasetup}/>
-    <AAPITier2 texts={copy.tier2scrolly} />
-    <AAPITier2a texts={copy.tier2scrolly} />
     <AAPITier2finalfinal texts={copy.tier2scrolly} /> 
-
     <AAPIText texts={copy.conclusion}/>
-    <AAPITier2tetris texts={copy.tier2scrolly} /> 
     <AAPIText texts={copy.methodology}/>
     
 
