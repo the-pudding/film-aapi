@@ -25,4 +25,5 @@
     overflow-wrap: break-word;
     text-align: justify; /* Optional: To center the text inside */
   }
+  
 </style>
