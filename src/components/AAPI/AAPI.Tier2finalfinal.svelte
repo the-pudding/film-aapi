@@ -302,7 +302,7 @@
             <div 
               class="movie-group 
                 {movie.hasAccurate && movie.hasInaccurate ? 'mixed' : ''} 
-                {movie.isFullyInaccurate ? 'fully-inaccurate' : 'dimmed'}"
+                {movie.isFullyInaccurate ? 'fully-inaccurate-opaque' : 'dimmed'}"
               data-hovered={hoveredMovieId === movie.movieId}
               on:mouseenter={(e) => showMovieTooltip(movie.movieId, e)}
               on:mouseleave={hideMovieTooltip}
