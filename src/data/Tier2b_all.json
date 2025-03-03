@@ -1702,7 +1702,7 @@
   {
     "Movie ID": 34,
     "Actor ID": 86,
-    "Media": 2046,
+    "Media": "2046",
     "Studio": "Paradis Films",
     "Box Office": "$1,444,592",
     "Release Year": 2005,

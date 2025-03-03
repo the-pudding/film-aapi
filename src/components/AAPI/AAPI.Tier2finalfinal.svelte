@@ -112,11 +112,23 @@
   }
 </script>
 <style>
+
+.movie-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align all content to the left */
+  justify-content: flex-start;
+  max-width: 100%; /* Ensures it doesn't limit the width */
+  margin-left: 0; /* Forces left alignment */
+  margin-right: auto; /* Prevents centering */
+  padding-left: 20px; /* Optional: Adds spacing from the left edge */
+}
 .year-group {
   display: flex;
   align-items: center;
   padding-bottom: 0px;
   margin-bottom: 5px;
+  
 }
 
 .year-label {
@@ -148,11 +160,11 @@
 
 /* 50% opacity for all other movies */
 .movie-group.dimmed {
-  opacity: 0.5;
+  opacity: 0.3;
 }
 
 .movie-group.fully-inaccurate-opaque {
-  opacity: 0.5;
+  opacity: 0.3;
   filter: grayscale(100%);
 }
 
@@ -164,6 +176,13 @@
   background-color: var(--square-color, red);
   transition: background-color 0.3s ease;
 }
+
+/* Set all actor squares to 0% opacity (fully hidden) */
+.square.hidden-actor {
+  opacity: 0;
+  pointer-events: none; /* Prevents interaction */
+}
+
 
 /* Accurate actors (Green) */
 .square[data-movie="true"] {
@@ -185,11 +204,47 @@
   background-color: rgb(100, 100, 100);
 }
 
+/* Yellow outline for the highlighted movies (Past Lives, Movie ID 63, Movie ID 71) */
+.movie-group.highlighted-movie {
+  outline: 4px solid yellow;
+}
 
 /* Inaccurate actors (Red) */
 .square[data-movie="false"] {
   --square-color: red;
 }
+
+/* Grey color for Early Era movies */
+.square.early-era {
+  background-color: rgb(150, 150, 150);
+  transition: background-color 0.3s ease;
+}
+
+/* Darker grey on hover */
+.movie-group[data-hovered="true"] .square.early-era {
+  background-color: rgb(100, 100, 100) !important;
+}
+
+/* Yellow border for "INDIANA JONES AND THE TEMPLE OF DOOM" (Movie ID: 2) */
+.movie-group.highlighted-movie {
+  outline: 4px solid yellow; 
+}
+/* Grey color for Early & Middle Era movies */
+.square.early-middle-era {
+  background-color: rgb(150, 150, 150);
+  transition: background-color 0.3s ease;
+}
+
+/* Darker grey on hover */
+.movie-group[data-hovered="true"] .square.early-middle-era {
+  background-color: rgb(100, 100, 100) !important;
+}
+
+/* Yellow outline for the highlighted movies (Crouching Tiger, Rush Hour, 2046) */
+.movie-group.highlighted-movie {
+  outline: 4px solid yellow;
+}
+
 
 /* Hover Effect */
 .movie-group[data-hovered="true"] .square[data-movie="true"] {
@@ -218,16 +273,164 @@
   display: block;
 }
 
+/* Adds space between specific year groups */
+.year-gap {
+  margin-bottom: 10px; /* Adjust this value as needed */
+}
+
 </style>
 
 
 <section class="scrolly-section">
   <div class="visualContainer">
 
-  {#if value == 0}
+    {#if value == 0}
+    <div class="movie-container">
+      {#each Object.keys(groupedByYearPairs) as yearRange, year_index}
+      
+        <div class="year-group"
+          style="margin-bottom: {year_index == 6 || year_index == 13 ? '20px' : '4px'};">
+
+          <div class="year-label">
+            {yearRange.split("-")[0]}-{yearRange.split("-")[1].slice(-2)}
+          </div>
+
+          <div class="movie-row">
+            {#each groupedByYearPairs[yearRange] as movie}
+            {#if year_index == 6}
+              <div class="year-gap"></div>
+             {/if}
+
+              <div 
+                class="movie-group"
+                role="button"
+                tabindex="0"
+              >
+                {#each movie.actors as actor}
+                  <div
+                    class="square hidden-actor"
+                    data-movie={actor["Background Match?"] === "Y"}
+                    style="width: {squareSize / 4}px; height: {squareSize/2}px;"
+                  >
+                  </div>
+                {/each}
+              </div>
+            {/each}
+          </div>
+        </div>
+      {/each}
+    </div>
+  {/if}
+  {#if value == 1}
   <div class="movie-container">
-    {#each Object.keys(groupedByYearPairs) as yearRange}
-      <div class="year-group">
+    {#each Object.keys(groupedByYearPairs) as yearRange, year_index}
+      <div class="year-group"
+        style="margin-bottom: {year_index == 6 || year_index == 13 ? '20px' : '4px'};">
+        <div class="year-label">
+          {yearRange.split("-")[0]}-{yearRange.split("-")[1].slice(-2)}
+        </div>
+        <div class="movie-row">
+          {#each groupedByYearPairs[yearRange] as movie}
+            <div 
+              class="movie-group {movie.movieId == 2 ? 'highlighted-movie' : ''}"
+              style="opacity: {(+yearRange.split("-")[0] >= 1982 && +yearRange.split("-")[1] <= 1995) ? (movie.movieId == 2 ? 1 : 1) : 0}"
+              role="button"
+              tabindex="0"
+            >
+              {#each movie.actors as actor}
+                <div
+                  class="square early-era"
+                  data-movie={actor["Background Match?"] === "Y"}
+                  style="width: {squareSize / 4}px; height: {squareSize/2}px;"
+                >
+                </div>
+              {/each}
+            </div>
+          {/each}
+        </div>
+      </div>
+    {/each}
+  </div>
+{/if}
+
+{#if value == 2}
+  <div class="movie-container">
+    {#each Object.keys(groupedByYearPairs) as yearRange, year_index}
+      <div class="year-group"          
+      style="margin-bottom: {year_index == 6 || year_index == 13 ? '20px' : '4px'};">
+        <div class="year-label">
+          {yearRange.split("-")[0]}-{yearRange.split("-")[1].slice(-2)}
+        </div>
+        <div class="movie-row">
+          {#each groupedByYearPairs[yearRange] as movie}
+            <div 
+              class="movie-group {movie.movieId == 15 || movie.movieId == 4 || movie.movieId == 34 ? 'highlighted-movie' : ''}"
+              style="opacity: {(+yearRange.split('-')[0] >= 1982 && +yearRange.split('-')[1] <= 1995) ? 0.3 : 
+                               (+yearRange.split('-')[0] >= 1996 && +yearRange.split('-')[1] <= 2009) ? 1 : 0}"
+              role="button"
+              tabindex="0"
+            >
+              {#each movie.actors as actor}
+                <div
+                  class="square early-middle-era"
+                  data-movie={actor["Background Match?"] === "Y"}
+                  style="width: {squareSize / 4}px; height: {squareSize/2}px;"
+                >
+                </div>
+              {/each}
+            </div>
+          {/each}
+        </div>
+      </div>
+    {/each}
+  </div>
+{/if}
+
+
+{#if value == 3}
+  <div class="movie-container">
+    {#each Object.keys(groupedByYearPairs) as yearRange, year_index}
+      <div class="year-group"
+        style="margin-bottom: {year_index == 6 || year_index == 13 ? '20px' : '4px'};">
+        <div class="year-label">
+          {yearRange.split("-")[0]}-{yearRange.split("-")[1].slice(-2)}
+        </div>
+        <div class="movie-row">
+          {#each groupedByYearPairs[yearRange] as movie}
+            <div 
+              class="movie-group {movie.movieId == 69 || movie.movieId == 63 || movie.movieId == 71 ? 'highlighted-movie' : ''}"
+              style="opacity: {(+yearRange.split('-')[0] >= 1982 && +yearRange.split('-')[1] <= 2009) ? 0.3 : 1}"
+
+              data-hovered={hoveredMovieId === movie.movieId}
+              on:mouseenter={(e) => showMovieTooltip(movie.movieId, e)}
+              on:mouseleave={hideMovieTooltip}
+              role="button"
+              tabindex="0"
+            >
+              {#each movie.actors as actor}
+                <div
+                  class="square grey"
+                  data-movie={actor["Background Match?"] === "Y"}
+                  style="width: {squareSize / 4}px; height: {squareSize/2}px;"
+                >
+                </div>
+              {/each}
+            </div>
+          {/each}
+        </div>
+      </div>
+    {/each}
+  </div>
+{/if}
+
+
+
+<!-- 4. Show everything at 100% opacity, all neutral/grey -->
+  {#if value == 4}
+  <div class="movie-container">
+    {#each Object.keys(groupedByYearPairs) as yearRange, year_index}
+      <div class="year-group"
+      style="margin-bottom: {year_index == 6 || year_index == 13 ? '20px' : '4px'};">
         <div class="year-label">
           {yearRange.split("-")[0]}-{yearRange.split("-")[1].slice(-2)}
         </div>
@@ -257,10 +460,12 @@
   </div>
 {/if}
 
-{#if value == 1}
+<!-- 5. 100% accurate -- gray for all other ones, ‘green’ for accurate -->
+{#if value == 5}
   <div class="movie-container">
-    {#each Object.keys(groupedByYearPairs) as yearRange}
-      <div class="year-group">
+    {#each Object.keys(groupedByYearPairs) as yearRange, year_index}
+      <div class="year-group"
+      style="margin-bottom: {year_index == 6 || year_index == 13 ? '20px' : '4px'};">
         <div class="year-label">
           {yearRange.split("-")[0]}-{yearRange.split("-")[1].slice(-2)}
         </div>
@@ -290,10 +495,13 @@
   </div>
 {/if}
 
-{#if value == 2}
+<!-- 6. Mixed accuracy -- opaque gray for all the rest, opaque green for 100% accurate, 
+ full opacity for mixed accuracy-->
+{#if value == 6}
   <div class="movie-container">
-    {#each Object.keys(groupedByYearPairs) as yearRange}
-      <div class="year-group">
+    {#each Object.keys(groupedByYearPairs) as yearRange, year_index}
+      <div class="year-group"
+      style="margin-bottom: {year_index == 6 || year_index == 13 ? '20px' : '4px'};">
         <div class="year-label">
           {yearRange.split("-")[0]}-{yearRange.split("-")[1].slice(-2)}
         </div>
@@ -324,11 +532,12 @@
     {/each}
   </div>
 {/if}
-
-{#if value == 3}
+<!-- 7. 0% accuracy -- opaque greens/reds for everything else, 100% opacity for highlighted -->
+{#if value == 7}
   <div class="movie-container">
-    {#each Object.keys(groupedByYearPairs) as yearRange}
-      <div class="year-group">
+    {#each Object.keys(groupedByYearPairs) as yearRange, year_index}
+      <div class="year-group"
+      style="margin-bottom: {year_index == 6 || year_index == 13 ? '20px' : '4px'};">
         <div class="year-label">
           {yearRange.split("-")[0]}-{yearRange.split("-")[1].slice(-2)}
         </div>
@@ -357,12 +566,13 @@
     {/each}
   </div>
 {/if}
-
-  {#if value == 4}
+<!-- 8. Show everything at 100% opacity, all colored in-->
+  {#if value == 8}
     <div class="movie-container">
-      {#each Object.keys(groupedByYearPairs) as yearRange}
+      {#each Object.keys(groupedByYearPairs) as yearRange, year_index}
       <!-- Modify the label format in the UI -->
-      <div class="year-group">
+      <div class="year-group"
+      style="margin-bottom: {year_index == 6 || year_index == 13 ? '20px' : '4px'};">
         <div class="year-label">
           {yearRange.split("-")[0]}-{yearRange.split("-")[1].slice(-2)}
         </div>
@@ -391,11 +601,15 @@
     {/each}
     </div>
     {/if}
+<!-- 9. Big 5 -- make non big 5 transparent
 
-    {#if value == 8}
+Highlight crazy rich asians 2018
+-->
+    {#if value == 9}
   <div class="movie-container">
-    {#each Object.keys(groupedByYearPairs) as yearRange}
-      <div class="year-group">
+    {#each Object.keys(groupedByYearPairs) as yearRange, year_index}
+      <div class="year-group"
+      style="margin-bottom: {year_index == 6 || year_index == 13 ? '20px' : '4px'};">
         <div class="year-label">
           {yearRange.split("-")[0]}-{yearRange.split("-")[1].slice(-2)}
         </div>
@@ -403,7 +617,7 @@
           {#each groupedByYearPairs[yearRange] as movie}
             <div 
               class="movie-group"
-              style="opacity: {movie.isBig5 ? 1 : 0.5}"
+              style="opacity: {movie.isBig5 ? 1 : 0.3}"
               data-hovered={hoveredMovieId === movie.movieId}
               on:mouseenter={(e) => showMovieTooltip(movie.movieId, e)}
               on:mouseleave={hideMovieTooltip}
@@ -426,45 +640,55 @@
   </div>
 {/if}
 
-{#if value == 9}
-  <div class="movie-container">
-    {#each Object.keys(groupedByYearPairs) as yearRange}
-      <div class="year-group">
-        <div class="year-label">
-          {yearRange.split("-")[0]}-{yearRange.split("-")[1].slice(-2)}
-        </div>
-        <div class="movie-row">
-          {#each groupedByYearPairs[yearRange] as movie}
-            <div 
-              class="movie-group"
-              style="opacity: {movie.isAsianDirector ? 1 : 0.5}"
-              data-hovered={hoveredMovieId === movie.movieId}
-              on:mouseenter={(e) => showMovieTooltip(movie.movieId, e)}
-              on:mouseleave={hideMovieTooltip}
-              role="button"
-              tabindex="0"
-            >
-              {#each movie.actors as actor}
-                <div
-                  class="square"
-                  data-movie={actor["Background Match?"] === "Y"}
-                  style="width: {squareSize / 4}px; height: {squareSize/2}px;"
-                >
-                </div>
-              {/each}
-            </div>
-          {/each}
-        </div>
-      </div>
-    {/each}
-  </div>
-{/if}
+<!-- 10. Asian directors -- make non asian directors transparent
 
+Minari
+Shang chi
+EEAAO
+Joy Ride
+-->
 {#if value == 10}
+  <div class="movie-container">
+    {#each Object.keys(groupedByYearPairs) as yearRange, year_index}
+      <div class="year-group"
+      style="margin-bottom: {year_index == 6 || year_index == 13 ? '20px' : '4px'};">
+        <div class="year-label">
+          {yearRange.split("-")[0]}-{yearRange.split("-")[1].slice(-2)}
+        </div>
+        <div class="movie-row">
+          {#each groupedByYearPairs[yearRange] as movie}
+            <div 
+              class="movie-group"
+              style="opacity: {movie.isAsianDirector ? 1 : 0.3}"
+              data-hovered={hoveredMovieId === movie.movieId}
+              on:mouseenter={(e) => showMovieTooltip(movie.movieId, e)}
+              on:mouseleave={hideMovieTooltip}
+              role="button"
+              tabindex="0"
+            >
+              {#each movie.actors as actor}
+                <div
+                  class="square"
+                  data-movie={actor["Background Match?"] === "Y"}
+                  style="width: {squareSize / 4}px; height: {squareSize/2}px;"
+                >
+                </div>
+              {/each}
+            </div>
+          {/each}
+        </div>
+      </div>
+    {/each}
+  </div>
+{/if}
+
+<!-- 11. Back to complete viz, can hover theoretically and stuff (full functionality/explore)-->
+{#if value == 11}
 <div class="movie-container">
-  {#each Object.keys(groupedByYearPairs) as yearRange}
+  {#each Object.keys(groupedByYearPairs) as yearRange, year_index}
   <!-- Modify the label format in the UI -->
-  <div class="year-group">
+  <div class="year-group"
+  style="margin-bottom: {year_index == 6 || year_index == 13 ? '20px' : '4px'};">
     <div class="year-label">
       {yearRange.split("-")[0]}-{yearRange.split("-")[1].slice(-2)}
     </div>
