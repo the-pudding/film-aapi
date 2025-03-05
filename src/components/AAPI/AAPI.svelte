@@ -2,8 +2,7 @@
 	import wordmark from "$svg/wordmark-shadow.svg";
     import AAPIIntro from "$components/AAPI/AAPI.Intro.svelte";
     import AAPITitle from "$components/AAPI/AAPI.Title.svelte";
-    import AAPITier1 from "$components/AAPI/AAPI.Tier1.svelte";
-    import AAPITier1B from "$components/AAPI/AAPI.Tier1B.svelte";
+    import AAPITier1C from "$components/AAPI/AAPI.Tier1C.svelte";
     import AAPITier2finalfinal from "$components/AAPI/AAPI.Tier2finalfinal.svelte";
     import AAPIText from "$components/AAPI/AAPI.Text.svelte";
     export let copy;
@@ -22,16 +21,12 @@
     </header>
 
     <!--AAPIIntro texts={copy.introScrolly} /-->
-    <!--AAPITitle /-->
     <AAPIText texts={copy.copy1}/>
-    <div 
-        class="amw"
-        role = "img"
-        aria-label="hi"></div>
+    <AAPITitle />
+
     <!-- PUT MOVIE POSTERS COMPONENT HERE f-->
     <AAPIText texts={copy.copy2}/>
-    <AAPITier1 texts={copy.tier1scrolly} />
-    <AAPITier1B texts={copy.tier1scrolly} />
+    <AAPITier1C texts={copy.tier1scrolly} />
     <AAPIText texts={copy.copy3}/>
     <AAPIText texts={copy.example1}/>
     <!-- PUT EXAMPLE 1 COMPONENT HERE gyvh-->
@@ -67,18 +62,18 @@
     
     #story {
         min-height: 100vh; /* Ensures it fills at least the viewport height */
-        background: white;
+        background: #876EA6;
         background-size: 100% 100%;
         display: flex;
         flex-direction: column;
     }
 
     .top-background {
-        background: url('$svg/illustrations/backgroundtop.png') no-repeat center top;
+        background: url('$svg/illustrations/comic.png') no-repeat center top;
         background-size: cover; /* Ensures the image covers the div */
         margin: 0 auto;
         height: 100vh; /* Adjust height as needed */
-        width: 100%; /* Spans the full width */
+        width: 50%; /* Spans the full width */
         }
 
     .amw {

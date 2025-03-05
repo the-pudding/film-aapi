@@ -85,11 +85,11 @@
 
 <style>
   .line { transition: stroke 0.3s ease; }
-  .line:hover { stroke: darkred; }
+  .line:hover { stroke: #EF476F; }
   .axis text { font-size: 12px; }
-  .axis path, .axis line { fill: none; stroke: #000; stroke-width: 1px; }
+  .axis path, .axis line { fill: none; stroke: #EF476F; stroke-width: 1px; }
   circle { transition: fill 0.3s ease; }
-  circle:hover { fill: darkred; }
+  circle:hover { fill: #fe0f47; }
 </style>
 
 <svg id="lineChart"></svg>

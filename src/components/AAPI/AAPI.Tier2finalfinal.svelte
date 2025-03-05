@@ -186,12 +186,12 @@
 
 /* Accurate actors (Green) */
 .square[data-movie="true"] {
-  --square-color: green;
+  --square-color: #2e2b90;
 }
 
 /* Default grey color for all squares */
 .square.grey {
-  background-color: rgb(150, 150, 150); /* Medium grey */
+  background-color: #574177; /* Medium grey */
   transition: background-color 0.3s ease;
 }
 
@@ -211,12 +211,12 @@
 
 /* Inaccurate actors (Red) */
 .square[data-movie="false"] {
-  --square-color: red;
+  --square-color: #F35B04;
 }
 
 /* Grey color for Early Era movies */
 .square.early-era {
-  background-color: rgb(150, 150, 150);
+  background-color: #574177;
   transition: background-color 0.3s ease;
 }
 
@@ -231,7 +231,7 @@
 }
 /* Grey color for Early & Middle Era movies */
 .square.early-middle-era {
-  background-color: rgb(150, 150, 150);
+  background-color: #574177;
   transition: background-color 0.3s ease;
 }
 
