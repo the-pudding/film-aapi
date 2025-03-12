@@ -530,7 +530,7 @@
   </div>
 {/if}
 <!-- 8. Show everything at 100% opacity, all colored in-->
-  {#if value == 8}
+  {#if value == 8 | value == 9}
     <div class="movie-container">
       {#each Object.keys(groupedByYearPairs) as yearRange, year_index}
       <!-- Modify the label format in the UI -->
@@ -568,7 +568,7 @@
 
 Highlight crazy rich asians 2018
 -->
-    {#if value == 9}
+    {#if value == 10}
   <div class="movie-container">
     {#each Object.keys(groupedByYearPairs) as yearRange, year_index}
       <div class="year-group"
@@ -610,7 +610,7 @@ Shang chi
 EEAAO
 Joy Ride
 -->
-{#if value == 10}
+{#if value == 11}
   <div class="movie-container">
     {#each Object.keys(groupedByYearPairs) as yearRange, year_index}
       <div class="year-group"
@@ -646,7 +646,7 @@ Joy Ride
 {/if}
 
 <!-- 11. Back to complete viz, can hover theoretically and stuff (full functionality/explore)-->
-{#if value == 11 | value == 12}
+{#if value == 12 | value == 13}
 <div class="movie-container">
   {#each Object.keys(groupedByYearPairs) as yearRange, year_index}
   <!-- Modify the label format in the UI -->

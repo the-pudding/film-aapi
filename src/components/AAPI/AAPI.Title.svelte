@@ -1,6 +1,6 @@
 <section id="title">
-    <h1><i>"ASIAN"</i></h1>
-    <h1 style="font-size: 9vh;"><i>REPRESENTATION</i></h1>
+    <h1>asian</h1>
+   <h1> mis representation</h1>
     <br/>
 
     <h4> By Anna Li and Dorothy Lu</h4>
@@ -8,8 +8,8 @@
 
 <style>
     h1 {
-        font-size: 20vh;
-        text-align: center;
+        font-size: 10vh;
+        text-align: left;
     }
     #title {
         padding-top: 0em;
