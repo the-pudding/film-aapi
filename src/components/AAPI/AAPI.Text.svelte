@@ -16,12 +16,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Full viewport height */
     margin: 0;
   }
 
   .textContainer {
-    width: 500px;
+    width: 600px;
     overflow-wrap: break-word;
     text-align: justify; /* Optional: To center the text inside */
   }

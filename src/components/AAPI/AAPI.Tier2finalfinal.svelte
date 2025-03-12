@@ -284,44 +284,7 @@
 <section class="scrolly-section">
   <div class="visualContainer">
 
-    {#if value == 0}
-    <div class="movie-container">
-      {#each Object.keys(groupedByYearPairs) as yearRange, year_index}
-      
-        <div class="year-group"
-          style="margin-bottom: {year_index == 6 || year_index == 13 ? '20px' : '4px'};">
-
-          <div class="year-label">
-            {yearRange.split("-")[0]}-{yearRange.split("-")[1].slice(-2)}
-          </div>
-
-          <div class="movie-row">
-            {#each groupedByYearPairs[yearRange] as movie}
-            {#if year_index == 6}
-              <div class="year-gap"></div>
-             {/if}
-
-              <div 
-                class="movie-group"
-                role="button"
-                tabindex="0"
-              >
-                {#each movie.actors as actor}
-                  <div
-                    class="square hidden-actor"
-                    data-movie={actor["Background Match?"] === "Y"}
-                    style="width: {squareSize / 4}px; height: {squareSize/2}px;"
-                  >
-                  </div>
-                {/each}
-              </div>
-            {/each}
-          </div>
-        </div>
-      {/each}
-    </div>
-  {/if}
-  {#if value == 1}
+  {#if value == 0}
   <div class="movie-container">
     {#each Object.keys(groupedByYearPairs) as yearRange, year_index}
       <div class="year-group"
@@ -353,7 +316,7 @@
   </div>
 {/if}
 
-{#if value == 2}
+{#if value == 1}
   <div class="movie-container">
     {#each Object.keys(groupedByYearPairs) as yearRange, year_index}
       <div class="year-group"          
@@ -387,7 +350,7 @@
 {/if}
 
 
-{#if value == 3}
+{#if value == 2 | value == 3}
   <div class="movie-container">
     {#each Object.keys(groupedByYearPairs) as yearRange, year_index}
       <div class="year-group"
@@ -683,7 +646,7 @@ Joy Ride
 {/if}
 
 <!-- 11. Back to complete viz, can hover theoretically and stuff (full functionality/explore)-->
-{#if value == 11}
+{#if value == 11 | value == 12}
 <div class="movie-container">
   {#each Object.keys(groupedByYearPairs) as yearRange, year_index}
   <!-- Modify the label format in the UI -->

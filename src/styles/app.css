@@ -94,7 +94,11 @@ h6 {
 }
 
 p {
-	font-size: var(--16px, 16px);
+	font-size: var(--17px, 17px);
+	font-family: var(--sans);
+	color:white;
+	text-align: left;
+	line-height: 1.6rem;
 }
 
 .visualContainer {
@@ -115,7 +119,7 @@ p {
 	margin: 0px auto;
 }
 .stepText {
-	background: var(--color-gray-100);
+	background: #382947;
 	text-align: left;
 	padding: 1.5rem;
 	position: relative; /* Makes sure z-index works correctly */
