@@ -1,19 +1,20 @@
 <section id="title">
-    <h1>asian</h1>
-   <h1> mis representation</h1>
-    <br/>
-
+    <h1>asian<br>mis representation</h1>
     <h4> By Anna Li and Dorothy Lu</h4>
 </section>
 
 <style>
-    h1 {
-        font-size: 10vh;
-        text-align: left;
-    }
     #title {
         padding-top: 0em;
-        height: 90vh;
+        width: 100%;
+        max-width: 620px;
+        margin: 50px auto;
+        text-align: center;
+        color: white;
+    }
+    h1 {
+        font-size: 5rem;
+        line-height: 4rem;
     }
 
     h3 {
@@ -27,5 +28,8 @@
         text-align: center;
         font-size: 1em;
         font-weight: 300;
+        width: 100%;
+        max-width: 620px;
+        margin: 0 auto;
     }
 </style>

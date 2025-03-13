@@ -5,7 +5,7 @@
 <div class="wrapper">
   <div class="textContainer">
     {#each texts.split(/\r?\n+/) as text, i}
-    <p>{text}</p>
+    <p>{@html text}</p>
     {/each}
   </div>
 </div>

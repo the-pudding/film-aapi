@@ -34,6 +34,11 @@
 	--color-input-bg: var(--color-gray-50);
 	--color-input-fg: var(--color-gray-900);
 	--color-placeholder: var(--color-gray-500);
+	--bgcolor: #876EA6;
+
+	--fullyaccurate: #00ccff;
+	--partiallyaccurate: #dbcf72;
+	--fullyinaccruate: #ff9063;
 
 	/* "1" second duration */
 	--1s: 1ms;
@@ -114,6 +119,7 @@ p {
 
 /* step = each individual scrolly box */
 .step {
+	padding-top: 30vh;
 	height: 100vh;
 	max-width: 30rem;
 	margin: 0px auto;
@@ -121,7 +127,7 @@ p {
 .stepText {
 	background: #382947;
 	text-align: left;
-	padding: 1.5rem;
+	padding: 1rem;
 	position: relative; /* Makes sure z-index works correctly */
 	opacity: 1; /* Ensure text is fully opaque */
 }
@@ -131,4 +137,46 @@ p {
 
 .step p {
 	margin: 0;
+}
+h2 {
+  font-size: 20px;
+  line-height: 25px;
+  margin: 0px;
+  color:  white;
+}
+h3 {
+	  color:  white;
+  font-size: 17px;
+  line-height:  20px;
+  margin:  10px 0;
+  font-weight: normal;
+}
+figcaption {
+  margin-top: 8px;
+  font-size: 12px;
+  color:  white;
+  font-family: var(--sans); /* Use the font from app.css */
+  width: 100%;
+}
+figure img {
+  width: 100%;
+}
+
+
+.stepText p span {
+  color:  yellow !important;
+  font-weight: bold;
+}
+
+.stepText p span.accurate {
+  color:  var(--fullyaccurate) !important;
+  font-weight: bold;
+}
+.stepText p span.partial_accurate {
+  color:  var(--partiallyaccurate) !important;
+  font-weight: bold;
+}
+.stepText p span.fully_inaccurate {
+   color:  var(--fullyinaccruate) !important;
+  font-weight: bold;
 }
