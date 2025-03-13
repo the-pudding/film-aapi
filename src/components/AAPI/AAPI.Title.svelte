@@ -16,6 +16,12 @@
         font-size: 5rem;
         line-height: 4rem;
     }
+    @media (max-width: 680px) {
+        h1 {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+    }
 
     h3 {
         padding-left: 10%;

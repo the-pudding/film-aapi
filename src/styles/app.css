@@ -34,8 +34,9 @@
 	--color-input-bg: var(--color-gray-50);
 	--color-input-fg: var(--color-gray-900);
 	--color-placeholder: var(--color-gray-500);
-	--bgcolor: #876EA6;
 
+
+	--bgcolor: #876EA6;
 	--fullyaccurate: #00ccff;
 	--partiallyaccurate: #dbcf72;
 	--fullyinaccruate: #ff9063;

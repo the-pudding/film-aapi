@@ -34,7 +34,7 @@
 <div class="outsideContainer">
   <section id="scrolly">
     <div class="visualContainer" bind:clientWidth={width} bind:clientHeight={height}>
-      <div class="comicContainer" style="transform: translateY(-{ (value+1)/6.9*100}%);">
+      <div class="comicContainer" style="transform: translate(-50%, -{ (value)/6*100}%);">
         {#each [1,2,3,4,5,6] as comic}
         <div class="panel" bind:clientWidth={panelWidth} bind:clientHeight={panelHeight}>
           <div class="comicWrapper" style="opacity: {value + 1 === comic ? 1 : 0.2};">
@@ -86,11 +86,12 @@
   .visualContainer {
     height: 100vh;
     overflow: hidden;
+    top: 0px;
 }
 .comicContainer {
-  width: 100%;
+  width: 90%;
+  left: 50%;
   max-width: 600px;
-  margin-top: 50vh;
   position: absolute;
   top: 0%;
   transition: all 500ms cubic-bezier(0.420, 0.000, 0.580, 1.000); /* ease-in-out */
@@ -113,6 +114,12 @@
   box-sizing: border-box;
   border-bottom: 3px solid #281113;
   color: #281113;
+}
+@media (max-width: 680px) {
+  .textPanel {
+    font-size: 4vw;
+  line-height: 4.01vw;
+  }
 }
 .panel {
   background: #221a24;
