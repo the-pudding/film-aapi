@@ -1,41 +1,96 @@
-<section id="title">
-    <h1>asian<br>mis representation</h1>
-    <h4> By Anna Li and Dorothy Lu</h4>
-</section>
-
-<style>
-    #title {
-        padding-top: 0em;
-        width: 100%;
-        max-width: 620px;
-        margin: 50px auto;
-        text-align: center;
-        color: white;
+<script>
+    let imageUrl = "/assets/images/title-picture.png";
+  </script>
+  
+  <style>
+    .title-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      color: #d4af71; /* Match the text color */
     }
-    h1 {
-        font-size: 5rem;
-        line-height: 4rem;
+  
+    /* Grouping title and credits together for alignment */
+    .title-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start; /* Align everything to the left */
     }
-    @media (max-width: 680px) {
-        h1 {
-        font-size: 3rem;
-        line-height: 3rem;
+  
+    /* Layout for the title */
+    .title {
+      display: flex;
+      flex-direction: row; /* Place image on the left, text on the right */
+      align-items: center; /* Align items vertically */
+      gap: 1rem; /* Space between image and text */
+      font-size: 4rem;
     }
+  
+    /* Ensures the text aligns left */
+    .text {
+      text-align: left;
+      line-height: 1.2;
+      position: relative; 
+      top: -0.15em;
     }
-
-    h3 {
-        padding-left: 10%;
-        padding-right: 10%;
-        text-align: center;
-        font-weight: 300;
+  
+    /* Image Box */
+    .image-box {
+      width: 150px;
+      height: 150px;
+      margin-right: 0.5em;
     }
-
-    h4 {
-        text-align: center;
-        font-size: 1em;
-        font-weight: 300;
-        width: 100%;
-        max-width: 620px;
-        margin: 0 auto;
+  
+    .image-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
-</style>
+  
+    /* Styling for "mis" */
+    .mis {
+      color: #A98A8F; /* Lighter shade for "mis" */
+    }
+  
+    /* Credits Section */
+    .credits {
+      font-size: 0.9rem;
+      margin-top: 1rem; /* Adds slight spacing */
+      color: #e5d8b7;
+      text-align: left; /* Ensures text is aligned left */
+      margin-left: 14em;
+    }
+  
+    .credits a {
+      text-decoration: none;
+      color: #e5d8b7;
+    }
+  
+    .credits a:hover {
+      text-decoration: underline;
+    }
+  </style>
+  
+  <div class="title-container">
+    <div class="title-wrapper">
+      <!-- Title (Image on left, text on right) -->
+      <div class="title">
+        <div class="image-box">
+          <img src={imageUrl} alt="Title Picture" />
+        </div>
+        <span class="text">
+          asian <br />
+          <span class="mis">mis </span>representation
+        </span>
+      </div>
+  
+      <!-- Left-aligned Credits directly below -->
+      <div class="credits">
+        Data & Storytelling by <a href="#">Dorothy Lu</a>  |  Visuals & Development by <a href="#">Anna Li</a><br />
+        & a big thanks to our mentor <a href="#">Alvin Chang</a>
+      </div>
+    </div>
+  </div>
+  
