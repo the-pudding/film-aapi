@@ -181,7 +181,3 @@ figure img {
    color:  var(--fullyinaccruate) !important;
   font-weight: bold;
 }
-.stepText p span.movie_name {
-	color:  var(--color-white) !important;
-	font-style: italic;
- }
