@@ -8,39 +8,44 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      height: 100vh;
       color: #d4af71; /* Match the text color */
+      padding-bottom: 10rem;
     }
   
-    /* Grouping title and credits together for alignment */
+    /* Wrapper for title & credits */
     .title-wrapper {
       display: flex;
       flex-direction: column;
       align-items: flex-start; /* Align everything to the left */
     }
   
-    /* Layout for the title */
+    /* Title layout (image on left, text on right) */
     .title {
       display: flex;
-      flex-direction: row; /* Place image on the left, text on the right */
-      align-items: center; /* Align items vertically */
+      flex-direction: row; /* Image on the left, text on the right */
+      align-items: center; /* Vertically centers items */
       gap: 1rem; /* Space between image and text */
       font-size: 4rem;
+      font-weight: bold;
     }
   
-    /* Ensures the text aligns left */
+    /* Adjust text position slightly upward */
     .text {
       text-align: left;
       line-height: 1.2;
-      position: relative; 
-      top: -0.15em;
+      position: relative;
+      top: -0.5em; /* Moves text up */
     }
   
     /* Image Box */
     .image-box {
-      width: 150px;
-      height: 150px;
+      width: 140px;
+      height: 140px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       margin-right: 0.5em;
+      margin-bottom: 0.6em;
     }
   
     .image-box img {
@@ -51,16 +56,15 @@
   
     /* Styling for "mis" */
     .mis {
-      color: #A98A8F; /* Lighter shade for "mis" */
+      color: #c0b3a8; /* Lighter shade for "mis" */
     }
   
     /* Credits Section */
     .credits {
       font-size: 0.9rem;
-      margin-top: 1rem; /* Adds slight spacing */
       color: #e5d8b7;
-      text-align: left; /* Ensures text is aligned left */
-      margin-left: 14em;
+      text-align: left; /* Ensures text aligns left */
+      margin-left: 13em;
     }
   
     .credits a {
@@ -71,25 +75,50 @@
     .credits a:hover {
       text-decoration: underline;
     }
+  
+    /* 📱 MOBILE RESPONSIVENESS (When screen width is ≤ 768px) */
+    @media (max-width: 768px) {
+      .title {
+        font-size: 2rem; /* Halve the title font size */
+        gap: 0.5rem; /* Reduce spacing */
+      }
+  
+      .text {
+        top: -0.5em; /* Adjust position */
+      }
+  
+      .image-box {
+        width: 70px; /* Halve the image size */
+        height: 70px;
+      }
+  
+      .credits {
+        font-size: 0.6rem; /* Halve the credits font size */
+        margin-left: 10em;
+      }
+    }
   </style>
   
   <div class="title-container">
     <div class="title-wrapper">
-      <!-- Title (Image on left, text on right) -->
+      <!-- Title section -->
       <div class="title">
+        <!-- Image on the left -->
         <div class="image-box">
           <img src={imageUrl} alt="Title Picture" />
         </div>
+  
+        <!-- Title text slightly moved up -->
         <span class="text">
           asian <br />
           <span class="mis">mis </span>representation
         </span>
       </div>
   
-      <!-- Left-aligned Credits directly below -->
+      <!-- Credits section -->
       <div class="credits">
-        Data & Storytelling by <a href="#">Dorothy Lu</a>  |  Visuals & Development by <a href="#">Anna Li</a><br />
-        & a big thanks to our mentor <a href="#">Alvin Chang</a>
+        Data & Storytelling by <a href="#">Dorothy Lu</a><br />
+        Visuals & Development by <a href="#">Anna Li</a>
       </div>
     </div>
   </div>
