@@ -12,19 +12,19 @@
   ]
   let bubbleSize = {
     "1": 25,
-    "2": 40,
-    "3": 20,
-    "4": 30,
+    "2": 25,
+    "3": 12,
+    "4": 25,
     "5": 0,
-    "6": 30
+    "6": 20
   }
   let bubbleText = {
     "1": "My mother, Haimei, is a Chinese immigrant who spent decades building a life in New York City.",
-    "2": "After her two children grew up and moved out, all she wants to do these days is cuddle with her dog and watch TV.",
-    "3": "Recently she was watching Emily In Paris, a Netflix TV show.",
+    "2": "After her two children grew up and moved, all she wants to do these days is cuddle with her dog and watch TV.",
+    "3": "Recently she put on Netflix.",
     "4": "She was excited to see a Chinese character—when she noticed something she couldn’t ignore.",
     "5": "",
-    "6": "She couldn't help but think that think Asian actors are interchangeable."
+    "6": "\'I guess Hollywood doesn’t care to get it right…\'"
   }
   $: {
     if (value == undefined) {value = 0}
@@ -144,8 +144,7 @@
 transition-timing-function: cubic-bezier(0.250, 0.250, 0.750, 0.750);
 }
 .comicPanel {
-  width: 120%;
-  margin-left: -10%;
+  width: 110%;
   margin-top: -10%;
   max-width: none;
   aspect-ratio: 1 / 1;

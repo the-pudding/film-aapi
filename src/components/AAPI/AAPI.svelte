@@ -29,7 +29,6 @@
     alt="Nancy Kwan plays Suzie Wong in The World of Suzie Wong (1960)"
     caption="Nancy Kwan plays Suzie Wong in <i>The World of Suzie Wong</i> (1960)"
     />
-    <AAPIText texts={'To measure exactly how much more representation Asians had in Hollywood, we TKTKTKTKT.'}/>
     <AAPIText texts={copy.dataSetup}/>
 <!--     <AAPIImages
     title="9882 Movies"

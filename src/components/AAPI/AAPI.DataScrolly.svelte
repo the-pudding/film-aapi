@@ -213,6 +213,7 @@
                 {#each movie.actors as actor}
                   <div
                   class="square early-era"
+                  data-actor={actor.Actor}
                   data-movie={actor["Background Match?"] === "Y"}
                   style="width: {width/40}px;">
                     <img 
