@@ -320,7 +320,7 @@
   margin-right: 15px;
   width: 80px; /* Adjusted for two-year format */
   text-align: right;
-  color: white;
+  color: rgb(55, 17, 82);;
   transition: opacity 0.3s ease;
 
   display: flex;

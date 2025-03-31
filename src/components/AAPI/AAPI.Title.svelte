@@ -8,7 +8,7 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      color: #d4af71; /* Match the text color */
+      color: #4e1488; /* Match the text color */
       padding-bottom: 10rem;
     }
   
@@ -56,20 +56,20 @@
   
     /* Styling for "mis" */
     .mis {
-      color: #c0b3a8; /* Lighter shade for "mis" */
+      color: #a08ece; /* Lighter shade for "mis" */
     }
   
     /* Credits Section */
     .credits {
       font-size: 0.9rem;
-      color: #e5d8b7;
+      color: #461c64;
       text-align: left; /* Ensures text aligns left */
       margin-left: 13em;
     }
   
     .credits a {
       text-decoration: none;
-      color: #e5d8b7;
+      color: #9367d0;
     }
   
     .credits a:hover {

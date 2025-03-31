@@ -29,30 +29,9 @@
     alt="Nancy Kwan plays Suzie Wong in The World of Suzie Wong (1960)"
     caption="Nancy Kwan plays Suzie Wong in <i>The World of Suzie Wong</i> (1960)"
     />
-    <AAPIText texts={copy.dataSetup}/>
-<!--     <AAPIImages
-    title="9882 Movies"
-    subtitle=""
-    url="assets/images/tier0-movie-viz.png"
-    alt="Visual of 9882 movies"
-    caption=""
-    /> -->
-    <AAPIText texts={copy.dataSetup400}/>
- <!--    <AAPIImages
-    title="477 Movies"
-    subtitle=""
-    url="assets/images/tier1-movie-viz.png"
-    alt="Visual of 477 movies"
-    caption=""
-    /> -->
-    <AAPIText texts={copy.dataSetup80}/>
-   <!--  <AAPIImages
-    title="80 Movies"
-    subtitle=""
-    url="assets/images/tier2-movie-viz.png"
-    alt="Visual of 80 movies"
-    caption=""
-    /> -->
+    <AAPIText texts={copy.dataTransition}/>
+    <div id = "box"> <AAPIText texts={copy.dataSetup}/></div>
+   
     <AAPIDataScrolly section="start" />
 
 
@@ -77,7 +56,7 @@
     <AAPIDataScrolly section="end" />
 
     <AAPIText texts={copy.conclusion}/>
-    <AAPIText texts={copy.methodology}/>
+    <dix id= "box"><AAPIText texts={copy.methodology}/> </dix>
     
 
 </div>
@@ -98,5 +77,13 @@
         margin: 0 auto;
         height: 100vh; /* Adjust height as needed */
         width: 50%; /* Spans the full width */
+    }
+
+    #box {
+        background-color: #c4bfe6;
+        width: 50%;
+        margin: 0 auto;
+        padding: 10px;
+        margin-top: 2em;
     }
 </style>

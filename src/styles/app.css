@@ -36,7 +36,7 @@
 	--color-placeholder: var(--color-gray-500);
 
 
-	--bgcolor: #876EA6;
+	--bgcolor: #e2defc;
 	--fullyaccurate: #00ccff;
 	--partiallyaccurate: #dbcf72;
 	--fullyinaccruate: #ff9063;
@@ -102,7 +102,7 @@ h6 {
 p {
 	font-size: var(--17px, 17px);
 	font-family: var(--sans);
-	color:white;
+	color:rgb(45, 15, 80);
 	text-align: left;
 	line-height: 1.6rem;
 }
@@ -126,10 +126,10 @@ p {
 	margin: 0px auto;
 }
 .stepText {
-	background: #382947;
+	background: #a596cf;
 	text-align: left;
 	padding: 1rem;
-	position: relative; /* Makes sure z-index works correctly */
+	position: re slative; /* Makes sure z-index works correctly */
 	opacity: 1; /* Ensure text is fully opaque */
 }
 .pad {
@@ -143,10 +143,10 @@ h2 {
   font-size: 20px;
   line-height: 25px;
   margin: 0px;
-  color:  white;
+  color:  rgb(55, 17, 82);
 }
 h3 {
-	  color:  white;
+	  color:  rgb(55, 17, 82);
   font-size: 17px;
   line-height:  20px;
   margin:  10px 0;
@@ -155,7 +155,7 @@ h3 {
 figcaption {
   margin-top: 8px;
   font-size: 12px;
-  color:  white;
+  color:  rgb(55, 17, 82);
   font-family: var(--sans); /* Use the font from app.css */
   width: 100%;
 }
