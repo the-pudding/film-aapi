@@ -16,13 +16,6 @@
     <AAPIText texts={copy.history}/>
     <AAPIhistoricalPictures />
     <AAPIText texts={copy.population}/>
-  <!--   <AAPIImages
-        title="Number of Asians in the US over time"
-        subtitle="1980 - 2020"
-        url="assets/images/asian-population-graph.png"
-        alt="Number of Asians in the US over time, 1980 - 2020"
-        caption="Data source: US Census Bureau, 1980 - 2020"
-    /> -->
     <AAPIText texts={copy.stereotypes}/>
     <AAPIImages
     url="assets/images/nancy-kwan.png"
@@ -81,9 +74,18 @@
 
     #box {
         background-color: #c4bfe6;
-        width: 50%;
+        width: 40%;
         margin: 0 auto;
         padding: 10px;
         margin-top: 2em;
+    }
+
+    @media (max-width: 680px) {
+        #story {
+            padding: 15px;
+        }
+        #box {
+            width: 90%;
+        }
     }
 </style>

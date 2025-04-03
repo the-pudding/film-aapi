@@ -1,8 +1,3 @@
-<script>
-
-
-  </script>
-  
   <div class="image-container">
     <figure>
       <img src="assets/images/charlie-chan.png" alt="Charlie Chan">
@@ -36,7 +31,6 @@
     figcaption {
         margin-top: 8px;
         font-size: 12px;
-        color:  white;
         font-family: var(--sans); /* Use the font from app.css */
         width: 170px;
   }

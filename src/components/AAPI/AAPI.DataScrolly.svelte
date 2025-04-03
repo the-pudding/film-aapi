@@ -46,6 +46,7 @@
       let year = actor["Release Year"];
       let boxOffice = parseFloat(actor["Box Office"].replace(/[$,]/g, "")) || 0;
       let studio = actor["Studio"];
+      let director = actor["Director name"];
       let isAsianDirector = actor["Is the director asian?"] === "Y";
 
       let movieId = actor["Movie ID"];
@@ -62,6 +63,7 @@
           boxOffice,
           isAsianDirector,
           studio,
+          director,
           isNotAsianDirector: !isAsianDirector,
           isBig5: big5Studios.has(studio), // Check if it's a Big 5 studio
           isNotBig5: !big5Studios.has(studio),
@@ -106,20 +108,38 @@
     groupedByYearPairs = tempGroupedByYearPairs;
   });
 
-  function showMovieTooltip(movieId, event) {
+  function showMovieTooltip(movieId, event, characteristic) {
     hoveredMovieId = movieId;
     let movie = Object.values(groupedByYearPairs)
     .flat()
     .find(m => m.movieId === movieId);
 
     if (!movie) return;
-
+    if (characteristic.includes("isBig5")) {
+      tooltip = {
+      visible: true,
+      x: event.clientX + 10,
+      y: event.clientY + 10,
+      text: `${movie.media} (${movie.releaseYear})\nInaccurate Castings: ${movie.inaccurateCastings}\nStudio: ${movie.studio}`,
+    }
+    }
+    else if (characteristic.includes("isAsianDirector")) {
+      tooltip = {
+      visible: true,
+      x: event.clientX + 10,
+      y: event.clientY + 10,
+      text: `${movie.media} (${movie.releaseYear})\nInaccurate Castings: ${movie.inaccurateCastings}\nDirector: ${movie.director}`,
+    }
+    }
+    
+    else {
     tooltip = {
       visible: true,
       x: event.clientX + 10,
       y: event.clientY + 10,
       text: `${movie.media} (${movie.releaseYear})\nInaccurate Castings: ${movie.inaccurateCastings}`,
     };
+  }
   }
 
   function hideMovieTooltip() {
@@ -205,7 +225,7 @@
               <div 
               class="movie-group {getMovieColorClass(movie.characteristics, currentStage)} {getMovieHighlight(movie.movieId, currentStage)}"
               data-hovered={hoveredMovieId === movie.movieId}
-              on:mouseenter={(e) => showMovieTooltip(movie.movieId, e)}
+              on:mouseenter={(e) => showMovieTooltip(movie.movieId, e, movie.characteristics)}
               on:mouseleave={hideMovieTooltip}
               style="opacity: {getOpacity(yearRange, movie.characteristics, currentStage)};"
               role="button"
@@ -251,6 +271,8 @@
 </div>
 
 <style>
+
+  
   .outsideContainer {
     width: 100%; /* Ensure it spans full width */
     max-width: 2000px;
