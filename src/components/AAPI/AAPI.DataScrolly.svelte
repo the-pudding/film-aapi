@@ -131,7 +131,6 @@
       text: `${movie.media} (${movie.releaseYear})\nInaccurate Castings: ${movie.inaccurateCastings}\nDirector: ${movie.director}`,
     }
     }
-    
     else {
     tooltip = {
       visible: true,

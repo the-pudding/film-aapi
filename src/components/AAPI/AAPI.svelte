@@ -8,6 +8,8 @@
     import AAPIImages from "$components/AAPI/AAPI.Images.svelte";
     import AAPIhistoricalPictures from "$components/AAPI/AAPI.historical.svelte";
     export let copy;
+
+    let showBox = false;
 </script>
 
 <div id="story">
@@ -23,7 +25,17 @@
     caption="Nancy Kwan plays Suzie Wong in <i>The World of Suzie Wong</i> (1960)"
     />
     <AAPIText texts={copy.dataTransition}/>
-    <div id = "box"> <AAPIText texts={copy.dataSetup}/></div>
+
+
+<button id="toggle-button" on:click={() => (showBox = !showBox)}>
+	Read more about our process {showBox ? '−' : '+'} 
+</button>
+
+{#if showBox}
+	<div id="box">
+		<AAPIText texts={copy.dataSetup}/>
+	</div>
+{/if}
    
     <AAPIDataScrolly section="start" />
 
@@ -72,12 +84,19 @@
         width: 50%; /* Spans the full width */
     }
 
+    #toggle-button {
+		cursor: pointer;
+		background: none;
+		border: none;
+		font-size: 1em;
+		color: #333;
+	}
+
     #box {
         background-color: #c4bfe6;
         width: 40%;
         margin: 0 auto;
         padding: 10px;
-        margin-top: 2em;
     }
 
     @media (max-width: 680px) {
