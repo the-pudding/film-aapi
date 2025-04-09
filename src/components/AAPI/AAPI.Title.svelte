@@ -45,7 +45,7 @@
       align-items: center;
       justify-content: center;
       margin-right: 0.5em;
-      margin-bottom: 0.6em;
+      margin-bottom: 1.2em;
     }
   
     .image-box img {
@@ -57,6 +57,17 @@
     /* Styling for "mis" */
     .mis {
       color: #a08ece; /* Lighter shade for "mis" */
+    }
+
+    .title-text {
+  font-size: inherit; /* inherits from .text (4rem) */
+    }
+
+    .byline {
+      font-size: 1rem;
+      margin-top: 1rem;
+      color: #4e1488;
+      font-weight: normal;
     }
   
     /* Credits Section */
@@ -81,15 +92,19 @@
       .title {
         font-size: 2rem; /* Halve the title font size */
         gap: 0.5rem; /* Reduce spacing */
+        flex-direction: column; /* Stack image on top of text */
+        align-items: center; /* Center everything horizontally */
+        text-align: center; /* Center text underneath image */
       }
   
       .text {
         top: -0.5em; /* Adjust position */
+        text-align: center;
       }
   
       .image-box {
-        width: 70px; /* Halve the image size */
-        height: 70px;
+        width: 200px; /* Halve the image size */
+        height: 200px;
       }
   
       .credits {
@@ -110,8 +125,11 @@
   
         <!-- Title text slightly moved up -->
         <span class="text">
+          <div class = "title-text"> 
           asian <br />
           <span class="mis">mis </span>representation 
+        </div>
+        <div class="byline"> <i>An exploration of casting accuracy in the past 42 years of Asian Americans in film.</i></div>
         </span>
       </div>
   
