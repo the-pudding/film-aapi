@@ -102,7 +102,7 @@ h6 {
 p {
 	font-size: var(--17px, 17px);
 	font-family: var(--sans);
-	color:rgb(45, 15, 80);
+	color:black;
 	text-align: left;
 	line-height: 1.6rem;
 }
@@ -126,7 +126,7 @@ p {
 	margin: 0px auto;
 }
 .stepText {
-	background: #a596cf;
+	background: #c6bdea;
 	text-align: left;
 	padding: 1rem;
 	position: re slative; /* Makes sure z-index works correctly */

@@ -111,14 +111,15 @@
         <!-- Title text slightly moved up -->
         <span class="text">
           asian <br />
-          <span class="mis">mis </span>representation
+          <span class="mis">mis </span>representation 
         </span>
       </div>
   
       <!-- Credits section -->
       <div class="credits">
         Data & Storytelling by <a href="#">Dorothy Lu</a><br />
-        Visuals & Development by <a href="#">Anna Li</a>
+        Visuals & Development by <a href="#">Anna Li</a><br />
+        Support from <a href="#">Alvin Chang </a>
       </div>
     </div>
   </div>

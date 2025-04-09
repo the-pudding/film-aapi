@@ -28,7 +28,7 @@
 
 
 <button id="toggle-button" on:click={() => (showBox = !showBox)}>
-	Read more about our process {showBox ? '−' : '+'} 
+	More details on our methodology {showBox ? '−' : '+'} 
 </button>
 
 {#if showBox}
@@ -61,12 +61,20 @@
     <AAPIDataScrolly section="end" />
 
     <AAPIText texts={copy.conclusion}/>
-    <dix id= "box"><AAPIText texts={copy.methodology}/> </dix>
+    <dix id= "box">
+        <h6>
+            Methodology
+        </h6>
+        <AAPIText texts={copy.methodology}/> 
+    </dix>
     
 
 </div>
 <style>
-
+    h6 {
+        margin: 1 auto;
+        text-align: center;
+    }
     #story {
         min-height: 100vh; /* Ensures it fills at least the viewport height */
         background: var(--bgcolor);
