@@ -1,5 +1,5 @@
 <script>
-  export let title, subtitle, url, alt, caption;
+  export let title, subtitle, url, alt, caption, urlmobile;
 </script>
 
 <div class="image-container">
@@ -10,25 +10,43 @@
     {#if subtitle}
     <h3 class ="subtitle">{@html subtitle}</h3>
     {/if}
-    <img src="{url}" alt="{alt}">
+    <img class="desktop" src="{url}" alt="{alt}">
+    {#if urlmobile}
+    <img class="mobile" src="{urlmobile}" alt="{alt}">
+    {/if}
     <figcaption>{@html caption}</figcaption>
   </figure>
 </div>
 <style>
+  figure {
+    margin: 30px 0;
+  }
  .image-container {
   display: block;
   flex-wrap: wrap; /* Allows wrapping on smaller screens */
   margin: 0 auto;    /* Centers the container */
-  padding-bottom: 30px;
-  width: 620px;
-  max-width: 100%;
+  width: 100%;
+  max-width:  600px;
   color: white;
 }
-
+.image-container .mobile {
+  display: none;
+}
+ .image-container img {
+  margin: 20px 0;
+ }
 @media (max-width: 768px) {
   .image-container {
     flex-direction: column;
     align-items: center;
+  }
+}
+@media (max-width: 450px) {
+  .image-container .mobile {
+   display: block;
+  }
+  .image-container .desktop {
+   display: none;
   }
 }
 

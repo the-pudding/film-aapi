@@ -23,16 +23,15 @@
       display: flex;
       flex-wrap: wrap; /* Allows wrapping on smaller screens */
       max-width: 600px;  /* Limits the content width */
-      margin: 0 auto;    /* Centers the container */
-      gap: 30px;
-      padding: 50px;
+      margin: 30px auto;    /* Centers the container */
+      gap: 10px;
     }
   
     figcaption {
         margin-top: 8px;
         font-size: 12px;
         font-family: var(--sans); /* Use the font from app.css */
-        width: 170px;
+        width: 190px;
   }
   
     @media (max-width: 768px) {

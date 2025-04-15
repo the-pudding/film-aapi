@@ -1,8 +1,10 @@
 <script>
   import Scrolly from "$components/helpers/Scrolly.svelte";
-  import { onMount } from "svelte";
+  import AAPIText from "$components/AAPI/AAPI.Text.svelte";
+  import { fade } from 'svelte/transition';
+  import { onMount, onDestroy } from "svelte"; // Added onDestroy
   import data from "$data/Tier2b_all.json";
-  import scrolly_copy from "$data/scrolly_copy.json";
+  import scrolly_copy from "$data/copy.json";
   export let section;
   let value = 0;
   let currentStage = scrolly_copy[section][value];
@@ -12,9 +14,27 @@
   let container;
   let width = 0;
   let height = 0;
+  let outsideWidth = 0;
   let squareSize = 20;
   let hoveredMovieId = null;
-  let tooltip = { visible: false, x: 0, y: 0, text: "" };
+  let character_color = null;
+  let tooltip = { visible: false, x: 0, y: 0, bottom: 0, text: "", useTop: true }; // Added useTop flag
+  const legendData = [
+    {"label": "Fully accurate", "color": "--fullyaccurate", "stage": 1},
+    {"label": "Part accurate", "color": "--partiallyaccurate", "stage": 2},
+    {"label": "Fully inaccurate", "color": "--fullyinaccurate", "stage": 3}
+  ]
+  const altLegendData = [
+    {"label": "Accurate", "color": "--fullyaccurate", "stage": 1},
+    {"label": "Inaccurate", "color": "--fullyinaccurate", "stage": 3}
+  ]
+  
+  // Add scroll event handler to hide tooltip on scroll
+  function handleScroll() {
+    if (tooltip.visible) {
+      hideMovieTooltip();
+    }
+  }
 
   // Group movies by two-year periods and sort by number of inaccurate castings
   onMount(() => {
@@ -31,9 +51,7 @@
       "Warner Bros. Pictures",
       "The Walt Disney Studios",
       "Columbia Pictures"
-    ]);
-
-    
+    ]);    
 
     // Initialize two-year groups
     for (let year = minYear; year <= maxYear; year += 2) {
@@ -106,39 +124,108 @@
     });
 
     groupedByYearPairs = tempGroupedByYearPairs;
+    
+    // IMPORTANT: Only add event listeners after component has mounted and window is defined
+    if (typeof window !== 'undefined') {
+      // Add scroll event listener
+      window.addEventListener('scroll', handleScroll, true); // Using capture phase for better detection
+      
+      // Also listen for wheel events which can happen before scroll events
+      window.addEventListener('wheel', handleScroll, true);
+      
+      // Listen for touchmove events for mobile devices
+      window.addEventListener('touchmove', handleScroll, true);
+    }
+  });
+  
+  // Clean up event listeners when component is destroyed
+  onDestroy(() => {
+    if (typeof window !== 'undefined') {
+      window.removeEventListener('scroll', handleScroll, true);
+      window.removeEventListener('wheel', handleScroll, true);
+      window.removeEventListener('touchmove', handleScroll, true);
+    }
   });
 
   function showMovieTooltip(movieId, event, characteristic) {
     hoveredMovieId = movieId;
     let movie = Object.values(groupedByYearPairs)
-    .flat()
-    .find(m => m.movieId === movieId);
+      .flat()
+      .find(m => m.movieId === movieId);
 
     if (!movie) return;
-    if (characteristic.includes("isBig5")) {
-      tooltip = {
-      visible: true,
-      x: event.clientX + 10,
-      y: event.clientY + 10,
-      text: `${movie.media} (${movie.releaseYear})\nInaccurate Castings: ${movie.inaccurateCastings}\nStudio: ${movie.studio}`,
+
+    // First set the tooltip content
+    let headers = "<tr class='row header'><th>Actor</th><th>Character</th></tr>";
+    let accurateCast = [];
+    let inaccurateCast = [];
+
+    // Limit the number of actors to prevent overflow (adjust the number as needed)
+    const limitActors = 50; // Show max 25 accurate and 25 inaccurate actors
+    let accurateCount = 0;
+    let inaccurateCount = 0;
+    
+    for (let i = 0; i < movie.actors.length; i++) {
+      if (movie.actors[i]["Background Match?"] == "Y") {
+        if (accurateCount < limitActors/2) {
+          accurateCast.push("<td class='value actor'>" + movie.actors[i].Actor + " <span>(" + movie.actors[i]["Actor Ethnicity"] + ")</span></td><td class='value character'>" + movie.actors[i]["Character Name"]  + " <span>(" + movie.actors[i]["Character Ethnicity"]  + ")</span></td>");
+          accurateCount++;
+        }
+      } else {
+        if (inaccurateCount < limitActors/2) {
+          inaccurateCast.push("<td class='value actor'>" + movie.actors[i].Actor + " <span>(" + movie.actors[i]["Actor Ethnicity"] + ")</span></td><td class='value character'>" + movie.actors[i]["Character Name"]  + " <span>(" + movie.actors[i]["Character Ethnicity"]  + ")</span></td>");
+          inaccurateCount++;
+        }
+      }
     }
+
+    // Show total counts if not all actors are displayed
+    let accurateFooter = "";
+    let inaccurateFooter = "";
+    
+    let totalAccurate = movie.actors.filter(a => a["Background Match?"] == "Y").length;
+    let totalInaccurate = movie.actors.filter(a => a["Background Match?"] != "Y").length;
+    
+    if (totalAccurate > accurateCount) {
+      accurateFooter = `<tr class="row footer"><td colspan="2">+ ${totalAccurate - accurateCount} more accurate casting(s)</td></tr>`;
     }
-    else if (characteristic.includes("isAsianDirector")) {
-      tooltip = {
-      visible: true,
-      x: event.clientX + 10,
-      y: event.clientY + 10,
-      text: `${movie.media} (${movie.releaseYear})\nInaccurate Castings: ${movie.inaccurateCastings}\nDirector: ${movie.director}`,
+    
+    if (totalInaccurate > inaccurateCount) {
+      inaccurateFooter = `<tr class="row footer inaccurate"><td colspan="2">+ ${totalInaccurate - inaccurateCount} more inaccurate casting(s)</td></tr>`;
     }
+
+    // Create the HTML string variables with div elements
+    let accuratelyCastList = accurateCast.map(actor => `<tr class='row'>${actor}</tr>`).join('') + accurateFooter;
+    let inaccuratelyCastList = inaccurateCast.map(actor => `<tr class='row inaccurate'>${actor}</tr>`).join('') + inaccurateFooter;
+    const movieTitle = "<div class='movieTitle'>" + movie.media + "</div>";
+    
+    tooltip.text = movieTitle + "<table>" + headers + accuratelyCastList + inaccuratelyCastList + "</table>";
+    tooltip.visible = true;
+    
+    // Only access window if it's defined (i.e., in browser environment)
+    if (typeof window !== 'undefined') {
+      // Determine whether to use top or bottom positioning based on mouse Y position
+      const viewportHeight = window.innerHeight;
+      tooltip.useTop = event.clientY < viewportHeight / 2;
+      
+      if (tooltip.useTop) {
+        tooltip.y = event.clientY + 10; // Set top position
+        tooltip.bottom = undefined; // Clear bottom
+      } else {
+        tooltip.bottom = viewportHeight - event.clientY + 10; // Set bottom position
+        tooltip.y = undefined; // Clear top
+      }
+
+      // Set initial position based on horizontal position and container width
+      tooltip.x = event.clientX + 10;
+
+      if (event.clientX > outsideWidth / 2) {
+        tooltip.x = event.clientX - 270;
+      }
+      if (outsideWidth < 600) {
+        tooltip.x = 10;
+      }
     }
-    else {
-    tooltip = {
-      visible: true,
-      x: event.clientX + 10,
-      y: event.clientY + 10,
-      text: `${movie.media} (${movie.releaseYear})\nInaccurate Castings: ${movie.inaccurateCastings}`,
-    };
-  }
   }
 
   function hideMovieTooltip() {
@@ -153,8 +240,6 @@
     return highlightedMovies.includes(Number(movieId)) ? 'highlighted-movie' : '';
   }
 
-
-
   function getOpacity(yearRange, chars) {
     const [startYear, endYear] = yearRange.split("-").map(Number);
     const [visibleStart, visibleEnd] = currentStage.visible_years.split("-").map(Number);
@@ -163,7 +248,6 @@
     if (currentStage.characteristic_dim) {
       dimmed = currentStage.characteristic_dim.split(",");
     }
-
 
     let opacity = 0;
     if (endYear >= opaqueStart && endYear <= opaqueEnd) {
@@ -185,7 +269,6 @@
       shown = currentStage.characteristic_shown.split(",");
     }
     
-
     for (const char of chars) {
       if (shown.includes(char)) {
         return char || "";
@@ -195,7 +278,11 @@
   }
 
   function formatImageName(actorName) {
-    return `assets/images/headshots/${String(actorName).replace(/ /g, "_")}.jpg`;
+    const name = String(actorName).replace(/ /g, "_")
+    if (section == "start") {
+      return `assets/images/headshots_color/${name}.jpg`;
+    }
+    return `assets/images/headshots/${name}.jpg`;
   }
   function handleImageError(event) {
     event.target.onerror = null; // Prevent infinite loop
@@ -205,53 +292,77 @@
   $: {
     if (value == undefined) { value = 0; }
     currentStage = scrolly_copy[section][value];
-
-    squareSize = width / 100;
+    character_color = (currentStage.character_color === undefined) ? -1 : currentStage.character_color;
+    squareSize = width / 100;    
   }
 </script>
-<div class="outsideContainer">
+<div class="outsideContainer {section}" bind:clientWidth={outsideWidth}>
   <section id="scrolly">
-    <div class="visualContainer" bind:clientWidth={width} bind:clientHeight={height}>
+    <div class="visualContainer stage{character_color}" bind:clientWidth={width} bind:clientHeight={height}>
 
       <div class="movie-container">
         {#each Object.keys(groupedByYearPairs) as yearRange, year_index}
-        <div class="movie-opacity-{getOpacity(yearRange, [], currentStage)} year-group year-group-{year_index}" style="height: {height/30}px;">
+        <div class="movie-opacity-{getOpacity(yearRange, [], currentStage)} year-group year-group-{year_index}" style="height: {height/30}px;" transition:fade>
           <div class="year-label" style="opacity: {getOpacity(yearRange, [], currentStage)};">
             {yearRange.split("-")[0]}-{yearRange.split("-")[1].slice(-2)}
           </div>
-          <div class="movie-row">
+          <div class="movie-row" transition:fade>
             {#each groupedByYearPairs[yearRange] as movie}
-              <div 
-              class="movie-group {getMovieColorClass(movie.characteristics, currentStage)} {getMovieHighlight(movie.movieId, currentStage)}"
-              data-hovered={hoveredMovieId === movie.movieId}
-              on:mouseenter={(e) => showMovieTooltip(movie.movieId, e, movie.characteristics)}
-              on:mouseleave={hideMovieTooltip}
-              style="opacity: {getOpacity(yearRange, movie.characteristics, currentStage)};"
-              role="button"
-              tabindex="0">
-                {#each movie.actors as actor}
-                  <div
-                  class="square early-era"
-                  data-actor={actor.Actor}
-                  data-movie={actor["Background Match?"] === "Y"}
-                  style="width: {width/40}px;">
-                    <img 
-                    src={formatImageName(actor.Actor)}
-                    alt="Image of {actor.Actor}"
-                    on:error={handleImageError}
-                    />
-                  </div>
-                {/each}
-             </div>
-            {/each}
+            <div 
+            class="movie-group {getMovieColorClass(movie.characteristics, currentStage)} {getMovieHighlight(movie.movieId, currentStage)}"
+            data-hovered={hoveredMovieId === movie.movieId}
+            on:mouseenter={(e) => showMovieTooltip(movie.movieId, e, movie.characteristics)}
+            on:mouseleave={hideMovieTooltip}
+            transition:fade
+            style="opacity: {getOpacity(yearRange, movie.characteristics, currentStage)};"
+            role="button"
+            tabindex="0">
+            {#each movie.actors as actor}
+            <div
+            transition:fade
+            class="square early-era actorClass{actor["Background Match?"]}"
+            data-actor={actor.Actor}
+            data-movie={actor["Background Match?"] === "Y"}
+            style="width: {width/40}px;">
+            <img 
+            src={formatImageName(actor.Actor)}
+            alt="Image of {actor.Actor}"
+            on:error={handleImageError}
+            />
           </div>
+          {/each}
         </div>
         {/each}
+      </div>
     </div>
+    {/each}
+    {#if section == "end"}
+    {#if character_color != "1"}
+    <div class="legend" transition:fade>
+      {#each legendData as d, i}
+      {#if value >= d.stage}
+      <div class="legendItem" transition:fade><span style="background: var({d.color});"></span> {d.label}</div>
+      {/if}
+      {/each}
+    </div>
+    {:else}
+      <div class="legend" transition:fade>
+      {#each altLegendData as d, i}
+      {#if value >= d.stage}
+      <div class="legendItem" transition:fade><span style="background: var({d.color});"></span> {d.label}</div>
+      {/if}
+      {/each}
+    </div>
+    {/if}
+    {/if}
+  </div>
 </div>
 
-<div class="tooltip {tooltip.visible ? 'visible' : ''}" style="top: {tooltip.y}px; left: {tooltip.x}px;">
-  {tooltip.text}
+<!-- Conditionally set top or bottom position based on useTop flag -->
+<div class="tooltip {tooltip.visible ? 'visible' : ''} {tooltip.orientation}" 
+     style="{tooltip.useTop ? `top: ${tooltip.y}px;` : `bottom: ${tooltip.bottom}px;`} left: {tooltip.x}px;">
+  {@html tooltip.text}
+  <div class="tooltip-arrow"></div>
 </div>
 
 <div class="stepContainer">
@@ -260,7 +371,7 @@
     {@const active = value === i}
     <div class="step">
       <div class="stepText">
-        <p>{@html stage.text}</p>
+        <AAPIText texts={stage.text} />
       </div>
     </div>
     {/each}
@@ -270,8 +381,6 @@
 </div>
 
 <style>
-
-  
   .outsideContainer {
     width: 100%; /* Ensure it spans full width */
     max-width: 2000px;
@@ -282,11 +391,14 @@
     height: 100vh; /* Full viewport height */
     width: 70%; /* Ensure it spans full width */
     margin-left: 30%;
+    z-index: 10;
   }
   .stepContainer {
-    display: block;
     width: 25%;
     margin-left: 2.5%;
+    z-index: 99;
+    position: relative; 
+    pointer-events: none;
   }
   @media (max-width: 1300px) {
     .visualContainer {
@@ -296,12 +408,11 @@
       height: 90vh;
     }
     .stepContainer {
-      display: block;
       width: 27%;
       margin-left: 1%;
     }
   }
-  @media (max-width: 1000px) {
+  @media (max-width: 1200px) {
     .visualContainer {
       width: 95%; 
       margin-left: 2.5%;
@@ -309,6 +420,7 @@
     .stepContainer {
       display: block;
       width: 350px;
+      max-width: 98%;
       margin: 0 auto;
     }
   }
@@ -327,7 +439,7 @@
     align-items: flex-start;  /* THIS IS IMPORTANT */
     width: 100%; /* THIS IS IMPORTANT */
     padding-bottom: 0px;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
   }
 
 
@@ -337,13 +449,13 @@
 }
 
 .year-label {
-  font-size: 20px;
+  font-size: 15px;
   margin-right: 15px;
-  width: 80px; /* Adjusted for two-year format */
+  width: 60px; /* Adjusted for two-year format */
   text-align: right;
-  color: rgb(55, 17, 82);;
+  color: var(--text-color);
   transition: opacity 0.3s ease;
-
+  font-weight: bold;
   display: flex;
   align-items: center;
   height: 100%; /* Ensure the parent has a defined height */
@@ -362,15 +474,15 @@
 .movie-group {
   display: flex;
   flex-wrap: nowrap; /* Prevents actors in a movie from stacking */
-  gap: 1px; /* Space between actors */
+  gap: 0px; /* Space between actors */
   align-items: center;
   opacity:  1;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
   height: 100%;
-  border: 1px solid #aaa;
+  border: 0.5px solid #594158;
 }
 .movie-group:hover {
-  border: 1px solid white;
+  transform: scale(1.05);
 }
 
 
@@ -378,9 +490,11 @@
   display: block;
   height: 100%;
   background-color: #dec7ff;
-  transition: all 0.3s ease;
+  transition: all 0.05s ease;
   position: relative;
   overflow: hidden;
+  border: 0.5px solid #594158;
+
 }
 .square img {
   position: absolute;
@@ -395,15 +509,24 @@
 .movie-opacity-0 {
   pointer-events: none;
 }
-.isFullyAccurate .square {
+.stage-1 .isFullyAccurate .square {
   background-color: var(--fullyaccurate) !important;
 }
-.isPartiallyAccurate .square {
+.stage-1 .isPartiallyAccurate .square {
   background-color: var(--partiallyaccurate) !important;
 } 
-.isFullyInaccurate .square {
- background-color: var(--fullyinaccruate) !important;
+.stage-1 .isFullyInaccurate .square {
+ background-color: var(--fullyinaccurate) !important;
 }
+
+.stage1 .actorClassN {
+ background-color: var(--fullyinaccurate) !important;
+}
+.stage1 .actorClassY {
+  background-color: var(--fullyaccurate) !important;
+}
+
+
 
 /* Set all actor squares to 0% opacity (fully hidden) */
 .square.hidden-actor {
@@ -433,26 +556,126 @@
 
 /* Yellow outline for the highlighted movies (Past Lives, Movie ID 63, Movie ID 71) */
 .movie-group.highlighted-movie {
-  outline: 2px solid yellow;
+  outline: 4px solid var(--hl-border);
+  transform: scale(1.2);
+  z-index: 99;
 }
-
 
 /* Tooltip */
 .tooltip {
   position: fixed;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.9);
   color: white;
-  padding: 5px;
+  padding: 10px;
   border-radius: 4px;
-  font-size: 0.8em;
+  font-size: 12px;
   pointer-events: none;
-  z-index: 10;
+  z-index: 1000;
   display: none;
-  white-space: pre-line;
+  max-width: 350px;
+  /* Remove max-height and overflow-y to prevent scrolling */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  border: 1px solid #444;
+  white-space: normal;
+  transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
 .tooltip.visible {
   display: block;
+}
+
+/* Mobile tooltip specific styles */
+.tooltip.mobile {
+  max-width: calc(100% - 20px);
+  width: calc(100% - 20px);
+  left: 10px !important; /* Override inline styles */
+  max-height: 40vh;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Tooltip arrow */
+.tooltip-arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 8px solid transparent;
+  pointer-events: none;
+}
+
+/* Arrow direction classes */
+.tooltip.left .tooltip-arrow {
+  right: -16px;
+  top: 20px;
+  border-left-color: rgba(0, 0, 0, 0.9);
+}
+
+.tooltip.right .tooltip-arrow {
+  left: -16px;
+  top: 20px;
+  border-right-color: rgba(0, 0, 0, 0.9);
+}
+
+.tooltip.top .tooltip-arrow {
+  bottom: -16px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-top-color: rgba(0, 0, 0, 0.9);
+}
+
+.tooltip.bottom .tooltip-arrow {
+  top: -16px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-bottom-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Hide arrow for mobile */
+.tooltip.mobile .tooltip-arrow {
+  display: none;
+}
+
+.tooltip .movieTitle {
+  font-weight: bold;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.tooltip table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tooltip th {
+  text-align: left;
+  padding: 3px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.tooltip td {
+  padding: 3px;
+  vertical-align: top;
+}
+
+.tooltip .row.inaccurate {
+  background-color: rgba(255, 100, 100, 0.2);
+}
+
+.tooltip .value span {
+  opacity: 0.7;
+  font-size: 0.9em;
+  display: block;
+}
+
+/* Remove any ::after pseudo-elements that create scroll indicators */
+.tooltip::after {
+  display: none;
+}
+
+/* Remove scrollbar styles */
+.tooltip::-webkit-scrollbar {
+  display: none;
 }
 
 /* Adds space between specific year groups */
@@ -460,4 +683,39 @@
   margin-bottom: 10px; /* Adjust this value as needed */
 }
 
+.legend {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  width: 150px;
+  font-size: 15px;
+}
+
+.legendItem span {
+  top: 2px;
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  border: 1px solid #444;
+}
+@media (max-width: 500px) {
+  .legend {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 120px;
+  font-size: 13px;
+}
+.legendItem span {
+  height: 10px;
+  width: 10px;
+}
+}
+/* Additional styling for the footer rows in the tooltip */
+.tooltip .row.footer {
+  font-size: 0.9em;
+  font-style: italic;
+  text-align: center;
+  color: #aaa;
+}
 </style>

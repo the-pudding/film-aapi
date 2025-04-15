@@ -26,7 +26,7 @@
     />
     <AAPIText texts={copy.dataTransition}/>
 
-
+<!-- 
 <button id="toggle-button" on:click={() => (showBox = !showBox)}>
 	More details on our methodology {showBox ? '−' : '+'} 
 </button>
@@ -35,7 +35,7 @@
 	<div id="box">
 		<AAPIText texts={copy.dataSetup}/>
 	</div>
-{/if}
+{/if} -->
    
     <AAPIDataScrolly section="start" />
 
@@ -50,8 +50,8 @@
     <AAPIText texts={copy.identity}/>
     <AAPIImages
     title="How Asian Americans identify themselves"
-    subtitle="2022 - 2023"
-    url="assets/images/identity-chart.png"
+    url="assets/images/ChartAAPI.svg"
+    urlmobile="assets/images/ChartAAPI-mobile.svg"
     alt="How Asian Americans identify themselves"
     caption="Data source: Pew Research Center, Survey of Asian American adults conducted 2022 - 2023"
     />
@@ -59,8 +59,11 @@
     <AAPIText texts={copy.thesis}/>
 
     <AAPIDataScrolly section="end" />
-
+    
     <AAPIText texts={copy.conclusion}/>
+
+    <div class="shortline"></div>
+    
     <dix id= "box">
         <h6>
             Methodology
@@ -77,11 +80,9 @@
     }
     #story {
         min-height: 100vh; /* Ensures it fills at least the viewport height */
-        background: var(--bgcolor);
-        background-size: 100% 100%;
-        display: flex;
-        flex-direction: column;
         font-family: var(--sans);
+        max-width: 97%;
+        margin: 0 auto;
     }
 
     .top-background {
@@ -91,28 +92,28 @@
         height: 100vh; /* Adjust height as needed */
         width: 50%; /* Spans the full width */
     }
-
+    .shortline {
+        display: block;
+        width: 200px;
+        margin:  50px auto;
+        border-top: 2px solid var(--text-color);
+    }
     #toggle-button {
+        display: block;
 		cursor: pointer;
 		background: none;
-		border: none;
 		font-size: 1em;
 		color: #333;
+        margin: 0 auto;
+        text-align: center;
+        font-weight: bold;
 	}
 
     #box {
-        background-color: #c4bfe6;
+/*         background-color: #c4bfe6; */
         width: 40%;
         margin: 0 auto;
         padding: 10px;
     }
 
-    @media (max-width: 680px) {
-        #story {
-            padding: 15px;
-        }
-        #box {
-            width: 90%;
-        }
-    }
 </style>

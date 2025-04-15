@@ -36,10 +36,16 @@
 	--color-placeholder: var(--color-gray-500);
 
 
-	--bgcolor: #e2defc;
-	--fullyaccurate: #00ccff;
-	--partiallyaccurate: #dbcf72;
-	--fullyinaccruate: #ff9063;
+	--bgcolor: #DFDEFC;
+	--fullyaccurate: #42baff;
+	--partiallyaccurate: #dbaf00;
+	--fullyinaccurate: #ff668d;
+	--hl-border: #e6c72c;
+	--hl-text: #edd34c;
+	--text-color: #463d4a;
+	--textbox-bg: #E9D4EC;
+	--textbox-bg-comic: #d3b7eb;
+	--step-bg: rgb(181, 171, 224);
 
 	/* "1" second duration */
 	--1s: 1ms;
@@ -106,7 +112,9 @@ p {
 	text-align: left;
 	line-height: 1.6rem;
 }
-
+body, html {
+	background: var(--bgcolor);
+}
 .visualContainer {
 	position: sticky;
 	height: 100vh;
@@ -120,25 +128,23 @@ p {
 
 /* step = each individual scrolly box */
 .step {
-	padding-top: 30vh;
+	padding-top: 20vh;
 	height: 100vh;
 	max-width: 30rem;
 	margin: 0px auto;
+	pointer-events: none;
 }
 .stepText {
-	background: #c6bdea;
+	background: var(--step-bg);
 	text-align: left;
 	padding: 1rem;
-	position: re slative; /* Makes sure z-index works correctly */
+	position: relative; /* Makes sure z-index works correctly */
 	opacity: 1; /* Ensure text is fully opaque */
 }
 .pad {
 	height: 100vh; /* Spacing between steps. 100vh = full viewport height */
 }
 
-.step p {
-	margin: 0;
-}
 h2 {
   font-size: 20px;
   line-height: 25px;
@@ -165,19 +171,66 @@ figure img {
 
 
 .stepText p span {
-  color:  yellow !important;
+  background:  var(--hl-text);
   font-weight: bold;
+  padding: 0 3px;
 }
 
 .stepText p span.accurate {
-  color:  var(--fullyaccurate) !important;
+  color: white;
+  background:  var(--fullyaccurate) !important;
   font-weight: bold;
 }
 .stepText p span.partial_accurate {
-  color:  var(--partiallyaccurate) !important;
+	color: white;
+  background:  var(--partiallyaccurate) !important;
   font-weight: bold;
 }
 .stepText p span.fully_inaccurate {
-   color:  var(--fullyinaccruate) !important;
+	color: white;
+   background:  var(--fullyinaccurate) !important;
   font-weight: bold;
+}
+
+
+.textContainer p {
+    font-size:  17px;
+    line-height: 25px;
+  }
+
+
+.tooltip {
+	width: 260px;
+	overflow: hidden;
+}
+.tooltip .movieTitle {
+  font-size: 13px;
+  line-height: 15px;
+  font-weight: bold !important;
+    text-transform: uppercase;
+}
+.tooltip .row {
+	border-bottom: 0.5px solid #aaa;
+}
+.tooltip .row.header {
+	line-height: 12px;
+	border-bottom: 2px solid #eee;
+}
+.tooltip .row td {
+	padding: 4px 3px 6px 0px;
+}
+.tooltip .row:last-child {
+	border: none;
+}
+.start .tooltip span {
+	display:  none !important;
+}
+.end .tooltip .row td.character {
+	color: var(--fullyaccurate);
+}
+.end .tooltip .row.inaccurate td.character {
+	color: var(--fullyinaccurate);
+}
+.tooltip .value {
+	line-height: 13px;
 }
