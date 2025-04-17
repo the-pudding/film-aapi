@@ -1,6 +1,6 @@
 <script>
   import { onMount } from 'svelte';
-  export let texts;
+  export let texts, size;
 
   function convertToHTML(text) {
     let finalText = [];
@@ -60,7 +60,7 @@
 
 </script>
 
-  <div class="textContainer">
+  <div class="textContainer {size}">
     {@html convertToHTML(texts)}
   </div>
 
@@ -75,8 +75,6 @@
 
   }
 
-
-  
 </style>
 
 

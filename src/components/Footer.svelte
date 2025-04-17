@@ -172,7 +172,7 @@
 
   .c {
     max-width: calc(var(--width-column-wide, 1280px) - var(--margin, 16px) * 2);
-    padding: 16px 0 100px;
+    padding: 16px 10px 100px;
     margin: 32px auto 0px auto;
     font-family: var(--sans);
   }

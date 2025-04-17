@@ -36,19 +36,26 @@
 	--color-placeholder: var(--color-gray-500);
 
 
-	--bgcolor: #DFDEFC;
-	--fullyaccurate: #42baff;
-	--partiallyaccurate: #dbaf00;
-	--fullyinaccurate: #ff668d;
-	--hl-border: #e6c72c;
-	--hl-text: #edd34c;
-	--text-color: #463d4a;
-	--textbox-bg: #E9D4EC;
-	--textbox-bg-comic: #d3b7eb;
-	--step-bg: rgb(181, 171, 224);
-
-	/* "1" second duration */
-	--1s: 1ms;
+/* 	--bgcolor: #DFDEFC; */
+--bgcolor: #ede4f0;
+--fullyaccurate: #42baff;
+--partiallyaccurate: #dbaf00;
+--fullyinaccurate: #ff668d;
+--fullyaccuratebg: #6bc9ff;
+--partiallyaccuratebg: #ffe580;
+--fullyinaccuratebg: #ffa1b2;
+--hl-border: #e6c72c;
+--hl-text: #edd34c;
+--text-color: #463d4a;
+--textbox-bg: #E9D4EC;
+--textbox-bg-comic: #d3b7eb;
+/* 	--intro-bg: #0f0014; */
+--intro-bg: #ede4f0;
+--panel-bg: #29172e;
+/* 	--step-bg: rgb(181, 171, 224); */
+--step-bg: #ddd3e0;
+/* "1" second duration */
+--1s: 1ms;
 }
 
 /* dark theme */
@@ -129,13 +136,17 @@ body, html {
 /* step = each individual scrolly box */
 .step {
 	padding-top: 20vh;
-	height: 100vh;
+	height: 120vh;
 	max-width: 30rem;
 	margin: 0px auto;
 	pointer-events: none;
 }
+.step a {
+	pointer-events: auto;
+}
 .stepText {
 	background: var(--step-bg);
+	border: 1px solid #aaa;
 	text-align: left;
 	padding: 1rem;
 	position: relative; /* Makes sure z-index works correctly */
@@ -146,57 +157,62 @@ body, html {
 }
 
 h2 {
-  font-size: 20px;
-  line-height: 25px;
-  margin: 0px;
-  color:  rgb(55, 17, 82);
+	font-size: 20px;
+	line-height: 25px;
+	margin: 0px;
+	color:  rgb(55, 17, 82);
 }
 h3 {
-	  color:  rgb(55, 17, 82);
-  font-size: 17px;
-  line-height:  20px;
-  margin:  10px 0;
-  font-weight: normal;
+	color:  rgb(55, 17, 82);
+	font-size: 17px;
+	line-height:  20px;
+	margin:  10px 0;
+	font-weight: normal;
 }
 figcaption {
-  margin-top: 8px;
-  font-size: 12px;
-  color:  rgb(55, 17, 82);
-  font-family: var(--sans); /* Use the font from app.css */
-  width: 100%;
+	margin-top: 0px;
+	font-size: 13px;
+	color:  rgb(55, 17, 82);
+	font-family: var(--sans); /* Use the font from app.css */
+	width: 100%;
 }
 figure img {
-  width: 100%;
+	width: 100%;
 }
 
 
 .stepText p span {
-  background:  var(--hl-text);
-  font-weight: bold;
-  padding: 0 3px;
+	background:  var(--hl-text);
+	font-weight: bold;
+	padding: 0 3px;
+	font-weight: bold;
+	box-decoration-break: clone;
+	-webkit-box-decoration-break: clone; /* For Safari support */
+	padding: 1px 2px; /* Optional: gives some breathing room */
+	border-radius: 2px;
 }
 
 .stepText p span.accurate {
-  color: white;
-  background:  var(--fullyaccurate) !important;
-  font-weight: bold;
+	background: var(--fullyaccuratebg) !important;
+
 }
 .stepText p span.partial_accurate {
-	color: white;
-  background:  var(--partiallyaccurate) !important;
-  font-weight: bold;
+	background:  var(--partiallyaccuratebg) !important;
 }
 .stepText p span.fully_inaccurate {
-	color: white;
-   background:  var(--fullyinaccurate) !important;
-  font-weight: bold;
+	background:  var(--fullyinaccuratebg) !important;
 }
 
 
 .textContainer p {
-    font-size:  17px;
-    line-height: 25px;
-  }
+	font-size:  17px;
+	line-height: 25px;
+}
+.textContainer.small p {
+	font-size:  14px;
+	line-height: 19px;
+	opacity: 0.8;
+}
 
 
 .tooltip {
@@ -204,10 +220,10 @@ figure img {
 	overflow: hidden;
 }
 .tooltip .movieTitle {
-  font-size: 13px;
-  line-height: 15px;
-  font-weight: bold !important;
-    text-transform: uppercase;
+	font-size: 13px;
+	line-height: 15px;
+	font-weight: bold !important;
+	text-transform: uppercase;
 }
 .tooltip .row {
 	border-bottom: 0.5px solid #aaa;

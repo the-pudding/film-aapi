@@ -385,6 +385,7 @@
     width: 100%; /* Ensure it spans full width */
     max-width: 2000px;
     margin: 0 auto;
+    font-family: var(--mono);
   }
   .visualContainer {
     display: block;
@@ -419,8 +420,8 @@
     }
     .stepContainer {
       display: block;
-      width: 350px;
-      max-width: 98%;
+      width: 500px;
+      max-width: 99%;
       margin: 0 auto;
     }
   }
@@ -455,7 +456,7 @@
   text-align: right;
   color: var(--text-color);
   transition: opacity 0.3s ease;
-  font-weight: bold;
+/*   font-weight: bold; */
   display: flex;
   align-items: center;
   height: 100%; /* Ensure the parent has a defined height */
@@ -559,6 +560,7 @@
   outline: 4px solid var(--hl-border);
   transform: scale(1.2);
   z-index: 99;
+  box-shadow: 0 0 12px 12px rgba(0,0,0,0.3);
 }
 
 /* Tooltip */
@@ -687,7 +689,7 @@
   position: absolute;
   top: 0px;
   right: 10px;
-  width: 150px;
+  width: 170px;
   font-size: 15px;
 }
 
@@ -703,8 +705,8 @@
   position: absolute;
   top: 0px;
   right: 0px;
-  width: 120px;
-  font-size: 13px;
+  width: 140px;
+  font-size: 12px;
 }
 .legendItem span {
   height: 10px;

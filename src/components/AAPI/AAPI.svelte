@@ -1,6 +1,6 @@
 <script>
 	import wordmark from "$svg/wordmark-shadow.svg";
-    import AAPIIntroScrolly from "$components/AAPI/AAPI.IntroScrolly.svelte";
+    import AAPIIntroScrolly from "$components/AAPI/AAPI.IntroScrolly-ALT.svelte";
     import AAPITitle from "$components/AAPI/AAPI.Title.svelte";
     import AAPIDataScrolly from "$components/AAPI/AAPI.DataScrolly.svelte";
     import AAPIText from "$components/AAPI/AAPI.Text.svelte";
@@ -12,12 +12,14 @@
     let showBox = false;
 </script>
 
+
+<AAPIIntroScrolly />
 <div id="story">
-    <AAPIIntroScrolly />
     <AAPITitle />
+    <AAPIText texts={copy.intro}/>
     <AAPIText texts={copy.history}/>
     <AAPIhistoricalPictures />
-    <AAPIText texts={copy.population}/>
+    <!-- <AAPIText texts={copy.population}/> -->
     <AAPIText texts={copy.stereotypes}/>
     <AAPIImages
     url="assets/images/nancy-kwan.png"
@@ -36,41 +38,41 @@
 		<AAPIText texts={copy.dataSetup}/>
 	</div>
 {/if} -->
-   
-    <AAPIDataScrolly section="start" />
+
+<AAPIDataScrolly section="start" />
 
 
-    <AAPIText texts={copy.pastDecade}/>
-    <AAPIImages
-    url="assets/images/crazy-rich-asians-gif.gif"
-    alt="The cast of Crazy Rich Asians (2018) at the Screen Actors Guild Awards. Source: Giphy"
-    caption="The cast of <i>Crazy Rich Asians (2018)</i> at the Screen Actors Guild Awards. Source: Giphy"
-    />
+<AAPIText texts={copy.pastDecade}/>
+<AAPIImages
+url="assets/images/crazy-rich-asians-gif.gif"
+alt="The cast of Crazy Rich Asians (2018) at the Screen Actors Guild Awards. Source: Giphy"
+caption="The cast of <i>Crazy Rich Asians (2018)</i> at the Screen Actors Guild Awards. Source: Giphy"
+/>
 
-    <AAPIText texts={copy.identity}/>
-    <AAPIImages
-    title="How Asian Americans identify themselves"
-    url="assets/images/ChartAAPI.svg"
-    urlmobile="assets/images/ChartAAPI-mobile.svg"
-    alt="How Asian Americans identify themselves"
-    caption="Data source: Pew Research Center, Survey of Asian American adults conducted 2022 - 2023"
-    />
+<AAPIText texts={copy.identity}/>
+<AAPIImages
+title="How Asian Americans identify themselves"
+url="assets/images/ChartAAPI.svg"
+urlmobile="assets/images/ChartAAPI-mobile.svg"
+alt="How Asian Americans identify themselves"
+caption="Data source: Pew Research Center, Survey of Asian American adults conducted 2022 - 2023"
+/>
 
-    <AAPIText texts={copy.thesis}/>
+<AAPIText texts={copy.thesis}/>
 
-    <AAPIDataScrolly section="end" />
-    
-    <AAPIText texts={copy.conclusion}/>
+<AAPIDataScrolly section="end" />
 
-    <div class="shortline"></div>
-    
-    <dix id= "box">
-        <h6>
-            Methodology
-        </h6>
-        <AAPIText texts={copy.methodology}/> 
-    </dix>
-    
+<AAPIText texts={copy.conclusion}/>
+
+<div class="shortline"></div>
+
+<dix id= "box">
+    <h6>
+        Methodology
+    </h6>
+    <AAPIText texts={copy.methodology} size="small"/> 
+</dix>
+
 
 </div>
 <style>
@@ -82,7 +84,7 @@
         min-height: 100vh; /* Ensures it fills at least the viewport height */
         font-family: var(--sans);
         max-width: 97%;
-        margin: 0 auto;
+        margin: 0px auto 0;
     }
 
     .top-background {
@@ -100,20 +102,20 @@
     }
     #toggle-button {
         display: block;
-		cursor: pointer;
-		background: none;
-		font-size: 1em;
-		color: #333;
+        cursor: pointer;
+        background: none;
+        font-size: 1em;
+        color: #333;
         margin: 0 auto;
         text-align: center;
         font-weight: bold;
-	}
+    }
 
     #box {
 /*         background-color: #c4bfe6; */
-        width: 40%;
-        margin: 0 auto;
-        padding: 10px;
-    }
+width: 40%;
+margin: 0 auto;
+padding: 10px;
+}
 
 </style>

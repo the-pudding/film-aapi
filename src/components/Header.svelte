@@ -16,7 +16,7 @@
 	header {
 /* 		background-image:  url('assets/app/grain.png'); */
 		background-size: 200px 200px;
-		background: var(--bgcolor);
+		background: var(--intro-bg);
 	}
 	.wordmark {
 		max-width: 14em;

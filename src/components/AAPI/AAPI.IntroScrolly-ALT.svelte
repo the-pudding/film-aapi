@@ -152,13 +152,7 @@ function getResponsiveBubbleStyle(bub, index, comicIndex) {
     {/each}
     <div class="fuzzy" style="background-image: url('assets/images/grain.png');"></div>
   </div>
-  {#each [0,1,2,3,4,5,6,7,8] as hole}
-  <div class="left hole" style="top:{ (hole+0.5)/9*100}%;"></div>
-  {/each}
-  {#each [0,1,2,3,4,5,6,7,8] as hole}
-  <div class="right hole" style="top:{ (hole+0.5)/9*100}%;"></div>
-  {/each}
-  <!-- <div class="stripText"><span>{comic}</span>By Anna Li and Dorothy Lu for the Pudding</div> -->
+  
 </div>
 {/each} 
 </div>
@@ -180,7 +174,7 @@ function getResponsiveBubbleStyle(bub, index, comicIndex) {
   .comicContainer {
     width: 90%;
     max-width: 600px;
-    box-shadow: 2px 2px 10px 12px rgba(0,0,0,0.1);
+/*     box-shadow: 2px 2px 10px 12px rgba(0,0,0,0.1); */
     border-radius: 2px;
     margin: 0 auto;
     margin-bottom: 100px;
@@ -278,8 +272,8 @@ function getResponsiveBubbleStyle(bub, index, comicIndex) {
   }
   
   .panel {
-    background: var(--panel-bg);
-    padding: 25px 30px;
+/*     background: var(--panel-bg); */
+    padding: 0px;
     position: relative;
     display: flex;
     align-items: center;
@@ -295,15 +289,18 @@ function getResponsiveBubbleStyle(bub, index, comicIndex) {
     width: calc(100% - 40px);
     overflow: hidden;
 /*     aspect-ratio: 1 / 1; */
-border-radius: 10px;
+border-radius: 0px;
 transition: opacity 200ms cubic-bezier(0.250, 0.250, 0.750, 0.750);
 transition-timing-function: cubic-bezier(0.250, 0.250, 0.750, 0.750);
+margin-bottom: 20px;
+border: 2px solid #333;
 }
 .comicPanel {
   width: 110%;
   margin-top: -10%;
   max-width: none;
   aspect-ratio: 1 / 1;
+
 }
 
 .fuzzy {
