@@ -11,6 +11,7 @@
 	version();
 
 	const preloadFont = [
+		"$styles/pangolin.woff2",
 		"https://pudding.cool/assets/fonts/tiempos/TiemposTextWeb-Regular.woff2",
 		"https://pudding.cool/assets/fonts/tiempos/TiemposTextWeb-Bold.woff2",
 		"https://pudding.cool/assets/fonts/atlas/AtlasGrotesk-Regular-Web.woff2",

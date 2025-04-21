@@ -1,4 +1,13 @@
 @font-face {
+font-family: "Pangolin";
+src: url("pangolin.woff2") format("woff2");
+font-weight: 700;
+font-style: normal;
+font-stretch: normal;
+font-display: swap;
+}
+
+@font-face {
 	font-family: "Atlas Grotesk";
 	src: url("https://pudding.cool/assets/fonts/atlas/AtlasGrotesk-Regular-Web.woff2") format("woff2");
 	font-weight: 400;

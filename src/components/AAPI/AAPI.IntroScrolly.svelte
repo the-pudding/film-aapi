@@ -164,14 +164,6 @@ function getResponsiveBubbleStyle(bub, index, comicIndex) {
 </div>
 </div>
 <style>
-  @font-face {
-    font-family: "Pangolin";
-    src: url("assets/fonts/pangolin.woff2") format("woff2");
-    font-weight: 700;
-    font-style: normal;
-    font-stretch: normal;
-    font-display: swap;
-  }
   #intro {
     background: var(--intro-bg);
     width: 100%;

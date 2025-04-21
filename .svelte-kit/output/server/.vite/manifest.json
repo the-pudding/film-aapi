@@ -73,7 +73,10 @@
       "_ssr.js"
     ],
     "css": [
-      "_app/immutable/assets/_layout.Cf3xCKY8.css"
+      "_app/immutable/assets/_layout.Cg6AJfdw.css"
+    ],
+    "assets": [
+      "_app/immutable/assets/pangolin.DXmBSIH6.woff2"
     ]
   },
   "src/routes/+page.server.js": {
@@ -91,7 +94,7 @@
       "_ssr.js"
     ],
     "css": [
-      "_app/immutable/assets/_page.BcMIjR3n.css"
+      "_app/immutable/assets/_page.DIIURATK.css"
     ]
   },
   "src/routes/demo/elements/+page.svelte": {
@@ -131,5 +134,9 @@
     "css": [
       "_app/immutable/assets/_page.BMf-RGIR.css"
     ]
+  },
+  "src/styles/pangolin.woff2": {
+    "file": "_app/immutable/assets/pangolin.DXmBSIH6.woff2",
+    "src": "src/styles/pangolin.woff2"
   }
 }
