@@ -1,6 +1,6 @@
 <script>
 	import wordmark from "$svg/wordmark-shadow.svg";
-    import AAPIIntroScrolly from "$components/AAPI/AAPI.IntroScrolly-ALT.svelte";
+    import AAPIIntroScrolly from "$components/AAPI/AAPI.IntroScrolly.svelte";
     import AAPITitle from "$components/AAPI/AAPI.Title.svelte";
     import AAPIDataScrolly from "$components/AAPI/AAPI.DataScrolly.svelte";
     import AAPIText from "$components/AAPI/AAPI.Text.svelte";
