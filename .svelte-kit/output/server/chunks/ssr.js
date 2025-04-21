@@ -28,10 +28,6 @@ function compute_rest_props(props, keys) {
   for (const k in props) if (!keys.has(k) && k[0] !== "$") rest[k] = props[k];
   return rest;
 }
-function set_store_value(store, ret, value) {
-  store.set(value);
-  return ret;
-}
 function custom_event(type, detail, { bubbles = false, cancelable = false } = {}) {
   return new CustomEvent(type, { detail, bubbles, cancelable });
 }
@@ -42,6 +38,9 @@ function set_current_component(component) {
 function get_current_component() {
   if (!current_component) throw new Error("Function called outside component initialization");
   return current_component;
+}
+function onDestroy(fn) {
+  get_current_component().$$.on_destroy.push(fn);
 }
 function createEventDispatcher() {
   const component = get_current_component();
@@ -260,16 +259,16 @@ export {
   create_ssr_component as c,
   each as d,
   escape as e,
-  spread as f,
+  add_styles as f,
   getContext as g,
-  escape_object as h,
-  set_store_value as i,
-  add_styles as j,
-  createEventDispatcher as k,
-  compute_rest_props as l,
+  compute_rest_props as h,
+  spread as i,
+  escape_object as j,
+  escape_attribute_value as k,
+  createEventDispatcher as l,
   missing_component as m,
-  escape_attribute_value as n,
-  noop as o,
+  noop as n,
+  onDestroy as o,
   safe_not_equal as p,
   setContext as s,
   validate_component as v

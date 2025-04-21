@@ -9,13 +9,6 @@
       "_paths.js"
     ]
   },
-  "_Icon.js": {
-    "file": "chunks/Icon.js",
-    "name": "Icon",
-    "imports": [
-      "_ssr.js"
-    ]
-  },
   "_exports.js": {
     "file": "chunks/exports.js",
     "name": "exports"
@@ -80,7 +73,7 @@
       "_ssr.js"
     ],
     "css": [
-      "_app/immutable/assets/_layout.BSmGI9A8.css"
+      "_app/immutable/assets/_layout.Cf3xCKY8.css"
     ]
   },
   "src/routes/+page.server.js": {
@@ -95,12 +88,10 @@
     "src": "src/routes/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_ssr.js",
-      "_Icon.js",
-      "_index.js"
+      "_ssr.js"
     ],
     "css": [
-      "_app/immutable/assets/_page.CSbEN11d.css"
+      "_app/immutable/assets/_page.BcMIjR3n.css"
     ]
   },
   "src/routes/demo/elements/+page.svelte": {
@@ -135,7 +126,6 @@
     "isEntry": true,
     "imports": [
       "_ssr.js",
-      "_Icon.js",
       "_index.js"
     ],
     "css": [

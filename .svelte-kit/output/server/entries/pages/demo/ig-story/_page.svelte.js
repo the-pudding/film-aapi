@@ -1,7 +1,10 @@
-import { c as create_ssr_component, d as each, e as escape, a as subscribe, b as add_attribute, v as validate_component, k as createEventDispatcher, s as setContext, g as getContext, j as add_styles } from "../../../../chunks/ssr.js";
-import { I as Icon, i as is_void } from "../../../../chunks/Icon.js";
+import { c as create_ssr_component, d as each, e as escape, a as subscribe, b as add_attribute, h as compute_rest_props, i as spread, j as escape_object, k as escape_attribute_value, v as validate_component, l as createEventDispatcher, s as setContext, g as getContext, f as add_styles } from "../../../../chunks/ssr.js";
 import { r as readable, w as writable } from "../../../../chunks/index.js";
 import "lodash.debounce";
+const void_element_names = /^(?:area|base|br|col|command|embed|hr|img|input|keygen|link|meta|param|source|track|wbr)$/;
+function is_void(name) {
+  return void_element_names.test(name) || name.toLowerCase() === "!doctype";
+}
 const css$5 = {
   code: ".chapters.svelte-s3rw5i.svelte-s3rw5i{position:absolute;top:5rem;display:-webkit-box;display:flex;width:100%;-webkit-box-pack:justify;justify-content:space-between;padding:0 1rem}.chapter.svelte-s3rw5i.svelte-s3rw5i{display:-webkit-box;display:flex;-webkit-box-align:end;align-items:end;-webkit-box-flex:1;flex:1;margin:0 3px}.chapter.svelte-s3rw5i.svelte-s3rw5i:first-of-type{margin-left:0}.chapter.svelte-s3rw5i.svelte-s3rw5i:last-of-type{margin-right:0}.chapter.active.svelte-s3rw5i.svelte-s3rw5i{-webkit-box-flex:5;flex:5}.text.svelte-s3rw5i.svelte-s3rw5i{position:absolute;top:-1.2rem;font-size:12px;white-space:nowrap;opacity:0.3}.chapter.active.svelte-s3rw5i .text.svelte-s3rw5i{opacity:1}.title.svelte-s3rw5i.svelte-s3rw5i{visibility:hidden}.chapter.active.svelte-s3rw5i .title.svelte-s3rw5i{visibility:visible}.block.svelte-s3rw5i.svelte-s3rw5i{position:relative;-webkit-box-flex:1;flex:1;height:2px;border-radius:1px;margin:0 1px;background:black;opacity:0.3;-webkit-transition:opacity calc(var(--1s) * 0.4);transition:opacity calc(var(--1s) * 0.4)}.block.svelte-s3rw5i.svelte-s3rw5i:first-of-type{margin-left:0}.block.svelte-s3rw5i.svelte-s3rw5i:last-of-type{margin-right:0}.block.active.svelte-s3rw5i.svelte-s3rw5i{opacity:1}@media(max-width: 600px){.text.svelte-s3rw5i.svelte-s3rw5i{font-size:10px}}",
   map: '{"version":3,"file":"Demo.IgStory.Chapters.svelte","sources":["Demo.IgStory.Chapters.svelte"],"sourcesContent":["<script>\\n\\texport let activeSlide;\\n\\texport let sections;\\n\\texport let allSlides;\\n<\/script>\\n\\n<div class=\\"chapters\\">\\n\\t{#each sections as { title, slides }, i}\\n\\t\\t{@const chapterActive = allSlides[activeSlide].section === i}\\n\\t\\t<div class=\\"chapter\\" class:active={chapterActive}>\\n\\t\\t\\t<span class=\\"text\\">\\n\\t\\t\\t\\t{i + 1}<span class=\\"title\\"> — {title}</span>\\n\\t\\t\\t</span>\\n\\t\\t\\t{#if chapterActive}\\n\\t\\t\\t\\t{#each slides as slide}\\n\\t\\t\\t\\t\\t{@const active = slide.i === activeSlide}\\n\\t\\t\\t\\t\\t<div class=\\"block\\" class:active />\\n\\t\\t\\t\\t{/each}\\n\\t\\t\\t{:else}\\n\\t\\t\\t\\t<div class=\\"block\\" />\\n\\t\\t\\t{/if}\\n\\t\\t</div>\\n\\t{/each}\\n</div>\\n\\n<style>\\n\\t.chapters {\\n\\t\\tposition: absolute;\\n\\t\\ttop: 5rem;\\n\\t\\tdisplay: -webkit-box;\\n\\t\\tdisplay: flex;\\n\\t\\twidth: 100%;\\n\\t\\t-webkit-box-pack: justify;\\n\\t\\t        justify-content: space-between;\\n\\t\\tpadding: 0 1rem;\\n\\t}\\n\\t.chapter {\\n\\t\\tdisplay: -webkit-box;\\n\\t\\tdisplay: flex;\\n\\t\\t-webkit-box-align: end;\\n\\t\\t        align-items: end;\\n\\t\\t-webkit-box-flex: 1;\\n\\t\\t        flex: 1;\\n\\t\\tmargin: 0 3px;\\n\\t}\\n\\t.chapter:first-of-type {\\n\\t\\tmargin-left: 0;\\n\\t}\\n\\t.chapter:last-of-type {\\n\\t\\tmargin-right: 0;\\n\\t}\\n\\t.chapter.active {\\n\\t\\t-webkit-box-flex: 5;\\n\\t\\t        flex: 5;\\n\\t}\\n\\t.text {\\n\\t\\tposition: absolute;\\n\\t\\ttop: -1.2rem;\\n\\t\\tfont-size: 12px;\\n\\t\\twhite-space: nowrap;\\n\\t\\topacity: 0.3;\\n\\t}\\n\\t.chapter.active .text {\\n\\t\\topacity: 1;\\n\\t}\\n\\t.title {\\n\\t\\tvisibility: hidden;\\n\\t}\\n\\t.chapter.active .title {\\n\\t\\tvisibility: visible;\\n\\t}\\n\\t.block {\\n\\t\\tposition: relative;\\n\\t\\t-webkit-box-flex: 1;\\n\\t\\t        flex: 1;\\n\\t\\theight: 2px;\\n\\t\\tborder-radius: 1px;\\n\\t\\tmargin: 0 1px;\\n\\t\\tbackground: black;\\n\\t\\topacity: 0.3;\\n\\t\\t-webkit-transition: opacity calc(var(--1s) * 0.4);\\n\\t\\ttransition: opacity calc(var(--1s) * 0.4);\\n\\t}\\n\\t.block:first-of-type {\\n\\t\\tmargin-left: 0;\\n\\t}\\n\\t.block:last-of-type {\\n\\t\\tmargin-right: 0;\\n\\t}\\n\\t.block.active {\\n\\t\\topacity: 1;\\n\\t}\\n\\n\\t@media (max-width: 600px) {\\n\\t\\t.text {\\n\\t\\t\\tfont-size: 10px;\\n\\t\\t}\\n\\t}</style>\\n"],"names":[],"mappings":"AA0BC,qCAAU,CACT,QAAQ,CAAE,QAAQ,CAClB,GAAG,CAAE,IAAI,CACT,OAAO,CAAE,WAAW,CACpB,OAAO,CAAE,IAAI,CACb,KAAK,CAAE,IAAI,CACX,gBAAgB,CAAE,OAAO,CACjB,eAAe,CAAE,aAAa,CACtC,OAAO,CAAE,CAAC,CAAC,IACZ,CACA,oCAAS,CACR,OAAO,CAAE,WAAW,CACpB,OAAO,CAAE,IAAI,CACb,iBAAiB,CAAE,GAAG,CACd,WAAW,CAAE,GAAG,CACxB,gBAAgB,CAAE,CAAC,CACX,IAAI,CAAE,CAAC,CACf,MAAM,CAAE,CAAC,CAAC,GACX,CACA,oCAAQ,cAAe,CACtB,WAAW,CAAE,CACd,CACA,oCAAQ,aAAc,CACrB,YAAY,CAAE,CACf,CACA,QAAQ,mCAAQ,CACf,gBAAgB,CAAE,CAAC,CACX,IAAI,CAAE,CACf,CACA,iCAAM,CACL,QAAQ,CAAE,QAAQ,CAClB,GAAG,CAAE,OAAO,CACZ,SAAS,CAAE,IAAI,CACf,WAAW,CAAE,MAAM,CACnB,OAAO,CAAE,GACV,CACA,QAAQ,qBAAO,CAAC,mBAAM,CACrB,OAAO,CAAE,CACV,CACA,kCAAO,CACN,UAAU,CAAE,MACb,CACA,QAAQ,qBAAO,CAAC,oBAAO,CACtB,UAAU,CAAE,OACb,CACA,kCAAO,CACN,QAAQ,CAAE,QAAQ,CAClB,gBAAgB,CAAE,CAAC,CACX,IAAI,CAAE,CAAC,CACf,MAAM,CAAE,GAAG,CACX,aAAa,CAAE,GAAG,CAClB,MAAM,CAAE,CAAC,CAAC,GAAG,CACb,UAAU,CAAE,KAAK,CACjB,OAAO,CAAE,GAAG,CACZ,kBAAkB,CAAE,OAAO,CAAC,KAAK,IAAI,IAAI,CAAC,CAAC,CAAC,CAAC,GAAG,CAAC,CACjD,UAAU,CAAE,OAAO,CAAC,KAAK,IAAI,IAAI,CAAC,CAAC,CAAC,CAAC,GAAG,CACzC,CACA,kCAAM,cAAe,CACpB,WAAW,CAAE,CACd,CACA,kCAAM,aAAc,CACnB,YAAY,CAAE,CACf,CACA,MAAM,mCAAQ,CACb,OAAO,CAAE,CACV,CAEA,MAAO,YAAY,KAAK,CAAE,CACzB,iCAAM,CACL,SAAS,CAAE,IACZ,CACD"}'
@@ -46,6 +49,61 @@ const Demo_IgStory_Figure = create_ssr_component(($$result, $$props, $$bindings,
   $$unsubscribe_viewport();
   return `<figure${add_attribute("style", `--offset: ${offset}px; --buffer: 2rem`, 0)} class="svelte-4vfsg0">visual goes here
 </figure>`;
+});
+/**
+ * @license lucide-svelte v0.439.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const defaultAttributes = {
+  xmlns: "http://www.w3.org/2000/svg",
+  width: 24,
+  height: 24,
+  viewBox: "0 0 24 24",
+  fill: "none",
+  stroke: "currentColor",
+  "stroke-width": 2,
+  "stroke-linecap": "round",
+  "stroke-linejoin": "round"
+};
+const Icon = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  let $$restProps = compute_rest_props($$props, ["name", "color", "size", "strokeWidth", "absoluteStrokeWidth", "iconNode"]);
+  let { name = void 0 } = $$props;
+  let { color = "currentColor" } = $$props;
+  let { size = 24 } = $$props;
+  let { strokeWidth = 2 } = $$props;
+  let { absoluteStrokeWidth = false } = $$props;
+  let { iconNode = [] } = $$props;
+  const mergeClasses = (...classes) => classes.filter((className, index, array) => {
+    return Boolean(className) && array.indexOf(className) === index;
+  }).join(" ");
+  if ($$props.name === void 0 && $$bindings.name && name !== void 0) $$bindings.name(name);
+  if ($$props.color === void 0 && $$bindings.color && color !== void 0) $$bindings.color(color);
+  if ($$props.size === void 0 && $$bindings.size && size !== void 0) $$bindings.size(size);
+  if ($$props.strokeWidth === void 0 && $$bindings.strokeWidth && strokeWidth !== void 0) $$bindings.strokeWidth(strokeWidth);
+  if ($$props.absoluteStrokeWidth === void 0 && $$bindings.absoluteStrokeWidth && absoluteStrokeWidth !== void 0) $$bindings.absoluteStrokeWidth(absoluteStrokeWidth);
+  if ($$props.iconNode === void 0 && $$bindings.iconNode && iconNode !== void 0) $$bindings.iconNode(iconNode);
+  return `<svg${spread(
+    [
+      escape_object(defaultAttributes),
+      escape_object($$restProps),
+      { width: escape_attribute_value(size) },
+      { height: escape_attribute_value(size) },
+      { stroke: escape_attribute_value(color) },
+      {
+        "stroke-width": escape_attribute_value(absoluteStrokeWidth ? Number(strokeWidth) * 24 / Number(size) : strokeWidth)
+      },
+      {
+        class: escape_attribute_value(mergeClasses("lucide-icon", "lucide", name ? `lucide-${name}` : "", $$props.class))
+      }
+    ],
+    {}
+  )}>${each(iconNode, ([tag, attrs]) => {
+    return `${((tag$1) => {
+      return tag$1 ? `<${tag}${spread([escape_object(attrs)], {})}>${is_void(tag$1) ? "" : ``}${is_void(tag$1) ? "" : `</${tag$1}>`}` : "";
+    })(tag)}`;
+  })}${slots.default ? slots.default({}) : ``}</svg>`;
 });
 const Chevron_left = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   const iconNode = [["path", { "d": "m15 18-6-6 6-6" }]];
