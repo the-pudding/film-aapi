@@ -209,7 +209,7 @@ function getResponsiveBubbleStyle(bub, index, comicIndex) {
     height: 20%;
     font-size: 29px;
     line-height: 32px;
-    font-weight: bold;
+/*     font-weight: bold; */
     width: 100%;
     position: absolute;
     left: 0;

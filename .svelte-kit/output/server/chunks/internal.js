@@ -102,7 +102,7 @@ const options = {
   root: Root,
   service_worker: false,
   templates: {
-    app: ({ head, body, assets, nonce, env }) => '<!doctype html>\n<html lang="en">\n\n<head>\n	<meta charset="utf-8" />\n	<meta name="viewport" content="width=device-width, initial-scale=1.0" />\n	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\n	' + head + '\n</head>\n\n<body>\n	<a href="#content" class="skip-to-main">Skip to main content</a>\n	<div>' + body + "</div>\n</body>\n\n</html>",
+    app: ({ head, body, assets, nonce, env }) => '<!doctype html>\n<html lang="en">\n\n<head>\n	<meta charset="utf-8" />\n	<meta name="viewport" content="width=device-width, initial-scale=1.0" />\n	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\n	' + head + '\n\n	<link rel="preconnect" href="https://fonts.googleapis.com">\n	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n	<link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">\n</head>\n\n<body>\n	<a href="#content" class="skip-to-main">Skip to main content</a>\n	<div>' + body + "</div>\n</body>\n\n</html>",
     error: ({ status, message }) => '<!doctype html>\n<html lang="en">\n	<head>\n		<meta charset="utf-8" />\n		<title>' + message + `</title>
 
 		<style>
@@ -174,7 +174,7 @@ const options = {
 		<div class="error">
 			<span class="status">` + status + '</span>\n			<div class="message">\n				<h1>' + message + "</h1>\n			</div>\n		</div>\n	</body>\n</html>\n"
   },
-  version_hash: "1cyf1fa"
+  version_hash: "hhiqv1"
 };
 async function get_hooks() {
   return {};

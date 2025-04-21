@@ -1,6 +1,3 @@
-<script>
-  let imageUrl = "/assets/images/title-picture.png";
-</script>
 
 <style>
   .title-wrapper {
@@ -109,7 +106,7 @@
   <div class="title">
     <!-- Image on the left -->
     <div class="image-box">
-      <img src={imageUrl} alt="Title Picture" />
+      <img src="assets/images/title-picture.png" alt="Title Picture" />
     </div>
 
     <!-- Title text slightly moved up -->
