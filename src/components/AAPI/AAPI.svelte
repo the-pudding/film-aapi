@@ -17,32 +17,22 @@
 <div id="story">
     <AAPITitle />
     <AAPIText texts={copy.intro}/>
-    <AAPIText texts={copy.history}/>
-    <AAPIhistoricalPictures />
+   <!--  <AAPIText texts={copy.history}/>
+    <AAPIhistoricalPictures /> -->
     <!-- <AAPIText texts={copy.population}/> -->
-    <AAPIText texts={copy.stereotypes}/>
+   <!--  <AAPIText texts={copy.stereotypes}/>
     <AAPIImages
     url="assets/images/nancy-kwan.png"
     alt="Nancy Kwan plays Suzie Wong in The World of Suzie Wong (1960)"
     caption="Nancy Kwan plays Suzie Wong in <i>The World of Suzie Wong</i> (1960)"
     />
-    <AAPIText texts={copy.dataTransition}/>
+    <AAPIText texts={copy.dataTransition}/> -->
 
-<!-- 
-<button id="toggle-button" on:click={() => (showBox = !showBox)}>
-	More details on our methodology {showBox ? '−' : '+'} 
-</button>
-
-{#if showBox}
-	<div id="box">
-		<AAPIText texts={copy.dataSetup}/>
-	</div>
-{/if} -->
 
 <AAPIDataScrolly section="start" />
 
-
-<AAPIText texts={copy.pastDecade}/>
+ <AAPIText texts={copy.middle}/>
+<!-- <AAPIText texts={copy.pastDecade}/>
 <AAPIImages
 url="assets/images/crazy-rich-asians-gif.gif"
 alt="The cast of Crazy Rich Asians (2018) at the Screen Actors Guild Awards. Source: Giphy"
@@ -58,7 +48,7 @@ alt="How Asian Americans identify themselves"
 caption="Data source: Pew Research Center, Survey of Asian American adults conducted 2022 - 2023"
 />
 
-<AAPIText texts={copy.thesis}/>
+<AAPIText texts={copy.thesis}/> -->
 
 <AAPIDataScrolly section="end" />
 
