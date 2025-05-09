@@ -1,9 +1,10 @@
 <script>
   import { onMount } from 'svelte';
   import AAPIImages from "$components/AAPI/AAPI.Images.svelte";
-  export let texts, size;
+  export let texts, size, dropcap;
   
   let processedContent = [];
+  let firstParagraphProcessed = false;
   
   onMount(() => {
     if (texts) {
@@ -14,6 +15,7 @@
   function processText(text) {
     let result = [];
     let currentBlock = { type: 'text', content: [] };
+    firstParagraphProcessed = false;
     
     if (text) {
       const lines = text.split(/\n/);
@@ -94,10 +96,18 @@
 </script>
 
 <div class="textContainer {size}">
-  {#each processedContent as block}
+  {#each processedContent as block, blockIndex}
     {#if block.type === 'text'}
-      {#each block.content as line}
-        <p>{@html line}</p>
+      {#each block.content as line, lineIndex}
+        {#if blockIndex === 0 && lineIndex === 0 && dropcap}
+          {@const firstChar = line.match(/[a-zA-Z]/) ? line.match(/[a-zA-Z]/)[0] : ''}
+          {@const remainingText = firstChar ? line.replace(firstChar, '') : line}
+          <p class="has-dropcap">
+            <span class="dropcap">{firstChar}</span>{@html remainingText}
+          </p>
+        {:else}
+          <p>{@html line}</p>
+        {/if}
       {/each}
     {:else if block.type === 'image'}
       <AAPIImages 
@@ -122,5 +132,19 @@
     overflow-wrap: break-word;
     text-align: justify; /* Optional: To center the text inside */
     margin: 0 auto;
+  }
+  
+  .dropcap {
+    float: left;
+    font-size: 3em;
+    line-height: 0.8;
+    margin-right: 0.1em;
+    padding-top: 0.07em;
+    font-weight: bold;
+    
+  }
+  
+  .has-dropcap {
+    clear: both;
   }
 </style>

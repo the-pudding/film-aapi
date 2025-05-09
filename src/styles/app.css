@@ -49,9 +49,9 @@
 --text-color: #463d4a;
 --textbox-bg: #E9D4EC;
 --textbox-bg-comic: #d3b7eb;
-/* 	--intro-bg: #0f0014; */
---intro-bg: #ede4f0;
---panel-bg: #29172e;
+	--intro-bg: #3b2738;
+/* --intro-bg: #ede4f0; */
+--panel-bg: #1f0817;
 /* 	--step-bg: rgb(181, 171, 224); */
 --step-bg: #ddd3e0;
 /* "1" second duration */
@@ -170,9 +170,9 @@ h3 {
 	font-weight: normal;
 }
 figcaption {
-	margin-top: 0px;
+	margin-top: 10px;
 	font-size: 13px;
-	color:  rgb(55, 17, 82);
+	color:  rgba(55, 17, 82,0.8);
 	font-family: var(--sans); /* Use the font from app.css */
 	width: 100%;
 }

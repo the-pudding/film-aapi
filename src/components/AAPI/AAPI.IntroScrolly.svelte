@@ -1,67 +1,71 @@
 <script>
-  import { onMount } from 'svelte';
-  let width, height, panelWidth, panelHeight;
-  let value;
-  let comicRefs = [];
-  let panelOpacities = [1, 0.1, 0.1, 0.1, 0.1, 0.1];
-  
-  const stages = [
-    "stage 1",
-    "stage 2",
-    "stage 3",
-    "stage 4",
-    "stage 5",
-    "stage 6"
-  ]
-  const bubbleSize = {
-    "1": 25,
-    "2": 25,
-    "3": 12,
-    "4": 25,
-    "5": 20,
-    "6": 0
-  }
-  const bubbleText = {
-    "1": "My mother, Haimei, is a Chinese immigrant who spent decades building a life in New York City.",
-    "2": "After her two children grew up and moved, all she wants to do these days is cuddle with her dog and watch TV.",
-    "3": "Recently she put on Netflix.",
-    "4": "She was excited to see a Chinese character—when she noticed something she couldn't ignore.",
-    "5": "Something just felt off about the Chinese character.",
-    "6": ""
-  }
+ import AAPITitle from "$components/AAPI/AAPI.Title.svelte";
+ import { onMount } from 'svelte';
+ let width, height, panelWidth, panelHeight;
+ let value;
+ let comicRefs = [];
+ let panelOpacities = [1, 0.1, 0.1, 0.1, 0.1, 0.1];
 
-  const smallerBubbles = [
+ const stages = [
+  "stage 1",
+  "stage 2",
+  "stage 3",
+  "stage 4",
+  "stage 5",
+  "stage 6"
+]
+const bubbleSize = {
+  "1": 25,
+  "2": 25,
+  "3": 12,
+  "4": 25,
+  "5": 12,
+  "6": 20
+}
+const bubbleText = {
+  "1": "My mother, Haimei, is a Chinese immigrant who spent decades building a life in New York City.",
+  "2": "After her two children grew up and moved, all she wants to do these days is cuddle with her dog and watch TV.",
+  "3": "Recently she put on Netflix.",
+  "4": "She was excited to see a Chinese character—when she noticed something she couldn't ignore.",
+  "5": "She called me to complain.",
+  "6": "After that, my friend Dorothy and I started noticing this a lot more."
+}
+
+const smallerBubbles = [
     // 1
-    [
-      {x: 68, y: 30, w: 20, text: "Who is buying dumplings at 3AM?"}   
-    ],
+  [
+    {x: 68, y: 30, w: 20, text: "Who is buying dumplings at 3AM?"}   
+  ],
     // 2
-    [
-      {x: 65, y: 40, w: 20, text: "I'm headed out now, Mom! "},
-      {x: 32, y: 70, w: 20, text: "Ok, see ya!"}    
-    ],
+  [
+    {x: 60, y: 40, w: 20, text: "I'm headed out now, Mom! "},
+    {x: 30, y: 70, w: 20, text: "Ok, see ya!"}    
+  ],
     // 3
-    [
-      {x: 65, y: 25, w: 25, text: "Oh? I've always wanted to live in Paris..."},
-      {x: 62, y: 82, w: 30, text: "Wow! A Chinese girl in Paris? I wish that could've been me..."}   
-    ],
+  [
+    {x: 65, y: 25, w: 25, text: "Oh? I've always wanted to live in Paris..."},
+    {x: 50, y: 82, w: 30, text: "Wow! A Chinese girl in Paris? I wish that could've been me..."}   
+  ],
     // 4
-    [
-      {x: 62, y: 80, w: 30, text: "呆在原地！Stay right where you are!"}   
-    ],
+  [
+    {x: 62, y: 60, w: 30, text: "呆在原地！Stay right where you are!"}   
+  ],
     // 5
-    [
-      {x: 55, y: 50, w: 40, text: "Oh no wonder... they got a Korean girl to play her. No wonder she doesn't feel Chinese."} 
-    ],
+  [
+    {x: 50, y: 30, w: 40, text: "Something's off about Mindy, but I don't know what!"},
+    {x: 50, y: 58, w: 30, text: "I agree... let me look her up."},
+    {x: 35, y: 73, w: 40, text: "Oh, I see. It says she's played by a Korean actor! No wonder she doesn't feel Chinese."} 
+  ],
     // 6
-    [
-      {x: 5, y: 8, w: 80, text:"I guess Hollywood doesn't care to get it right…"}
-    ]
-  ];
+  [
+    {x: 32, y: 85, w: 40, text:"Hey, this seems pretty common! I wonder..."},
+    {x: 50, y: 42, w: 50, text:"Why do they have Simu Liu playing a Korean?"}
+  ]
+];
 
-  $: {
-    if (value == undefined) {value = 0}
-  }
+$: {
+  if (value == undefined) {value = 0}
+}
 
 let windowWidth = 0;
 let windowHeight = 0;
@@ -125,71 +129,105 @@ function getResponsiveBubbleStyle(bub, index, comicIndex) {
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
-      window.removeEventListener('resize', handleResize); // Fixed: was addEventListener
+      window.removeEventListener('resize', handleResize);
     };
   });
 </script>
 
+<!-- SVG Filters for the squiggly border effect -->
+<svg width="0" height="0" style="position: absolute;">
+  <defs>
+    <!-- Strong squiggly for main comic container -->
+    <filter id="squiggly-strong" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.01" numOctaves="1" result="noise" />
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="10" xChannelSelector="R" yChannelSelector="G" />
+    </filter>
+    
+    <!-- Medium squiggly for panel borders -->
+    <filter id="squiggly-medium" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="2" result="noise" />
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="2" xChannelSelector="R" yChannelSelector="G" />
+    </filter>
+    
+    <!-- Light squiggly for text bubbles -->
+    <filter id="squiggly-light" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.00" numOctaves="0" result="noise" />
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="0" xChannelSelector="R" yChannelSelector="G" />
+    </filter>
+  </defs>
+</svg>
+
 <div id="intro">
-<div class="comicContainer">
-  {#each [1,2,3,4,5,6] as comic, i}
-  <div class="panel" 
-  bind:clientWidth={panelWidth} 
-  bind:clientHeight={panelHeight} 
-  bind:this={comicRefs[i]}>
-  <div class="comicWrapper" style="opacity: {panelOpacities[i]};">
-    <img class="comicPanel" src="assets/images/comic/comic-0{comic}-620.png"/>
-    {#if comic == 1}
-    <div class="downarrow">↓</div>
-    {/if}
-    {#if bubbleSize[comic] > 0}
-    <div class="textPanel" style="height: {bubbleSize[comic]}%;">{bubbleText[comic]}</div>
-    {/if}
-    {#each smallerBubbles[comic - 1] as bub, j}
-    <div class="smallerBubble smallerBubble{j}" style={getResponsiveBubbleStyle(bub, j, comic - 1)}>
-      {bub.text}
+  <div class="comicContainer">
+    {#each [1,2,3,4,5,6] as comic, i}
+    <div class="panel" 
+    bind:clientWidth={panelWidth} 
+    bind:clientHeight={panelHeight} 
+    bind:this={comicRefs[i]}>
+    <div class="comicWrapper" style="opacity: {panelOpacities[i]};">
+      <img class="comicPanel" src="assets/images/comic/comic-0{comic}-620.png"/>
+      {#if comic == 1}
+      <div class="downarrow">↓</div>
+      {/if}
+      {#if bubbleSize[comic] > 0}
+      <div class="textPanel" style="height: {bubbleSize[comic]}%;">{bubbleText[comic]}</div>
+      {/if}
+      {#each smallerBubbles[comic - 1] as bub, j}
+      <div class="smallerBubble smallerBubble{j}" style={getResponsiveBubbleStyle(bub, j, comic - 1)}>
+        {bub.text}
+      </div>
+      {/each}
+      <div class="fuzzy" style="background-image: url('assets/images/grain.png');"></div>
     </div>
+    {#each [0,1,2,3,4,5,6,7,8] as hole}
+    <div class="left hole" style="top:{ (hole+0.5)/9*100}%;"></div>
     {/each}
-    <div class="fuzzy" style="background-image: url('assets/images/grain.png');"></div>
+    {#each [0,1,2,3,4,5,6,7,8] as hole}
+    <div class="right hole" style="top:{ (hole+0.5)/9*100}%;"></div>
+    {/each}
+    <!-- <div class="stripText"><span>{comic}</span>By Anna Li and Dorothy Lu for the Pudding</div> -->
   </div>
-  {#each [0,1,2,3,4,5,6,7,8] as hole}
-  <div class="left hole" style="top:{ (hole+0.5)/9*100}%;"></div>
-  {/each}
-  {#each [0,1,2,3,4,5,6,7,8] as hole}
-  <div class="right hole" style="top:{ (hole+0.5)/9*100}%;"></div>
-  {/each}
-  <!-- <div class="stripText"><span>{comic}</span>By Anna Li and Dorothy Lu for the Pudding</div> -->
+  {/each} 
 </div>
-{/each} 
+<!-- <div class="transition">So this got us wondering...</div> -->
+<AAPITitle />
 </div>
-</div>
+
 <style>
+  .transition {
+    margin: 40px auto;
+    text-align: center;
+    font-size: 30px;
+  }
   #intro {
     background: var(--intro-bg);
     width: 100%;
-    padding-bottom: 50px;
+    padding-bottom: 0px;
+    margin-bottom: 50px;
+    font-family:  "Pangolin", var(--sans);
   }
   .comicContainer {
     width: 90%;
     max-width: 600px;
-    box-shadow: 2px 2px 10px 12px rgba(0,0,0,0.1);
+/*     box-shadow: 2px 2px 10px 12px rgba(0,0,0,0.1); */
     border-radius: 2px;
     margin: 0 auto;
-    margin-bottom: 100px;
+    border: 3px solid #000;
+    /* Add the squiggly filter */
+    filter: url('#squiggly-strong');
   }
   /* Base Styling for Down Arrow */
-.downarrow {
-  position: absolute;
-  color: white;
-  font-size: 40px;
-  left: 50%;
-  bottom: 0%;
-  font-weight: bold;
-  text-shadow: 0 0 12px #000;
-  transform: translateX(-50%);
-  animation: bounceDown 2s infinite ease-in-out; /* Apply the animation */
-  cursor: pointer; /* Changes cursor to indicate it's clickable */
-}
+  .downarrow {
+    position: absolute;
+    color: white;
+    font-size: 40px;
+    left: 50%;
+    bottom: 0%;
+    font-weight: bold;
+    text-shadow: 0 0 12px #000;
+    transform: translateX(-50%);
+    animation: bounceDown 2s infinite ease-in-out; /* Apply the animation */
+  }
 
 /* Keyframes for Bouncing Down Animation */
 @keyframes bounceDown {
@@ -203,97 +241,110 @@ function getResponsiveBubbleStyle(bub, index, comicIndex) {
     transform: translateX(-50%) translateY(-7px);
   }
 }
+.textPanel {
+  background: var(--textbox-bg);
+  height: 20%;
+  font-size: 29px;
+  line-height: 32px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 16px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #281113;
+  color: #281113;
+  /* Remove the filter */
+  filter: none;
+}
+@media (max-width: 680px) {
   .textPanel {
-    font-family:  "Pangolin", var(--sans);
-    background: var(--textbox-bg);
-    height: 20%;
-    font-size: 29px;
-    line-height: 32px;
-/*     font-weight: bold; */
-    width: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    padding: 16px;
-    box-sizing: border-box;
-    border-bottom: 3px solid #281113;
-    color: #281113;
+    font-size: 27px;
+    line-height: 30px;
+    padding: 12px;
   }
-  @media (max-width: 680px) {
-    .textPanel {
-      font-size: 27px;
-      line-height: 30px;
-      padding: 12px;
-    }
+}
+@media (max-width: 640px) {
+  .textPanel {
+    font-size: 27px;
+    line-height: 29px;
+    padding: 12px;
   }
-  @media (max-width: 640px) {
-    .textPanel {
-      font-size: 27px;
-      line-height: 29px;
-      padding: 12px;
-    }
+}
+@media (max-width: 550px) {
+  .textPanel {
+    font-size: 25px;
+    line-height: 27px;
+    padding: 12px;
   }
-   @media (max-width: 550px) {
-    .textPanel {
-      font-size: 25px;
-      line-height: 27px;
-      padding: 12px;
-    }
+}
+@media (max-width: 500px) {
+  .textPanel {
+    font-size: 22px;
+    line-height: 24px;
+    padding: 12px;
   }
-  @media (max-width: 500px) {
-    .textPanel {
-      font-size: 22px;
-      line-height: 24px;
-      padding: 12px;
-    }
+}
+@media (max-width: 430px) {
+  .textPanel {
+    font-size: 20px;
+    line-height: 23px;
+    padding: 12px;
   }
-  @media (max-width: 430px) {
-    .textPanel {
-      font-size: 20px;
-      line-height: 23px;
-      padding: 12px;
-    }
+}
+@media (max-width: 390px) {
+  .textPanel {
+    font-size: 18px;
+    line-height: 20px;
+    padding: 10px;
   }
-  @media (max-width: 390px) {
-    .textPanel {
-      font-size: 18px;
-      line-height: 20px;
-      padding: 10px;
-    }
+}
+@media (max-width: 350px) {
+  .textPanel {
+    font-size: 16px;
+    line-height: 18px;
+    padding: 8px;
   }
-  @media (max-width: 350px) {
-    .textPanel {
-      font-size: 16px;
-      line-height: 18px;
-      padding: 8px;
-    }
-  }
-  
-  .panel {
-    background: var(--panel-bg);
-    padding: 25px 30px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-  }
-  .panel:first-child {
-    padding-top: 30px;
-    border-radius: 3px 3px 0 0;
-  }
-  .comicWrapper {
-    position: relative;
-    width: calc(100% - 40px);
-    overflow: hidden;
-/*     aspect-ratio: 1 / 1; */
-border-radius: 10px;
-transition: opacity 200ms cubic-bezier(0.250, 0.250, 0.750, 0.750);
-transition-timing-function: cubic-bezier(0.250, 0.250, 0.750, 0.750);
+}
+.textPanel:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 5px; /* Slightly thicker to ensure visibility */
+  background-color: #281113;
+  z-index: 1;
+  filter: url('#squiggly-medium');
+  transform: translateY(2px); /* Offset slightly */
+}
+.panel {
+  background: var(--panel-bg);
+  padding: 25px 30px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.panel:first-child {
+  padding-top: 30px;
+  border-radius: 3px 3px 0 0;
+}
+.comicWrapper {
+  position: relative;
+  width: calc(100% - 40px);
+  overflow: hidden;
+  border-radius: 10px;
+  transition: opacity 200ms cubic-bezier(0.250, 0.250, 0.750, 0.750);
+  transition-timing-function: cubic-bezier(0.250, 0.250, 0.750, 0.750);
+  border: 3px solid #000;
+  /* Add the squiggly filter */
+  filter: url('#squiggly-medium');
 }
 .comicPanel {
-  width: 110%;
-  margin-top: -10%;
+  width: 100%;
+  margin-top: 0%;
   max-width: none;
   aspect-ratio: 1 / 1;
 }
@@ -328,13 +379,16 @@ transition-timing-function: cubic-bezier(0.250, 0.250, 0.750, 0.750);
   height: 20px;
   border-radius: 3px;
   background: var(--intro-bg);
-  box-shadow: inset 2px 2px 8px -2px #000;
+  border: 3px solid #000;
+  box-sizing: border-box;
+  /* Add the squiggly filter */
+  filter: url('#squiggly-medium');
 }
 .hole.left {
-  left: 20px;
+  left: 15px;
 }
 .hole.right {
-  right: 20px;
+  right: 15px;
 }
 .stripText {
   position: absolute;
@@ -360,14 +414,11 @@ transition-timing-function: cubic-bezier(0.250, 0.250, 0.750, 0.750);
   padding: 10px;
   border: 2px solid #281113;
   position: absolute;
-/*   background: var(--textbox-bg); */
-background: var(--textbox-bg-comic);
+  background: var(--textbox-bg-comic);
   border-radius: 9px;
+  /* Add the squiggly filter */
+  filter: none;
 }
-.panel:nth-child(6) .smallerBubble {
-    font-size: 26px;
-    line-height: 28px;
-  }
 
 @media (max-width: 620px) {
   .comicContainer {
@@ -429,10 +480,6 @@ background: var(--textbox-bg-comic);
     line-height: 15px;
     margin-top: -20px;
   }
-  .panel:nth-child(6) .smallerBubble {
-    font-size: 22px;
-    line-height: 26px;
-  }
 }
 
 @media (max-width: 400px) {
@@ -442,19 +489,16 @@ background: var(--textbox-bg-comic);
     padding: 5px 7px;
     margin-top: -15px;
   }
-    /* Even more specific adjustments for really small screens */
+  /* Even more specific adjustments for really small screens */
   .panel:nth-child(3) .smallerBubble1 {
     margin-top: -20px;
     margin-left: -10%;
     width: 40% !important;
   }
-   .panel:nth-child(6) .smallerBubble {
+  .panel:nth-child(6) .smallerBubble {
     font-size: 20px;
     line-height: 24px;
     margin-top: 0;
   }
 }
-
-
-
 </style>

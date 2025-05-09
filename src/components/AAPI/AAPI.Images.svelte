@@ -33,7 +33,7 @@
   display: none;
 }
  .image-container img {
-  margin: 20px 0;
+  margin: 20px 0 5px;
  }
 @media (max-width: 768px) {
   .image-container {
