@@ -1,8 +1,8 @@
 <script>
-	export let title = "Title TK";
-	export let description = "Description TK";
-	export let url = "https://pudding.cool";
-	export let keywords = "";
+	export let title = "Asian Misrepresentation";
+	export let description = "How accurately cast are Asian Americans actors in Hollywood?";
+	export let url = "https://pudding.cool/05/2025/aapi-casting";
+	export let keywords = "Asian casting,AAPI,Hollywood,Asian representation,Asian actor,Asian American";
 	export let preloadFont = [];
 </script>
 

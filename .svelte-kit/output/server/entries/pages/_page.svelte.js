@@ -1,10 +1,10 @@
 import { c as create_ssr_component, e as escape, b as add_attribute, d as each, v as validate_component, o as onDestroy, g as getContext, s as setContext } from "../../chunks/ssr.js";
 import "d3";
 const Meta = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  let { title = "Title TK" } = $$props;
-  let { description = "Description TK" } = $$props;
-  let { url = "https://pudding.cool" } = $$props;
-  let { keywords = "" } = $$props;
+  let { title = "Asian Misrepresentation" } = $$props;
+  let { description = "How accurately cast are Asian Americans actors in Hollywood?" } = $$props;
+  let { url = "https://pudding.cool/05/2025/aapi-casting" } = $$props;
+  let { keywords = "Asian casting,AAPI,Hollywood,Asian representation,Asian actor,Asian American" } = $$props;
   let { preloadFont = [] } = $$props;
   if ($$props.title === void 0 && $$bindings.title && title !== void 0) $$bindings.title(title);
   if ($$props.description === void 0 && $$bindings.description && description !== void 0) $$bindings.description(description);
@@ -765,7 +765,7 @@ const Index = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 function version() {
   console.log("--- --- --- --- --- ---");
   console.log(`svelte-starter: ${"5.23.0"}`);
-  console.log(`build: ${"2025-05-12-14:06"}`);
+  console.log(`build: ${"2025-05-12-14:13"}`);
   console.log("--- --- --- --- --- ---");
 }
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
