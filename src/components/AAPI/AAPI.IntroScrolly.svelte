@@ -5,6 +5,7 @@
  let value;
  let comicRefs = [];
  let panelOpacities = [1, 0.1, 0.1, 0.1, 0.1, 0.1];
+ let prefersReducedMotion = false;
 
  const stages = [
   "stage 1",
@@ -92,6 +93,7 @@ function getResponsiveBubbleStyle(bub, index, comicIndex) {
 
   // Handle scroll events to update panel opacities
   onMount(() => {
+
     const handleScroll = () => {
       const viewportHeight = window.innerHeight;
       const scrollPosition = window.scrollY;
@@ -113,6 +115,23 @@ function getResponsiveBubbleStyle(bub, index, comicIndex) {
 
       // Force Svelte to update
       panelOpacities = [...panelOpacities];
+
+      const mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+      function updatePreference(e) {
+        prefersReducedMotion = e.matches;
+      }
+
+        // Add listener
+      mediaQuery.addListener(updatePreference);
+
+        // Set initial value
+      prefersReducedMotion = mediaQuery.matches;
+
+        // Cleanup function
+      return () => {
+        mediaQuery.removeListener(updatePreference);
+      };
     };
     
     const handleResize = () => {
@@ -134,7 +153,7 @@ function getResponsiveBubbleStyle(bub, index, comicIndex) {
   });
 </script>
 
-
+{#if !prefersReducedMotion}
 <svg width="0" height="0" style="position: absolute;">
   <defs>
     <!-- Strong squiggly for main comic container -->
@@ -156,6 +175,7 @@ function getResponsiveBubbleStyle(bub, index, comicIndex) {
     </filter>
   </defs>
 </svg>
+{/if}
 
 <div id="intro">
   <div class="comicContainer">
@@ -177,7 +197,9 @@ function getResponsiveBubbleStyle(bub, index, comicIndex) {
         {bub.text}
       </div>
       {/each}
+      {#if !prefersReducedMotion}
       <div class="fuzzy" style="background-image: url('assets/images/grain.png');"></div>
+      {/if}
     </div>
     {#each [0,1,2,3,4,5,6,7,8] as hole}
     <div class="left hole" style="top:{ (hole+0.5)/9*100}%;"></div>
@@ -190,7 +212,7 @@ function getResponsiveBubbleStyle(bub, index, comicIndex) {
   {/each} 
 </div>
 <!-- <div class="transition">So this got us wondering...</div> -->
-<AAPITitle />
+<AAPITitle {prefersReducedMotion} />
 </div>
 
 <style>
@@ -210,24 +232,24 @@ function getResponsiveBubbleStyle(bub, index, comicIndex) {
     width: 90%;
     max-width: 600px;
 /*     box-shadow: 2px 2px 10px 12px rgba(0,0,0,0.1); */
-    border-radius: 2px;
-    margin: 0 auto;
-    border: 3px solid #000;
-    /* Add the squiggly filter */
-    filter: url('#squiggly-strong');
-  }
-  /* Base Styling for Down Arrow */
-  .downarrow {
-    position: absolute;
-    color: white;
-    font-size: 40px;
-    left: 50%;
-    bottom: 0%;
-    font-weight: bold;
-    text-shadow: 0 0 12px #000;
-    transform: translateX(-50%);
-    animation: bounceDown 2s infinite ease-in-out; /* Apply the animation */
-  }
+border-radius: 2px;
+margin: 0 auto;
+border: 3px solid #000;
+/* Add the squiggly filter */
+filter: url('#squiggly-strong');
+}
+/* Base Styling for Down Arrow */
+.downarrow {
+  position: absolute;
+  color: white;
+  font-size: 40px;
+  left: 50%;
+  bottom: 0%;
+  font-weight: bold;
+  text-shadow: 0 0 12px #000;
+  transform: translateX(-50%);
+  animation: bounceDown 2s infinite ease-in-out; /* Apply the animation */
+}
 
 /* Keyframes for Bouncing Down Animation */
 @keyframes bounceDown {
@@ -419,7 +441,7 @@ function getResponsiveBubbleStyle(bub, index, comicIndex) {
   position: absolute;
   background: var(--textbox-bg-comic);
   border-radius: 12px;
-   -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   backface-visibility: hidden;
   transform: translateZ(0);

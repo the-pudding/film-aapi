@@ -89,9 +89,9 @@ width: 100%;
   height: 25%;
   /* More dramatic glow with layered shadows for depth */
   box-shadow: 
-    0 0 30px 20px rgba(255, 220, 180, 0.7),
-    0 0 70px 50px rgba(255, 180, 120, 0.3),
-    0 0 120px 80px rgba(255, 150, 100, 0.1);
+  0 0 30px 20px rgba(255, 220, 180, 0.7),
+  0 0 70px 50px rgba(255, 180, 120, 0.3),
+  0 0 120px 80px rgba(255, 150, 100, 0.1);
   /* More realistic flickering animation */
   animation: lightFlicker 20s infinite alternate;
   /* Softer blur for a more natural light source */
@@ -104,18 +104,18 @@ width: 100%;
 /* More complex flickering animation */
 @keyframes lightFlicker {
   0%, 10%, 15%, 20%, 25%, 30%, 35%, 40%, 45%, 50%, 55%, 60%, 65%, 70%, 75%, 80%, 85%, 90%, 95%, 100% {
-    opacity: 0.6;
+    opacity: 0.3;
     box-shadow: 
-      0 0 30px 20px rgba(255, 220, 180, 0.7),
-      0 0 70px 50px rgba(255, 180, 120, 0.3),
-      0 0 120px 80px rgba(255, 150, 100, 0.1);
+    0 0 30px 20px rgba(255, 220, 180, 0.7),
+    0 0 70px 50px rgba(255, 180, 120, 0.3),
+    0 0 120px 80px rgba(255, 150, 100, 0.1);
   }
   5%, 13%, 23%, 28%, 33%, 38%, 43%, 48%, 53%, 58%, 63%, 68%, 73%, 78%, 83%, 88%, 93%, 98% {
     opacity: 0.1;
     box-shadow: 
-      0 0 25px 15px rgba(255, 220, 180, 0.5),
-      0 0 60px 40px rgba(255, 180, 120, 0.2),
-      0 0 100px 70px rgba(255, 150, 100, 0.05);
+    0 0 25px 15px rgba(255, 220, 180, 0.5),
+    0 0 60px 40px rgba(255, 180, 120, 0.2),
+    0 0 100px 70px rgba(255, 150, 100, 0.05);
   }
 }
 
@@ -128,34 +128,34 @@ width: 100%;
   height: 100%;
   pointer-events: none;
   z-index: 3;
-  opacity: 0.7;
+  opacity: 1;
   
   /* Better dust particle effect using multiple background images */
   background-image: 
-    radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.1) 0.5px, transparent 2px),
-    radial-gradient(circle at 50% 70%, rgba(255, 255, 255, 0.08) .5px, transparent 2px),
-    radial-gradient(circle at 80% 10%, rgba(255, 255, 255, 0.06) .5px, transparent 2px),
-    radial-gradient(circle at 10% 90%, rgba(255, 255, 255, 0.07) .5px, transparent 2px),
-    radial-gradient(circle at 40% 50%, rgba(255, 255, 255, 0.05) .5px, transparent 2px),
-    radial-gradient(circle at 70% 60%, rgba(255, 255, 255, 0.09) .5px, transparent 2px);
+  radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.1) 0.5px, transparent 1px),
+/*   radial-gradient(circle at 50% 70%, rgba(255, 255, 255, 0.08) .5px, transparent 2px), */
+/*   radial-gradient(circle at 80% 10%, rgba(255, 255, 255, 0.06) .5px, transparent 2px), */
+/*   radial-gradient(circle at 10% 90%, rgba(255, 255, 255, 0.07) .5px, transparent 2px), */
+  radial-gradient(circle at 40% 50%, rgba(255, 255, 255, 0.05) .5px, transparent 2px),
+  radial-gradient(circle at 70% 60%, rgba(255, 255, 255, 0.09) .5px, transparent 1px);
   
   /* Larger, more varied background size for more natural look */
   background-size: 
-    100px 100px,
-    150px 150px,
-    120px 120px,
-    200px 200px,
-    180px 180px,
-    130px 130px;
+  100px 100px,
+  150px 150px,
+  120px 120px,
+  200px 200px,
+  180px 180px,
+  130px 130px;
   
   /* Staggered initial positions */
   background-position: 
-    0px 0px,
-    20px 30px,
-    50px 10px,
-    10px 40px,
-    30px 80px,
-    70px 60px;
+  0px 0px,
+  20px 30px,
+  50px 10px,
+  10px 40px,
+  30px 80px,
+  70px 60px;
   
   /* Smoother animation with longer duration */
   animation: floatingDust 40s infinite linear;
@@ -164,12 +164,12 @@ width: 100%;
 @keyframes floatingDust {
   to {
     background-position: 
-      100px 100px,
-      150px 180px,
-      120px 130px,
-      200px 240px,
-      180px 260px,
-      130px 190px;
+    100px 100px,
+    150px 180px,
+    120px 130px,
+    200px 240px,
+    180px 260px,
+    130px 190px;
   }
 }
 /* Credits Section */
@@ -229,7 +229,9 @@ width: 100%;
   background:  rgba(0,0,0,0.2);
 }
 </style>
-
+<script>
+  export let prefersReducedMotion;
+</script>
 <div class="title-wrapper">
   <!-- Title section -->
   <div class="title">
@@ -256,9 +258,13 @@ width: 100%;
  <div class="lead-image-container">
 
   <img class="lead-image" src="assets/images/comic/comic-header.png" alt="Title Picture" />
+  {#if !prefersReducedMotion}
   <div class="flashingLight">
   </div>
+  {/if}
   
 </div>
+{#if !prefersReducedMotion}
 <div class="dustParticles"></div>
+{/if}
 </div>
