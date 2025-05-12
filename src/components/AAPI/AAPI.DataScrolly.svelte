@@ -19,6 +19,11 @@
   let hoveredMovieId = null;
   let character_color = null;
   let tooltip = { visible: false, x: 0, y: 0, bottom: 0, text: "", useTop: true }; // Added useTop flag
+  
+  // Add the onScreen variable
+  let onScreen = false;
+  let stepContainerElement;
+  
   const legendData = [
     {"label": "Fully accurate", "color": "--fullyaccurate", "stage": 1},
     {"label": "Part accurate", "color": "--partiallyaccurate", "stage": 2},
@@ -34,6 +39,27 @@
     if (tooltip.visible) {
       hideMovieTooltip();
     }
+    
+    // Check if stepContainer is visible
+    checkIfOnScreen();
+  }
+  
+  // Function to check if an element is in the viewport
+  function checkIfOnScreen() {
+    if (!stepContainerElement || typeof window === 'undefined') return;
+    
+    const rect = stepContainerElement.getBoundingClientRect();
+    const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+    const windowWidth = window.innerWidth || document.documentElement.clientWidth;
+    
+    // Consider element visible if any part of it is in the viewport
+    const isVisible = 
+    rect.top < windowHeight &&
+    rect.bottom > 0 &&
+    rect.left < windowWidth &&
+    rect.right > 0;
+    
+    onScreen = isVisible;
   }
 
   // Group movies by two-year periods and sort by number of inaccurate castings
@@ -135,30 +161,37 @@
       
       // Listen for touchmove events for mobile devices
       window.addEventListener('touchmove', handleScroll, true);
+      
+      // Set up resize observer to check visibility on window resize
+      window.addEventListener('resize', checkIfOnScreen, true);
+      
+      // Check initially
+      setTimeout(checkIfOnScreen, 100);
     }
   });
-  
+
   // Clean up event listeners when component is destroyed
-  onDestroy(() => {
-    if (typeof window !== 'undefined') {
-      window.removeEventListener('scroll', handleScroll, true);
-      window.removeEventListener('wheel', handleScroll, true);
-      window.removeEventListener('touchmove', handleScroll, true);
-    }
-  });
+onDestroy(() => {
+  if (typeof window !== 'undefined') {
+    window.removeEventListener('scroll', handleScroll, true);
+    window.removeEventListener('wheel', handleScroll, true);
+    window.removeEventListener('touchmove', handleScroll, true);
+    window.removeEventListener('resize', checkIfOnScreen, true);
+  }
+});
 
-  function showMovieTooltip(movieId, event, characteristic) {
-    hoveredMovieId = movieId;
-    let movie = Object.values(groupedByYearPairs)
-      .flat()
-      .find(m => m.movieId === movieId);
+function showMovieTooltip(movieId, event, characteristic) {
+  hoveredMovieId = movieId;
+  let movie = Object.values(groupedByYearPairs)
+  .flat()
+  .find(m => m.movieId === movieId);
 
-    if (!movie) return;
+  if (!movie) return;
 
     // First set the tooltip content
-    let headers = "<tr class='row header'><th>Actor</th><th>Character</th></tr>";
-    let accurateCast = [];
-    let inaccurateCast = [];
+  let headers = "<tr class='row header'><th>Actor</th><th>Character</th></tr>";
+  let accurateCast = [];
+  let inaccurateCast = [];
 
     // Limit the number of actors to prevent overflow (adjust the number as needed)
     const limitActors = 50; // Show max 25 accurate and 25 inaccurate actors
@@ -234,7 +267,7 @@
   }
 
   function getMovieHighlight(movieId) {
-    if (!currentStage.highlight_movies) return ''; // Return empty string if no highlights
+    if (!currentStage.highlight_movies || !onScreen) return ''; // Return empty string if no highlights
 
     const highlightedMovies = currentStage.highlight_movies.split(",").map(Number); // Convert to numbers
     return highlightedMovies.includes(Number(movieId)) ? 'highlighted-movie' : '';
@@ -277,8 +310,39 @@
     return "";
   }
 
+  const missingActors = [
+    "Nina_Li_Chi",
+    "Chow_YunFat",
+    "Shinichi_Chiba",
+    "Winter_Jones_Tony_Yalda",
+    "Youki_Kudoh",
+    "Bee_Vang",
+    "Zhensu_Wu",
+    "Zhiheng_Wang",
+    "Ahney_Her",
+    "Hyekyo_Song",
+    "Xiaoshenyang",
+    "Ayaan_Khan",
+    "Divian_Ladwa",
+    "Jianguo_Yongbo",
+    "MengEr_Zhang",
+    "Yeojeong_Yoon"
+  ];
+
+  // Improved image name formatting with better validation and missing actor check
   function formatImageName(actorName) {
-    const name = String(actorName).replace(/ /g, "_")
+    // Handle null/undefined/empty cases
+    if (!actorName) return "assets/images/headshots/headshotfiller.png";
+    
+    // Clean the name by removing special characters and replacing spaces with underscores
+    const name = String(actorName).replace(/[^\w\s]/g, "").replace(/ /g, "_");
+    
+    // NEW: Check if this actor is in our list of known missing images
+    if (missingActors.includes(name)) {
+      return "assets/images/headshots/headshotfiller.png";
+    }
+    
+    // Otherwise return the normal path
     if (section == "start") {
       return `assets/images/headshots_color/${name}.jpg`;
     }
@@ -291,10 +355,12 @@
 
   $: {
     if (value == undefined) { value = 0; }
+    onScreen;
     currentStage = scrolly_copy[section][value];
     character_color = (currentStage.character_color === undefined) ? -1 : currentStage.character_color;
     squareSize = width / 100;    
   }
+  
 </script>
 <div class="outsideContainer {section}" bind:clientWidth={outsideWidth}>
   <section id="scrolly">
@@ -323,7 +389,7 @@
             class="square early-era actorClass{actor["Background Match?"]}"
             data-actor={actor.Actor}
             data-movie={actor["Background Match?"] === "Y"}
-            style="width: {width/40}px;">
+            style="width: {width < 800 ? width/50 : width/40}px;">
             <img 
             src={formatImageName(actor.Actor)}
             alt="Image of {actor.Actor}"
@@ -346,7 +412,7 @@
       {/each}
     </div>
     {:else}
-      <div class="legend" transition:fade>
+    <div class="legend" transition:fade>
       {#each altLegendData as d, i}
       {#if value >= d.stage}
       <div class="legendItem" transition:fade><span style="background: var({d.color});"></span> {d.label}</div>
@@ -360,12 +426,12 @@
 
 <!-- Conditionally set top or bottom position based on useTop flag -->
 <div class="tooltip {tooltip.visible ? 'visible' : ''} {tooltip.orientation}" 
-     style="{tooltip.useTop ? `top: ${tooltip.y}px;` : `bottom: ${tooltip.bottom}px;`} left: {tooltip.x}px;">
-  {@html tooltip.text}
-  <div class="tooltip-arrow"></div>
+style="{tooltip.useTop ? `top: ${tooltip.y}px;` : `bottom: ${tooltip.bottom}px;`} left: {tooltip.x}px;">
+{@html tooltip.text}
+<div class="tooltip-arrow"></div>
 </div>
 
-<div class="stepContainer">
+<div class="stepContainer" bind:this={stepContainerElement}>
   <Scrolly bind:value>
     {#each scrolly_copy[section] as stage, i}
     {@const active = value === i}
@@ -415,8 +481,8 @@
   }
   @media (max-width: 1200px) {
     .visualContainer {
-      width: 95%; 
-      margin-left: 2.5%;
+      width: 98%; 
+      margin-left: 2%;
     }
     .stepContainer {
       display: block;
@@ -457,9 +523,9 @@
   color: var(--text-color);
   transition: opacity 0.3s ease;
 /*   font-weight: bold; */
-  display: flex;
-  align-items: center;
-  height: 100%; /* Ensure the parent has a defined height */
+display: flex;
+align-items: center;
+height: 100%; /* Ensure the parent has a defined height */
 }
 
 
@@ -702,16 +768,19 @@
 }
 @media (max-width: 500px) {
   .legend {
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  width: 140px;
-  font-size: 12px;
-}
-.legendItem span {
-  height: 10px;
-  width: 10px;
-}
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 140px;
+    font-size: 12px;
+  }
+  .legendItem span {
+    height: 10px;
+    width: 10px;
+  }
+  .movie-row {
+    gap: 5px;
+  }
 }
 /* Additional styling for the footer rows in the tooltip */
 .tooltip .row.footer {

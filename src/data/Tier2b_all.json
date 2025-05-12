@@ -4109,7 +4109,7 @@
     "Director name": "Adele Lim",
     "Is the director asian?": "Y",
     "Character Name": "Audrey",
-    "Actor": "Ashley Park III",
+    "Actor": "Ashley Park",
     "Ethnicity Specified in Movie?": "Y",
     "Character Ethnicity": "Korean",
     "Character Ethnicity (Cleaned)": "Korean",
@@ -4220,7 +4220,7 @@
     "Background Match?": "Y"
   },
   {
-    "Movie ID": 72,
+    "Movie ID": 81,
     "Actor ID": 212,
     "Media": "The Killing Fields",
     "Box Office": "$34,700,310",

@@ -28,7 +28,7 @@ const bubbleText = {
   "3": "Recently she put on Netflix.",
   "4": "She was excited to see a Chinese character—when she noticed something she couldn't ignore.",
   "5": "She called me to complain.",
-  "6": "After that, my friend Dorothy and I started noticing this a lot more."
+  "6": "After this, we started noticing a pattern that got us thinking..."
 }
 
 const smallerBubbles = [
@@ -48,18 +48,18 @@ const smallerBubbles = [
   ],
     // 4
   [
-    {x: 62, y: 60, w: 30, text: "呆在原地！Stay right where you are!"}   
+    {x: 62, y: 60, w: 30, text: "呆在我能看得到你的地方 \"Stay here!\""}   
   ],
     // 5
   [
-    {x: 50, y: 30, w: 40, text: "Something's off about Mindy, but I don't know what!"},
+    {x: 50, y: 30, w: 40, text: "Something’s off about Mindy, but I don’t know what!"},
     {x: 50, y: 58, w: 30, text: "I agree... let me look her up."},
-    {x: 35, y: 73, w: 40, text: "Oh, I see. It says she's played by a Korean actor! No wonder she doesn't feel Chinese."} 
+    {x: 35, y: 73, w: 40, text: "Oh, I see. It says she’s played by a Korean actor! No wonder she doesn’t feel Chinese."} 
   ],
     // 6
   [
-    {x: 32, y: 85, w: 40, text:"Hey, this seems pretty common! I wonder..."},
-    {x: 50, y: 42, w: 50, text:"Why do they have Simu Liu playing a Korean?"}
+    {x: 50, y: 42, w: 50, text:"Hey, this seems pretty common!"},
+    {x: 35, y: 85, w: 40, text:"Yeah... why do they have Simu Liu playing a Korean?"}
   ]
 ];
 
@@ -134,25 +134,25 @@ function getResponsiveBubbleStyle(bub, index, comicIndex) {
   });
 </script>
 
-<!-- SVG Filters for the squiggly border effect -->
+
 <svg width="0" height="0" style="position: absolute;">
   <defs>
     <!-- Strong squiggly for main comic container -->
-    <filter id="squiggly-strong" x="-10%" y="-10%" width="120%" height="120%">
+    <filter id="squiggly-strong" x="-10%" y="-10%" width="120%" height="120%" color-interpolation-filters="sRGB">
       <feTurbulence type="fractalNoise" baseFrequency="0.01" numOctaves="1" result="noise" />
       <feDisplacementMap in="SourceGraphic" in2="noise" scale="10" xChannelSelector="R" yChannelSelector="G" />
     </filter>
     
     <!-- Medium squiggly for panel borders -->
-    <filter id="squiggly-medium" x="-10%" y="-10%" width="120%" height="120%">
+    <filter id="squiggly-medium" x="-10%" y="-10%" width="120%" height="120%" color-interpolation-filters="sRGB">
       <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="2" result="noise" />
-      <feDisplacementMap in="SourceGraphic" in2="noise" scale="2" xChannelSelector="R" yChannelSelector="G" />
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="0" xChannelSelector="R" yChannelSelector="G" />
     </filter>
     
     <!-- Light squiggly for text bubbles -->
-    <filter id="squiggly-light" x="-10%" y="-10%" width="120%" height="120%">
-      <feTurbulence type="fractalNoise" baseFrequency="0.00" numOctaves="0" result="noise" />
-      <feDisplacementMap in="SourceGraphic" in2="noise" scale="0" xChannelSelector="R" yChannelSelector="G" />
+    <filter id="squiggly-light" x="-10%" y="-10%" width="120%" height="120%" color-interpolation-filters="sRGB">
+      <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="1" result="noise" />
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="0.2" xChannelSelector="R" yChannelSelector="G" />
     </filter>
   </defs>
 </svg>
@@ -269,6 +269,9 @@ function getResponsiveBubbleStyle(bub, index, comicIndex) {
     font-size: 27px;
     line-height: 29px;
     padding: 12px;
+  }
+  .comicContainer {
+    width: calc(100% - 20px);
   }
 }
 @media (max-width: 550px) {
@@ -415,15 +418,17 @@ function getResponsiveBubbleStyle(bub, index, comicIndex) {
   border: 2px solid #281113;
   position: absolute;
   background: var(--textbox-bg-comic);
-  border-radius: 9px;
-  /* Add the squiggly filter */
-  filter: none;
+  border-radius: 12px;
+   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  will-change: transform;
+  filter: drop-shadow(0 0 1px rgba(0,0,0,0.05));
 }
 
+
 @media (max-width: 620px) {
-  .comicContainer {
-    width: 100%;
-  }
   .stripText {
     display: none;
   }
@@ -452,14 +457,14 @@ function getResponsiveBubbleStyle(bub, index, comicIndex) {
     width: calc(100% - 26px);
   }
   .hole {
-    width: 5px;
+    width: 12px;
     height: 20px;
   }
   .hole.left {
-    left: 4px;
+    left: 0px;
   }
   .hole.right {
-    right: 4px;
+    right: 0px;
   }
   .panel {
     padding: 10px 0px;
@@ -495,10 +500,16 @@ function getResponsiveBubbleStyle(bub, index, comicIndex) {
     margin-left: -10%;
     width: 40% !important;
   }
-  .panel:nth-child(6) .smallerBubble {
+/*   .panel:nth-child(6) .smallerBubble {
     font-size: 20px;
     line-height: 24px;
     margin-top: 0;
-  }
+  } */
+}
+.comicContainer, .comicWrapper, .hole, .textPanel:after {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: bicubic;
+  shape-rendering: geometricPrecision;
 }
 </style>

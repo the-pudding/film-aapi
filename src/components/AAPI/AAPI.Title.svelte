@@ -75,63 +75,103 @@ width: 100%;
 }
 .flashingLight {
   position: absolute;
-  background: rgba(255, 235, 210, 0.2);  /* Reduced opacity */
-  left: 48%;
-  transform: translateX(-50%) scale(1.3);
-  top: 14%;
-  width: 35%;
-  height: 32%;
-  /* Less intense glow */
-  box-shadow: 0 0 50px 40px rgba(255, 225, 200, 0.15);
-  /* Animation */
-  animation: bigFlicker 2s infinite;
-  /* Blur effect */
-  filter: blur(10px);
-  /* Performance */
+  /* Warmer light color with higher opacity for stronger central light */
+  background: radial-gradient(
+    circle,
+    rgba(255, 220, 180, 0.8) 0%,
+    rgba(255, 200, 150, 0.4) 30%,
+    rgba(255, 180, 120, 0.1) 70%
+  );
+  left: 47%;
+  transform: translateX(-50%);
+  top: 16%;
+  width: 33%;
+  height: 25%;
+  /* More dramatic glow with layered shadows for depth */
+  box-shadow: 
+    0 0 30px 20px rgba(255, 220, 180, 0.7),
+    0 0 70px 50px rgba(255, 180, 120, 0.3),
+    0 0 120px 80px rgba(255, 150, 100, 0.1);
+  /* More realistic flickering animation */
+  animation: lightFlicker 20s infinite alternate;
+  /* Softer blur for a more natural light source */
+  filter: blur(40px);
+  /* Performance optimization */
   will-change: opacity, box-shadow;
   z-index: 2;
 }
 
-/* Flicker effect with more subtle brightness changes */
-@keyframes bigFlicker {
-  0%, 100% { 
-    opacity: 0.2; 
-    box-shadow: 0 0 50px 40px rgba(255, 220, 190, 0.15);
+/* More complex flickering animation */
+@keyframes lightFlicker {
+  0%, 10%, 15%, 20%, 25%, 30%, 35%, 40%, 45%, 50%, 55%, 60%, 65%, 70%, 75%, 80%, 85%, 90%, 95%, 100% {
+    opacity: 0.6;
+    box-shadow: 
+      0 0 30px 20px rgba(255, 220, 180, 0.7),
+      0 0 70px 50px rgba(255, 180, 120, 0.3),
+      0 0 120px 80px rgba(255, 150, 100, 0.1);
   }
-  20% { 
-    opacity: 0.1; 
-    box-shadow: 0 0 80px 70px rgba(255, 230, 200, 0.18);
-  }
-  32% { 
-    opacity: 0.25; 
-    box-shadow: 0 0 80px 70px rgba(255, 240, 210, 0.2);
-  }
-  50% { 
-    opacity: 0.3; /* Reduced from 0.5 */
-    box-shadow: 0 0 80px 70px rgba(255, 245, 220, 0.22);
-  }
-  62% { 
-    opacity: 0.15; 
-    box-shadow: 0 0 80px 70px rgba(255, 235, 205, 0.2);
-  }
-  68% { 
-    opacity: 0.25; /* Reduced from 0.4 */
-    box-shadow: 0 0 80px 70px rgba(255, 240, 215, 0.22);
-  }
-  75% { 
-    opacity: 0.1; 
-    box-shadow: 0 0 40px 30px rgba(255, 225, 195, 0.15);
-  }
-  81% { 
-    opacity: 0.18; 
-    box-shadow: 0 0 40px 30px rgba(255, 230, 200, 0.17);
-  }
-  95% { 
-    opacity: 0.08; 
-    box-shadow: 0 0 40px 30px rgba(255, 220, 190, 0.12);
+  5%, 13%, 23%, 28%, 33%, 38%, 43%, 48%, 53%, 58%, 63%, 68%, 73%, 78%, 83%, 88%, 93%, 98% {
+    opacity: 0.1;
+    box-shadow: 
+      0 0 25px 15px rgba(255, 220, 180, 0.5),
+      0 0 60px 40px rgba(255, 180, 120, 0.2),
+      0 0 100px 70px rgba(255, 150, 100, 0.05);
   }
 }
 
+
+.dustParticles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 3;
+  opacity: 0.7;
+  
+  /* Better dust particle effect using multiple background images */
+  background-image: 
+    radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.1) 0.5px, transparent 2px),
+    radial-gradient(circle at 50% 70%, rgba(255, 255, 255, 0.08) .5px, transparent 2px),
+    radial-gradient(circle at 80% 10%, rgba(255, 255, 255, 0.06) .5px, transparent 2px),
+    radial-gradient(circle at 10% 90%, rgba(255, 255, 255, 0.07) .5px, transparent 2px),
+    radial-gradient(circle at 40% 50%, rgba(255, 255, 255, 0.05) .5px, transparent 2px),
+    radial-gradient(circle at 70% 60%, rgba(255, 255, 255, 0.09) .5px, transparent 2px);
+  
+  /* Larger, more varied background size for more natural look */
+  background-size: 
+    100px 100px,
+    150px 150px,
+    120px 120px,
+    200px 200px,
+    180px 180px,
+    130px 130px;
+  
+  /* Staggered initial positions */
+  background-position: 
+    0px 0px,
+    20px 30px,
+    50px 10px,
+    10px 40px,
+    30px 80px,
+    70px 60px;
+  
+  /* Smoother animation with longer duration */
+  animation: floatingDust 40s infinite linear;
+}
+
+@keyframes floatingDust {
+  to {
+    background-position: 
+      100px 100px,
+      150px 180px,
+      120px 130px,
+      200px 240px,
+      180px 260px,
+      130px 190px;
+  }
+}
 /* Credits Section */
 .credits {
   font-size: 1.2rem;
@@ -176,8 +216,8 @@ width: 100%;
   line-height: 36px;
 }
 .subhed, .credits {
-  font-size: 1.1rem;
-  line-height: 1.4rem;
+  font-size: 1rem;
+  line-height: 1.3rem;
 }
 }
 .floor {
@@ -208,7 +248,7 @@ width: 100%;
       <div class="title">How accurately cast are Asian American actors in Hollywood?</div>
       <!-- Credits section -->
       <div class="credits">
-       by <a href="#">Dorothy Lu</a> and <a href="#">Anna Li</a>
+       Data and script by <a href="#">Dorothy Lu</a><br>Illustrations and development by <a href="#">Anna Li</a>
      </div>
    </span>
  </div>
@@ -218,5 +258,7 @@ width: 100%;
   <img class="lead-image" src="assets/images/comic/comic-header.png" alt="Title Picture" />
   <div class="flashingLight">
   </div>
+  
 </div>
+<div class="dustParticles"></div>
 </div>

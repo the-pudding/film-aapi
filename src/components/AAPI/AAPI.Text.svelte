@@ -130,7 +130,7 @@
     max-width: 600px;
     width: 100%;
     overflow-wrap: break-word;
-    text-align: justify; /* Optional: To center the text inside */
+
     margin: 0 auto;
   }
   
@@ -146,5 +146,11 @@
   
   .has-dropcap {
     clear: both;
+  }
+  @media (max-width: 620px) {
+   .textContainer  {
+    width: calc(100% - 20px);
+    margin: 0 10px;
+   } 
   }
 </style>

@@ -165,7 +165,7 @@
 
 <style>
   footer {
-    margin-top: 100px;
+    margin-top: 0px;
     background: white;
     color: black;
   }
