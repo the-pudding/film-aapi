@@ -214,6 +214,11 @@ figure img {
 	opacity: 0.8;
 }
 
+#story p a {
+	text-decoration: none;
+	border-bottom: 1px dotted var(--text-color);
+}
+
 
 .tooltip {
 	width: 260px;

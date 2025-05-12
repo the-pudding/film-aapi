@@ -1,7 +1,7 @@
 <script>
 	import wordmark from "$svg/wordmark-shadow.svg";
     import AAPIIntroScrolly from "$components/AAPI/AAPI.IntroScrolly.svelte";
-   
+    
     import AAPIDataScrolly from "$components/AAPI/AAPI.DataScrolly.svelte";
     import AAPIText from "$components/AAPI/AAPI.Text.svelte";
     import AAPISubhed from "$components/AAPI/AAPI.Subhed.svelte";
@@ -28,9 +28,9 @@
     <AAPIText texts={copy.dataTransition}/> -->
 
 
-<AAPIDataScrolly section="start" />
+    <AAPIDataScrolly section="start" />
 
- <AAPIText texts={copy.middle}/>
+    <AAPIText texts={copy.middle}/>
 <!-- <AAPIText texts={copy.pastDecade}/>
 <AAPIImages
 url="assets/images/crazy-rich-asians-gif.gif"
@@ -101,10 +101,9 @@ caption="Data source: Pew Research Center, Survey of Asian American adults condu
     }
 
     #box {
-/*         background-color: #c4bfe6; */
-width: 40%;
-margin: 0 auto;
-padding: 10px;
-}
+        width: 40%;
+        margin: 0 auto;
+        padding: 10px;
+    }
 
 </style>
