@@ -765,7 +765,7 @@ const Index = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 function version() {
   console.log("--- --- --- --- --- ---");
   console.log(`svelte-starter: ${"5.23.0"}`);
-  console.log(`build: ${"2025-05-12-14:13"}`);
+  console.log(`build: ${"2025-05-12-15:11"}`);
   console.log("--- --- --- --- --- ---");
 }
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
