@@ -15,9 +15,17 @@
   "stage 5",
   "stage 6"
 ]
+const altText= [
+  "Young woman riding a bike in New York",
+  "Middle-age woman watching TV and her daughter leaving the room",
+  "Emily in Paris on TV, and Haimei watching in her living room",
+  "An Asian character talking to a white character",
+  "Haimei calling her daughter",
+  "Two women watching Kim's Convenience in their apartment"
+]
 const bubbleSize = {
   "1": 25,
-  "2": 25,
+  "2": 32,
   "3": 12,
   "4": 25,
   "5": 12,
@@ -25,7 +33,7 @@ const bubbleSize = {
 }
 const bubbleText = {
   "1": "My mother, Haimei, is a Chinese immigrant who spent decades building a life in New York City.",
-  "2": "After her two children grew up and moved, all she wants to do these days is cuddle with her dog and watch TV.",
+  "2": "Now that her two children are grown and have moved out, all she wants to do these days is cuddle with her dog and watch TV.",
   "3": "Recently she put on Netflix.",
   "4": "She was excited to see a Chinese character—when she noticed something she couldn't ignore.",
   "5": "She called me to complain.",
@@ -49,18 +57,19 @@ const smallerBubbles = [
   ],
     // 4
   [
-    {x: 62, y: 60, w: 30, text: "呆在我能看得到你的地方 \"Stay here!\""}   
+    {x: 62, y: 60, w: 30, text: "呆在我能看得到你的地方 \"Stay where I can see you!\""}   
   ],
     // 5
   [
-    {x: 50, y: 30, w: 40, text: "Something’s off about Mindy, but I don’t know what!"},
+    // {x: 50, y: 30, w: 40, text: "Something’s off about Mindy, but I don’t know what!"},
+     {x: 50, y: 30, w: 40, text: "Mindy's Mandarin is so bad!"},
     {x: 50, y: 58, w: 30, text: "I agree... let me look her up."},
     {x: 35, y: 73, w: 40, text: "Oh, I see. It says she’s played by a Korean actor! No wonder she doesn’t feel Chinese."} 
   ],
     // 6
   [
-    {x: 50, y: 42, w: 50, text:"Hey, this seems pretty common!"},
-    {x: 35, y: 85, w: 40, text:"Yeah... why do they have Simu Liu playing a Korean?"}
+    {x: 25, y: 40, w: 30, text:"Hey is that Simu Liu? Isn't he Chinese?"},
+    {x: 35, y: 85, w: 40, text:"Yeah, why is he playing a Korean? I wonder..."}
   ]
 ];
 
@@ -185,7 +194,7 @@ function getResponsiveBubbleStyle(bub, index, comicIndex) {
     bind:clientHeight={panelHeight} 
     bind:this={comicRefs[i]}>
     <div class="comicWrapper" style="opacity: {panelOpacities[i]};">
-      <img class="comicPanel" src="assets/images/comic/comic-0{comic}-620.png"/>
+      <img class="comicPanel" src="assets/images/comic/comic-0{comic}-620.png" alt={altText[i]}/>
       {#if comic == 1}
       <div class="downarrow">↓</div>
       {/if}
@@ -226,6 +235,7 @@ function getResponsiveBubbleStyle(bub, index, comicIndex) {
     width: 100%;
     padding-bottom: 0px;
     margin-bottom: 50px;
+    margin-top: -1px;
     font-family:  "Pangolin", var(--sans);
   }
   .comicContainer {
@@ -379,7 +389,7 @@ filter: url('#squiggly-strong');
   content: "";
   height: 500%;
   width: 500%;
-  opacity: 1;
+  opacity: 0.7;
   position: absolute;
   left: -125%;
   top: -125%;
@@ -476,11 +486,11 @@ filter: url('#squiggly-strong');
 
 @media (max-width: 500px) {
   .comicWrapper {
-    width: calc(100% - 26px);
+    width: calc(100% - 32px);
   }
   .hole {
-    width: 12px;
-    height: 20px;
+    width: 14px;
+    height: 14px;
   }
   .hole.left {
     left: 0px;

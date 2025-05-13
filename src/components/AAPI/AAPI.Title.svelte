@@ -247,7 +247,7 @@ width: 100%;
         asian <br />
         <span class="mis">mis </span>representation 
       </div> -->
-      <div class="title">How accurately cast are Asian American actors in Hollywood?</div>
+      <div class="title">How Accurately are Asian American Actors Cast in Hollywood?</div>
       <!-- Credits section -->
       <div class="credits">
        Data and script by <a href="#">Dorothy Lu</a><br>Illustrations and development by <a href="#">Anna Li</a>
@@ -257,7 +257,7 @@ width: 100%;
  <div class="floor"></div>
  <div class="lead-image-container">
 
-  <img class="lead-image" src="assets/images/comic/comic-header.png" alt="Title Picture" />
+  <img class="lead-image" src="assets/images/comic/comic-header.png" alt="Two women watching TV in a living room with two Chinese vases, a fan, and a calendar"/>
   {#if !prefersReducedMotion}
   <div class="flashingLight">
   </div>

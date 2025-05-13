@@ -39,11 +39,15 @@
 /* 	--bgcolor: #DFDEFC; */
 --bgcolor: #ede4f0;
 --fullyaccurate: #42baff;
---partiallyaccurate: #dbaf00;
---fullyinaccurate: #ff668d;
---fullyaccuratebg: #6bc9ff;
---partiallyaccuratebg: #ffe580;
---fullyinaccuratebg: #ffa1b2;
+--fullyaccurate2: #20a3bd;
+/* --partiallyaccurate: #dbaf00; */
+--partiallyaccurate: #b28dcc;
+--fullyinaccurate: #ed7461;
+--fullyinaccurate2: #fa7f2d;
+--fullyaccuratebg: #75b9e0;
+/* --partiallyaccuratebg: #ffe580; */
+--partiallyaccuratebg: #d0aee8;
+--fullyinaccuratebg: #f5afab;
 --hl-border: #e6c72c;
 --hl-text: #edd34c;
 --text-color: #463d4a;
@@ -141,6 +145,12 @@ body, html {
 	margin: 0px auto;
 	pointer-events: none;
 }
+
+@media (max-width: 1200px) {
+	.step {
+		padding-top: 50vh;
+	}
+}
 .step a {
 	pointer-events: auto;
 }
@@ -152,6 +162,9 @@ body, html {
 	position: relative; /* Makes sure z-index works correctly */
 	opacity: 1; /* Ensure text is fully opaque */
 }
+
+
+
 .pad {
 	height: 100vh; /* Spacing between steps. 100vh = full viewport height */
 }

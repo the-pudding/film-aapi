@@ -55,7 +55,7 @@ caption="Data source: Pew Research Center, Survey of Asian American adults condu
 
 <div class="shortline"></div>
 
-<dix id= "box">
+<dix id="box">
     <h6>
         Methodology
     </h6>
@@ -86,7 +86,7 @@ caption="Data source: Pew Research Center, Survey of Asian American adults condu
     .shortline {
         display: block;
         width: 200px;
-        margin:  50px auto;
+        margin:  50px auto 20px;
         border-top: 2px solid var(--text-color);
     }
     #toggle-button {

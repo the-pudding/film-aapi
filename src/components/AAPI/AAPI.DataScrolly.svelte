@@ -25,9 +25,9 @@
   let stepContainerElement;
   
   const legendData = [
-    {"label": "Fully accurate", "color": "--fullyaccurate", "stage": 1},
-    {"label": "Part accurate", "color": "--partiallyaccurate", "stage": 2},
-    {"label": "Fully inaccurate", "color": "--fullyinaccurate", "stage": 3}
+    {"label": "Complete accuracy", "color": "--fullyaccurate", "stage": 1},
+    {"label": "Partial accuracy", "color": "--partiallyaccurate", "stage": 2},
+    {"label": "Complete inaccuracy", "color": "--fullyinaccurate", "stage": 3}
   ]
   const altLegendData = [
     {"label": "Accurate", "color": "--fullyaccurate", "stage": 1},
@@ -389,7 +389,7 @@ function showMovieTooltip(movieId, event, characteristic) {
             class="square early-era actorClass{actor["Background Match?"]}"
             data-actor={actor.Actor}
             data-movie={actor["Background Match?"] === "Y"}
-            style="width: {width < 800 ? width/50 : width/40}px;">
+            style="width: {width < 800 ? width/50 : width/40}px; transition: background-color 0ms {0 + Math.random() * 500}ms; ">
             <img 
             src={formatImageName(actor.Actor)}
             alt="Image of {actor.Actor}"
@@ -483,6 +483,8 @@ style="{tooltip.useTop ? `top: ${tooltip.y}px;` : `bottom: ${tooltip.bottom}px;`
     .visualContainer {
       width: 98%; 
       margin-left: 2%;
+      height: 95vh;
+      margin-top: 5vh;
     }
     .stepContainer {
       display: block;
@@ -561,7 +563,6 @@ height: 100%; /* Ensure the parent has a defined height */
   position: relative;
   overflow: hidden;
   border: 0.5px solid #594158;
-
 }
 .square img {
   position: absolute;
@@ -571,7 +572,7 @@ height: 100%; /* Ensure the parent has a defined height */
   width: 100%;
   height: 100%;
   object-fit: cover; /* Ensures full coverage while keeping aspect ratio */
-  mix-blend-mode: multiply; /* Adjust blend mode as needed */
+  mix-blend-mode: luminosity; /* Adjust blend mode as needed */
 }
 .movie-opacity-0 {
   pointer-events: none;
@@ -585,6 +586,7 @@ height: 100%; /* Ensure the parent has a defined height */
 .stage-1 .isFullyInaccurate .square {
  background-color: var(--fullyinaccurate) !important;
 }
+
 
 .stage1 .actorClassN {
  background-color: var(--fullyinaccurate) !important;
@@ -755,8 +757,8 @@ height: 100%; /* Ensure the parent has a defined height */
   position: absolute;
   top: 0px;
   right: 10px;
-  width: 170px;
-  font-size: 15px;
+  width: 210px;
+  font-size: 14px;
 }
 
 .legendItem span {
@@ -771,7 +773,7 @@ height: 100%; /* Ensure the parent has a defined height */
     position: absolute;
     top: 0px;
     right: 0px;
-    width: 140px;
+    width: 160px;
     font-size: 12px;
   }
   .legendItem span {
