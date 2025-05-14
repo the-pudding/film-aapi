@@ -247,7 +247,7 @@ width: 100%;
         asian <br />
         <span class="mis">mis </span>representation 
       </div> -->
-      <div class="title">How Accurately are Asian American Actors Cast in Hollywood?</div>
+      <div class="title">How Accurately Are Asian Americans Cast in Hollywood?</div>
       <!-- Credits section -->
       <div class="credits">
        Data and script by <a href="#">Dorothy Lu</a><br>Illustrations and development by <a href="#">Anna Li</a>
