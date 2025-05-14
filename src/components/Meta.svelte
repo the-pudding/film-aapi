@@ -1,7 +1,7 @@
 <script>
   export let title = "Asian Misrepresentation";
   export let description =
-    "How Accurately Are Asian Americans Cast in Hollywood?";
+    "How accurately are Asian Americans cast in Hollywood?";
   export let url = "https://pudding.cool/2025/05/aapi-casting";
   export let keywords =
     "Asian casting,AAPI,Hollywood,Asian representation,Asian actor,Asian American";
