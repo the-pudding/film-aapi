@@ -1,166 +1,167 @@
 <script>
-	import { onMount } from "svelte";
-	import { shuffle } from "d3";
-	import wordmark from "$svg/wordmark-sticker.svg";
-	import linkOutArrow from "$svg/arrow-up-right.svg";
-	import Story from "$components/Footer.Story.svelte";
+  import { onMount } from "svelte";
+  import { shuffle } from "d3";
+  import wordmark from "$svg/wordmark-sticker.svg";
+  import linkOutArrow from "$svg/arrow-up-right.svg";
+  import Story from "$components/Footer.Story.svelte";
 
-	// Props for Svelte 4
-	export let recirc = true;
-	export let recent = true;
-	export let recircImages = true;
+  // Props for Svelte 4
+  export let recirc = true;
+  export let recent = true;
+  export let recircImages = true;
 
-	// custom to starter
-	const base = "https://pudding.cool";
-	let stories = [];
-	let storyCount = 0;
+  // custom to starter
+  const base = "https://pudding.cool";
+  let stories = [];
+  let storyCount = 0;
 
-	const v = Date.now();
-	const url = `https://pudding.cool/assets/data/stories.json?v=${v}`;
+  const v = Date.now();
+  const url = `https://pudding.cool/assets/data/stories.json?v=${v}`;
 
-	const about = [
-		{ name: "Our Team", url: "https://pudding.cool/about" },
-		{ name: "Our Resources", url: "https://pudding.cool/resources/" },
-		{ name: "Pitch a Story", url: "https://pudding.cool/pitch/" },
-		{ name: "Brand Partnerships", url: "https://polygraph.cool" },
-		{ name: "Privacy Policy", url: "https://pudding.cool/pitch/" }
-	];
+  const about = [
+    { name: "Our Team", url: "https://pudding.cool/about" },
+    { name: "Our Resources", url: "https://pudding.cool/resources/" },
+    { name: "Pitch a Story", url: "https://pudding.cool/pitch/" },
+    { name: "Brand Partnerships", url: "https://polygraph.cool" },
+    { name: "Privacy Policy", url: "https://pudding.cool/pitch/" },
+  ];
 
-	const follow = [
-		{
-			name: "Instagram",
-			url: "https://www.instagram.com/the.pudding"
-		},
-		{ name: "Twitter/X", url: "https://twitter.com/puddingviz/" },
-		{ name: "TikTok", url: "https://www.tiktok.com/@the_pudding" },
-		{ name: "YouTube", url: "https://www.youtube.com/@thepudding" },
-		{ name: "RSS", url: "https://pudding.cool/feed/index.xml" }
-	];
+  const follow = [
+    {
+      name: "Instagram",
+      url: "https://www.instagram.com/the.pudding",
+    },
+    { name: "Twitter/X", url: "https://twitter.com/puddingviz/" },
+    { name: "TikTok", url: "https://www.tiktok.com/@the_pudding" },
+    { name: "YouTube", url: "https://www.youtube.com/@thepudding" },
+    { name: "RSS", url: "https://pudding.cool/feed/index.xml" },
+  ];
 
-	onMount(async () => {
-		if (recirc) {
-			const localURL = window.location.href;
-			const response = await fetch(url);
-			const data = await response.json();
+  onMount(async () => {
+    if (recirc) {
+      const localURL = window.location.href;
+      const response = await fetch(url);
+      const data = await response.json();
 
-			const filtered = data.filter((d) => !localURL.includes(d.url));
+      const filtered = data.filter((d) => !localURL.includes(d.url));
 
-			const withSlug = filtered.map((d) => ({
-				...d,
-				tease: d.hed,
-				slug: d.image,
-				href: d.url
-			}));
+      const withSlug = filtered.map((d) => ({
+        ...d,
+        tease: d.hed,
+        slug: d.image,
+        href: `https://pudding.cool/${d.url}`,
+      }));
 
-			storyCount = filtered.length;
-      
-			const numStories = recircImages ? 4 : 3;
-			if (recent) stories = recent ? withSlug.slice(0, numStories) : [];
-			else stories = shuffle(withSlug).slice(0, numStories);
-		}
-	});
+      storyCount = filtered.length;
+
+      const numStories = recircImages ? 4 : 3;
+      if (recent) stories = recent ? withSlug.slice(0, numStories) : [];
+      else stories = shuffle(withSlug).slice(0, numStories);
+    }
+  });
 </script>
 
 <footer>
-	<div class="c">
-		<div class="top">
-			{#if recirc && stories.length}
-				{#if recircImages}
-					<section class="images">
-						<ul>
-							{#each stories as story}
-								<li>
-									<Story {...story} footer={true} />
-								</li>
-							{/each}
-						</ul>
-					</section>
-				{:else}
-					<section class="text">
-						We've published <strong>{storyCount}</strong> awesome stories such
-						as
-						{#each stories as { short, url }, i}
-							<a href={url} target="_blank" rel="noreferrer">{short}</a>,&nbsp;
-						{/each}and more.
-					</section>
-				{/if}
-			{/if}
-		</div>
-		<div class="bottom">
-			<div class="cta-wrapper">
-				<section class="donate">
-					<div class="img-wrapper">
-						<a href="https://patreon.com/thepudding">
-							<img
-								src="{base}/assets/stickers/donate-footer-square@2x.png"
-								alt="donate sticker"
-							/>
-						</a>
-					</div>
-					<div class="text-wrapper">
-						<p>
-							<a href="https://patreon.com/thepudding">Support us on Patreon</a>
-							<span class="arrow">{@html linkOutArrow}</span>
-						</p>
-						<p>
-							We pour our heart into these stories, but they take time and
-							money. For just $2/month, you can help support us. Join our
-							growing community of data-driven enthusiasts.
-						</p>
-					</div>
-				</section>
+  <div class="c">
+    <div class="top">
+      {#if recirc && stories.length}
+        {#if recircImages}
+          <section class="images">
+            <ul>
+              {#each stories as story}
+                <li>
+                  <Story {...story} footer={true} />
+                </li>
+              {/each}
+            </ul>
+          </section>
+        {:else}
+          <section class="text">
+            We've published <strong>{storyCount}</strong> awesome stories such
+            as
+            {#each stories as { short, url }, i}
+              <a href={url} target="_blank" rel="noreferrer">{short}</a>,&nbsp;
+            {/each}and more.
+          </section>
+        {/if}
+      {/if}
+    </div>
+    <div class="bottom">
+      <div class="cta-wrapper">
+        <section class="donate">
+          <div class="img-wrapper">
+            <a href="https://patreon.com/thepudding">
+              <img
+                src="{base}/assets/stickers/donate-footer-square@2x.png"
+                alt="donate sticker"
+              />
+            </a>
+          </div>
+          <div class="text-wrapper">
+            <p>
+              <a href="https://patreon.com/thepudding">Support us on Patreon</a>
+              <span class="arrow">{@html linkOutArrow}</span>
+            </p>
+            <p>
+              We pour our heart into these stories, but they take time and
+              money. For just $2/month, you can help support us. Join our
+              growing community of data-driven enthusiasts.
+            </p>
+          </div>
+        </section>
 
-				<section class="subscribe">
-					<div class="img-wrapper">
-						<a href="https://pudding.cool/subscribe">
-							<img
-								src="{base}/assets/stickers/subscribe-footer@2x.png"
-								alt="donate sticker"
-							/>
-						</a>
-					</div>
-					<div class="text-wrapper">
-						<p>
-							<a href="https://pudding.cool/subscribe"
-								>Subscribe to our newsletter</a
-							>
-							<span class="arrow">{@html linkOutArrow}</span>
-						</p>
-						<p>
-							Get all our latest stories in your inbox. Plus get links to some
-							of our favorite projects from around the web.
-						</p>
-					</div>
-				</section>
-			</div>
+        <section class="subscribe">
+          <div class="img-wrapper">
+            <a href="https://pudding.cool/subscribe">
+              <img
+                src="{base}/assets/stickers/subscribe-footer@2x.png"
+                alt="donate sticker"
+              />
+            </a>
+          </div>
+          <div class="text-wrapper">
+            <p>
+              <a href="https://pudding.cool/subscribe"
+                >Subscribe to our newsletter</a
+              >
+              <span class="arrow">{@html linkOutArrow}</span>
+            </p>
+            <p>
+              Get all our latest stories in your inbox. Plus get links to some
+              of our favorite projects from around the web.
+            </p>
+          </div>
+        </section>
+      </div>
 
-			<section class="links">
-				<div class="img-wrapper">
-					<span class="wordmark">
-          <a href="https://pudding.cool/">{@html wordmark}</a></span>
-				</div>
-				<div class="inner">
-					<div class="about">
-						<p class="title">About Us</p>
-						<ul>
-							{#each about as { name, url }}
-								<li><a href={url}>{name}</a></li>
-							{/each}
-						</ul>
-					</div>
+      <section class="links">
+        <div class="img-wrapper">
+          <span class="wordmark">
+            <a href="https://pudding.cool/">{@html wordmark}</a></span
+          >
+        </div>
+        <div class="inner">
+          <div class="about">
+            <p class="title">About Us</p>
+            <ul>
+              {#each about as { name, url }}
+                <li><a href={url}>{name}</a></li>
+              {/each}
+            </ul>
+          </div>
 
-					<div class="follow">
-						<p class="title">Follow Us</p>
-						<ul>
-							{#each follow as { name, url }}
-								<li><a href={url}>{name}</a></li>
-							{/each}
-						</ul>
-					</div>
-				</div>
-			</section>
-		</div>
-	</div>
+          <div class="follow">
+            <p class="title">Follow Us</p>
+            <ul>
+              {#each follow as { name, url }}
+                <li><a href={url}>{name}</a></li>
+              {/each}
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
 </footer>
 
 <style>
